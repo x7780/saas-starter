@@ -64,7 +64,7 @@ export default function Home() {
         </section>
 
         {/* Statistics Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 flex flex-col justify-center items-center">
+        <section className="w-full py-12 md:py-24 lg:py-16 bg-muted/50 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="flex flex-col items-center justify-center space-y-2 text-center">
@@ -472,7 +472,7 @@ export default function Home() {
         {/* FAQ Section */}
         <section
           id="faq"
-          className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 flex flex-col justify-center items-center"
+          className="w-full py-12 md:py-24 lg:py-16 bg-muted/50 flex flex-col justify-center items-center"
         >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
