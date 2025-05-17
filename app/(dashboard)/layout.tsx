@@ -1,9 +1,9 @@
 'use client';
 
 import Link from 'next/link';
-import { use, useState, Suspense } from 'react';
+import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { CircleIcon, Home, LogOut } from 'lucide-react';
+import { CircleIcon, Home, LogOut, Settings } from 'lucide-react'; // Added Settings icon here
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -66,11 +66,11 @@ function UserMenu() {
           </Link>
         </DropdownMenuItem>
         <DropdownMenuItem className="cursor-pointer">
-        <Link href="/dashboard/general" className="flex w-full items-center">
-          <Settings className="mr-2 h-4 w-4" />
-          <span>General</span>
-        </Link>
-      </DropdownMenuItem>
+          <Link href="/dashboard/general" className="flex w-full items-center">
+            <Settings className="mr-2 h-4 w-4" />
+            <span>General</span>
+          </Link>
+        </DropdownMenuItem>
         <form action={handleSignOut} className="w-full">
           <button type="submit" className="flex w-full">
             <DropdownMenuItem className="w-full flex-1 cursor-pointer">
