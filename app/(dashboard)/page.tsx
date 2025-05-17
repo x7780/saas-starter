@@ -50,7 +50,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <div className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-[16/9] overflow-hidden rounded-xl">
                   <Image
-                    src="./public/images/character.png"
+                    src="/images/character.png"
                     alt="Digital Asset Investment Chart"
                     fill
                     className="object-cover"
