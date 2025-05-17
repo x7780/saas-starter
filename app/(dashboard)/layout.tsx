@@ -64,19 +64,19 @@ function UserMenu() {
             <Home className="mr-2 h-4 w-4" />
             <span>Dashboard</span>
           </Link>
-          <Link href="/dashboard/general" className="flex w-full items-center">
-            <Home className="mr-2 h-4 w-4" />
-            <span>General</span>
-          </Link>
-          <Link href="/dashboard/activity" className="flex w-full items-center">
-            <Home className="mr-2 h-4 w-4" />
-            <span>Activity</span>
-          </Link>
-          <Link href="/dashboard/security" className="flex w-full items-center">
-            <Home className="mr-2 h-4 w-4" />
-            <span>Security</span>
-          </Link>
         </DropdownMenuItem>
+        {[
+          { href: '/dashboard/general', icon: Settings, label: 'General' },
+          { href: '/dashboard/activity', icon: Activity, label: 'Activity' },
+          { href: '/dashboard/security', icon: Shield, label: 'Security' }
+        ].map((item) => (
+          <DropdownMenuItem key={item.href} className="cursor-pointer">
+            <Link href={item.href} className="flex w-full items-center">
+              <item.icon className="mr-2 h-4 w-4" />
+              <span>{item.label}</span>
+            </Link>
+          </DropdownMenuItem>
+        ))}
         <form action={handleSignOut} className="w-full">
           <button type="submit" className="flex w-full">
             <DropdownMenuItem className="w-full flex-1 cursor-pointer">
