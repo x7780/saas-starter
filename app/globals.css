@@ -273,3 +273,21 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-350px * 5 - 1.5rem * 5));
+  }
+}
+
+.testimonial-track {
+  animation: scroll 30s linear infinite;
+}
+
+.testimonial-carousel:hover .testimonial-track {
+  animation-play-state: paused;
+}
