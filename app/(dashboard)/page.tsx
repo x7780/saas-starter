@@ -1,7 +1,19 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, BarChart3, Clock, Shield, TrendingUp, Zap } from "lucide-react"
+import {
+  ArrowRight,
+  BarChart3,
+  Clock,
+  Facebook,
+  Instagram,
+  MessageSquare,
+  Send,
+  Shield,
+  TrendingUp,
+  Twitter,
+  Zap,
+} from "lucide-react"
 
 export default function Home() {
   return (
@@ -200,58 +212,232 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 用户评价 */}
+        {/* User Testimonials */}
         <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">用户的声音</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl">听听我们的用户如何评价我们的定投服务</p>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">What Our Users Say</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl">
+                  Hear from our community of investors about their experience with our DCA service
+                </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-              <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg">
-                <div className="space-y-2">
-                  <p className="text-muted-foreground">
-                    "使用这个定投服务已经一年多了，系统非常稳定，操作简单，最重要的是让我养成了良好的投资习惯，资产也在稳步增长。"
-                  </p>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="rounded-full bg-muted h-10 w-10"></div>
-                  <div>
-                    <p className="text-sm font-medium">张先生</p>
-                    <p className="text-xs text-muted-foreground">IT工程师</p>
+
+            <div className="relative mt-12 overflow-hidden">
+              {/* Auto-scrolling testimonials carousel */}
+              <div className="testimonial-carousel w-full overflow-hidden">
+                <div className="testimonial-track flex animate-scroll gap-6 py-4">
+                  {/* First set of testimonials */}
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                    <div className="space-y-2">
+                      <p className="text-muted-foreground">
+                        "I've been using this DCA service for over a year now. The system is incredibly stable, easy to
+                        use, and most importantly, it has helped me develop good investment habits while steadily
+                        growing my assets."
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="rounded-full bg-muted h-10 w-10"></div>
+                      <div>
+                        <p className="text-sm font-medium">Michael Chen</p>
+                        <p className="text-xs text-muted-foreground">IT Engineer</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                    <div className="space-y-2">
+                      <p className="text-muted-foreground">
+                        "As a beginner investor, this platform has been incredibly helpful. The smart analysis features
+                        help me better understand the market, and the automatic DCA ensures I never miss an investment
+                        opportunity."
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="rounded-full bg-muted h-10 w-10"></div>
+                      <div>
+                        <p className="text-sm font-medium">Sarah Johnson</p>
+                        <p className="text-xs text-muted-foreground">Marketing Specialist</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                    <div className="space-y-2">
+                      <p className="text-muted-foreground">
+                        "The security and transparency of this platform give me peace of mind. Customer service is also
+                        very professional, promptly addressing any questions. Highly recommend to anyone looking for
+                        long-term investments."
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="rounded-full bg-muted h-10 w-10"></div>
+                      <div>
+                        <p className="text-sm font-medium">David Wang</p>
+                        <p className="text-xs text-muted-foreground">Financial Analyst</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                    <div className="space-y-2">
+                      <p className="text-muted-foreground">
+                        "The automated investment feature has completely changed how I approach digital assets. I no
+                        longer stress about timing the market - the system does it all for me while I focus on my
+                        career."
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="rounded-full bg-muted h-10 w-10"></div>
+                      <div>
+                        <p className="text-sm font-medium">Emma Rodriguez</p>
+                        <p className="text-xs text-muted-foreground">Software Developer</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                    <div className="space-y-2">
+                      <p className="text-muted-foreground">
+                        "I've tried several DCA platforms, but this one stands out for its intuitive interface and
+                        comprehensive analytics. The performance reports help me understand exactly how my investments
+                        are growing."
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="rounded-full bg-muted h-10 w-10"></div>
+                      <div>
+                        <p className="text-sm font-medium">James Wilson</p>
+                        <p className="text-xs text-muted-foreground">Business Consultant</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Second set of testimonials (duplicated for continuous scrolling) */}
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                    <div className="space-y-2">
+                      <p className="text-muted-foreground">
+                        "The flexibility of this service is what I appreciate most. I can adjust my investment strategy
+                        as my financial situation changes, and the platform adapts seamlessly to my needs."
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="rounded-full bg-muted h-10 w-10"></div>
+                      <div>
+                        <p className="text-sm font-medium">Olivia Kim</p>
+                        <p className="text-xs text-muted-foreground">Entrepreneur</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                    <div className="space-y-2">
+                      <p className="text-muted-foreground">
+                        "As someone who's always been intimidated by investing, this platform has been a game-changer.
+                        The educational resources combined with the automated DCA have given me confidence in my
+                        financial future."
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="rounded-full bg-muted h-10 w-10"></div>
+                      <div>
+                        <p className="text-sm font-medium">Thomas Brown</p>
+                        <p className="text-xs text-muted-foreground">Teacher</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                    <div className="space-y-2">
+                      <p className="text-muted-foreground">
+                        "The customer support team deserves special mention. Whenever I've had questions about my
+                        investment strategy, they've provided thoughtful, personalized advice that has truly added
+                        value."
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="rounded-full bg-muted h-10 w-10"></div>
+                      <div>
+                        <p className="text-sm font-medium">Sophia Martinez</p>
+                        <p className="text-xs text-muted-foreground">Healthcare Professional</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                    <div className="space-y-2">
+                      <p className="text-muted-foreground">
+                        "I appreciate how this platform makes complex investment strategies accessible to everyone. The
+                        regular updates and market insights have helped me become a more informed investor."
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="rounded-full bg-muted h-10 w-10"></div>
+                      <div>
+                        <p className="text-sm font-medium">Daniel Lee</p>
+                        <p className="text-xs text-muted-foreground">Civil Engineer</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                    <div className="space-y-2">
+                      <p className="text-muted-foreground">
+                        "The peace of mind that comes with knowing my investments are being handled systematically is
+                        invaluable. This service has removed the emotional aspect of investing that often led to poor
+                        decisions in the past."
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="rounded-full bg-muted h-10 w-10"></div>
+                      <div>
+                        <p className="text-sm font-medium">Rachel Thompson</p>
+                        <p className="text-xs text-muted-foreground">Psychologist</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Duplicate first set for seamless looping */}
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                    <div className="space-y-2">
+                      <p className="text-muted-foreground">
+                        "I've been using this DCA service for over a year now. The system is incredibly stable, easy to
+                        use, and most importantly, it has helped me develop good investment habits while steadily
+                        growing my assets."
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="rounded-full bg-muted h-10 w-10"></div>
+                      <div>
+                        <p className="text-sm font-medium">Michael Chen</p>
+                        <p className="text-xs text-muted-foreground">IT Engineer</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                    <div className="space-y-2">
+                      <p className="text-muted-foreground">
+                        "As a beginner investor, this platform has been incredibly helpful. The smart analysis features
+                        help me better understand the market, and the automatic DCA ensures I never miss an investment
+                        opportunity."
+                      </p>
+                    </div>
+                    <div className="flex items-center space-x-4">
+                      <div className="rounded-full bg-muted h-10 w-10"></div>
+                      <div>
+                        <p className="text-sm font-medium">Sarah Johnson</p>
+                        <p className="text-xs text-muted-foreground">Marketing Specialist</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg">
-                <div className="space-y-2">
-                  <p className="text-muted-foreground">
-                    "作为投资新手，这个平台给了我很大帮助。智能分析功能让我更好地了解市场，自动定投功能也让我不用担心错过投资时机。"
-                  </p>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="rounded-full bg-muted h-10 w-10"></div>
-                  <div>
-                    <p className="text-sm font-medium">李女士</p>
-                    <p className="text-xs text-muted-foreground">市场营销</p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg">
-                <div className="space-y-2">
-                  <p className="text-muted-foreground">
-                    "平台的安全性和透明度让我很放心。客户服务也很专业，有任何问题都能得到及时解答。强烈推荐给想要长期投资的朋友。"
-                  </p>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="rounded-full bg-muted h-10 w-10"></div>
-                  <div>
-                    <p className="text-sm font-medium">王先生</p>
-                    <p className="text-xs text-muted-foreground">金融分析师</p>
-                  </div>
-                </div>
-              </div>
+
+              {/* Gradient overlays for smooth visual transition */}
+              <div className="absolute left-0 top-0 bottom-0 w-12 z-10 bg-gradient-to-r from-background to-transparent pointer-events-none"></div>
+              <div className="absolute right-0 top-0 bottom-0 w-12 z-10 bg-gradient-to-l from-background to-transparent pointer-events-none"></div>
             </div>
           </div>
         </section>
@@ -331,94 +517,49 @@ export default function Home() {
       {/* 页脚 */}
       <footer className="border-t bg-muted/50">
         <div className="container flex flex-col gap-6 py-8 px-4 md:px-6">
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
-            <div className="space-y-4">
-              <h3 className="text-base font-medium">产品</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="#features" className="text-muted-foreground hover:underline">
-                    功能特点
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#how-it-works" className="text-muted-foreground hover:underline">
-                    工作原理
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:underline">
-                    安全保障
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-base font-medium">资源</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:underline">
-                    投资指南
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:underline">
-                    市场分析
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#faq" className="text-muted-foreground hover:underline">
-                    常见问题
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-base font-medium">公司</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:underline">
-                    关于我们
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:underline">
-                    联系我们
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:underline">
-                    加入我们
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-base font-medium">法律</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:underline">
-                    隐私政策
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:underline">
-                    服务条款
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-muted-foreground hover:underline">
-                    免责声明
-                  </Link>
-                </li>
-              </ul>
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <h3 className="text-base font-medium">Follow Us</h3>
+            <div className="flex items-center gap-6">
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <div className="flex flex-col items-center gap-2">
+                  <Twitter className="h-6 w-6" />
+                  <span className="text-xs">Twitter</span>
+                </div>
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <div className="flex flex-col items-center gap-2">
+                  <Facebook className="h-6 w-6" />
+                  <span className="text-xs">Facebook</span>
+                </div>
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <div className="flex flex-col items-center gap-2">
+                  <Instagram className="h-6 w-6" />
+                  <span className="text-xs">Instagram</span>
+                </div>
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <div className="flex flex-col items-center gap-2">
+                  <Send className="h-6 w-6" />
+                  <span className="text-xs">Telegram</span>
+                </div>
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <div className="flex flex-col items-center gap-2">
+                  <MessageSquare className="h-6 w-6" />
+                  <span className="text-xs">Discord</span>
+                </div>
+              </Link>
             </div>
           </div>
-          <div className="flex flex-col gap-4 sm:flex-row items-center justify-between">
+          <div className="flex flex-col gap-4 sm:flex-row items-center justify-center">
             <div className="flex items-center gap-2">
               <TrendingUp className="h-6 w-6" />
-              <span className="font-bold">智投数字</span>
+              <span className="font-bold">Smart Invest Digital</span>
             </div>
-            <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} 智投数字. 保留所有权利.</p>
+            <p className="text-xs text-muted-foreground">
+              © {new Date().getFullYear()} Smart Invest Digital. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
