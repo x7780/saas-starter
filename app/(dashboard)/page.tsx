@@ -50,7 +50,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <div className="relative w-full aspect-square overflow-hidden rounded-xl">
                   <Image
-                    src="/images/Fcharacter.png?height=600&width=600"
+                    src="/images/character.png?height=600&width=600"
                     alt="Digital Asset Investment Chart"
                     width={600}
                     height={600}
