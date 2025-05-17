@@ -2,129 +2,255 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, CreditCard, Database } from 'lucide-react';
 import { Terminal } from './terminal';
 
-export default function HomePage() {
+
+export default function Home() {
   return (
-    <main>
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-            <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-              <h1 className="text-4xl font-bold text-gray-900 tracking-tight sm:text-5xl md:text-6xl">
-                btc Your SaaS
-                <span className="block text-orange-500">Faster Than Ever</span>
+    <div className="min-h-screen bg-background">
+      {/* Hero Section */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-background to-background/95 pb-16 pt-24 md:pb-24 md:pt-32">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" />
+        <div className="container relative space-y-16">
+          <div className="mx-auto max-w-3xl space-y-8 text-center">
+            <div className="space-y-4">
+              <h1 className="bg-gradient-to-r from-primary/70 to-primary bg-clip-text text-4xl font-bold tracking-tighter text-transparent md:text-6xl">
+                Smart Digital Market Investing Made Simple
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Launch your SaaS product in record time with our powerful,
-                ready-to-use template. Packed with modern technologies and
-                essential integrations.
+              <p className="mx-auto max-w-2xl text-muted-foreground md:text-xl">
+                Automate your digital asset investments with our powerful DCA platform. Build wealth consistently with
+                scheduled investments tailored to your goals.
               </p>
-              <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                <a
-                  href="https://vercel.com/templates/next.js/next-js-saas-starter"
-                  target="_blank"
-                >
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="text-lg rounded-full"
-                  >
-                    Deploy your own
-                    <ArrowRight className="ml-2 h-5 w-5" />
+            </div>
+            <div className="space-x-4">
+              <Button size="lg" className="gap-2">
+                Get Started <ChevronRight className="h-4 w-4" />
+              </Button>
+              <Button size="lg" variant="outline">
+                How It Works
+              </Button>
+            </div>
+          </div>
+          <div className="mx-auto grid max-w-5xl grid-cols-3 gap-8 text-center">
+            {stats.map((stat) => (
+              <div key={stat.label} className="space-y-2 rounded-lg bg-muted/50 p-4">
+                <p className="text-3xl font-bold">{stat.value}</p>
+                <p className="text-sm text-muted-foreground">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="container py-24">
+        <div className="mx-auto max-w-5xl space-y-16">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold">Why Choose Our DCA Platform</h2>
+            <p className="mt-4 text-muted-foreground">
+              Powerful features designed to optimize your investment strategy
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            {features.map((feature) => (
+              <div key={feature.title} className="space-y-4 rounded-lg border p-6">
+                <div className="inline-flex rounded-lg bg-primary/10 p-2 text-primary">
+                  <feature.icon className="h-5 w-5" />
+                </div>
+                <h3 className="text-xl font-bold">{feature.title}</h3>
+                <p className="text-muted-foreground">{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="bg-muted/30 py-24">
+        <div className="container">
+          <div className="mx-auto max-w-5xl space-y-16">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold">How It Works</h2>
+              <p className="mt-4 text-muted-foreground">
+                Start your automated investment journey in three simple steps
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-3">
+              {steps.map((step, index) => (
+                <div key={step.title} className="relative space-y-4 rounded-lg border bg-background p-6">
+                  <div className="absolute -top-4 -left-4 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                    {index + 1}
+                  </div>
+                  <h3 className="text-xl font-bold">{step.title}</h3>
+                  <p className="text-muted-foreground">{step.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="relative overflow-hidden bg-primary/10 py-24">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f1a_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f1a_1px,transparent_1px)] bg-[size:14px_24px]" />
+        <div className="container relative">
+          <div className="mx-auto max-w-4xl rounded-2xl border bg-background p-8 shadow-lg md:p-12">
+            <div className="grid gap-8 md:grid-cols-2 md:gap-12">
+              <div className="space-y-4">
+                <div className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                  Limited Time Offer
+                </div>
+                <h2 className="text-3xl font-bold tracking-tight">Start Building Your Digital Portfolio Today</h2>
+                <p className="text-muted-foreground">
+                  Join thousands of smart investors who are already using our platform to build wealth through strategic
+                  DCA investing.
+                </p>
+                <ul className="space-y-2">
+                  {benefits.map((benefit, index) => (
+                    <li key={index} className="flex items-center gap-2">
+                      <div className="flex h-5 w-5 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        ✓
+                      </div>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="pt-4">
+                  <Button size="lg" className="w-full md:w-auto">
+                    Get Started Now
                   </Button>
-                </a>
+                </div>
               </div>
-            </div>
-            <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-              <Terminal />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-white w-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-3 lg:gap-8">
-            <div>
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
-                <svg viewBox="0 0 24 24" className="h-6 w-6">
-                  <path
-                    fill="currentColor"
-                    d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"
-                  />
-                </svg>
-              </div>
-              <div className="mt-5">
-                <h2 className="text-lg font-medium text-gray-900">
-                  Next.js and React
-                </h2>
-                <p className="mt-2 text-base text-gray-500">
-                  Leverage the power of modern web technologies for optimal
-                  performance and developer experience.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 lg:mt-0">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
-                <Database className="h-6 w-6" />
-              </div>
-              <div className="mt-5">
-                <h2 className="text-lg font-medium text-gray-900">
-                  Postgres and Drizzle ORM
-                </h2>
-                <p className="mt-2 text-base text-gray-500">
-                  Robust database solution with an intuitive ORM for efficient
-                  data management and scalability.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-10 lg:mt-0">
-              <div className="flex items-center justify-center h-12 w-12 rounded-md bg-orange-500 text-white">
-                <CreditCard className="h-6 w-6" />
-              </div>
-              <div className="mt-5">
-                <h2 className="text-lg font-medium text-gray-900">
-                  Stripe Integration
-                </h2>
-                <p className="mt-2 text-base text-gray-500">
-                  Seamless payment processing and subscription management with
-                  industry-leading Stripe integration.
-                </p>
+              <div className="flex items-center justify-center">
+                <div className="relative h-64 w-full max-w-sm rounded-lg bg-gradient-to-br from-primary/20 to-primary/40 p-1">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="space-y-6 text-center">
+                      <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-primary text-4xl font-bold text-primary-foreground">
+                        <TrendingUp className="h-10 w-10" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-medium text-muted-foreground">Average Annual Return</p>
+                        <p className="text-3xl font-bold">+27.8%</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-                Ready to launch your SaaS?
-              </h2>
-              <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                Our template provides everything you need to get your SaaS up
-                and running quickly. Don't waste time on boilerplate - focus on
-                what makes your product unique.
-              </p>
+      {/* Footer */}
+      <footer className="border-t bg-muted/50">
+        <div className="container py-8">
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <div className="flex items-center space-x-2">
+              <TrendingUp className="h-6 w-6" />
+              <span className="text-lg font-bold">DCA Platform</span>
             </div>
-            <div className="mt-8 lg:mt-0 flex justify-center lg:justify-end">
-              <a href="https://github.com/nextjs/saas-starter" target="_blank">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="text-lg rounded-full"
-                >
-                  View the code
-                  <ArrowRight className="ml-3 h-6 w-6" />
-                </Button>
-              </a>
+            <div className="flex items-center justify-center space-x-6">
+              <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <Twitter className="h-5 w-5" aria-hidden="true" />
+                <span className="sr-only">Twitter</span>
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <Instagram className="h-5 w-5" aria-hidden="true" />
+                <span className="sr-only">Instagram</span>
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <Facebook className="h-5 w-5" aria-hidden="true" />
+                <span className="sr-only">Facebook</span>
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <Send className="h-5 w-5" aria-hidden="true" />
+                <span className="sr-only">Telegram</span>
+              </Link>
+              <Link href="#" className="text-muted-foreground hover:text-foreground">
+                <MessageSquare className="h-5 w-5" aria-hidden="true" />
+                <span className="sr-only">Discord</span>
+              </Link>
+            </div>
+            <div className="text-center text-sm text-muted-foreground">
+              © {new Date().getFullYear()} DCA Platform. All rights reserved.
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  );
+      </footer>
+    </div>
+  )
 }
+
+const stats = [
+  { label: "Active Investors", value: "10,000+" },
+  { label: "Total Invested", value: "$50M+" },
+  { label: "Supported Assets", value: "50+" },
+]
+
+const features = [
+  {
+    icon: Clock,
+    title: "Automated Investing",
+    description: "Set up recurring investments on your schedule - daily, weekly, or monthly.",
+  },
+  {
+    icon: BarChart3,
+    title: "Portfolio Analytics",
+    description: "Track performance with detailed analytics and customizable reports.",
+  },
+  {
+    icon: Shield,
+    title: "Secure Platform",
+    description: "Enterprise-grade security to protect your investments and personal data.",
+  },
+]
+
+const steps = [
+  {
+    title: "Create an Account",
+    description: "Sign up in minutes with our simple onboarding process.",
+  },
+  {
+    title: "Configure Your Strategy",
+    description: "Select assets, investment amount, and frequency that fits your goals.",
+  },
+  {
+    title: "Relax and Watch It Grow",
+    description: "Our platform handles the rest, automatically executing your strategy.",
+  },
+]
+
+const footerLinks = [
+  {
+    title: "Platform",
+    links: [
+      { label: "Features", href: "#" },
+      { label: "Security", href: "#" },
+      { label: "How It Works", href: "#" },
+      { label: "Supported Assets", href: "#" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { label: "Documentation", href: "#" },
+      { label: "Learning Center", href: "#" },
+      { label: "Blog", href: "#" },
+      { label: "FAQ", href: "#" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { label: "About", href: "#" },
+      { label: "Careers", href: "#" },
+      { label: "Contact", href: "#" },
+      { label: "Partners", href: "#" },
+    ],
+  },
+]
+
+const benefits = [
+  "No minimum investment required",
+  "Automated investing on your schedule",
+  "Advanced portfolio analytics",
+  "Bank-level security for your assets",
+]
