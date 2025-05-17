@@ -21,7 +21,7 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 max-w-5xl mx-auto">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
@@ -50,7 +50,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <div className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-[16/9] overflow-hidden rounded-xl">
                   <Image
-                    src="https://wave.devdojo.com/wave/img/character.png"
+                    src="/placeholder.svg?height=720&width=1280"
                     alt="Digital Asset Investment Chart"
                     fill
                     className="object-cover"
@@ -64,7 +64,7 @@ export default function Home() {
 
         {/* Statistics Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 max-w-4xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="flex flex-col items-center justify-center space-y-2 text-center">
                 <div className="text-3xl font-bold">10,000+</div>
@@ -88,7 +88,7 @@ export default function Home() {
 
         {/* Features Section */}
         <section id="features" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 max-w-5xl mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Why Choose Our DCA Service</h2>
@@ -98,7 +98,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
+            <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
               <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
                   <Clock className="h-6 w-6 text-primary" />
@@ -177,7 +177,7 @@ export default function Home() {
 
         {/* How It Works */}
         <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 max-w-4xl mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">How DCA Works</h2>
@@ -186,7 +186,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 md:grid-cols-3">
+            <div className="mx-auto grid max-w-4xl grid-cols-1 gap-8 py-12 md:grid-cols-3">
               <div className="flex flex-col items-center space-y-4 text-center">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground text-2xl font-bold">
                   1
@@ -237,7 +237,7 @@ export default function Home() {
 
         {/* User Testimonials */}
         <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 max-w-4xl mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">What Our Users Say</h2>
@@ -252,7 +252,7 @@ export default function Home() {
               <div className="testimonial-carousel w-full overflow-hidden">
                 <div className="testimonial-track flex animate-scroll gap-6 py-4">
                   {/* First set of testimonials */}
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[280px] max-w-[320px] flex-shrink-0">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "I've been using this DCA service for over a year now. The system is incredibly stable, easy to
@@ -269,7 +269,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[280px] max-w-[320px] flex-shrink-0">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "As a beginner investor, this platform has been incredibly helpful. The smart analysis features
@@ -286,7 +286,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[280px] max-w-[320px] flex-shrink-0">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "The security and transparency of this platform give me peace of mind. Customer service is also
@@ -303,7 +303,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[280px] max-w-[320px] flex-shrink-0">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "The automated investment feature has completely changed how I approach digital assets. I no
@@ -320,7 +320,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[280px] max-w-[320px] flex-shrink-0">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "I've tried several DCA platforms, but this one stands out for its intuitive interface and
@@ -338,7 +338,7 @@ export default function Home() {
                   </div>
 
                   {/* Second set of testimonials (duplicated for continuous scrolling) */}
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[280px] max-w-[320px] flex-shrink-0">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "The flexibility of this service is what I appreciate most. I can adjust my investment strategy
@@ -354,7 +354,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[280px] max-w-[320px] flex-shrink-0">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "As someone who's always been intimidated by investing, this platform has been a game-changer.
@@ -371,7 +371,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[280px] max-w-[320px] flex-shrink-0">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "The customer support team deserves special mention. Whenever I've had questions about my
@@ -388,7 +388,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[280px] max-w-[320px] flex-shrink-0">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "I appreciate how this platform makes complex investment strategies accessible to everyone. The
@@ -404,7 +404,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[280px] max-w-[320px] flex-shrink-0">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "The peace of mind that comes with knowing my investments are being handled systematically is
@@ -422,7 +422,7 @@ export default function Home() {
                   </div>
 
                   {/* Duplicate first set for seamless looping */}
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[280px] max-w-[320px] flex-shrink-0">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "I've been using this DCA service for over a year now. The system is incredibly stable, easy to
@@ -439,7 +439,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[280px] max-w-[320px] flex-shrink-0">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "As a beginner investor, this platform has been incredibly helpful. The smart analysis features
@@ -467,7 +467,7 @@ export default function Home() {
 
         {/* FAQ Section */}
         <section id="faq" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 max-w-3xl mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Frequently Asked Questions</h2>
@@ -516,7 +516,7 @@ export default function Home() {
 
         {/* Call to Action */}
         <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+          <div className="container px-4 md:px-6 max-w-4xl mx-auto">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Start Your Smart DCA Journey</h2>
@@ -544,50 +544,52 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="border-t bg-muted/50">
-        <div className="container flex flex-col gap-6 py-8 px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4">
-            <h3 className="text-base font-medium">Follow Us</h3>
-            <div className="flex items-center gap-6">
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
-                  <Twitter className="h-6 w-6" />
-                  <span className="text-xs">Twitter</span>
-                </div>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
-                  <Facebook className="h-6 w-6" />
-                  <span className="text-xs">Facebook</span>
-                </div>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
-                  <Instagram className="h-6 w-6" />
-                  <span className="text-xs">Instagram</span>
-                </div>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
-                  <Send className="h-6 w-6" />
-                  <span className="text-xs">Telegram</span>
-                </div>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
-                  <MessageSquare className="h-6 w-6" />
-                  <span className="text-xs">Discord</span>
-                </div>
-              </Link>
+        <div className="container px-4 md:px-6 max-w-4xl mx-auto">
+          <div className="flex flex-col gap-6 py-8">
+            <div className="flex flex-col items-center justify-center space-y-4">
+              <h3 className="text-base font-medium">Follow Us</h3>
+              <div className="flex items-center gap-6">
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <div className="flex flex-col items-center gap-2">
+                    <Twitter className="h-6 w-6" />
+                    <span className="text-xs">Twitter</span>
+                  </div>
+                </Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <div className="flex flex-col items-center gap-2">
+                    <Facebook className="h-6 w-6" />
+                    <span className="text-xs">Facebook</span>
+                  </div>
+                </Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <div className="flex flex-col items-center gap-2">
+                    <Instagram className="h-6 w-6" />
+                    <span className="text-xs">Instagram</span>
+                  </div>
+                </Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <div className="flex flex-col items-center gap-2">
+                    <Send className="h-6 w-6" />
+                    <span className="text-xs">Telegram</span>
+                  </div>
+                </Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <div className="flex flex-col items-center gap-2">
+                    <MessageSquare className="h-6 w-6" />
+                    <span className="text-xs">Discord</span>
+                  </div>
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col gap-4 sm:flex-row items-center justify-center">
-            <div className="flex items-center gap-2">
-              <TrendingUp className="h-6 w-6" />
-              <span className="font-bold">Smart Invest Digital</span>
+            <div className="flex flex-col gap-4 sm:flex-row items-center justify-center">
+              <div className="flex items-center gap-2">
+                <TrendingUp className="h-6 w-6" />
+                <span className="font-bold">Smart Invest Digital</span>
+              </div>
+              <p className="text-xs text-muted-foreground">
+                © {new Date().getFullYear()} Smart Invest Digital. All rights reserved.
+              </p>
             </div>
-            <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} Smart Invest Digital. All rights reserved.
-            </p>
           </div>
         </div>
       </footer>
