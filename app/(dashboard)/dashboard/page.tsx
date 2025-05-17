@@ -1,361 +1,287 @@
 'use client';
 
-import { ArrowUp, CreditCard, LineChart, Bitcoin, Wallet, Coins } from "lucide-react"
-
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from '@/components/ui/button';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardFooter
+} from '@/components/ui/card';
+import { customerPortalAction } from '@/lib/payments/actions';
+import { useActionState } from 'react';
+import { TeamDataWithMembers, User } from '@/lib/db/schema';
+import { removeTeamMember, inviteTeamMember } from '@/app/(login)/actions';
+import useSWR from 'swr';
+import { Suspense } from 'react';
+import { Input } from '@/components/ui/input';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { Label } from '@/components/ui/label';
+import { Loader2, PlusCircle } from 'lucide-react';
 
-export default function DashboardPage() {
+type ActionState = {
+  error?: string;
+  success?: string;
+};
+
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
+
+function SubscriptionSkeleton() {
   return (
-    <div className="flex flex-col gap-6 p-6">
-      <div className="flex flex-col gap-2">
-        <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
-        <p className="text-muted-foreground">View your digital market investment overview and performance</p>
-      </div>
+    <Card className="mb-8 h-[140px]">
+      <CardHeader>
+        <CardTitle>Team Subscription</CardTitle>
+      </CardHeader>
+    </Card>
+  );
+}
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium">Account Balance</CardTitle>
-            <CreditCard className="h-4 w-4 text-muted-foreground" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">$128,430</div>
-            <p className="text-xs text-muted-foreground">
-              <span className="text-green-500 flex items-center">
-                <ArrowUp className="mr-1 h-4 w-4" />
-                +12.5%
-              </span>{" "}
-              from last month
-            </p>
-          </CardContent>
-        </Card>
+function ManageSubscription() {
+  const { data: teamData } = useSWR<TeamDataWithMembers>('/api/team', fetcher);
 
-        <Card className="md:col-span-2">
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <div>
-              <CardTitle className="text-sm font-medium">Investment Summary</CardTitle>
-              <CardDescription>Total amount and frequency</CardDescription>
+  return (
+    <Card className="mb-8">
+      <CardHeader>
+        <CardTitle>Team Subscription</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="space-y-4">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
+            <div className="mb-4 sm:mb-0">
+              <p className="font-medium">
+                Current Plan: {teamData?.planName || 'Free'}
+              </p>
+              <p className="text-sm text-muted-foreground">
+                {teamData?.subscriptionStatus === 'active'
+                  ? 'Billed monthly'
+                  : teamData?.subscriptionStatus === 'trialing'
+                  ? 'Trial period'
+                  : 'No active subscription'}
+              </p>
             </div>
-            <div className="flex space-x-2">
-              <div className="flex flex-col items-end">
-                <span className="text-sm font-medium">Total Amount</span>
-                <span className="text-2xl font-bold">$45,800</span>
-              </div>
-              <div className="flex flex-col items-end">
-                <span className="text-sm font-medium">Investment Count</span>
-                <span className="text-2xl font-bold">124</span>
-              </div>
-            </div>
-          </CardHeader>
-          <CardContent>{/* Investment summary content here */}</CardContent>
-        </Card>
-      </div>
+            <form action={customerPortalAction}>
+              <Button type="submit" variant="outline">
+                Manage Subscription
+              </Button>
+            </form>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
 
-      <div className="grid gap-6 md:grid-cols-1">
-        <Card>
-          <CardHeader>
-            <CardTitle>Coin Statistics</CardTitle>
-            <CardDescription>Your current holdings and performance</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Coin</TableHead>
-                  <TableHead>Holdings</TableHead>
-                  <TableHead>Purchase Price</TableHead>
-                  <TableHead>Current Price</TableHead>
-                  <TableHead>Profit/Loss</TableHead>
-                  <TableHead>Actions</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {[
-                  {
-                    name: "Bitcoin",
-                    symbol: "BTC",
-                    holdings: "0.85",
-                    purchasePrice: "$32,450",
-                    currentPrice: "$38,750",
-                    profitLoss: "+19.4%",
-                    isProfit: true,
-                  },
-                  {
-                    name: "Ethereum",
-                    symbol: "ETH",
-                    holdings: "5.2",
-                    purchasePrice: "$1,850",
-                    currentPrice: "$2,240",
-                    profitLoss: "+21.1%",
-                    isProfit: true,
-                  },
-                  {
-                    name: "Binance Coin",
-                    symbol: "BNB",
-                    holdings: "12.5",
-                    purchasePrice: "$320",
-                    currentPrice: "$295",
-                    profitLoss: "-7.8%",
-                    isProfit: false,
-                  },
-                  {
-                    name: "Solana",
-                    symbol: "SOL",
-                    holdings: "45",
-                    purchasePrice: "$85",
-                    currentPrice: "$110",
-                    profitLoss: "+29.4%",
-                    isProfit: true,
-                  },
-                  {
-                    name: "Dogecoin",
-                    symbol: "DOG",
-                    holdings: "12,500",
-                    purchasePrice: "$0.08",
-                    currentPrice: "$0.075",
-                    profitLoss: "-6.3%",
-                    isProfit: false,
-                  },
-                ].map((coin, i) => (
-                  <TableRow key={i}>
-                    <TableCell>
-                      <div className="flex items-center gap-2">
-                        <Avatar className="h-8 w-8">
-                          <AvatarImage src={`/placeholder.svg?height=32&width=32`} alt={coin.name} />
-                          <AvatarFallback>{coin.symbol.slice(0, 2)}</AvatarFallback>
-                        </Avatar>
-                        <div>
-                          <p className="font-medium">{coin.name}</p>
-                          <p className="text-xs text-muted-foreground">{coin.symbol}</p>
-                        </div>
-                      </div>
-                    </TableCell>
-                    <TableCell>{coin.holdings}</TableCell>
-                    <TableCell>{coin.purchasePrice}</TableCell>
-                    <TableCell>{coin.currentPrice}</TableCell>
-                    <TableCell>
-                      <span className={coin.isProfit ? "text-green-500" : "text-red-500"}>{coin.profitLoss}</span>
-                    </TableCell>
-                    <TableCell>
-                      <Button variant="outline" size="sm">
-                        Buy
-                      </Button>
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </CardContent>
-        </Card>
-      </div>
+function TeamMembersSkeleton() {
+  return (
+    <Card className="mb-8 h-[140px]">
+      <CardHeader>
+        <CardTitle>Team Members</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="animate-pulse space-y-4 mt-1">
+          <div className="flex items-center space-x-4">
+            <div className="size-8 rounded-full bg-gray-200"></div>
+            <div className="space-y-2">
+              <div className="h-4 w-32 bg-gray-200 rounded"></div>
+              <div className="h-3 w-14 bg-gray-200 rounded"></div>
+            </div>
+          </div>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-7">
-        <Card className="lg:col-span-4">
-          <CardHeader className="flex flex-row items-center">
-            <div className="grid gap-1">
-              <CardTitle>BTC Price History</CardTitle>
-              <CardDescription>Historical prices and your investment dates</CardDescription>
-            </div>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="ml-auto">
-                  Last 6 months
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuLabel>Time Range</DropdownMenuLabel>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>Last 30 days</DropdownMenuItem>
-                <DropdownMenuItem>Last 3 months</DropdownMenuItem>
-                <DropdownMenuItem>Last 6 months</DropdownMenuItem>
-                <DropdownMenuItem>Last year</DropdownMenuItem>
-                <DropdownMenuItem>All time</DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </CardHeader>
-          <CardContent>
-            <div className="h-[300px] flex items-center justify-center">
-              <div className="flex flex-col items-center text-muted-foreground">
-                <LineChart className="h-16 w-16 mb-4" />
-                <p>BTC Price Chart</p>
-                <p className="text-sm">Price trend with your investment points marked</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-        <Card className="lg:col-span-3">
-          <CardHeader>
-            <CardTitle>Recent Investments</CardTitle>
-            <CardDescription>Your recent DCA transactions</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {[
-                { type: "Buy", coin: "Bitcoin", amount: "0.015 BTC", value: "$580", date: "2025-05-15" },
-                { type: "Buy", coin: "Ethereum", amount: "0.25 ETH", value: "$560", date: "2025-05-08" },
-                { type: "Buy", coin: "Solana", amount: "5 SOL", value: "$550", date: "2025-05-01" },
-                { type: "Buy", coin: "Bitcoin", amount: "0.012 BTC", value: "$464", date: "2025-04-24" },
-                { type: "Buy", coin: "Ethereum", amount: "0.2 ETH", value: "$448", date: "2025-04-17" },
-              ].map((transaction, i) => (
-                <div key={i} className="flex items-center justify-between border-b pb-4 last:border-0 last:pb-0">
-                  <div className="flex items-center gap-4">
-                    <Avatar className="h-9 w-9">
-                      <AvatarImage src={`/placeholder.svg?height=36&width=36`} alt={transaction.coin} />
-                      <AvatarFallback>{transaction.coin.slice(0, 2)}</AvatarFallback>
-                    </Avatar>
-                    <div className="grid gap-1">
-                      <p className="font-medium">{transaction.coin}</p>
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <span>{transaction.type}</span>
-                        <span>•</span>
-                        <span>{transaction.amount}</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="grid gap-1 text-right">
-                    <p className="font-medium">{transaction.value}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {new Date(transaction.date).toLocaleDateString("en-US")}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-          <CardFooter>
-            <Button variant="outline" className="w-full">
-              View All Transactions
-            </Button>
-          </CardFooter>
-        </Card>
-      </div>
+function TeamMembers() {
+  const { data: teamData } = useSWR<TeamDataWithMembers>('/api/team', fetcher);
+  const [removeState, removeAction, isRemovePending] = useActionState<
+    ActionState,
+    FormData
+  >(removeTeamMember, {});
 
-      <div className="grid gap-6 md:grid-cols-2">
-        <Card>
-          <CardHeader>
-            <CardTitle>Investment Plans</CardTitle>
-            <CardDescription>Your active DCA strategies</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {[
-                { name: "Bitcoin DCA", amount: "$100", frequency: "Weekly", status: "Active", date: "Every Monday" },
-                { name: "Ethereum DCA", amount: "$80", frequency: "Weekly", status: "Active", date: "Every Monday" },
-                { name: "BNB DCA", amount: "$50", frequency: "Monthly", status: "Active", date: "1st of month" },
-                { name: "Solana DCA", amount: "$30", frequency: "Monthly", status: "Active", date: "1st of month" },
-                { name: "Dogecoin DCA", amount: "$20", frequency: "Monthly", status: "Active", date: "15th of month" },
-              ].map((plan, i) => (
-                <div key={i} className="flex items-center justify-between border-b pb-4 last:border-0 last:pb-0">
-                  <div className="grid gap-1">
-                    <p className="font-medium">{plan.name}</p>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <span>{plan.amount}</span>
-                      <span>•</span>
-                      <span>{plan.frequency}</span>
-                      <span>•</span>
-                      <span>{plan.date}</span>
-                    </div>
-                  </div>
-                  <div>
-                    <Button variant="outline" size="sm">
-                      Manage
-                    </Button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-          <CardFooter>
-            <Button className="w-full">Create New DCA Plan</Button>
-          </CardFooter>
-        </Card>
-        <Card>
-          <CardHeader>
-            <CardTitle>Market Overview</CardTitle>
-            <CardDescription>Current market conditions</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
-                <Card className="border-none shadow-none">
-                  <CardHeader className="p-0 pb-2">
-                    <CardTitle className="text-sm font-medium flex items-center">
-                      <Bitcoin className="mr-2 h-4 w-4" />
-                      Bitcoin
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-0">
-                    <div className="text-xl font-bold">$38,750</div>
-                    <p className="text-xs text-green-500">+2.4% (24h)</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-none shadow-none">
-                  <CardHeader className="p-0 pb-2">
-                    <CardTitle className="text-sm font-medium flex items-center">
-                      <Wallet className="mr-2 h-4 w-4" />
-                      Ethereum
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-0">
-                    <div className="text-xl font-bold">$2,240</div>
-                    <p className="text-xs text-green-500">+1.8% (24h)</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-none shadow-none">
-                  <CardHeader className="p-0 pb-2">
-                    <CardTitle className="text-sm font-medium flex items-center">
-                      <Coins className="mr-2 h-4 w-4" />
-                      BNB
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-0">
-                    <div className="text-xl font-bold">$295</div>
-                    <p className="text-xs text-red-500">-0.7% (24h)</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-none shadow-none">
-                  <CardHeader className="p-0 pb-2">
-                    <CardTitle className="text-sm font-medium flex items-center">
-                      <Coins className="mr-2 h-4 w-4" />
-                      Solana
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-0">
-                    <div className="text-xl font-bold">$110</div>
-                    <p className="text-xs text-green-500">+3.2% (24h)</p>
-                  </CardContent>
-                </Card>
-              </div>
-              <div className="pt-4">
-                <h3 className="text-sm font-medium mb-2">Market Sentiment</h3>
-                <div className="flex items-center justify-between bg-gray-100 dark:bg-gray-800 rounded-md p-3">
-                  <span>Fear & Greed Index</span>
-                  <div className="flex items-center">
-                    <div className="w-16 h-2 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 rounded-full mr-2"></div>
-                    <span className="font-medium">65 - Greed</span>
-                  </div>
+  const getUserDisplayName = (user: Pick<User, 'id' | 'name' | 'email'>) => {
+    return user.name || user.email || 'Unknown User';
+  };
+
+  if (!teamData?.teamMembers?.length) {
+    return (
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle>Team Members</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-muted-foreground">No team members yet.</p>
+        </CardContent>
+      </Card>
+    );
+  }
+
+  return (
+    <Card className="mb-8">
+      <CardHeader>
+        <CardTitle>Team Members</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <ul className="space-y-4">
+          {teamData.teamMembers.map((member, index) => (
+            <li key={member.id} className="flex items-center justify-between">
+              <div className="flex items-center space-x-4">
+                <Avatar>
+                  {/* 
+                    This app doesn't save profile images, but here
+                    is how you'd show them:
+
+                    <AvatarImage
+                      src={member.user.image || ''}
+                      alt={getUserDisplayName(member.user)}
+                    />
+                  */}
+                  <AvatarFallback>
+                    {getUserDisplayName(member.user)
+                      .split(' ')
+                      .map((n) => n[0])
+                      .join('')}
+                  </AvatarFallback>
+                </Avatar>
+                <div>
+                  <p className="font-medium">
+                    {getUserDisplayName(member.user)}
+                  </p>
+                  <p className="text-sm text-muted-foreground capitalize">
+                    {member.role}
+                  </p>
                 </div>
               </div>
-            </div>
-          </CardContent>
-          <CardFooter>
-            <Button variant="outline" className="w-full">
-              View Market Analysis
-            </Button>
-          </CardFooter>
-        </Card>
-      </div>
-    </div>
-  )
+              {index > 1 ? (
+                <form action={removeAction}>
+                  <input type="hidden" name="memberId" value={member.id} />
+                  <Button
+                    type="submit"
+                    variant="outline"
+                    size="sm"
+                    disabled={isRemovePending}
+                  >
+                    {isRemovePending ? 'Removing...' : 'Remove'}
+                  </Button>
+                </form>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+        {removeState?.error && (
+          <p className="text-red-500 mt-4">{removeState.error}</p>
+        )}
+      </CardContent>
+    </Card>
+  );
+}
+
+function InviteTeamMemberSkeleton() {
+  return (
+    <Card className="h-[260px]">
+      <CardHeader>
+        <CardTitle>Invite Team Member</CardTitle>
+      </CardHeader>
+    </Card>
+  );
+}
+
+function InviteTeamMember() {
+  const { data: user } = useSWR<User>('/api/user', fetcher);
+  const isOwner = user?.role === 'owner';
+  const [inviteState, inviteAction, isInvitePending] = useActionState<
+    ActionState,
+    FormData
+  >(inviteTeamMember, {});
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>Invite Team Member</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <form action={inviteAction} className="space-y-4">
+          <div>
+            <Label htmlFor="email" className="mb-2">
+              Email
+            </Label>
+            <Input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Enter email"
+              required
+              disabled={!isOwner}
+            />
+          </div>
+          <div>
+            <Label>Role</Label>
+            <RadioGroup
+              defaultValue="member"
+              name="role"
+              className="flex space-x-4"
+              disabled={!isOwner}
+            >
+              <div className="flex items-center space-x-2 mt-2">
+                <RadioGroupItem value="member" id="member" />
+                <Label htmlFor="member">Member</Label>
+              </div>
+              <div className="flex items-center space-x-2 mt-2">
+                <RadioGroupItem value="owner" id="owner" />
+                <Label htmlFor="owner">Owner</Label>
+              </div>
+            </RadioGroup>
+          </div>
+          {inviteState?.error && (
+            <p className="text-red-500">{inviteState.error}</p>
+          )}
+          {inviteState?.success && (
+            <p className="text-green-500">{inviteState.success}</p>
+          )}
+          <Button
+            type="submit"
+            className="bg-orange-500 hover:bg-orange-600 text-white"
+            disabled={isInvitePending || !isOwner}
+          >
+            {isInvitePending ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                Inviting...
+              </>
+            ) : (
+              <>
+                <PlusCircle className="mr-2 h-4 w-4" />
+                Invite Member
+              </>
+            )}
+          </Button>
+        </form>
+      </CardContent>
+      {!isOwner && (
+        <CardFooter>
+          <p className="text-sm text-muted-foreground">
+            You must be a team owner to invite new members.
+          </p>
+        </CardFooter>
+      )}
+    </Card>
+  );
+}
+
+export default function SettingsPage() {
+  return (
+    <section className="flex-1 p-4 lg:p-8">
+      <h1 className="text-lg lg:text-2xl font-medium mb-6">Team Settings</h1>
+      <Suspense fallback={<SubscriptionSkeleton />}>
+        <ManageSubscription />
+      </Suspense>
+      <Suspense fallback={<TeamMembersSkeleton />}>
+        <TeamMembers />
+      </Suspense>
+      <Suspense fallback={<InviteTeamMemberSkeleton />}>
+        <InviteTeamMember />
+      </Suspense>
+    </section>
+  );
 }
