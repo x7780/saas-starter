@@ -1,5 +1,4 @@
 import { ArrowRight, CreditCard, Database } from 'lucide-react';
-import { Terminal } from './terminal';
 
 import { Button } from "@/components/ui/button"
 import {
