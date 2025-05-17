@@ -83,7 +83,11 @@ function UserMenu() {
         
         {/* 登出表单 */}
         <form action={handleSignOut} className="w-full">
-          <button type="submit" className="flex w-full">
+          <button 
+            type="submit" 
+            className="flex w-full"
+            aria-label="Sign out"
+          >
             <DropdownMenuItem className="w-full flex-1 cursor-pointer">
               <LogOut className="mr-2 h-4 w-4" />
               <span>Sign out</span>
