@@ -20,7 +20,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
               <div className="flex flex-col justify-center space-y-4">
@@ -63,7 +63,7 @@ export default function Home() {
         </section>
 
         {/* Statistics Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="flex flex-col items-center justify-center space-y-2 text-center">
@@ -87,7 +87,7 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section id="features" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="features" className="w-full py-12 md:py-24 lg:py-32 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -176,7 +176,7 @@ export default function Home() {
         </section>
 
         {/* How It Works */}
-        <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -236,7 +236,7 @@ export default function Home() {
         </section>
 
         {/* User Testimonials */}
-        <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32">
+        <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -466,7 +466,7 @@ export default function Home() {
         </section>
 
         {/* FAQ Section */}
-        <section id="faq" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        <section id="faq" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -515,7 +515,7 @@ export default function Home() {
         </section>
 
         {/* Call to Action */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section className="w-full py-12 md:py-24 lg:py-32 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -543,7 +543,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t bg-muted/50">
+      <footer className="border-t bg-muted/50 flex flex-col justify-center items-center">
         <div className="container flex flex-col gap-6 py-8 px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4">
             <h3 className="text-base font-medium">Follow Us</h3>
