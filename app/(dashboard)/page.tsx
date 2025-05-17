@@ -50,7 +50,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <div className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-[16/9] overflow-hidden rounded-xl">
                   <Image
-                    src="/placeholder.svg?height=720&width=1280"
+                    src="https://wave.devdojo.com/wave/img/character.png"
                     alt="Digital Asset Investment Chart"
                     fill
                     className="object-cover"
