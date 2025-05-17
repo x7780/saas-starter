@@ -6,40 +6,6 @@ import { ArrowRight, BarChart3, Clock, Shield, TrendingUp, Zap } from "lucide-re
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* 导航栏 */}
-      <header className="border-b">
-        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl">
-            <TrendingUp className="h-6 w-6" />
-            <span>智投数字</span>
-          </Link>
-          <nav className="hidden md:flex gap-6">
-            <Link href="#features" className="text-sm font-medium hover:underline underline-offset-4">
-              功能特点
-            </Link>
-            <Link href="#how-it-works" className="text-sm font-medium hover:underline underline-offset-4">
-              工作原理
-            </Link>
-            <Link href="#testimonials" className="text-sm font-medium hover:underline underline-offset-4">
-              用户评价
-            </Link>
-            <Link href="#faq" className="text-sm font-medium hover:underline underline-offset-4">
-              常见问题
-            </Link>
-          </nav>
-          <div className="flex items-center gap-4">
-            <Link href="/sign-in">
-              <Button variant="ghost" size="sm">
-                登录
-              </Button>
-            </Link>
-            <Link href="/sign-up">
-              <Button size="sm">注册</Button>
-            </Link>
-          </div>
-        </div>
-      </header>
-
       <main className="flex-1">
         {/* 英雄区域 */}
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
