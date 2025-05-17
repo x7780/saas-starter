@@ -1,7 +1,20 @@
-import { Button } from '@/components/ui/button';
 import { ArrowRight, CreditCard, Database } from 'lucide-react';
 import { Terminal } from './terminal';
 
+import { Button } from "@/components/ui/button"
+import {
+  Clock,
+  BarChart3,
+  ChevronRight,
+  Shield,
+  Twitter,
+  Instagram,
+  Facebook,
+  Send,
+  MessageSquare,
+  TrendingUp,
+} from "lucide-react"
+import Link from "next/link"
 
 export default function Home() {
   return (
