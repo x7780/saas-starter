@@ -60,7 +60,7 @@ function UserMenu() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-56 flex flex-col gap-1 p-1">
         {/* 单个菜单项 */}
-        <DropdownMenuItem className="cursor-pointer">
+        <DropdownMenuItem asChild className="cursor-pointer">
           <Link href="/dashboard" className="flex w-full items-center">
             <Home className="mr-2 h-4 w-4" />
             <span>Dashboard</span>
@@ -73,7 +73,7 @@ function UserMenu() {
           { href: '/dashboard/activity', icon: Activity, label: 'Activity' },
           { href: '/dashboard/security', icon: Shield, label: 'Security' }
         ].map((item) => (
-          <DropdownMenuItem key={item.href} className="cursor-pointer">
+          <DropdownMenuItem asChild key={item.href} className="cursor-pointer">
             <Link href={item.href} className="flex w-full items-center">
               <item.icon className="mr-2 h-4 w-4" />
               <span>{item.label}</span>
@@ -81,19 +81,16 @@ function UserMenu() {
           </DropdownMenuItem>
         ))}
         
-        {/* 登出表单 */}
-        <form action={handleSignOut} className="w-full">
-          <button 
-            type="submit" 
-            className="flex w-full"
-            aria-label="Sign out"
+        {/* 登出项 - 也保持相同结构 */}
+        <DropdownMenuItem asChild className="cursor-pointer">
+          <button
+            onClick={handleSignOut}
+            className="flex w-full items-center"
           >
-            <DropdownMenuItem className="w-full flex-1 cursor-pointer">
-              <LogOut className="mr-2 h-4 w-4" />
-              <span>Sign out</span>
-            </DropdownMenuItem>
+            <LogOut className="mr-2 h-4 w-4" />
+            <span>Sign out</span>
           </button>
-        </form>
+        </DropdownMenuItem>
       </DropdownMenuContent>
   );
 }
