@@ -19,29 +19,30 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
-        {/* 英雄区域 */}
+        {/* Hero Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                    智能定投，轻松构建数字资产
+                    Smart DCA, Build Digital Assets Effortlessly
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    通过我们的智能定投服务，您可以轻松地定期投资数字市场，降低市场波动风险，实现长期稳健增长。
+                    Through our intelligent DCA service, you can easily invest in digital markets regularly, reduce
+                    market volatility risk, and achieve long-term stable growth.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link href="/sign-up">
                     <Button size="lg" className="gap-1">
-                      开始定投
+                      Start Investing
                       <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>
                   <Link href="#how-it-works">
                     <Button size="lg" variant="outline">
-                      了解更多
+                      Learn More
                     </Button>
                   </Link>
                 </div>
@@ -50,7 +51,7 @@ export default function Home() {
                 <div className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-[16/9] overflow-hidden rounded-xl">
                   <Image
                     src="/placeholder.svg?height=720&width=1280"
-                    alt="数字资产定投图表"
+                    alt="Digital Asset Investment Chart"
                     fill
                     className="object-cover"
                     priority
@@ -61,38 +62,39 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 统计数据 */}
+        {/* Statistics Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="flex flex-col items-center justify-center space-y-2 text-center">
                 <div className="text-3xl font-bold">10,000+</div>
-                <div className="text-sm text-muted-foreground">活跃用户</div>
+                <div className="text-sm text-muted-foreground">Active Users</div>
               </div>
               <div className="flex flex-col items-center justify-center space-y-2 text-center">
-                <div className="text-3xl font-bold">¥1亿+</div>
-                <div className="text-sm text-muted-foreground">管理资产</div>
+                <div className="text-3xl font-bold">$100M+</div>
+                <div className="text-sm text-muted-foreground">Assets Managed</div>
               </div>
               <div className="flex flex-col items-center justify-center space-y-2 text-center">
                 <div className="text-3xl font-bold">99.9%</div>
-                <div className="text-sm text-muted-foreground">系统可用性</div>
+                <div className="text-sm text-muted-foreground">System Availability</div>
               </div>
               <div className="flex flex-col items-center justify-center space-y-2 text-center">
                 <div className="text-3xl font-bold">24/7</div>
-                <div className="text-sm text-muted-foreground">全天候支持</div>
+                <div className="text-sm text-muted-foreground">Support</div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 功能特点 */}
+        {/* Features Section */}
         <section id="features" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">为什么选择我们的定投服务</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Why Choose Our DCA Service</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  我们提供智能、安全、便捷的数字市场定投解决方案，帮助您实现长期财富增长
+                  We provide intelligent, secure, and convenient digital market DCA solutions to help you achieve
+                  long-term wealth growth
                 </p>
               </div>
             </div>
@@ -102,9 +104,10 @@ export default function Home() {
                   <Clock className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">自动定投</h3>
+                  <h3 className="text-xl font-bold">Automated DCA</h3>
                   <p className="text-muted-foreground">
-                    设置一次，系统自动按您的计划执行定投，无需手动操作，节省您的宝贵时间。
+                    Set it once, and the system automatically executes your DCA plan, saving your valuable time with no
+                    manual operations needed.
                   </p>
                 </div>
               </div>
@@ -113,9 +116,10 @@ export default function Home() {
                   <BarChart3 className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">智能分析</h3>
+                  <h3 className="text-xl font-bold">Smart Analysis</h3>
                   <p className="text-muted-foreground">
-                    基于市场数据和历史表现，提供智能分析和投资建议，优化您的投资组合。
+                    Based on market data and historical performance, we provide intelligent analysis and investment
+                    advice to optimize your portfolio.
                   </p>
                 </div>
               </div>
@@ -124,8 +128,11 @@ export default function Home() {
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">安全保障</h3>
-                  <p className="text-muted-foreground">采用银行级安全措施保护您的资金和个人信息，确保交易安全可靠。</p>
+                  <h3 className="text-xl font-bold">Security Guarantee</h3>
+                  <p className="text-muted-foreground">
+                    We use bank-level security measures to protect your funds and personal information, ensuring safe
+                    and reliable transactions.
+                  </p>
                 </div>
               </div>
               <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
@@ -133,9 +140,10 @@ export default function Home() {
                   <Zap className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">灵活策略</h3>
+                  <h3 className="text-xl font-bold">Flexible Strategies</h3>
                   <p className="text-muted-foreground">
-                    提供多种定投策略选择，可根据您的风险偏好和投资目标进行个性化定制。
+                    We offer multiple DCA strategies that can be customized according to your risk preferences and
+                    investment goals.
                   </p>
                 </div>
               </div>
@@ -144,8 +152,11 @@ export default function Home() {
                   <TrendingUp className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">实时监控</h3>
-                  <p className="text-muted-foreground">随时查看您的投资组合表现，获取实时市场动态和投资收益分析。</p>
+                  <h3 className="text-xl font-bold">Real-time Monitoring</h3>
+                  <p className="text-muted-foreground">
+                    View your portfolio performance anytime, get real-time market dynamics and investment return
+                    analysis.
+                  </p>
                 </div>
               </div>
               <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
@@ -153,21 +164,26 @@ export default function Home() {
                   <ArrowRight className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">一键提取</h3>
-                  <p className="text-muted-foreground">随时一键提取您的资金，灵活管理您的投资，无复杂流程。</p>
+                  <h3 className="text-xl font-bold">One-Click Withdrawal</h3>
+                  <p className="text-muted-foreground">
+                    Withdraw your funds anytime with one click, flexibly manage your investments with no complicated
+                    processes.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 工作原理 */}
+        {/* How It Works */}
         <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">定投如何运作</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl">简单三步，开启您的智能定投之旅</p>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">How DCA Works</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl">
+                  Three simple steps to start your smart DCA journey
+                </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 md:grid-cols-3">
@@ -176,8 +192,11 @@ export default function Home() {
                   1
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">创建账户</h3>
-                  <p className="text-muted-foreground">注册账户并完成身份验证，确保您的投资安全可靠。</p>
+                  <h3 className="text-xl font-bold">Create Account</h3>
+                  <p className="text-muted-foreground">
+                    Register an account and complete identity verification to ensure your investment is safe and
+                    reliable.
+                  </p>
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-4 text-center">
@@ -185,9 +204,10 @@ export default function Home() {
                   2
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">设置定投计划</h3>
+                  <h3 className="text-xl font-bold">Set Up DCA Plan</h3>
                   <p className="text-muted-foreground">
-                    选择您感兴趣的数字资产，设定投资金额和频率，定制专属定投计划。
+                    Choose the digital assets you're interested in, set the investment amount and frequency, and
+                    customize your exclusive DCA plan.
                   </p>
                 </div>
               </div>
@@ -196,15 +216,18 @@ export default function Home() {
                   3
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">坐享增长</h3>
-                  <p className="text-muted-foreground">系统自动执行您的定投计划，您可以随时查看投资表现和收益分析。</p>
+                  <h3 className="text-xl font-bold">Enjoy Growth</h3>
+                  <p className="text-muted-foreground">
+                    The system automatically executes your DCA plan, and you can check your investment performance and
+                    earnings analysis anytime.
+                  </p>
                 </div>
               </div>
             </div>
             <div className="flex justify-center">
               <Link href="/sign-up">
                 <Button size="lg" className="gap-1">
-                  立即开始
+                  Get Started
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
@@ -442,70 +465,75 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 常见问题 */}
+        {/* FAQ Section */}
         <section id="faq" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">常见问题</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl">关于我们定投服务的常见问题解答</p>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Frequently Asked Questions</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl">Common questions about our DCA service</p>
               </div>
             </div>
             <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6 py-12">
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">什么是数字市场定投？</h3>
+                <h3 className="text-xl font-bold">What is digital market DCA?</h3>
                 <p className="text-muted-foreground">
-                  数字市场定投是一种投资策略，通过定期投入固定金额购买数字资产，降低市场波动风险，实现长期稳健增长。
+                  Digital market DCA is an investment strategy that reduces market volatility risk and achieves
+                  long-term stable growth by regularly investing fixed amounts to purchase digital assets.
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">我需要多少资金才能开始定投？</h3>
+                <h3 className="text-xl font-bold">How much money do I need to start DCA?</h3>
                 <p className="text-muted-foreground">
-                  我们的平台支持低门槛投资，您可以根据自己的经济状况灵活设置投资金额，没有最低限制。
+                  Our platform supports low-threshold investment. You can flexibly set your investment amount according
+                  to your financial situation, with no minimum limit.
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">如何保障我的资金安全？</h3>
+                <h3 className="text-xl font-bold">How is my money kept safe?</h3>
                 <p className="text-muted-foreground">
-                  我们采用银行级安全措施，包括多重加密、冷热钱包分离存储、多重签名等技术，确保您的资金安全。
+                  We use bank-level security measures, including multi-layer encryption, cold and hot wallet separation
+                  storage, multi-signature technology, and more to ensure your funds are secure.
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">我可以随时取出我的资金吗？</h3>
+                <h3 className="text-xl font-bold">Can I withdraw my funds at any time?</h3>
                 <p className="text-muted-foreground">
-                  是的，您可以随时提取您的资金，没有锁定期限制，灵活管理您的投资。
+                  Yes, you can withdraw your funds at any time without lock-up period restrictions, giving you flexible
+                  management of your investments.
                 </p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-xl font-bold">如何开始使用定投服务？</h3>
+                <h3 className="text-xl font-bold">How do I start using the DCA service?</h3>
                 <p className="text-muted-foreground">
-                  只需注册账户，完成身份验证，设置您的定投计划，系统将自动为您执行定投操作。
+                  Simply register an account, complete identity verification, set up your DCA plan, and the system will
+                  automatically execute DCA operations for you.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 行动召唤 */}
+        {/* Call to Action */}
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">开始您的智能定投之旅</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Start Your Smart DCA Journey</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  加入成千上万的投资者，通过智能定投构建您的数字资产
+                  Join thousands of investors and build your digital assets through smart DCA
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/sign-up">
                   <Button size="lg" className="gap-1">
-                    免费注册
+                    Sign Up Free
                     <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
                 <Link href="/sign-in">
                   <Button size="lg" variant="outline">
-                    登录账户
+                    Log In
                   </Button>
                 </Link>
               </div>
@@ -514,7 +542,7 @@ export default function Home() {
         </section>
       </main>
 
-      {/* 页脚 */}
+      {/* Footer */}
       <footer className="border-t bg-muted/50">
         <div className="container flex flex-col gap-6 py-8 px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4">
