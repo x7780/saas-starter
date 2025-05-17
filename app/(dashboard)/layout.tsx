@@ -58,13 +58,16 @@ function UserMenu() {
           </AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="flex flex-col gap-1">
+      <DropdownMenuContent align="end" className="w-56 flex flex-col gap-1 p-1">
+        {/* 单个菜单项 */}
         <DropdownMenuItem className="cursor-pointer">
           <Link href="/dashboard" className="flex w-full items-center">
             <Home className="mr-2 h-4 w-4" />
             <span>Dashboard</span>
           </Link>
         </DropdownMenuItem>
+        
+        {/* 使用map循环生成菜单项 */}
         {[
           { href: '/dashboard/general', icon: Settings, label: 'General' },
           { href: '/dashboard/activity', icon: Activity, label: 'Activity' },
@@ -77,6 +80,8 @@ function UserMenu() {
             </Link>
           </DropdownMenuItem>
         ))}
+        
+        {/* 登出表单 */}
         <form action={handleSignOut} className="w-full">
           <button type="submit" className="flex w-full">
             <DropdownMenuItem className="w-full flex-1 cursor-pointer">
@@ -86,7 +91,6 @@ function UserMenu() {
           </button>
         </form>
       </DropdownMenuContent>
-    </DropdownMenu>
   );
 }
 
