@@ -14,6 +14,8 @@ import {
   Twitter,
   Zap,
 } from "lucide-react"
+import { AnimatedSection } from "@/components/animated-section"
+import { CounterAnimation } from "@/components/counter-animation"
 
 export default function Home() {
   return (
@@ -23,7 +25,7 @@ export default function Home() {
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-0">
           <div className="container px-4 md:px-6 max-w-6xl mx-auto">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
-              <div className="flex flex-col justify-center space-y-4">
+              <AnimatedSection animation="fade-right" className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                     Smart DCA, Build Digital Assets Effortlessly
@@ -35,20 +37,20 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Link href="/sign-up">
-                    <Button size="lg" className="gap-1">
+                    <Button size="lg" className="gap-1 btn-hover-effect">
                       Start Investing
                       <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>
                   <Link href="#how-it-works">
-                    <Button size="lg" variant="outline">
+                    <Button size="lg" variant="outline" className="btn-hover-effect">
                       Learn More
                     </Button>
                   </Link>
                 </div>
-              </div>
-              <div className="flex items-center justify-center">
-                <div className="relative w-full aspect-square overflow-hidden rounded-xl">
+              </AnimatedSection>
+              <AnimatedSection animation="fade-left" delay={300} className="flex items-center justify-center">
+                <div className="relative w-full aspect-square overflow-hidden rounded-xl animate-float animate-pulse-glow">
                   <Image
                     src="/images/character.png?height=600&width=600"
                     alt="Digital Asset Investment Chart"
@@ -57,8 +59,9 @@ export default function Home() {
                     className="object-cover"
                     priority
                   />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-xl"></div>
                 </div>
-              </div>
+              </AnimatedSection>
             </div>
           </div>
         </section>
@@ -67,22 +70,44 @@ export default function Home() {
         <section className="w-full py-12 md:py-24 lg:py-16 bg-muted/50 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div className="flex flex-col items-center justify-center space-y-2 text-center">
-                <div className="text-3xl font-bold">10,000+</div>
+              <AnimatedSection
+                animation="fade-up"
+                delay={0}
+                className="flex flex-col items-center justify-center space-y-2 text-center"
+              >
+                <div className="text-3xl font-bold">
+                  <CounterAnimation end={10000} suffix="+" />
+                </div>
                 <div className="text-sm text-muted-foreground">Active Users</div>
-              </div>
-              <div className="flex flex-col items-center justify-center space-y-2 text-center">
-                <div className="text-3xl font-bold">$100M+</div>
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={200}
+                className="flex flex-col items-center justify-center space-y-2 text-center"
+              >
+                <div className="text-3xl font-bold">
+                  $<CounterAnimation end={100} suffix="M+" />
+                </div>
                 <div className="text-sm text-muted-foreground">Assets Managed</div>
-              </div>
-              <div className="flex flex-col items-center justify-center space-y-2 text-center">
-                <div className="text-3xl font-bold">99.9%</div>
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={400}
+                className="flex flex-col items-center justify-center space-y-2 text-center"
+              >
+                <div className="text-3xl font-bold">
+                  <CounterAnimation end={99.9} decimalPlaces={1} suffix="%" />
+                </div>
                 <div className="text-sm text-muted-foreground">System Availability</div>
-              </div>
-              <div className="flex flex-col items-center justify-center space-y-2 text-center">
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={600}
+                className="flex flex-col items-center justify-center space-y-2 text-center"
+              >
                 <div className="text-3xl font-bold">24/7</div>
                 <div className="text-sm text-muted-foreground">Support</div>
-              </div>
+              </AnimatedSection>
             </div>
           </div>
         </section>
@@ -90,7 +115,10 @@ export default function Home() {
         {/* Features Section */}
         <section id="features" className="w-full py-12 md:py-24 lg:py-16 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <AnimatedSection
+              animation="fade-up"
+              className="flex flex-col items-center justify-center space-y-4 text-center"
+            >
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Why Choose Our DCA Service</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
@@ -98,10 +126,14 @@ export default function Home() {
                   long-term wealth growth
                 </p>
               </div>
-            </div>
+            </AnimatedSection>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-              <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+              <AnimatedSection
+                animation="fade-up"
+                delay={0}
+                className="feature-card flex flex-col items-start space-y-4 p-6 border rounded-lg"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 feature-icon">
                   <Clock className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
@@ -111,9 +143,13 @@ export default function Home() {
                     manual operations needed.
                   </p>
                 </div>
-              </div>
-              <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={200}
+                className="feature-card flex flex-col items-start space-y-4 p-6 border rounded-lg"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 feature-icon">
                   <BarChart3 className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
@@ -123,9 +159,13 @@ export default function Home() {
                     advice to optimize your portfolio.
                   </p>
                 </div>
-              </div>
-              <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={400}
+                className="feature-card flex flex-col items-start space-y-4 p-6 border rounded-lg"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 feature-icon">
                   <Shield className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
@@ -135,9 +175,13 @@ export default function Home() {
                     and reliable transactions.
                   </p>
                 </div>
-              </div>
-              <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={0}
+                className="feature-card flex flex-col items-start space-y-4 p-6 border rounded-lg"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 feature-icon">
                   <Zap className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
@@ -147,9 +191,13 @@ export default function Home() {
                     investment goals.
                   </p>
                 </div>
-              </div>
-              <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={200}
+                className="feature-card flex flex-col items-start space-y-4 p-6 border rounded-lg"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 feature-icon">
                   <TrendingUp className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
@@ -159,9 +207,13 @@ export default function Home() {
                     analysis.
                   </p>
                 </div>
-              </div>
-              <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={400}
+                className="feature-card flex flex-col items-start space-y-4 p-6 border rounded-lg"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 feature-icon">
                   <ArrowRight className="h-6 w-6 text-primary" />
                 </div>
                 <div className="space-y-2">
@@ -171,7 +223,7 @@ export default function Home() {
                     processes.
                   </p>
                 </div>
-              </div>
+              </AnimatedSection>
             </div>
           </div>
         </section>
@@ -182,17 +234,24 @@ export default function Home() {
           className="w-full py-12 md:py-24 lg:py-16 bg-muted/50 flex flex-col justify-center items-center"
         >
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <AnimatedSection
+              animation="fade-up"
+              className="flex flex-col items-center justify-center space-y-4 text-center"
+            >
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">How DCA Works</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
                   Three simple steps to start your smart DCA journey
                 </p>
               </div>
-            </div>
+            </AnimatedSection>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 md:grid-cols-3">
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground text-2xl font-bold">
+              <AnimatedSection
+                animation="fade-right"
+                delay={0}
+                className="flex flex-col items-center space-y-4 text-center"
+              >
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground text-2xl font-bold animate-pulse-glow">
                   1
                 </div>
                 <div className="space-y-2">
@@ -202,9 +261,13 @@ export default function Home() {
                     reliable.
                   </p>
                 </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground text-2xl font-bold">
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={300}
+                className="flex flex-col items-center space-y-4 text-center"
+              >
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground text-2xl font-bold animate-pulse-glow">
                   2
                 </div>
                 <div className="space-y-2">
@@ -214,9 +277,13 @@ export default function Home() {
                     customize your exclusive DCA plan.
                   </p>
                 </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground text-2xl font-bold">
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-left"
+                delay={600}
+                className="flex flex-col items-center space-y-4 text-center"
+              >
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground text-2xl font-bold animate-pulse-glow">
                   3
                 </div>
                 <div className="space-y-2">
@@ -226,37 +293,40 @@ export default function Home() {
                     earnings analysis anytime.
                   </p>
                 </div>
-              </div>
+              </AnimatedSection>
             </div>
-            <div className="flex justify-center">
+            <AnimatedSection animation="scale-up" delay={900} className="flex justify-center">
               <Link href="/sign-up">
-                <Button size="lg" className="gap-1">
+                <Button size="lg" className="gap-1 btn-hover-effect">
                   Get Started
                   <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
-            </div>
+            </AnimatedSection>
           </div>
         </section>
 
         {/* User Testimonials */}
         <section id="testimonials" className="w-full py-12 md:py-24 lg:py-16 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <AnimatedSection
+              animation="fade-up"
+              className="flex flex-col items-center justify-center space-y-4 text-center"
+            >
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">What Our Users Say</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
                   Hear from our community of investors about their experience with our DCA service
                 </p>
               </div>
-            </div>
+            </AnimatedSection>
 
             <div className="relative mt-12 overflow-hidden">
               {/* Auto-scrolling testimonials carousel */}
               <div className="testimonial-carousel w-full overflow-hidden">
                 <div className="testimonial-track flex animate-scroll gap-6 py-4">
                   {/* First set of testimonials */}
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "I've been using this DCA service for over a year now. The system is incredibly stable, easy to
@@ -273,7 +343,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "As a beginner investor, this platform has been incredibly helpful. The smart analysis features
@@ -290,7 +360,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "The security and transparency of this platform give me peace of mind. Customer service is also
@@ -307,7 +377,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "The automated investment feature has completely changed how I approach digital assets. I no
@@ -324,7 +394,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "I've tried several DCA platforms, but this one stands out for its intuitive interface and
@@ -342,7 +412,7 @@ export default function Home() {
                   </div>
 
                   {/* Second set of testimonials (duplicated for continuous scrolling) */}
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "The flexibility of this service is what I appreciate most. I can adjust my investment strategy
@@ -358,7 +428,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "As someone who's always been intimidated by investing, this platform has been a game-changer.
@@ -375,7 +445,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "The customer support team deserves special mention. Whenever I've had questions about my
@@ -392,7 +462,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "I appreciate how this platform makes complex investment strategies accessible to everyone. The
@@ -408,7 +478,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "The peace of mind that comes with knowing my investments are being handled systematically is
@@ -426,7 +496,7 @@ export default function Home() {
                   </div>
 
                   {/* Duplicate first set for seamless looping */}
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "I've been using this DCA service for over a year now. The system is incredibly stable, easy to
@@ -443,7 +513,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
+                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                     <div className="space-y-2">
                       <p className="text-muted-foreground">
                         "As a beginner investor, this platform has been incredibly helpful. The smart analysis features
@@ -475,48 +545,71 @@ export default function Home() {
           className="w-full py-12 md:py-24 lg:py-16 bg-muted/50 flex flex-col justify-center items-center"
         >
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <AnimatedSection
+              animation="fade-up"
+              className="flex flex-col items-center justify-center space-y-4 text-center"
+            >
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Frequently Asked Questions</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">Common questions about our DCA service</p>
               </div>
-            </div>
+            </AnimatedSection>
             <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6 py-12">
-              <div className="space-y-2">
+              <AnimatedSection
+                animation="fade-up"
+                delay={0}
+                className="space-y-2 hover:bg-muted/30 p-4 rounded-lg transition-colors duration-300"
+              >
                 <h3 className="text-xl font-bold">What is digital market DCA?</h3>
                 <p className="text-muted-foreground">
                   Digital market DCA is an investment strategy that reduces market volatility risk and achieves
                   long-term stable growth by regularly investing fixed amounts to purchase digital assets.
                 </p>
-              </div>
-              <div className="space-y-2">
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={100}
+                className="space-y-2 hover:bg-muted/30 p-4 rounded-lg transition-colors duration-300"
+              >
                 <h3 className="text-xl font-bold">How much money do I need to start DCA?</h3>
                 <p className="text-muted-foreground">
                   Our platform supports low-threshold investment. You can flexibly set your investment amount according
                   to your financial situation, with no minimum limit.
                 </p>
-              </div>
-              <div className="space-y-2">
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={200}
+                className="space-y-2 hover:bg-muted/30 p-4 rounded-lg transition-colors duration-300"
+              >
                 <h3 className="text-xl font-bold">How is my money kept safe?</h3>
                 <p className="text-muted-foreground">
                   We use bank-level security measures, including multi-layer encryption, cold and hot wallet separation
                   storage, multi-signature technology, and more to ensure your funds are secure.
                 </p>
-              </div>
-              <div className="space-y-2">
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={300}
+                className="space-y-2 hover:bg-muted/30 p-4 rounded-lg transition-colors duration-300"
+              >
                 <h3 className="text-xl font-bold">Can I withdraw my funds at any time?</h3>
                 <p className="text-muted-foreground">
                   Yes, you can withdraw your funds at any time without lock-up period restrictions, giving you flexible
                   management of your investments.
                 </p>
-              </div>
-              <div className="space-y-2">
+              </AnimatedSection>
+              <AnimatedSection
+                animation="fade-up"
+                delay={400}
+                className="space-y-2 hover:bg-muted/30 p-4 rounded-lg transition-colors duration-300"
+              >
                 <h3 className="text-xl font-bold">How do I start using the DCA service?</h3>
                 <p className="text-muted-foreground">
                   Simply register an account, complete identity verification, set up your DCA plan, and the system will
                   automatically execute DCA operations for you.
                 </p>
-              </div>
+              </AnimatedSection>
             </div>
           </div>
         </section>
@@ -524,7 +617,10 @@ export default function Home() {
         {/* Call to Action */}
         <section className="w-full py-12 md:py-24 lg:py-32 flex flex-col justify-center items-center">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+            <AnimatedSection
+              animation="scale-up"
+              className="flex flex-col items-center justify-center space-y-4 text-center"
+            >
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Start Your Smart DCA Journey</h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl">
@@ -533,18 +629,18 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/sign-up">
-                  <Button size="lg" className="gap-1">
+                  <Button size="lg" className="gap-1 btn-hover-effect animate-pulse-glow">
                     Sign Up Free
                     <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
                 <Link href="/sign-in">
-                  <Button size="lg" variant="outline">
+                  <Button size="lg" variant="outline" className="btn-hover-effect">
                     Log In
                   </Button>
                 </Link>
               </div>
-            </div>
+            </AnimatedSection>
           </div>
         </section>
       </main>
@@ -556,31 +652,31 @@ export default function Home() {
             <h3 className="text-base font-medium">Follow Us</h3>
             <div className="flex items-center gap-6">
               <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
+                <div className="flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-300">
                   <Twitter className="h-6 w-6" />
                   <span className="text-xs">Twitter</span>
                 </div>
               </Link>
               <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
+                <div className="flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-300">
                   <Facebook className="h-6 w-6" />
                   <span className="text-xs">Facebook</span>
                 </div>
               </Link>
               <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
+                <div className="flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-300">
                   <Instagram className="h-6 w-6" />
                   <span className="text-xs">Instagram</span>
                 </div>
               </Link>
               <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
+                <div className="flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-300">
                   <Send className="h-6 w-6" />
                   <span className="text-xs">Telegram</span>
                 </div>
               </Link>
               <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
+                <div className="flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-300">
                   <MessageSquare className="h-6 w-6" />
                   <span className="text-xs">Discord</span>
                 </div>
