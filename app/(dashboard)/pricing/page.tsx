@@ -52,20 +52,6 @@ export default async function PricingPage() {
           popular={false}
         />
 
-        {/* Base Plan */}
-        <PricingCard
-          name={basePlan?.name || "Base"}
-          price={basePrice?.unitAmount || 800}
-          interval="quarter"
-          trialDays={basePrice?.trialPeriodDays || 7}
-          features={features}
-          tier="base"
-          description="Perfect for active crypto investors"
-          priceId={basePrice?.id}
-          popular={true}
-          duration="3 months"
-        />
-
         {/* Plus Plan */}
         <PricingCard
           name={plusPlan?.name || "Plus"}
@@ -76,8 +62,22 @@ export default async function PricingPage() {
           tier="plus"
           description="Advanced features for serious investors"
           priceId={plusPrice?.id}
-          popular={false}
+          popular={true}
           duration="1 year"
+        />
+
+        {/* Base Plan */}
+        <PricingCard
+          name={basePlan?.name || "Base"}
+          price={basePrice?.unitAmount || 800}
+          interval="quarter"
+          trialDays={basePrice?.trialPeriodDays || 7}
+          features={features}
+          tier="base"
+          description="Perfect for active crypto investors"
+          priceId={basePrice?.id}
+          popular={false}
+          duration="3 months"
         />
       </div>
 
