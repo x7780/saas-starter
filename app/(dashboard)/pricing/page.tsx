@@ -22,7 +22,7 @@ export default async function PricingPage() {
     { name: "SOL DCA", free: false, base: true, plus: true },
     { name: "BNB DCA", free: false, base: true, plus: true },
     { name: "DOGE DCA", free: false, base: true, plus: true },
-    { name: "Telegram Notifications", free: false, base: true, plus: true },
+    { name: "Telegram Notifications", free: true, base: true, plus: true },
     { name: "Discord Notifications", free: false, base: true, plus: true },
     { name: "AI Analysis", free: false, base: false, plus: true },
   ]
