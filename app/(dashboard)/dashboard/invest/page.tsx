@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { format } from "date-fns"
 import { ArrowUpDown, Brain, ChevronLeft, ChevronRight, Download } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -110,9 +109,12 @@ const generateTransactions = (count = 100) => {
     const total = price * amount
     const fee = total * 0.005
 
+    // Format date as YYYY-MM-DD using native JavaScript
+    const formattedDate = date.toISOString().split("T")[0]
+
     transactions.push({
       id: i + 1,
-      date: format(date, "yyyy-MM-dd"),
+      date: formattedDate,
       pair: `${crypto}/USD`,
       amount: amount.toFixed(crypto === "DOGE" ? 0 : 4),
       price: `$${price.toFixed(2)}`,
