@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { Users, TrendingUp, DollarSign, Settings, Bell, Activity, Shield } from 'lucide-react';
+import { Users, TrendingUp, DollarSign, Settings, Bell, Activity, Shield, Sliders, Cog } from 'lucide-react';
 
 export default function DashboardLayout({
   children
@@ -16,15 +16,14 @@ export default function DashboardLayout({
 
   const navItems = [
     { href: '/dashboard', icon: Users, label: 'Team' },
-    { href: '/dashboard', icon: TrendingUp, label: 'Auto-Invest (Daily)' },
-    { href: '/dashboard', icon: DollarSign, label: 'Sell Assets' },
-    { href: '/dashboard', icon: Settings, label: 'Policy settings' },
-    { href: '/dashboard', icon: Bell, label: 'Notification settings' },
-    { href: '/dashboard/general', icon: Settings, label: 'General' },
+    { href: '/dashboard/invest', icon: TrendingUp, label: 'Auto-Invest (Daily)' },
+    { href: '/dashboard/sell', icon: DollarSign, label: 'Sell Assets' },
+    { href: '/dashboard/policy', icon: Sliders, label: 'Policy Settings' }, 
+    { href: '/dashboard/notifications', icon: Bell, label: 'Notification Settings' },
+    { href: '/dashboard/general', icon: Cog, label: 'General' }, 
     { href: '/dashboard/activity', icon: Activity, label: 'Activity' },
     { href: '/dashboard/security', icon: Shield, label: 'Security' }
   ];
-
   return (
     <div className="flex flex-col min-h-[calc(100dvh-68px)] max-w-7xl mx-auto w-full">
       {/* Mobile header */}
