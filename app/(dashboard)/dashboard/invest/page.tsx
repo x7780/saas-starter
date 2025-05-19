@@ -2,11 +2,9 @@
 
 import { useState } from "react"
 import { ArrowUpDown, Brain, ChevronLeft, ChevronRight, Download } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import * as DropdownMenu from "@radix-ui/react-dropdown-menu"
+import { Slot } from "@radix-ui/react-slot"
+import { cn } from "@/lib/utils"
 
 // Mock data for demonstration
 const cryptoData = {
@@ -128,8 +126,35 @@ const generateTransactions = (count = 100) => {
 
 const transactions = generateTransactions(100)
 
+// Simple button component using Radix UI Slot
+function Button({ className, variant = "default", size = "default", children, ...props }) {
+  return (
+    <Slot
+      className={cn(
+        "inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-50",
+        {
+          "bg-primary text-primary-foreground hover:bg-primary/90": variant === "default",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90": variant === "destructive",
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground": variant === "outline",
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80": variant === "secondary",
+          "hover:bg-accent hover:text-accent-foreground": variant === "ghost",
+          "text-primary underline-offset-4 hover:underline": variant === "link",
+          "h-10 px-4 py-2": size === "default",
+          "h-9 rounded-md px-3": size === "sm",
+          "h-11 rounded-md px-8": size === "lg",
+        },
+        className,
+      )}
+      {...props}
+    >
+      {children}
+    </Slot>
+  )
+}
+
 export default function AutoInvestPage() {
   const [currentPage, setCurrentPage] = useState(1)
+  const [selectedCoin, setSelectedCoin] = useState("all")
   const itemsPerPage = 10
 
   // Calculate total statistics
@@ -145,23 +170,30 @@ export default function AutoInvestPage() {
     transactions: Object.values(cryptoData).reduce((sum, crypto) => sum + crypto.holdings.transactions, 0),
   }
 
+  // Filter transactions based on selected coin
+  const filteredTransactions =
+    selectedCoin === "all" ? transactions : transactions.filter((tx) => tx.pair.startsWith(selectedCoin.toUpperCase()))
+
   // Pagination
-  const totalPages = Math.ceil(transactions.length / itemsPerPage)
-  const currentTransactions = transactions.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
+  const totalPages = Math.ceil(filteredTransactions.length / itemsPerPage)
+  const currentTransactions = filteredTransactions.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
 
   return (
     <div className="container mx-auto py-6 space-y-8">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold">Auto-Invest (Daily)</h1>
         <div className="flex items-center gap-2">
-          <Button variant="outline" size="sm">
+          <button className="inline-flex items-center justify-center rounded-md border border-input bg-background px-3 h-9 text-sm font-medium hover:bg-accent hover:text-accent-foreground">
             <Download className="mr-2 h-4 w-4" />
             Export Data
-          </Button>
-          <Button disabled variant="default" size="sm">
+          </button>
+          <button
+            className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-3 h-9 text-sm font-medium opacity-50 cursor-not-allowed"
+            disabled
+          >
             <Brain className="mr-2 h-4 w-4" />
             AI Insights
-          </Button>
+          </button>
         </div>
       </div>
 
@@ -170,11 +202,11 @@ export default function AutoInvestPage() {
         <h2 className="text-2xl font-bold mb-4">Holdings Statistics</h2>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {Object.entries(cryptoData).map(([key, crypto]) => (
-            <Card key={key}>
-              <CardHeader className="pb-2">
-                <CardTitle className="text-lg">{crypto.symbol}</CardTitle>
-              </CardHeader>
-              <CardContent className="pb-2">
+            <div key={key} className="bg-card text-card-foreground rounded-xl border shadow-sm">
+              <div className="p-6 pb-2">
+                <h3 className="text-lg font-semibold">{crypto.symbol}</h3>
+              </div>
+              <div className="p-6 pt-2">
                 <div className="space-y-1">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Amount:</span>
@@ -193,17 +225,17 @@ export default function AutoInvestPage() {
                     <span className="font-medium">{crypto.holdings.transactions}</span>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
 
         {/* Total Statistics */}
-        <Card className="mt-4">
-          <CardHeader className="pb-2">
-            <CardTitle>Total Statistics</CardTitle>
-          </CardHeader>
-          <CardContent>
+        <div className="bg-card text-card-foreground rounded-xl border shadow-sm mt-4">
+          <div className="p-6 pb-2">
+            <h3 className="font-semibold">Total Statistics</h3>
+          </div>
+          <div className="p-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="flex flex-col items-center p-4 bg-muted rounded-lg">
                 <span className="text-muted-foreground mb-1">Total Cost</span>
@@ -218,95 +250,168 @@ export default function AutoInvestPage() {
                 <span className="text-2xl font-bold">{totalStats.transactions}</span>
               </div>
             </div>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       </div>
 
       {/* Transaction History */}
       <div>
         <h2 className="text-2xl font-bold mb-4">Purchase History</h2>
-        <Card>
-          <CardHeader className="pb-2">
+        <div className="bg-card text-card-foreground rounded-xl border shadow-sm">
+          <div className="p-6 pb-2">
             <div className="flex justify-between items-center">
-              <CardTitle>Transaction Records</CardTitle>
+              <h3 className="font-semibold">Transaction Records</h3>
               <div className="flex items-center gap-2">
-                <Select defaultValue="all">
-                  <SelectTrigger className="w-[150px]">
-                    <SelectValue placeholder="Filter by Coin" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="all">All Coins</SelectItem>
-                    <SelectItem value="btc">BTC</SelectItem>
-                    <SelectItem value="eth">ETH</SelectItem>
-                    <SelectItem value="sol">SOL</SelectItem>
-                    <SelectItem value="bnb">BNB</SelectItem>
-                    <SelectItem value="doge">DOGE</SelectItem>
-                  </SelectContent>
-                </Select>
+                <DropdownMenu.Root>
+                  <DropdownMenu.Trigger asChild>
+                    <button className="inline-flex items-center justify-between rounded-md border border-input bg-background px-3 h-9 w-[150px] text-sm">
+                      {selectedCoin === "all" ? "All Coins" : selectedCoin.toUpperCase()}
+                      <ChevronDown className="h-4 w-4 opacity-50" />
+                    </button>
+                  </DropdownMenu.Trigger>
+                  <DropdownMenu.Portal>
+                    <DropdownMenu.Content className="z-50 min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md">
+                      <DropdownMenu.Item
+                        className="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground"
+                        onClick={() => {
+                          setSelectedCoin("all")
+                          setCurrentPage(1)
+                        }}
+                      >
+                        All Coins
+                      </DropdownMenu.Item>
+                      <DropdownMenu.Item
+                        className="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground"
+                        onClick={() => {
+                          setSelectedCoin("btc")
+                          setCurrentPage(1)
+                        }}
+                      >
+                        BTC
+                      </DropdownMenu.Item>
+                      <DropdownMenu.Item
+                        className="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground"
+                        onClick={() => {
+                          setSelectedCoin("eth")
+                          setCurrentPage(1)
+                        }}
+                      >
+                        ETH
+                      </DropdownMenu.Item>
+                      <DropdownMenu.Item
+                        className="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground"
+                        onClick={() => {
+                          setSelectedCoin("sol")
+                          setCurrentPage(1)
+                        }}
+                      >
+                        SOL
+                      </DropdownMenu.Item>
+                      <DropdownMenu.Item
+                        className="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground"
+                        onClick={() => {
+                          setSelectedCoin("bnb")
+                          setCurrentPage(1)
+                        }}
+                      >
+                        BNB
+                      </DropdownMenu.Item>
+                      <DropdownMenu.Item
+                        className="relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground"
+                        onClick={() => {
+                          setSelectedCoin("doge")
+                          setCurrentPage(1)
+                        }}
+                      >
+                        DOGE
+                      </DropdownMenu.Item>
+                    </DropdownMenu.Content>
+                  </DropdownMenu.Portal>
+                </DropdownMenu.Root>
               </div>
             </div>
-          </CardHeader>
-          <CardContent>
-            <Table>
-              <TableHeader>
-                <TableRow>
-                  <TableHead className="w-[100px]">
-                    <Button variant="ghost" className="p-0 h-8 font-medium">
-                      Date
-                      <ArrowUpDown className="ml-2 h-4 w-4" />
-                    </Button>
-                  </TableHead>
-                  <TableHead>
-                    <Button variant="ghost" className="p-0 h-8 font-medium">
-                      Trading Pair
-                      <ArrowUpDown className="ml-2 h-4 w-4" />
-                    </Button>
-                  </TableHead>
-                  <TableHead className="text-right">Amount</TableHead>
-                  <TableHead className="text-right">Price</TableHead>
-                  <TableHead className="text-right">Fee</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {currentTransactions.map((tx) => (
-                  <TableRow key={tx.id}>
-                    <TableCell className="font-medium">{tx.date}</TableCell>
-                    <TableCell>{tx.pair}</TableCell>
-                    <TableCell className="text-right">{tx.amount}</TableCell>
-                    <TableCell className="text-right">{tx.price}</TableCell>
-                    <TableCell className="text-right">{tx.fee}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+          </div>
+          <div className="p-6">
+            <div className="relative w-full overflow-auto">
+              <table className="w-full caption-bottom text-sm">
+                <thead className="[&_tr]:border-b">
+                  <tr className="border-b transition-colors hover:bg-muted/50">
+                    <th className="h-12 px-4 text-left align-middle font-medium text-muted-foreground">
+                      <button className="inline-flex items-center justify-center font-medium p-0 h-8">
+                        Date
+                        <ArrowUpDown className="ml-2 h-4 w-4" />
+                      </button>
+                    </th>
+                    <th className="h-12 px-4 text-left align-middle font-medium text-muted-foreground">
+                      <button className="inline-flex items-center justify-center font-medium p-0 h-8">
+                        Trading Pair
+                        <ArrowUpDown className="ml-2 h-4 w-4" />
+                      </button>
+                    </th>
+                    <th className="h-12 px-4 text-right align-middle font-medium text-muted-foreground">Amount</th>
+                    <th className="h-12 px-4 text-right align-middle font-medium text-muted-foreground">Price</th>
+                    <th className="h-12 px-4 text-right align-middle font-medium text-muted-foreground">Fee</th>
+                  </tr>
+                </thead>
+                <tbody className="[&_tr:last-child]:border-0">
+                  {currentTransactions.map((tx) => (
+                    <tr key={tx.id} className="border-b transition-colors hover:bg-muted/50">
+                      <td className="p-4 align-middle font-medium">{tx.date}</td>
+                      <td className="p-4 align-middle">{tx.pair}</td>
+                      <td className="p-4 align-middle text-right">{tx.amount}</td>
+                      <td className="p-4 align-middle text-right">{tx.price}</td>
+                      <td className="p-4 align-middle text-right">{tx.fee}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
 
             {/* Pagination */}
             <div className="flex items-center justify-end space-x-2 py-4">
-              <Button
-                variant="outline"
-                size="sm"
+              <button
+                className="inline-flex items-center justify-center rounded-md border border-input bg-background px-3 h-9 text-sm font-medium hover:bg-accent hover:text-accent-foreground disabled:opacity-50"
                 onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
                 disabled={currentPage === 1}
               >
                 <ChevronLeft className="h-4 w-4" />
                 Previous
-              </Button>
+              </button>
               <div className="text-sm">
                 Page {currentPage} of {totalPages}
               </div>
-              <Button
-                variant="outline"
-                size="sm"
+              <button
+                className="inline-flex items-center justify-center rounded-md border border-input bg-background px-3 h-9 text-sm font-medium hover:bg-accent hover:text-accent-foreground disabled:opacity-50"
                 onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
                 disabled={currentPage === totalPages}
               >
                 Next
                 <ChevronRight className="h-4 w-4" />
-              </Button>
+              </button>
             </div>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       </div>
     </div>
+  )
+}
+
+// Missing ChevronDown icon
+function ChevronDown(props) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="m6 9 6 6 6-6" />
+    </svg>
   )
 }
