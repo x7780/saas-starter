@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
-import { Users, TrendingUp, DollarSign, Settings, Bell, Activity, Shield, Sliders, Cog } from 'lucide-react';
+import { Users, TrendingUp, DollarSign, Settings, Bell, Activity, Shield, Sliders, Cog, Menu } from 'lucide-react';
 
 export default function DashboardLayout({
   children
