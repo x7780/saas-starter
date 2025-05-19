@@ -5,8 +5,8 @@ import { getUser, getTeamForUser } from '@/lib/db/queries';
 import { SWRConfig } from 'swr';
 
 export const metadata: Metadata = {
-  title: 'Next.js SaaS Starter',
-  description: 'Get started quickly with Next.js, Postgres, and Stripe.'
+  title: 'Automated Crypto DCA Investing Platform',
+  description: 'helps you invest smarter with automated DCA strategies for Bitcoin, Ethereum, and top cryptocurrencies. Start with as little as $10 and reduce market volatility risks. Join 100K+ investors today.'
 };
 
 export const viewport: Viewport = {
