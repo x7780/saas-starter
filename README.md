@@ -1,3 +1,6 @@
+项目解读
+https://readmex.com/nextjs/saas-starter/page-62b915be0-71f0-4452-8fb8-aa29568645fe
+
 # Next.js SaaS Starter
 
 This is a starter template for building a SaaS application using **Next.js** with support for authentication, Stripe integration for payments, and a dashboard for logged-in users.
