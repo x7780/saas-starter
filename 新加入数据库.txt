@@ -1,0 +1,154 @@
+-- 1. 创建用户交易配置表（关联到users.id）
+CREATE TABLE user_trading_configs (
+  id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  exchange VARCHAR(50) NOT NULL,
+  api_key VARCHAR(255) NOT NULL,
+  api_secret VARCHAR(255) NOT NULL,
+  dca_index NUMERIC(10, 2),
+  profit_loss_stop_percentage NUMERIC(5, 2),
+  discord_id VARCHAR(255),
+  telegram_id VARCHAR(255),
+  dca_amount NUMERIC(10, 2) NOT NULL,
+  interval_hours INTEGER NOT NULL,
+  btc_dca INTEGER DEFAULT 0 CHECK (btc_dca IN (0, 1)),
+  eth_dca INTEGER DEFAULT 0 CHECK (eth_dca IN (0, 1)),
+  sol_dca INTEGER DEFAULT 0 CHECK (sol_dca IN (0, 1)),
+  bnb_dca INTEGER DEFAULT 0 CHECK (bnb_dca IN (0, 1)),
+  doge_dca INTEGER DEFAULT 0 CHECK (doge_dca IN (0, 1)),
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+-- 2. 添加表注释
+COMMENT ON TABLE user_trading_configs IS '用户交易配置表';
+
+-- 3. 添加字段注释
+COMMENT ON COLUMN user_trading_configs.id IS '主键ID，自动递增';
+COMMENT ON COLUMN user_trading_configs.user_id IS '关联的用户ID，引用users表的id';
+COMMENT ON COLUMN user_trading_configs.exchange IS '加密货币交易所名称';
+COMMENT ON COLUMN user_trading_configs.api_key IS '交易所API Key';
+COMMENT ON COLUMN user_trading_configs.api_secret IS '交易所API Secret';
+COMMENT ON COLUMN user_trading_configs.dca_index IS '定投指数参数(策略计算使用)';
+COMMENT ON COLUMN user_trading_configs.profit_loss_stop_percentage IS '盈亏止损百分比(如10.5表示10.5%)';
+COMMENT ON COLUMN user_trading_configs.discord_id IS 'Discord通知ID';
+COMMENT ON COLUMN user_trading_configs.telegram_id IS 'Telegram通知ID';
+COMMENT ON COLUMN user_trading_configs.dca_amount IS '每次定投金额';
+COMMENT ON COLUMN user_trading_configs.interval_hours IS '定投间隔时间(小时)';
+COMMENT ON COLUMN user_trading_configs.btc_dca IS 'BTC定投开关(1=开启,0=关闭)';
+COMMENT ON COLUMN user_trading_configs.eth_dca IS 'ETH定投开关(1=开启,0=关闭)';
+COMMENT ON COLUMN user_trading_configs.sol_dca IS 'SOL定投开关(1=开启,0=关闭)';
+COMMENT ON COLUMN user_trading_configs.bnb_dca IS 'BNB定投开关(1=开启,0=关闭)';
+COMMENT ON COLUMN user_trading_configs.doge_dca IS 'DOGE定投开关(1=开启,0=关闭)';
+COMMENT ON COLUMN user_trading_configs.created_at IS '记录创建时间';
+COMMENT ON COLUMN user_trading_configs.updated_at IS '记录最后更新时间';
+
+-- 4. 创建索引
+CREATE INDEX idx_user_trading_configs_user_id ON user_trading_configs (user_id);
+CREATE INDEX idx_user_trading_configs_discord_id ON user_trading_configs (discord_id);
+CREATE INDEX idx_user_trading_configs_telegram_id ON user_trading_configs (telegram_id);
+
+-- 5. 添加索引注释
+COMMENT ON INDEX idx_user_trading_configs_user_id IS '用户ID索引';
+COMMENT ON INDEX idx_user_trading_configs_discord_id IS 'Discord ID索引';
+COMMENT ON INDEX idx_user_trading_configs_telegram_id IS 'Telegram ID索引';
+
+-- 6. 创建触发器函数
+CREATE OR REPLACE FUNCTION update_modified_column()
+RETURNS TRIGGER AS $$
+BEGIN
+   NEW.updated_at = NOW();
+   RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+-- 7. 创建触发器
+CREATE TRIGGER update_user_trading_configs_modtime
+BEFORE UPDATE ON user_trading_configs
+FOR EACH ROW
+EXECUTE FUNCTION update_modified_column();
+
+-- 8. 添加触发器注释
+COMMENT ON TRIGGER update_user_trading_configs_modtime ON user_trading_configs 
+IS '自动更新updated_at字段的触发器';
+
+-------------------------------------------------------------------------------------------------------------
+-- 9. 创建交易记录表（同时关联users和user_trading_configs）
+CREATE TABLE users_exchange_transactions (
+  id BIGINT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  config_id BIGINT NOT NULL REFERENCES user_trading_configs(id) ON DELETE CASCADE,
+  exchange VARCHAR(50) NOT NULL,
+  symbol VARCHAR(20) NOT NULL,
+  transaction_type VARCHAR(10) NOT NULL CHECK (transaction_type IN ('BUY', 'SELL', 'FEE')),
+  quantity NUMERIC(20, 10) NOT NULL,
+  price NUMERIC(20, 10) NOT NULL,
+  amount NUMERIC(20, 10) NOT NULL,
+  fee NUMERIC(20, 10),
+  fee_currency VARCHAR(10),
+  status VARCHAR(20) NOT NULL DEFAULT 'FILLED' CHECK (status IN ('PENDING', 'FILLED', 'PARTIALLY_FILLED', 'CANCELED', 'FAILED')),
+  exchange_order_id VARCHAR(100),
+  client_order_id VARCHAR(100),
+  transaction_time TIMESTAMPTZ NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW(),
+  notes TEXT,
+  tags VARCHAR(255)
+);
+
+-- 10. 添加表注释
+COMMENT ON TABLE users_exchange_transactions IS '交易所交易记录表';
+
+-- 11. 添加字段注释
+COMMENT ON COLUMN users_exchange_transactions.id IS '主键ID，自动递增';
+COMMENT ON COLUMN users_exchange_transactions.user_id IS '关联的用户ID，直接引用users表';
+COMMENT ON COLUMN users_exchange_transactions.config_id IS '关联的交易配置ID';
+COMMENT ON COLUMN users_exchange_transactions.exchange IS '交易所名称';
+COMMENT ON COLUMN users_exchange_transactions.symbol IS '交易对，如BTC/USDT';
+COMMENT ON COLUMN users_exchange_transactions.transaction_type IS '交易类型: BUY/SELL/FEE';
+COMMENT ON COLUMN users_exchange_transactions.quantity IS '交易数量';
+COMMENT ON COLUMN users_exchange_transactions.price IS '交易单价';
+COMMENT ON COLUMN users_exchange_transactions.amount IS '交易总金额(quantity*price)';
+COMMENT ON COLUMN users_exchange_transactions.fee IS '交易手续费';
+COMMENT ON COLUMN users_exchange_transactions.fee_currency IS '手续费币种';
+COMMENT ON COLUMN users_exchange_transactions.status IS '交易状态';
+COMMENT ON COLUMN users_exchange_transactions.exchange_order_id IS '交易所订单ID';
+COMMENT ON COLUMN users_exchange_transactions.client_order_id IS '客户端订单ID';
+COMMENT ON COLUMN users_exchange_transactions.transaction_time IS '交易发生时间(交易所时间)';
+COMMENT ON COLUMN users_exchange_transactions.created_at IS '记录创建时间';
+COMMENT ON COLUMN users_exchange_transactions.updated_at IS '记录更新时间';
+COMMENT ON COLUMN users_exchange_transactions.notes IS '备注信息';
+COMMENT ON COLUMN users_exchange_transactions.tags IS '标签，用于分类';
+
+-- 12. 创建索引
+CREATE INDEX idx_users_exchange_transactions_user_id ON users_exchange_transactions (user_id);
+CREATE INDEX idx_users_exchange_transactions_config_id ON users_exchange_transactions (config_id);
+CREATE INDEX idx_users_exchange_transactions_exchange ON users_exchange_transactions (exchange);
+CREATE INDEX idx_users_exchange_transactions_symbol ON users_exchange_transactions (symbol);
+CREATE INDEX idx_users_exchange_transactions_transaction_time ON users_exchange_transactions (transaction_time);
+
+-- 13. 添加索引注释
+COMMENT ON INDEX idx_users_exchange_transactions_user_id IS '用户ID索引';
+COMMENT ON INDEX idx_users_exchange_transactions_config_id IS '交易配置ID索引';
+COMMENT ON INDEX idx_users_exchange_transactions_exchange IS '交易所索引';
+COMMENT ON INDEX idx_users_exchange_transactions_symbol IS '交易对索引';
+COMMENT ON INDEX idx_users_exchange_transactions_transaction_time IS '交易时间索引';
+
+-- 14. 创建触发器函数
+CREATE OR REPLACE FUNCTION update_transaction_modified_column()
+RETURNS TRIGGER AS $$
+BEGIN
+   NEW.updated_at = NOW();
+   RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+-- 15. 创建触发器
+CREATE TRIGGER update_users_exchange_transactions_modtime
+BEFORE UPDATE ON users_exchange_transactions
+FOR EACH ROW
+EXECUTE FUNCTION update_transaction_modified_column();
+
+-- 16. 添加触发器注释
+COMMENT ON TRIGGER update_users_exchange_transactions_modtime ON users_exchange_transactions 
+IS '自动更新updated_at字段的触发器';
