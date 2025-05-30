@@ -7,6 +7,7 @@ CREATE TABLE user_trading_configs (
   api_secret VARCHAR(255) NOT NULL,
   dca_index NUMERIC(10, 2),
   profit_loss_stop_percentage NUMERIC(5, 2),
+  take_profit_percentage NUMERIC(5, 2),
   discord_id VARCHAR(255),
   telegram_id VARCHAR(255),
   dca_amount NUMERIC(10, 2) NOT NULL,
@@ -16,6 +17,8 @@ CREATE TABLE user_trading_configs (
   sol_dca INTEGER DEFAULT 0 CHECK (sol_dca IN (0, 1)),
   bnb_dca INTEGER DEFAULT 0 CHECK (bnb_dca IN (0, 1)),
   doge_dca INTEGER DEFAULT 0 CHECK (doge_dca IN (0, 1)),
+  virtual_switch INTEGER DEFAULT 0 CHECK (virtual_switch IN (0, 1)),
+  simulated_amount VARCHAR(255),
   created_at TIMESTAMPTZ DEFAULT NOW(),
   updated_at TIMESTAMPTZ DEFAULT NOW()
 );
@@ -26,11 +29,12 @@ COMMENT ON TABLE user_trading_configs IS '用户交易配置表';
 -- 3. 添加字段注释
 COMMENT ON COLUMN user_trading_configs.id IS '主键ID，自动递增';
 COMMENT ON COLUMN user_trading_configs.user_id IS '关联的用户ID，引用users表的id';
-COMMENT ON COLUMN user_trading_configs.exchange IS '加密货币交易所名称';
+COMMENT ON COLUMN user_trading_configs.exchange IS '加密货币交易所名称Binance';
 COMMENT ON COLUMN user_trading_configs.api_key IS '交易所API Key';
 COMMENT ON COLUMN user_trading_configs.api_secret IS '交易所API Secret';
-COMMENT ON COLUMN user_trading_configs.dca_index IS '定投指数参数(策略计算使用)';
-COMMENT ON COLUMN user_trading_configs.profit_loss_stop_percentage IS '盈亏止损百分比(如10.5表示10.5%)';
+COMMENT ON COLUMN user_trading_configs.dca_index IS '定投指数参数(策略计算使用，一共5种模型，从0.45-1.25)';
+COMMENT ON COLUMN user_trading_configs.profit_loss_stop_percentage IS '盈亏止损百分比(限制-20%-40%)';
+COMMENT ON COLUMN user_trading_configs.take_profit_percentage IS '盈利%卖出（限制10%-45%）';
 COMMENT ON COLUMN user_trading_configs.discord_id IS 'Discord通知ID';
 COMMENT ON COLUMN user_trading_configs.telegram_id IS 'Telegram通知ID';
 COMMENT ON COLUMN user_trading_configs.dca_amount IS '每次定投金额';
@@ -40,6 +44,8 @@ COMMENT ON COLUMN user_trading_configs.eth_dca IS 'ETH定投开关(1=开启,0=�
 COMMENT ON COLUMN user_trading_configs.sol_dca IS 'SOL定投开关(1=开启,0=关闭)';
 COMMENT ON COLUMN user_trading_configs.bnb_dca IS 'BNB定投开关(1=开启,0=关闭)';
 COMMENT ON COLUMN user_trading_configs.doge_dca IS 'DOGE定投开关(1=开启,0=关闭)';
+COMMENT ON COLUMN user_trading_configs.virtual_switch IS '启动虚拟交易(1=开启,0=关闭)';
+COMMENT ON COLUMN user_trading_configs.simulated_amount IS '模拟金额(默认10000)';
 COMMENT ON COLUMN user_trading_configs.created_at IS '记录创建时间';
 COMMENT ON COLUMN user_trading_configs.updated_at IS '记录最后更新时间';
 
