@@ -16,10 +16,7 @@ export default function DashboardLayout({
 
   const navItems = [
     { href: '/dashboard', icon: Users, label: 'Team' },
-    { href: '/dashboard/invest', icon: TrendingUp, label: 'Auto-Invest (Daily)' },
-    { href: '/dashboard/sell', icon: DollarSign, label: 'Sell Assets' },
-    { href: '/dashboard/policy', icon: Sliders, label: 'Policy Settings' }, 
-    { href: '/dashboard/notifications', icon: Bell, label: 'Notification Settings' },
+    { href: '/dashboard/invest', icon: TrendingUp, label: 'API keys' },
     { href: '/dashboard/general', icon: Cog, label: 'General' }, 
     { href: '/dashboard/activity', icon: Activity, label: 'Activity' },
     { href: '/dashboard/security', icon: Shield, label: 'Security' }
