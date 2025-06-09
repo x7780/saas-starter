@@ -25,8 +25,8 @@ import {
 } from "lucide-react"
 import { generateApiKey } from "@/lib/utils"
 
-export default function ApiDashboard({ initialApiKey = "" }: { initialApiKey?: string }) {
-  const [apiKey, setApiKey] = useState(initialApiKey)
+export default function ApiDashboard() {
+  const [apiKey, setApiKey] = useState("")
   const [showApiKey, setShowApiKey] = useState(false)
   const [isRefreshing, setIsRefreshing] = useState(false)
   const [copied, setCopied] = useState(false)
@@ -122,44 +122,6 @@ export default function ApiDashboard({ initialApiKey = "" }: { initialApiKey?: s
             </CardContent>
           </Card>
         </div>
-
-
-
-        {/* 30-Day Usage Chart */}
-        <Card className="border-0 shadow-xl">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-3 text-2xl">
-              <Activity className="h-6 w-6 text-blue-500" />
-              30-Day Usage History
-            </CardTitle>
-            <CardDescription className="text-base">Daily API request volume over the past month</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div className="flex items-end justify-between gap-1 h-48 px-2">
-                {monthlyData.map((day, index) => (
-                  <div key={index} className="flex flex-col items-center justify-end group relative flex-1">
-                    <div
-                      className="w-full bg-gradient-to-t from-blue-500 to-blue-400 rounded-t-sm transition-all duration-300 hover:from-blue-600 hover:to-blue-500 cursor-pointer min-h-[4px]"
-                      style={{ height: `${Math.max((day.requests / maxDailyRequests) * 100, 2)}%` }}
-                    />
-                    <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none">
-                      <div className="font-medium">{day.requests.toLocaleString()} requests</div>
-                      <div className="text-gray-300">{new Date(day.date).toLocaleDateString()}</div>
-                      <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="flex justify-between text-xs text-slate-500 mt-2">
-                <span>30 days ago</span>
-                <span>15 days ago</span>
-                <span>Today</span>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
           {/* Model Usage Analytics */}
