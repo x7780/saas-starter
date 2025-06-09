@@ -25,7 +25,7 @@ import {
 } from "lucide-react"
 import { generateApiKey } from "@/lib/utils"
 
-export default function ApiDashboard({ initialApiKey }: { initialApiKey: string }) {
+export default function ApiDashboard({ initialApiKey = "" }: { initialApiKey?: string }) {
   const [apiKey, setApiKey] = useState(initialApiKey)
   const [showApiKey, setShowApiKey] = useState(false)
   const [isRefreshing, setIsRefreshing] = useState(false)
