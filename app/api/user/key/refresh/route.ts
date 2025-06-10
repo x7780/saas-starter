@@ -33,7 +33,7 @@ export async function POST(request: Request) {
     await db.insert(activityLogs).values({
       teamId: team.id,
       userId: user.id,
-      action: 'API_KEY_REFRESH',
+      action: `Updated the API Key (IP: ${ipAddress})`,
       ipAddress: ipAddress,
       timestamp: new Date()
     })
