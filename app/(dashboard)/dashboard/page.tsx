@@ -29,8 +29,8 @@ const modelInfo = [
   {
     name: "GPT-4 Turbo",
     description: "Most capable GPT-4 model with improved instruction following, JSON mode, and function calling.",
-    usage: "45.2%",
-    apiUrl: "https://api.bitdca.top/v1/chat/completions",
+    usage: "96.2%",
+    apiUrl: "https://api.bitdca.top/v1/chat/1",
     icon: Brain,
     color: "bg-purple-500",
     status: "Active",
@@ -38,8 +38,8 @@ const modelInfo = [
   {
     name: "GPT-3.5 Turbo",
     description: "Fast and efficient model optimized for chat and text completion tasks with great performance.",
-    usage: "25.7%",
-    apiUrl: "https://api.bitdca.top/v1/chat/completions",
+    usage: "20.7%",
+    apiUrl: "https://api.bitdca.top/v1/chat/2",
     icon: Zap,
     color: "bg-green-500",
     status: "Active",
@@ -48,7 +48,7 @@ const modelInfo = [
     name: "Claude-3 Sonnet",
     description: "Anthropic's balanced model offering strong performance across a wide range of tasks.",
     usage: "18.3%",
-    apiUrl: "https://api.bitdca.top/v1/claude/completions",
+    apiUrl: "https://api.bitdca.top/v1/claude/3",
     icon: MessageSquare,
     color: "bg-blue-500",
     status: "Active",
@@ -68,7 +68,7 @@ const maxDailyRequests = Math.max(...monthlyData.map(d => d.requests))
 export default function Component() {
   const [showApiKey, setShowApiKey] = useState(false)
   const [apiKey, setApiKey] = useState('')
-  const [copied, setCopied] = useState(false)
+  const [copiedUrls, setCopiedUrls] = useState<Record<string, boolean>>({})
   const [isRefreshing, setIsRefreshing] = useState(false)
   const [userData, setUserData] = useState({
     name: 'Loading...',
@@ -106,14 +106,15 @@ export default function Component() {
     fetchData()
   }, [])
 
-  const handleCopyKey = async () => {
-    if (!apiKey) return
+  const handleCopyKey = async (modelName: string, text: string) => {
+    if (!text) return
     try {
-      await navigator.clipboard.writeText(apiKey)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
+      await navigator.clipboard.writeText(text)
+      const key = `${modelName}_${text}`
+      setCopiedUrls(prev => ({...prev, [key]: true}))
+      setTimeout(() => setCopiedUrls(prev => ({...prev, [key]: false})), 2000)
     } catch (error) {
-      console.error('Failed to copy API key:', error)
+      console.error('Failed to copy:', error)
     }
   }
 
@@ -252,9 +253,9 @@ export default function Component() {
                           variant="ghost"
                           size="sm"
                           className="h-6 w-6 p-0 hover:bg-slate-200 flex-shrink-0"
-                          onClick={() => navigator.clipboard.writeText(model.apiUrl)}
+                          onClick={() => handleCopyKey(model.name, model.apiUrl)}
                         >
-                          <Copy className="h-3 w-3" />
+                          {copiedUrls[`${model.name}_${model.apiUrl}`] ? <CheckCircle className="h-3 w-3 text-green-500" /> : <Copy className="h-3 w-3" />}
                         </Button>
                       </div>
                     </div>
@@ -296,8 +297,8 @@ export default function Component() {
                       {showApiKey ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                     </Button>
                   </div>
-                  <Button variant="outline" onClick={handleCopyKey} className="px-4 hover:bg-slate-100">
-                    {copied ? <CheckCircle className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
+                  <Button variant="outline" onClick={() => handleCopyKey('API Key', apiKey)} className="px-4 hover:bg-slate-100">
+                    {copiedUrls[`API Key_${apiKey}`] ? <CheckCircle className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
                   </Button>
                   <Button
                     onClick={handleRefreshKey}
