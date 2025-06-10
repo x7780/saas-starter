@@ -16,7 +16,6 @@ export async function POST(request: Request) {
   const user = await getUser()
   const ipAddress = request.headers.get('x-forwarded-for') || 
                     request.headers.get('x-real-ip') || 
-                    request.ip || 
                     '127.0.0.1'
   if (!user) {
     return NextResponse.json(
