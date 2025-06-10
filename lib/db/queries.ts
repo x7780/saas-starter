@@ -128,3 +128,23 @@ export async function getTeamForUser() {
 
   return result?.team || null;
 }
+
+export async function updateUserApiKey(userId: number, apiKey: string) {
+  await db
+    .update(users)
+    .set({ 
+      apiKey,
+      updatedAt: new Date()
+    })
+    .where(eq(users.id, userId));
+}
+
+export async function getUserApiKey(userId: number) {
+  const result = await db
+    .select({ apiKey: users.apiKey })
+    .from(users)
+    .where(eq(users.id, userId))
+    .limit(1);
+
+  return result[0]?.apiKey || null;
+}

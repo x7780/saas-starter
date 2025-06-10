@@ -17,6 +17,7 @@ import {
   invitations
 } from '@/lib/db/schema';
 import { comparePasswords, hashPassword, setSession } from '@/lib/auth/session';
+import { generateApiKey } from '@/lib/utils';
 import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';
 import { createCheckoutSession } from '@/lib/payments/stripe';
@@ -128,7 +129,8 @@ export const signUp = validatedAction(signUpSchema, async (data, formData) => {
   const newUser: NewUser = {
     email,
     passwordHash,
-    role: 'owner' // Default role, will be overridden if there's an invitation
+    role: 'owner', // Default role, will be overridden if there's an invitation
+    apiKey: generateApiKey()
   };
 
   const [createdUser] = await db.insert(users).values(newUser).returning();
