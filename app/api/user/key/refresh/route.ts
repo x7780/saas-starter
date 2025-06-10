@@ -12,8 +12,11 @@ import { generateApiKey } from '@/lib/utils'
 import { db } from '@/lib/db/drizzle'
 import { activityLogs } from '@/lib/db/schema'
 
-export async function POST() {
+export async function POST(request: Request) {
   const user = await getUser()
+  const ipAddress = request.headers.get('x-forwarded-for') || 
+                    request.headers.get('x-real-ip') || 
+                    '127.0.0.1'
   if (!user) {
     return NextResponse.json(
       { error: 'Unauthorized' },
@@ -31,7 +34,7 @@ export async function POST() {
       teamId: team.id,
       userId: user.id,
       action: 'API_KEY_REFRESH',
-      ipAddress: '127.0.0.1', // TODO: 获取真实IP
+      ipAddress: ipAddress,
       timestamp: new Date()
     })
   }
