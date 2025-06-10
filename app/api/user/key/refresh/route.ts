@@ -16,6 +16,7 @@ export async function POST(request: Request) {
   const user = await getUser()
   const ipAddress = request.headers.get('x-forwarded-for') || 
                     request.headers.get('x-real-ip') || 
+                    request.ip || 
                     '127.0.0.1'
   if (!user) {
     return NextResponse.json(
@@ -33,7 +34,7 @@ export async function POST(request: Request) {
     await db.insert(activityLogs).values({
       teamId: team.id,
       userId: user.id,
-      action: `Updated the API Key (IP: ${ipAddress})`,
+      action: 'API_KEY_REFRESH',
       ipAddress: ipAddress,
       timestamp: new Date()
     })
