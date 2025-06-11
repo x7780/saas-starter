@@ -426,7 +426,7 @@ export default function Component() {
                     key={strategy.id}
                     className="overflow-hidden border border-slate-200 transition-all duration-200 hover:shadow-md pt-0"
                   >
-                    <div className={`${strategy.color} h-1.5 w-full`}></div>
+                    <div className={`${strategy.color} h-2.5 w-full`}></div>
                     <CardHeader className="p-3 pb-1">
                       <div className="flex items-start justify-between">
                         <div className="flex items-center gap-3">
