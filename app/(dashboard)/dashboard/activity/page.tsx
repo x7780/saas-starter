@@ -12,6 +12,7 @@ import {
   Activity,
   MapPin,
   Clock,
+  Key,
   type LucideIcon,
 } from "lucide-react"
 import { ActivityType } from "@/lib/db/schema"
@@ -28,6 +29,7 @@ const iconMap: Record<ActivityType, LucideIcon> = {
   [ActivityType.REMOVE_TEAM_MEMBER]: UserMinus,
   [ActivityType.INVITE_TEAM_MEMBER]: Mail,
   [ActivityType.ACCEPT_INVITATION]: CheckCircle,
+  [ActivityType.API_KEY_REFRESH]: Key,
 }
 
 const statusMap: Record<ActivityType, "success" | "warning" | "info"> = {
@@ -41,6 +43,7 @@ const statusMap: Record<ActivityType, "success" | "warning" | "info"> = {
   [ActivityType.REMOVE_TEAM_MEMBER]: "warning",
   [ActivityType.INVITE_TEAM_MEMBER]: "info",
   [ActivityType.ACCEPT_INVITATION]: "success",
+  [ActivityType.API_KEY_REFRESH]: "success",
 }
 
 function getRelativeTime(date: Date) {
@@ -76,6 +79,8 @@ function formatAction(action: ActivityType): string {
       return "Team member invited"
     case ActivityType.ACCEPT_INVITATION:
       return "Team invitation accepted"
+    case ActivityType.API_KEY_REFRESH:
+      return "API Key updated successfully"
     default:
       return "Unknown action occurred"
   }
