@@ -1,14 +1,12 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Badge } from "@/components/ui/badge"
 import {
-  Activity,
-  BarChart3,
   Key,
   Eye,
   EyeOff,
@@ -19,8 +17,14 @@ import {
   Brain,
   Zap,
   MessageSquare,
-  ImageIcon,
-  Code,
+  Download,
+  Star,
+  BarChart3,
+  TrendingUp,
+  Users,
+  Layers,
+  FileText,
+  Activity,
 } from "lucide-react"
 
 
@@ -53,8 +57,56 @@ const modelInfo = [
     color: "bg-blue-500",
     status: "Active",
   },
+]
 
-
+// 策略数据
+const strategies = [
+  {
+    id: "Freqtrade",
+    name: "Freqtrade",
+    description:
+      "A Python-based, open-source crypto trading bot focused on backtesting and live trading with customizable strategies",
+    platform: "linux win",
+    language: "Python",
+    rating: 5,
+    downloads: 12453,
+    tags: ["Bitcoin", "Coinbase", "OKX", "Kraken", "Bybit", "Bitget"],
+    icon: TrendingUp,
+    color: "bg-blue-500",
+    lastUpdated: "2023-05-15",
+    downloadUrl: "https://download.bitdca.top/freqtrade/ahr999_strategy.zip",
+    docUrl: "/dashboard/Freqtrade",
+  },
+  {
+    id: "Zenbot",
+    name: "Zenbot",
+    description: "A lightweight, high-frequency trading bot built in Node.js, optimized for speed and arbitrage.",
+    platform: "linux win",
+    language: "Node.js",
+    rating: 3,
+    downloads: 8765,
+    tags: ["Bitcoin", "Coinbase", "OKX", "Kraken", "Bybit", "Bitget"],
+    icon: BarChart3,
+    color: "bg-green-500",
+    lastUpdated: "2023-06-22",
+    downloadUrl: "https://download.bitdca.top/freqtrade/fear_greed_strategy.zip",
+    docUrl: "/doc",
+  },
+  {
+    id: "Hummingbot",
+    name: "Hummingbot",
+    description: "An open-source market-making and arbitrage bot designed for liquidity provision and earning rewards.",
+    platform: "linux win",
+    language: "Python",
+    rating: 3,
+    downloads: 6543,
+    tags: ["Bitcoin", "Coinbase", "OKX", "Kraken", "Bybit", "Bitget"],
+    icon: Layers,
+    color: "bg-purple-500",
+    lastUpdated: "2023-07-10",
+    downloadUrl: "https://download.bitdca.top/freqtrade/rainbow_strategy.zip",
+    docUrl: "/doc",
+  },
 ]
 
 // 模拟30天使用数据
@@ -133,6 +185,19 @@ export default function Component() {
     } finally {
       setIsRefreshing(false)
     }
+  }
+
+  const renderStars = (rating: number) => {
+    return (
+      <div className="flex items-center">
+        {[1, 2, 3, 4, 5].map((star) => (
+          <Star
+            key={star}
+            className={`h-3.5 w-3.5 ${star <= rating ? "fill-amber-400 text-amber-400" : "text-slate-300"}`}
+          />
+        ))}
+      </div>
+    )
   }
 
   return (
@@ -340,6 +405,88 @@ export default function Component() {
             </CardContent>
           </Card>
         </div>
+
+        {/* Trading Strategies */}
+        <Card className="border-0 shadow-xl">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-3 text-2xl">
+              <Download className="h-6 w-6 text-blue-500" />
+              Trading Strategies
+            </CardTitle>
+            <CardDescription className="text-base">
+              Download our professional trading strategies for various platforms and markets
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {strategies.map((strategy) => {
+                const IconComponent = strategy.icon
+                return (
+                  <Card
+                    key={strategy.id}
+                    className="overflow-hidden border border-slate-200 transition-all duration-200 hover:shadow-md pt-0"
+                  >
+                    <div className={`${strategy.color} h-1.5 w-full`}></div>
+                    <CardHeader className="p-3 pb-1">
+                      <div className="flex items-start justify-between">
+                        <div className="flex items-center gap-3">
+                          <div className={`p-2 rounded-lg ${strategy.color} bg-opacity-10`}>
+                            <IconComponent className={`h-5 w-5 ${strategy.color.replace("bg-", "text-")}`} />
+                          </div>
+                          <div>
+                            <CardTitle className="text-lg">{strategy.name}</CardTitle>
+                            <div className="flex items-center gap-2 mt-1">
+                              <Badge variant="outline" className="text-xs font-normal">
+                                {strategy.platform}
+                              </Badge>
+                              <Badge variant="outline" className="text-xs font-normal">
+                                {strategy.language}
+                              </Badge>
+                            </div>
+                          </div>
+                        </div>
+                        {renderStars(strategy.rating)}
+                      </div>
+                    </CardHeader>
+                    <CardContent className="p-3 pt-1">
+                      <p className="text-sm text-slate-600 line-clamp-2 h-10">{strategy.description}</p>
+                      <div className="flex flex-wrap gap-1 mt-3">
+                        {strategy.tags.map((tag, i) => (
+                          <span
+                            key={i}
+                            className="inline-block bg-slate-100 text-slate-700 rounded-full px-2 py-0.5 text-xs"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </CardContent>
+                    <CardFooter className="p-3 pt-0 flex items-center justify-between">
+                      <div className="text-xs text-slate-500 flex items-center">
+                        <Users className="h-3 w-3 mr-1" />
+                        <span>{strategy.downloads.toLocaleString()} downloads</span>
+                      </div>
+                      <div className="flex gap-2">
+                        <Button asChild size="sm" variant="outline" className="border-slate-300 hover:bg-slate-50">
+                          <a href={strategy.docUrl}>
+                            <FileText className="h-3.5 w-3.5 mr-1" />
+                            Docs
+                          </a>
+                        </Button>
+                        <Button asChild size="sm" className="bg-blue-500 hover:bg-blue-600">
+                          <a href={strategy.downloadUrl} download>
+                            <Download className="h-3.5 w-3.5 mr-1" />
+                            Download
+                          </a>
+                        </Button>
+                      </div>
+                    </CardFooter>
+                  </Card>
+                )
+              })}
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </div>
   )
