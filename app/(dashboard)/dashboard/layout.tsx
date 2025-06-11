@@ -18,7 +18,6 @@ export default function DashboardLayout({
     { href: '/dashboard', icon: Users, label: 'Home' },
     { href: '/dashboard/model', icon: TrendingUp, label: 'AI Model' },
     { href: '/dashboard/Freqtrade', icon: TrendingUp, label: 'Freqtrade Setup' },
-    { href: '/dashboard/general', icon: Cog, label: 'General' }, 
     { href: '/dashboard/security', icon: Shield, label: 'Security' },
     { href: '/dashboard/activity', icon: Activity, label: 'Activity' }
   ];
