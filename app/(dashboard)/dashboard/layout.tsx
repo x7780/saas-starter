@@ -19,8 +19,8 @@ export default function DashboardLayout({
     { href: '/dashboard/model', icon: TrendingUp, label: 'AI Model' },
     { href: '/dashboard/Freqtrade', icon: TrendingUp, label: 'Freqtrade Setup' },
     { href: '/dashboard/general', icon: Cog, label: 'General' }, 
-    { href: '/dashboard/activity', icon: Activity, label: 'Activity' },
-    { href: '/dashboard/security', icon: Shield, label: 'Security' }
+    { href: '/dashboard/security', icon: Shield, label: 'Security' },
+    { href: '/dashboard/activity', icon: Activity, label: 'Activity' }
   ];
   return (
     <div className="flex flex-col min-h-[calc(100dvh-68px)] max-w-none mx-auto w-full">
