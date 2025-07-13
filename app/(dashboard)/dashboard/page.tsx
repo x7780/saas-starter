@@ -5,8 +5,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
-import { getRecentVerificationLogs } from "@/lib/db/queries"
-
 interface VerificationLog {
   timestamp: Date
   ipAddress: string | null
@@ -45,8 +43,14 @@ export default function Component() {
 
   useEffect(() => {
     const fetchVerificationLogs = async () => {
-      const logs = await getRecentVerificationLogs()
-      setVerificationLogs(logs)
+      try {
+        const response = await fetch('/api/user/verification-logs')
+        if (!response.ok) throw new Error('Failed to fetch logs')
+        const logs = await response.json()
+        setVerificationLogs(logs)
+      } catch (error) {
+        console.error('Error fetching verification logs:', error)
+      }
     }
     fetchVerificationLogs()
   }, [])
