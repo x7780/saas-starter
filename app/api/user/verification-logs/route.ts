@@ -30,9 +30,15 @@ export async function GET() {
     }, {} as Record<string, IpStat>)
 
     // Convert to array and sort by latest timestamp
+    // Sort by count descending, then by latest timestamp
     const result = Object.values(ipStats)
-      .sort((a, b) => b.latestTimestamp.getTime() - a.latestTimestamp.getTime())
-      .slice(0, 5) // Get top 5
+      .sort((a, b) => {
+        if (b.count !== a.count) {
+          return b.count - a.count // Higher count first
+        }
+        return b.latestTimestamp.getTime() - a.latestTimestamp.getTime() // Newer first if counts equal
+      })
+      .slice(0, 5) // Get top 5 most active IPs
 
     return NextResponse.json(result)
   } catch (error) {

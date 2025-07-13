@@ -155,14 +155,13 @@ export async function getRecentVerificationLogs() {
     return [];
   }
 
-  return await db
-    .select({
-      timestamp: verificationLogs.timestamp,
-      ipAddress: verificationLogs.ipAddress,
-      licenseKey: verificationLogs.licenseKey
-    })
-    .from(verificationLogs)
-    .where(eq(verificationLogs.licenseKey, user.apiKey))
-    .orderBy(desc(verificationLogs.timestamp))
-    .limit(5);
+    return await db
+      .select({
+        timestamp: verificationLogs.timestamp,
+        ipAddress: verificationLogs.ipAddress,
+        licenseKey: verificationLogs.licenseKey
+      })
+      .from(verificationLogs)
+      .where(eq(verificationLogs.licenseKey, user.apiKey))
+      .orderBy(desc(verificationLogs.timestamp));
 }
