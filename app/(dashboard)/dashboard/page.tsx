@@ -64,6 +64,8 @@ export default function Component() {
         const userData = await userResponse.json()
         const teamResponse = await fetch("/api/team")
         const teamData = await teamResponse.json()
+        const keyResponse = await fetch("/api/user/key")
+        const keyData = await keyResponse.json()
 
         setUserData({
           name: userData?.name || "Unknown",
@@ -73,6 +75,7 @@ export default function Component() {
               ? new Date(teamData.currentPeriodEnd * 1000).toLocaleDateString("en-US")
               : "Not subscribed",
         })
+        setMachineCode(keyData.apiKey || "")
       } catch (error) {
         console.error("Failed to fetch data:", error)
       }
@@ -214,7 +217,7 @@ export default function Component() {
                     <div className="flex items-center justify-between">
                       <span className="text-green-700">Machine Code:</span>
                       <code className="bg-white px-2 py-1 rounded border text-green-800 font-mono">
-                        MC-2024-ABCD-1234-EFGH
+                        {machineCode || "Not bound"}
                       </code>
                     </div>
                     <div className="flex items-center justify-between">
