@@ -30,13 +30,13 @@ export async function GET() {
     }, {} as Record<string, IpStat>)
 
     // Convert to array and sort by latest timestamp
-    // Sort by count descending, then by latest timestamp
+    // Sort by latest timestamp descending, then by count descending
     const result = Object.values(ipStats)
       .sort((a, b) => {
-        if (b.count !== a.count) {
-          return b.count - a.count // Higher count first
+        if (b.latestTimestamp.getTime() !== a.latestTimestamp.getTime()) {
+          return b.latestTimestamp.getTime() - a.latestTimestamp.getTime() // Newer first
         }
-        return b.latestTimestamp.getTime() - a.latestTimestamp.getTime() // Newer first if counts equal
+        return b.count - a.count // Higher count first if timestamps equal
       })
       .slice(0, 5) // Get top 5 most active IPs
 
