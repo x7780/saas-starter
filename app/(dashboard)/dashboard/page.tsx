@@ -24,7 +24,8 @@ import {
 
 export default function Component() {
   const [copiedUrls, setCopiedUrls] = useState<Record<string, boolean>>({})
-  const [machineCode, setMachineCode] = useState("")
+  const [machineCode, setMachineCode] = useState("") // 用于显示已绑定的机器码
+  const [inputMachineCode, setInputMachineCode] = useState("") // 用于用户输入新机器码
   const [isBinding, setIsBinding] = useState(false)
   const [userData, setUserData] = useState({
     name: "Loading...",
@@ -96,7 +97,7 @@ export default function Component() {
   }
 
   const handleBindMachine = async () => {
-    if (!machineCode.trim()) return
+    if (!inputMachineCode.trim()) return
     setIsBinding(true)
     try {
       const response = await fetch('/api/user/key', {
@@ -104,7 +105,7 @@ export default function Component() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ machineCode }),
+        body: JSON.stringify({ machineCode: inputMachineCode }),
       })
 
       const result = await response.json()
@@ -114,7 +115,11 @@ export default function Component() {
 
       if (result.success) {
         alert('Machine code bound successfully!')
-        setMachineCode('')
+        setInputMachineCode('')
+        // 重新获取最新的机器码
+        const keyResponse = await fetch("/api/user/key")
+        const keyData = await keyResponse.json()
+        setMachineCode(keyData.apiKey || "")
       }
     } catch (error) {
       console.error("Failed to bind machine:", error)
@@ -192,13 +197,13 @@ export default function Component() {
                       id="machine-code"
                       type="text"
                       placeholder="Enter your machine code here..."
-                      value={machineCode}
-                      onChange={(e) => setMachineCode(e.target.value)}
+                      value={inputMachineCode}
+                      onChange={(e) => setInputMachineCode(e.target.value)}
                       className="font-mono text-sm h-12"
                     />
                     <Button
                       onClick={handleBindMachine}
-                      disabled={!machineCode.trim() || isBinding}
+                      disabled={!inputMachineCode.trim() || isBinding}
                       size="lg"
                       className="w-full bg-blue-500 hover:bg-blue-600"
                     >
