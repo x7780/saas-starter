@@ -1,6 +1,6 @@
 import { desc, and, eq, isNull } from 'drizzle-orm';
 import { db } from './drizzle';
-import { activityLogs, teamMembers, teams, users } from './schema';
+import { activityLogs, teamMembers, teams, users, verificationLogs } from './schema';
 import { cookies } from 'next/headers';
 import { verifyToken } from '@/lib/auth/session';
 
@@ -147,4 +147,22 @@ export async function getUserApiKey(userId: number) {
     .limit(1);
 
   return result[0]?.apiKey || null;
+}
+
+export async function getRecentVerificationLogs() {
+  const user = await getUser();
+  if (!user || !user.apiKey) {
+    return [];
+  }
+
+  return await db
+    .select({
+      timestamp: verificationLogs.timestamp,
+      ipAddress: verificationLogs.ipAddress,
+      licenseKey: verificationLogs.licenseKey
+    })
+    .from(verificationLogs)
+    .where(eq(verificationLogs.licenseKey, user.apiKey))
+    .orderBy(desc(verificationLogs.timestamp))
+    .limit(5);
 }

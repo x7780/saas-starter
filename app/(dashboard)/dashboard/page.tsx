@@ -5,6 +5,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
+import { getRecentVerificationLogs } from "@/lib/db/queries"
+
+interface VerificationLog {
+  timestamp: Date
+  ipAddress: string | null
+  licenseKey: string
+}
+
 import {
   Key,
   CheckCircle,
@@ -33,29 +41,15 @@ export default function Component() {
     expires: "Loading...",
   })
 
-  // IP历史记录，按Total Verifications排序
-  const ipRecords = [
-    {
-      ip: "192.168.1.100",
-      lastVerification: "2024-01-15 18:45:23",
-      totalVerifications: 1250,
-    },
-    {
-      ip: "192.168.1.105",
-      lastVerification: "2024-01-14 23:15:41",
-      totalVerifications: 890,
-    },
-    {
-      ip: "10.0.0.50",
-      lastVerification: "2024-01-13 16:30:12",
-      totalVerifications: 340,
-    },
-    {
-      ip: "203.0.113.45",
-      lastVerification: "2024-01-12 10:22:15",
-      totalVerifications: 156,
-    },
-  ]
+  const [verificationLogs, setVerificationLogs] = useState<VerificationLog[]>([])
+
+  useEffect(() => {
+    const fetchVerificationLogs = async () => {
+      const logs = await getRecentVerificationLogs()
+      setVerificationLogs(logs)
+    }
+    fetchVerificationLogs()
+  }, [])
 
   useEffect(() => {
     const fetchData = async () => {
@@ -256,17 +250,27 @@ export default function Component() {
                   </div>
 
                   <div className="divide-y divide-slate-200">
-                    {ipRecords.map((record, index) => (
-                      <div key={index} className="px-4 py-3 hover:bg-slate-50 transition-colors">
-                        <div className="grid grid-cols-3 gap-4 items-center text-sm">
-                          <div>
-                            <code className="font-mono bg-slate-100 px-2 py-1 rounded text-slate-800">{record.ip}</code>
+                    {verificationLogs.length > 0 ? (
+                      verificationLogs.map((log, index) => (
+                        <div key={index} className="px-4 py-3 hover:bg-slate-50 transition-colors">
+                          <div className="grid grid-cols-3 gap-4 items-center text-sm">
+                            <div>
+                              <code className="font-mono bg-slate-100 px-2 py-1 rounded text-slate-800">
+                                {log.ipAddress || 'N/A'}
+                              </code>
+                            </div>
+                            <div className="text-slate-600">
+                              {new Date(log.timestamp).toLocaleString()}
+                            </div>
+                            <div className="text-slate-600">1</div>
                           </div>
-                          <div className="text-slate-600">{record.lastVerification}</div>
-                          <div className="text-slate-600">{record.totalVerifications.toLocaleString()}</div>
                         </div>
+                      ))
+                    ) : (
+                      <div className="px-4 py-3 text-center text-sm text-slate-500">
+                        No verification logs found
                       </div>
-                    ))}
+                    )}
                   </div>
                 </div>
               </div>
