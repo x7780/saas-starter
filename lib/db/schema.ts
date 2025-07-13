@@ -51,7 +51,7 @@ export const activityLogs = pgTable('activity_logs', {
     .references(() => teams.id),
   userId: integer('user_id').references(() => users.id),
   action: text('action').notNull(),
-  timestamp: timestamp('timestamp').notNull().defaultNow(),
+  timestamp: timestamp('timestamp', { precision: 0 }).notNull().defaultNow(),
   ipAddress: varchar('ip_address', { length: 45 }),
 });
 
@@ -128,6 +128,13 @@ export type TeamDataWithMembers = Team & {
     user: Pick<User, 'id' | 'name' | 'email'>;
   })[];
 };
+
+export const verificationLogs = pgTable('verification_logs', {
+  id: serial('id').primaryKey(),
+  timestamp: timestamp('timestamp', { precision: 0 }).notNull().defaultNow(),
+  ipAddress: varchar('ip_address', { length: 45 }),
+  licenseKey: varchar('license_key', { length: 64 }).notNull(),
+});
 
 export enum ActivityType {
   SIGN_UP = 'SIGN_UP',
