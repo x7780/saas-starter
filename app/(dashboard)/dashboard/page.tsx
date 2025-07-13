@@ -5,10 +5,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
-interface VerificationLog {
-  timestamp: Date
-  ipAddress: string | null
-  licenseKey: string
+interface IpStat {
+  ipAddress: string
+  count: number
+  latestTimestamp: Date
 }
 
 import {
@@ -39,7 +39,7 @@ export default function Component() {
     expires: "Loading...",
   })
 
-  const [verificationLogs, setVerificationLogs] = useState<VerificationLog[]>([])
+  const [ipStats, setIpStats] = useState<IpStat[]>([])
 
   useEffect(() => {
     const fetchVerificationLogs = async () => {
@@ -47,7 +47,7 @@ export default function Component() {
         const response = await fetch('/api/user/verification-logs')
         if (!response.ok) throw new Error('Failed to fetch logs')
         const logs = await response.json()
-        setVerificationLogs(logs)
+        setIpStats(logs)
       } catch (error) {
         console.error('Error fetching verification logs:', error)
       }
@@ -254,19 +254,19 @@ export default function Component() {
                   </div>
 
                   <div className="divide-y divide-slate-200">
-                    {verificationLogs.length > 0 ? (
-                      verificationLogs.map((log, index) => (
+                    {ipStats.length > 0 ? (
+                      ipStats.map((stat, index) => (
                         <div key={index} className="px-4 py-3 hover:bg-slate-50 transition-colors">
                           <div className="grid grid-cols-3 gap-4 items-center text-sm">
                             <div>
                               <code className="font-mono bg-slate-100 px-2 py-1 rounded text-slate-800">
-                                {log.ipAddress || 'N/A'}
+                                {stat.ipAddress}
                               </code>
                             </div>
                             <div className="text-slate-600">
-                              {new Date(log.timestamp).toLocaleString()}
+                              {new Date(stat.latestTimestamp).toLocaleString()}
                             </div>
-                            <div className="text-slate-600">1</div>
+                            <div className="text-slate-600">{stat.count}</div>
                           </div>
                         </div>
                       ))
