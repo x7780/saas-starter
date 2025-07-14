@@ -3,7 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { CheckCircle, DollarSign, Bitcoin, Wallet, Mail, Phone, MessageSquare } from "lucide-react"
+import { CheckCircle, DollarSign, Bitcoin, Wallet } from "lucide-react"
 
 export default function PricingPage() {
   const pricingTiers = [
@@ -47,9 +47,9 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-6">
       <div className="max-w-7xl mx-auto space-y-12">
-        <div className="text-center space-y-4">
+        <div className="text-left space-y-4">
           <h1 className="text-4xl font-bold text-slate-900">Flexible Pricing for Your Needs</h1>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-600 max-w-2xl">
             Choose the plan that best fits your usage and enjoy seamless service.
           </p>
         </div>
