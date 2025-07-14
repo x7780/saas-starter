@@ -17,7 +17,7 @@ export default function DashboardLayout({
   const navItems = [
     { href: '/dashboard', icon: Users, label: 'Home' },
     { href: '/dashboard/Freqtrade', icon: TrendingUp, label: 'Freqtrade Setup' },
-    { href: '/pricing', icon: TrendingUp, label: 'pricing' },
+    { href: '/dashboard/pricing', icon: TrendingUp, label: 'pricing' },
     { href: '/dashboard/security', icon: Shield, label: 'Security' },
     { href: '/dashboard/activity', icon: Activity, label: 'Activity' }
   ];
