@@ -14,13 +14,6 @@ interface IpStat {
 import {
   Key,
   CheckCircle,
-  Download,
-  Star,
-  TrendingUp,
-  Users,
-  Layers,
-  FileText,
-  BarChart3,
   Globe,
   Terminal,
   Server,
@@ -29,7 +22,6 @@ import {
 
 
 export default function Component() {
-  const [copiedUrls, setCopiedUrls] = useState<Record<string, boolean>>({})
   const [machineCode, setMachineCode] = useState("") // 用于显示已绑定的机器码
   const [inputMachineCode, setInputMachineCode] = useState("") // 用于用户输入新机器码
   const [isBinding, setIsBinding] = useState(false)
@@ -82,18 +74,6 @@ export default function Component() {
     fetchData()
   }, [])
 
-  const handleCopyKey = async (modelName: string, text: string) => {
-    if (!text) return
-    try {
-      await navigator.clipboard.writeText(text)
-      const key = `${modelName}_${text}`
-      setCopiedUrls((prev) => ({ ...prev, [key]: true }))
-      setTimeout(() => setCopiedUrls((prev) => ({ ...prev, [key]: false })), 2000)
-    } catch (error) {
-      console.error("Failed to copy:", error)
-    }
-  }
-
   const handleBindMachine = async () => {
     if (!inputMachineCode.trim()) return
     setIsBinding(true)
@@ -125,19 +105,6 @@ export default function Component() {
     } finally {
       setIsBinding(false)
     }
-  }
-
-  const renderStars = (rating: number) => {
-    return (
-      <div className="flex items-center">
-        {[1, 2, 3, 4, 5].map((star) => (
-          <Star
-            key={star}
-            className={`h-3.5 w-3.5 ${star <= rating ? "fill-amber-400 text-amber-400" : "text-slate-300"}`}
-          />
-        ))}
-      </div>
-    )
   }
 
   return (
