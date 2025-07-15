@@ -8,8 +8,8 @@ import { CheckCircle, DollarSign, Bitcoin, Wallet } from "lucide-react"
 export default function PricingPage() {
   const pricingTiers = [
     {
-      name: "15-Day Free Trial",
-      price: "Free",
+      name: "Free Trial",
+      price: "15-Day Free Trial",
       duration: "7 Days",
       features: ["1 Host Supported", "1 IP Binding", "Basic Data Adjustment", "Limited Support"],
       buttonText: "Start Free Trial",
