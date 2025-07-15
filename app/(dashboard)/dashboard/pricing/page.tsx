@@ -37,12 +37,7 @@ export default function PricingPage() {
     },
   ]
 
-  const paymentMethods = [
-    { name: "Bitcoin", icon: Bitcoin },
-    { name: "Ethereum", icon: Wallet }, // Using Wallet for ETH as there's no specific ETH icon in Lucide
-    { name: "Solana", icon: Wallet }, // Using Wallet for SOL
-    { name: "USD", icon: DollarSign },
-  ]
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-6">
