@@ -9,8 +9,8 @@ export default function PricingPage() {
   const pricingTiers = [
     {
       name: "Free Trial",
-      price: "15-Day Free Trial",
-      duration: "7 Days",
+      price: "Trial",
+      duration: "15 Days",
       features: ["1 Host Supported", "1 IP Binding", "Basic Data Adjustment", "Limited Support"],
       buttonText: "Start Free Trial",
       buttonVariant: "outline",
