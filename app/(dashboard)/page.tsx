@@ -163,11 +163,11 @@ function MetricCard({ metric }: { metric: Metric }) {
                 type: 'value',
                 show: false,
                 min: function(value) {
-                  const minVal = Math.min(...chartData.map(item => item[1]));
+                  const minVal = Math.min(...chartData.map(item => Number(item[1])));
                   return minVal * 0.9; // 留10%下边距
                 },
                 max: function(value) {
-                  const maxVal = Math.max(...chartData.map(item => item[1]));
+                  const maxVal = Math.max(...chartData.map(item => Number(item[1])));
                   return maxVal * 1.1; // 留10%上边距
                 }
               },
