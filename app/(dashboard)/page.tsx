@@ -47,7 +47,7 @@ function MetricCard({ metric }: { metric: Metric }) {
   }
 
   const getYAxisDomain = () => {
-    const values = chartData.map((d) => d[1])
+    const values = chartData.map((d) => Number(d[1]))
     const min = Math.min(...values)
     const max = Math.max(...values)
     const padding = (max - min) * 0.1
@@ -145,7 +145,7 @@ function MetricCard({ metric }: { metric: Metric }) {
               // prettier-ignore
               tooltip: {
                 trigger: 'axis',
-                formatter: function(params) {
+                formatter: function(params: any) {
                   const rawData = params[0].data.rawData || params[0].data;
                   return `
                     Date: ${rawData[0]}<br/>
@@ -162,11 +162,11 @@ function MetricCard({ metric }: { metric: Metric }) {
               yAxis: {
                 type: 'value',
                 show: false,
-                min: function(value) {
+                min: function(value: number) {
                   const minVal = Math.min(...chartData.map(item => Number(item[1])));
                   return minVal * 0.9; // 留10%下边距
                 },
-                max: function(value) {
+                max: function(value: number) {
                   const maxVal = Math.max(...chartData.map(item => Number(item[1])));
                   return maxVal * 1.1; // 留10%上边距
                 }
@@ -178,8 +178,8 @@ function MetricCard({ metric }: { metric: Metric }) {
                   name: item[0],
                   rawData: item,
                   itemStyle: {
-                    color: item[2] < 85 ? '#00FF00' : // green for Reference Value < 85
-                           item[2] > 120 ? '#FF0000' : // red for Reference Value > 120
+                    color: Number(item[2]) < 85 ? '#00FF00' : // green for Reference Value < 85
+                           Number(item[2]) > 120 ? '#FF0000' : // red for Reference Value > 120
                            '#3398DB' // default blue for others
                   }
                 })),
