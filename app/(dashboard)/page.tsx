@@ -1,553 +1,451 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
+"use client"
+
+import Link from "next/link" // Import Link for navigation
 import {
-  ArrowRight,
-  BarChart3,
-  Clock,
+  Twitter,
   Facebook,
   Instagram,
-  MessageSquare,
   Send,
-  Shield,
+  MessageSquare,
   TrendingUp,
-  Twitter,
-  Zap,
-} from "lucide-react"
+  ArrowDown,
+  ArrowUp,
+  PauseCircle,
+  Star,
+  DollarSign,
+} from "lucide-react" // Import all necessary icons
+import ReactECharts from 'echarts-for-react' // Import ECharts component
+import { Badge } from "@/components/ui/badge" // Assuming Badge is a shadcn/ui component
 
-export default function Home() {
+// MetricCard Component (moved from components/metric-card.tsx)
+interface Metric {
+  title: string
+  value: string
+  change: string
+  changePercent: string
+  date: string
+  isPositive: boolean | null
+  isLongTermInvest?: boolean // Added for long-term investment indicator
+  score: number // Added for today's evaluation score
+}
+
+function MetricCard({ metric }: { metric: Metric }) {
+  const currentValueNum = Number.parseFloat(metric.value.replace(/,/g, ""))
+  const chartData = generateChartData(currentValueNum)
+
+  const getChangeColor = () => {
+    if (metric.isPositive === null) return "text-gray-500"
+    return metric.isPositive ? "text-green-600" : "text-red-600"
+  }
+
+  const formatValue = (value: string) => {
+    const num = Number.parseFloat(value.replace(/,/g, ""))
+    if (num >= 1000) {
+      return num.toLocaleString()
+    }
+    return value
+  }
+
+  const getYAxisDomain = () => {
+    const values = chartData.map((d) => d.value)
+    const min = Math.min(...values)
+    const max = Math.max(...values)
+    const padding = (max - min) * 0.1
+    return [Math.max(0, min - padding), max + padding]
+  }
+
+  // New function to determine recommendation based on score
+  const getRecommendationDetails = (score: number) => {
+    if (score < 40) {
+      return {
+        text: "Double Buy",
+        icon: <DollarSign className="h-4 w-4 mr-1" />, // Using DollarSign for Double Buy
+        colorClass: "text-blue-600",
+        riskText: "Very Low Risk",
+      }
+    } else if (score < 85) {
+      // score >= 40 and < 85
+      return {
+        text: "Recommended Buy",
+        icon: <ArrowUp className="h-4 w-4 mr-1" />,
+        colorClass: "text-green-600",
+        riskText: "Low Risk",
+      }
+    } else if (score < 125) {
+      // score >= 85 and < 125
+      return {
+        text: "Pause",
+        icon: <PauseCircle className="h-4 w-4 mr-1" />,
+        colorClass: "text-gray-500",
+        riskText: "Moderate Risk",
+      }
+    } else {
+      // score >= 125
+      return {
+        text: "Recommended Sell",
+        icon: <ArrowDown className="h-4 w-4 mr-1" />,
+        colorClass: "text-red-600",
+        riskText: "High Risk",
+      }
+    }
+  }
+
+  const recommendation = getRecommendationDetails(metric.score)
+
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="flex-1">
-        {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-0">
-          <div className="container px-4 md:px-6 max-w-6xl mx-auto">
-            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                    Smart DCA, Build Digital Assets Effortlessly
-                  </h1>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Through our intelligent DCA service, you can easily invest in digital markets regularly, reduce
-                    market volatility risk, and achieve long-term stable growth.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Link href="/sign-up">
-                    <Button size="lg" className="gap-1">
-                      Start Investing
-                      <ArrowRight className="h-4 w-4" />
-                    </Button>
-                  </Link>
-                  <Link href="#how-it-works">
-                    <Button size="lg" variant="outline">
-                      Learn More
-                    </Button>
-                  </Link>
-                </div>
+    <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm py-7">
+      {/* Header */}
+      <div className="mb-2">
+        <div className="flex justify-between items-center mb-1">
+          <h3 className="text-base font-semibold text-gray-900 flex items-center">
+            {metric.title}
+            {metric.isLongTermInvest && (
+              <div className="group relative inline-block">
+                <Star className="h-4 w-4 ml-2 text-yellow-500" />
+                <span className="absolute z-10 hidden group-hover:block px-2 py-1 text-xs text-white bg-gray-800 rounded whitespace-nowrap -left-1/2 transform translate-x-1/2">
+                  Recommended for Long-Term Investment
+                </span>
               </div>
-              <div className="flex items-center justify-center">
-                <div className="relative w-full aspect-square overflow-hidden rounded-xl">
-                  <Image
-                    src="/images/character.png?height=600&width=600"
-                    alt="Digital Asset Investment Chart"
-                    width={600}
-                    height={600}
-                    className="object-cover"
-                    priority
-                  />
-                </div>
+            )}
+          </h3>
+          <span className={`flex items-center font-semibold text-sm ${recommendation.colorClass}`}>
+            {recommendation.icon} {recommendation.text}
+          </span>
+        </div>
+      </div>
+
+      {/* Value and Change */}
+      <div className="mb-2">
+        <div className="flex items-baseline space-x-3">
+          <span className="text-2xl font-bold text-gray-900">{formatValue(metric.value)}</span>
+          <span className={`text-sm font-medium ${getChangeColor()}`}>
+            {metric.change} ({metric.changePercent})
+          </span>
+        </div>
+      </div>
+
+      {/* Today's Evaluation */}
+      <div className="mb-4 mt-2">
+        <div className="flex items-center justify-between text-sm">
+          <span className="font-semibold text-gray-700">Today's Evaluation:</span>
+          <span className={`font-bold flex items-center ${recommendation.colorClass}`}>
+            {metric.score}
+            {recommendation.icon}
+          </span>
+        </div>
+        <p className={`text-xs ${recommendation.colorClass} mt-1`}>
+          {recommendation.text} ({recommendation.riskText})
+        </p>
+      </div>
+
+      {/* Chart */}
+      <div className="h-18 mt-2">
+            <ReactECharts
+            option={{
+              // prettier-ignore
+              tooltip: {
+                trigger: 'axis',
+                formatter: function(params) {
+                  const rawData = params[0].data.rawData || params[0].data;
+                  return `
+                    Date: ${rawData[0]}<br/>
+                    Main Value: ${Number(rawData[1]).toFixed(5)}<br/>
+                    Reference Value: ${rawData[2] ? Number(rawData[2]).toFixed(2) : 'N/A'}
+                  `;
+                }
+              },
+              xAxis: {
+                type: 'category',
+                data: chartData.map(item => item[0]),
+                show: false
+              },
+              yAxis: {
+                type: 'value',
+                show: false,
+                min: function(value) {
+                  const minVal = Math.min(...chartData.map(item => item[1]));
+                  return minVal * 0.9; // 留10%下边距
+                },
+                max: function(value) {
+                  const maxVal = Math.max(...chartData.map(item => item[1]));
+                  return maxVal * 1.1; // 留10%上边距
+                }
+              },
+              series: [{
+                type: 'line',
+                data: chartData.map(item => ({
+                  value: item[1],
+                  name: item[0],
+                  rawData: item,
+                  itemStyle: {
+                    color: item[2] < 85 ? '#00FF00' : // green for Reference Value < 85
+                           item[2] > 120 ? '#FF0000' : // red for Reference Value > 120
+                           '#3398DB' // default blue for others
+                  }
+                })),
+                lineStyle: {
+                  color: '#3398DB'
+                },
+                symbol: 'circle',
+                symbolSize: 5,
+                showAllSymbol: true, // 强制显示所有点
+                symbolKeepAspect: true, // 保持圆形比例
+                showSymbol: true,  
+                label: {
+                  show: false
+                }
+              }]
+            }}
+            style={{ height: '100%', width: '100%' }}
+            opts={{ renderer: 'svg' }}
+          />
+        <div className="text-xs text-gray-500 text-right mt-1">{metric.date}</div>
+      </div>
+    </div>
+  )
+}
+
+// Helper function for chart data (moved from components/metric-card.tsx)
+const generateChartData = (currentValue: number) => {
+  const points = 50
+  const data = []
+  const volatility = currentValue * 0.2 // 20% volatility
+
+  for (let i = 0; i < points; i++) {
+    const value = currentValue + (Math.random() * 2 - 1) * volatility * (Math.sin(i / 3) + 1.5)
+    // Generate indicator between 50-150 based on value variation
+    const indicator = 100 + (value - currentValue) / currentValue * 100
+    // Generate dates in YYYY-MM-DD format
+    const date = new Date(2000, 5, 5 + i); // Starting from 2000-06-05
+    const formattedDate = date.toISOString().split('T')[0];
+
+    data.push([
+      formattedDate,
+      Math.max(0, value),
+      Math.max(50, Math.min(150, indicator))
+    ])
+  }
+  return data
+}
+
+// FaqSection Component (moved from components/faq-section.tsx)
+const faqs = [
+  {
+    id: "1",
+    question: "What is Digital Currency Dollar-Cost Averaging (DCA)?",
+    answer:
+      "DCA is an investment strategy in which an investor divides the total amount to be invested across periodic purchases of a target asset (e.g., Bitcoin) in an effort to reduce the impact of volatility on the overall purchase. The purchases occur regardless of the asset's price and at regular intervals.",
+  },
+  {
+    id: "2",
+    question: "How does this dashboard help with my DCA strategy?",
+    answer:
+      "This dashboard provides real-time price data and historical charts for various digital currency pairs (e.g., BTC/USDT), helping you monitor market trends relevant to your DCA strategy. While it doesn't execute trades, it offers insights to inform your decisions.",
+  },
+  {
+    id: "3",
+    question: "Can I track specific crypto pairs for my DCA?",
+    answer:
+      "Yes, the dashboard displays a variety of popular digital currency pairs. You can monitor their current prices, daily changes, and historical trends to align with your chosen DCA assets.",
+  },
+  {
+    id: "4",
+    question: "What is the difference between 'Buy' and 'Strong Buy'?",
+    answer:
+      "In a DCA strategy, 'Buy' refers to your standard periodic investment amount. 'Strong Buy' is an optional action where you invest a larger amount, often considered during significant market dips to accelerate accumulation.",
+  },
+  {
+    id: "5",
+    question: "Is historical price data available for analysis?",
+    answer:
+      "Yes, each metric card includes a small historical chart to give you a quick visual overview of the price trend over time, which can be useful for understanding past performance.",
+  },
+  {
+    id: "6",
+    question: "Is this platform suitable for beginners in crypto DCA?",
+    answer:
+      "This dashboard is designed to be user-friendly, providing clear market data. While it doesn't offer financial advice, it can be a helpful tool for both beginners and experienced investors to track their chosen digital assets for DCA.",
+  },
+]
+
+function FaqSection() {
+  return (
+    <div className="container mx-auto px-4 py-12 max-w-7xl">
+      <div className="text-center mb-8">
+        <Badge variant="outline" className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4">
+          FAQ
+        </Badge>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Frequently Asked Questions About Digital Currency DCA
+        </h2>
+        <p className="text-lg text-gray-600">
+          Find answers related to digital currency dollar-cost averaging, market trends, and more.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+        {faqs.map((faq) => (
+          <div key={faq.id} className="flex items-start">
+            <div className="flex-shrink-0 mt-1 mr-3">
+              <div className="w-6 h-6 flex items-center justify-center rounded-full border border-orange-500 text-orange-500 text-sm font-bold">
+                {faq.id}
               </div>
+            </div>
+            <div>
+              <h3 className="text-base font-semibold text-gray-900 mb-1">{faq.question}</h3>
+              <p className="text-gray-700 text-sm">{faq.answer}</p>
             </div>
           </div>
-        </section>
+        ))}
+      </div>
+    </div>
+  )
+}
 
-        {/* Statistics Section */}
-        <section className="w-full py-12 md:py-24 lg:py-16 bg-muted/50 flex flex-col justify-center items-center">
-          <div className="container px-4 md:px-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div className="flex flex-col items-center justify-center space-y-2 text-center">
-                <div className="text-3xl font-bold">10,000+</div>
-                <div className="text-sm text-muted-foreground">Active Users</div>
-              </div>
-              <div className="flex flex-col items-center justify-center space-y-2 text-center">
-                <div className="text-3xl font-bold">$100M+</div>
-                <div className="text-sm text-muted-foreground">Assets Managed</div>
-              </div>
-              <div className="flex flex-col items-center justify-center space-y-2 text-center">
-                <div className="text-3xl font-bold">99.9%</div>
-                <div className="text-sm text-muted-foreground">System Availability</div>
-              </div>
-              <div className="flex flex-col items-center justify-center space-y-2 text-center">
-                <div className="text-3xl font-bold">24/7</div>
-                <div className="text-sm text-muted-foreground">Support</div>
-              </div>
-            </div>
-          </div>
-        </section>
+// Main Page Component
+const cryptoMetricsData = [
+  {
+    title: "BTC/USDT",
+    value: "68,500.23",
+    change: "+123.45",
+    changePercent: "+0.18%",
+    date: "Jul 15,2025",
+    isPositive: true,
+    isLongTermInvest: true,
+    score: 30, // Double Buy
+  },
+  {
+    title: "ETH/USDT",
+    value: "3,890.75",
+    change: "-15.20",
+    changePercent: "-0.39%",
+    date: "Jul 15,2025",
+    isPositive: false,
+    isLongTermInvest: true,
+    score: 70, // Recommended Buy
+  },
+  {
+    title: "BNB/USDT",
+    value: "610.50",
+    change: "+5.10",
+    changePercent: "+0.84%",
+    date: "Jul 15,2025",
+    isPositive: true,
+    isLongTermInvest: true,
+    score: 95, // Pause
+  },
+  {
+    title: "SOL/USDT",
+    value: "155.80",
+    change: "-2.30",
+    changePercent: "-1.45%",
+    date: "Jul 15,2025",
+    isPositive: false,
+    isLongTermInvest: true,
+    score: 130, // Recommended Sell
+  },
+  {
+    title: "XRP/USDT",
+    value: "0.52",
+    change: "+0.01",
+    changePercent: "+1.96%",
+    date: "Jul 15,2025",
+    isPositive: true,
+    score: 45, // Recommended Buy
+  },
+  {
+    title: "ADA/USDT",
+    value: "0.40",
+    change: "-0.005",
+    changePercent: "-1.23%",
+    date: "Jul 15,2025",
+    isPositive: false,
+    score: 100, // Pause
+  },
+  {
+    title: "DOGE/USDT",
+    value: "0.12",
+    change: "+0.002",
+    changePercent: "+1.69%",
+    date: "Jul 15,2025",
+    isPositive: true,
+    score: 25, // Double Buy
+  },
+  {
+    title: "DOT/USDT",
+    value: "7.80",
+    change: "-0.15",
+    changePercent: "-1.89%",
+    date: "Jul 15,2025",
+    isPositive: false,
+    score: 110, // Pause
+  },
+  {
+    title: "LTC/USDT",
+    value: "75.20",
+    change: "+0.80",
+    changePercent: "+1.08%",
+    date: "Jul 15,2025",
+    isPositive: true,
+    score: 80, // Recommended Buy
+  },
+  {
+    title: "LINK/USDT",
+    value: "14.30",
+    change: "-0.25",
+    changePercent: "-1.72%",
+    date: "Jul 15,2025",
+    isPositive: false,
+    score: 140, // Recommended Sell
+  },
+  {
+    title: "BCH/USDT",
+    value: "420.00",
+    change: "+5.50",
+    changePercent: "+1.33%",
+    date: "Jul 15,2025",
+    isPositive: true,
+    score: 35, // Double Buy
+  },
+  {
+    title: "XLM/USDT",
+    value: "0.10",
+    change: "-0.001",
+    changePercent: "-0.99%",
+    date: "Jul 15,2025",
+    isPositive: false,
+    score: 90, // Pause
+  },
+]
 
-        {/* Features Section */}
-        <section id="features" className="w-full py-12 md:py-24 lg:py-16 flex flex-col justify-center items-center">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Why Choose Our DCA Service</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  We provide intelligent, secure, and convenient digital market DCA solutions to help you achieve
-                  long-term wealth growth
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-              <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <Clock className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Automated DCA</h3>
-                  <p className="text-muted-foreground">
-                    Set it once, and the system automatically executes your DCA plan, saving your valuable time with no
-                    manual operations needed.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <BarChart3 className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Smart Analysis</h3>
-                  <p className="text-muted-foreground">
-                    Based on market data and historical performance, we provide intelligent analysis and investment
-                    advice to optimize your portfolio.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <Shield className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Security Guarantee</h3>
-                  <p className="text-muted-foreground">
-                    We use bank-level security measures to protect your funds and personal information, ensuring safe
-                    and reliable transactions.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <Zap className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Flexible Strategies</h3>
-                  <p className="text-muted-foreground">
-                    We offer multiple DCA strategies that can be customized according to your risk preferences and
-                    investment goals.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <TrendingUp className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Real-time Monitoring</h3>
-                  <p className="text-muted-foreground">
-                    View your portfolio performance anytime, get real-time market dynamics and investment return
-                    analysis.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-start space-y-4 p-6 border rounded-lg">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-                  <ArrowRight className="h-6 w-6 text-primary" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">One-Click Withdrawal</h3>
-                  <p className="text-muted-foreground">
-                    Withdraw your funds anytime with one click, flexibly manage your investments with no complicated
-                    processes.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+export default function CryptoDashboard() {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <div className="text-center px-2 leading-6 py-0 my-[42px]">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Digital Currency Dollar-Cost Averaging Dashboard:
+        </h1>
+        <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <span className="text-orange-500">BTC, ETH, BNB,SOL,</span>
+          <span className="text-gray-900"> and More</span>
+        </h2>
+        <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          Data-driven tools for digital currency investors, traders, and analysts—featuring real-time prices, historical
+          charts, and DCA status.
+        </p>
+      </div>
 
-        {/* How It Works */}
-        <section
-          id="how-it-works"
-          className="w-full py-12 md:py-24 lg:py-16 bg-muted/50 flex flex-col justify-center items-center"
-        >
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">How DCA Works</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Three simple steps to start your smart DCA journey
-                </p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 py-12 md:grid-cols-3">
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground text-2xl font-bold">
-                  1
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Create Account</h3>
-                  <p className="text-muted-foreground">
-                    Register an account and complete identity verification to ensure your investment is safe and
-                    reliable.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground text-2xl font-bold">
-                  2
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Set Up DCA Plan</h3>
-                  <p className="text-muted-foreground">
-                    Choose the digital assets you're interested in, set the investment amount and frequency, and
-                    customize your exclusive DCA plan.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground text-2xl font-bold">
-                  3
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Enjoy Growth</h3>
-                  <p className="text-muted-foreground">
-                    The system automatically executes your DCA plan, and you can check your investment performance and
-                    earnings analysis anytime.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <Link href="/sign-up">
-                <Button size="lg" className="gap-1">
-                  Get Started
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
+      {/* Metrics Grid */}
+      <div className="container mx-auto px-4 pb-12 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          {cryptoMetricsData.map((metric, index) => (
+            <MetricCard key={index} metric={metric} />
+          ))}
+        </div>
+      </div>
 
-        {/* User Testimonials */}
-        <section id="testimonials" className="w-full py-12 md:py-24 lg:py-16 flex flex-col justify-center items-center">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">What Our Users Say</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Hear from our community of investors about their experience with our DCA service
-                </p>
-              </div>
-            </div>
-
-            <div className="relative mt-12 overflow-hidden">
-              {/* Auto-scrolling testimonials carousel */}
-              <div className="testimonial-carousel w-full overflow-hidden">
-                <div className="testimonial-track flex animate-scroll gap-6 py-4">
-                  {/* First set of testimonials */}
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        "I've been using this DCA service for over a year now. The system is incredibly stable, easy to
-                        use, and most importantly, it has helped me develop good investment habits while steadily
-                        growing my assets."
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-muted h-10 w-10"></div>
-                      <div>
-                        <p className="text-sm font-medium">Michael Chen</p>
-                        <p className="text-xs text-muted-foreground">IT Engineer</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        "As a beginner investor, this platform has been incredibly helpful. The smart analysis features
-                        help me better understand the market, and the automatic DCA ensures I never miss an investment
-                        opportunity."
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-muted h-10 w-10"></div>
-                      <div>
-                        <p className="text-sm font-medium">Sarah Johnson</p>
-                        <p className="text-xs text-muted-foreground">Marketing Specialist</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        "The security and transparency of this platform give me peace of mind. Customer service is also
-                        very professional, promptly addressing any questions. Highly recommend to anyone looking for
-                        long-term investments."
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-muted h-10 w-10"></div>
-                      <div>
-                        <p className="text-sm font-medium">David Wang</p>
-                        <p className="text-xs text-muted-foreground">Financial Analyst</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        "The automated investment feature has completely changed how I approach digital assets. I no
-                        longer stress about timing the market - the system does it all for me while I focus on my
-                        career."
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-muted h-10 w-10"></div>
-                      <div>
-                        <p className="text-sm font-medium">Emma Rodriguez</p>
-                        <p className="text-xs text-muted-foreground">Software Developer</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        "I've tried several DCA platforms, but this one stands out for its intuitive interface and
-                        comprehensive analytics. The performance reports help me understand exactly how my investments
-                        are growing."
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-muted h-10 w-10"></div>
-                      <div>
-                        <p className="text-sm font-medium">James Wilson</p>
-                        <p className="text-xs text-muted-foreground">Business Consultant</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Second set of testimonials (duplicated for continuous scrolling) */}
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        "The flexibility of this service is what I appreciate most. I can adjust my investment strategy
-                        as my financial situation changes, and the platform adapts seamlessly to my needs."
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-muted h-10 w-10"></div>
-                      <div>
-                        <p className="text-sm font-medium">Olivia Kim</p>
-                        <p className="text-xs text-muted-foreground">Entrepreneur</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        "As someone who's always been intimidated by investing, this platform has been a game-changer.
-                        The educational resources combined with the automated DCA have given me confidence in my
-                        financial future."
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-muted h-10 w-10"></div>
-                      <div>
-                        <p className="text-sm font-medium">Thomas Brown</p>
-                        <p className="text-xs text-muted-foreground">Teacher</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        "The customer support team deserves special mention. Whenever I've had questions about my
-                        investment strategy, they've provided thoughtful, personalized advice that has truly added
-                        value."
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-muted h-10 w-10"></div>
-                      <div>
-                        <p className="text-sm font-medium">Sophia Martinez</p>
-                        <p className="text-xs text-muted-foreground">Healthcare Professional</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        "I appreciate how this platform makes complex investment strategies accessible to everyone. The
-                        regular updates and market insights have helped me become a more informed investor."
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-muted h-10 w-10"></div>
-                      <div>
-                        <p className="text-sm font-medium">Daniel Lee</p>
-                        <p className="text-xs text-muted-foreground">Civil Engineer</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        "The peace of mind that comes with knowing my investments are being handled systematically is
-                        invaluable. This service has removed the emotional aspect of investing that often led to poor
-                        decisions in the past."
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-muted h-10 w-10"></div>
-                      <div>
-                        <p className="text-sm font-medium">Rachel Thompson</p>
-                        <p className="text-xs text-muted-foreground">Psychologist</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Duplicate first set for seamless looping */}
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        "I've been using this DCA service for over a year now. The system is incredibly stable, easy to
-                        use, and most importantly, it has helped me develop good investment habits while steadily
-                        growing my assets."
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-muted h-10 w-10"></div>
-                      <div>
-                        <p className="text-sm font-medium">Michael Chen</p>
-                        <p className="text-xs text-muted-foreground">IT Engineer</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col justify-between space-y-4 p-6 border rounded-lg min-w-[300px] max-w-[350px] flex-shrink-0">
-                    <div className="space-y-2">
-                      <p className="text-muted-foreground">
-                        "As a beginner investor, this platform has been incredibly helpful. The smart analysis features
-                        help me better understand the market, and the automatic DCA ensures I never miss an investment
-                        opportunity."
-                      </p>
-                    </div>
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-muted h-10 w-10"></div>
-                      <div>
-                        <p className="text-sm font-medium">Sarah Johnson</p>
-                        <p className="text-xs text-muted-foreground">Marketing Specialist</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Gradient overlays for smooth visual transition */}
-              <div className="absolute left-0 top-0 bottom-0 w-12 z-10 bg-gradient-to-r from-background to-transparent pointer-events-none"></div>
-              <div className="absolute right-0 top-0 bottom-0 w-12 z-10 bg-gradient-to-l from-background to-transparent pointer-events-none"></div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section
-          id="faq"
-          className="w-full py-12 md:py-24 lg:py-16 bg-muted/50 flex flex-col justify-center items-center"
-        >
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Frequently Asked Questions</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl">Common questions about our DCA service</p>
-              </div>
-            </div>
-            <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6 py-12">
-              <div className="space-y-2">
-                <h3 className="text-xl font-bold">What is digital market DCA?</h3>
-                <p className="text-muted-foreground">
-                  Digital market DCA is an investment strategy that reduces market volatility risk and achieves
-                  long-term stable growth by regularly investing fixed amounts to purchase digital assets.
-                </p>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-xl font-bold">How much money do I need to start DCA?</h3>
-                <p className="text-muted-foreground">
-                  Our platform supports low-threshold investment. You can flexibly set your investment amount according
-                  to your financial situation, with no minimum limit.
-                </p>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-xl font-bold">How is my money kept safe?</h3>
-                <p className="text-muted-foreground">
-                  We use bank-level security measures, including multi-layer encryption, cold and hot wallet separation
-                  storage, multi-signature technology, and more to ensure your funds are secure.
-                </p>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-xl font-bold">Can I withdraw my funds at any time?</h3>
-                <p className="text-muted-foreground">
-                  Yes, you can withdraw your funds at any time without lock-up period restrictions, giving you flexible
-                  management of your investments.
-                </p>
-              </div>
-              <div className="space-y-2">
-                <h3 className="text-xl font-bold">How do I start using the DCA service?</h3>
-                <p className="text-muted-foreground">
-                  Simply register an account, complete identity verification, set up your DCA plan, and the system will
-                  automatically execute DCA operations for you.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Call to Action */}
-        <section className="w-full py-12 md:py-24 lg:py-32 flex flex-col justify-center items-center">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Start Your Smart DCA Journey</h2>
-                <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                  Join thousands of investors and build your digital assets through smart DCA
-                </p>
-              </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link href="/sign-up">
-                  <Button size="lg" className="gap-1">
-                    Sign Up Free
-                    <ArrowRight className="h-4 w-4" />
-                  </Button>
-                </Link>
-                <Link href="/sign-in">
-                  <Button size="lg" variant="outline">
-                    Log In
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
+      {/* FAQ Section */}
+      <FaqSection />
 
       {/* Footer */}
       <footer className="border-t bg-muted/50 flex flex-col justify-center items-center">
