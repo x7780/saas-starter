@@ -47,7 +47,7 @@ function MetricCard({ metric }: { metric: Metric }) {
   }
 
   const getYAxisDomain = () => {
-    const values = chartData.map((d) => d.value)
+    const values = chartData.map((d) => d[1])
     const min = Math.min(...values)
     const max = Math.max(...values)
     const padding = (max - min) * 0.1
