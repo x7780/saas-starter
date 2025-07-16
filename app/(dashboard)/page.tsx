@@ -100,12 +100,7 @@ function MetricCard({ metric }: { metric: Metric }) {
           <h3 className="text-base font-semibold text-gray-900 flex items-center">
             {metric.title}
             {metric.isLongTermInvest && (
-              <div className="group relative inline-block">
-                <Star className="h-4 w-4 ml-2 text-yellow-500" />
-                <span className="absolute z-10 hidden group-hover:block px-2 py-1 text-xs text-white bg-gray-800 rounded whitespace-nowrap -left-1/2 transform translate-x-1/2">
-                  Recommended for Long-Term Investment
-                </span>
-              </div>
+              <Star className="h-4 w-4 ml-2 text-yellow-500" />
             )}
           </h3>
           <span className={`flex items-center font-semibold text-sm ${recommendation.colorClass}`}>
