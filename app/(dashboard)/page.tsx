@@ -423,15 +423,14 @@ export default function CryptoDashboard() {
       {/* Header */}
       <div className="text-center px-2 leading-6 py-0 my-[42px]">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Digital Currency Dollar-Cost Averaging Dashboard:
+          Daily Dollar-Cost Averaging (DCA) in Crypto:
         </h1>
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           <span className="text-orange-500">BTC, ETH, BNB,SOL,</span>
           <span className="text-gray-900"> and More</span>
         </h2>
         <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-          Data-driven tools for digital currency investors, traders, and analysts—featuring real-time prices, historical
-          charts, and DCA status.
+          For digital asset investors: Smart daily DCA with real-time risk monitoring. Join our proven strategy—maintaining a flawless 0% loss rate and 100% success rate since 2018.
         </p>
       </div>
 
