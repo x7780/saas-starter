@@ -3,7 +3,7 @@ name: Daily AHR Execution
 on:
   schedule:
     - cron: '30 00 * * *'   # 每天 UTC 00:30（北京时间 08:30）
-  workflow_dispatch: {}      # 支持手动触发
+  workflow_dispatch: {}     # 支持手动触发
 
 jobs:
   run-ahr:
@@ -20,12 +20,16 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          pip install -r app/dashboard/python/requirements.txt || true
-          pip install pandas numpy scikit-learn python-binance python-dotenv
+          pip install pandas numpy scikit-learn requests
+
+      - name: Test CoinGecko API availability
+        run: |
+          echo "Testing CoinGecko API..."
+          curl -s -o /dev/null -w "%{http_code}" https://api.coingecko.com/api/v3/ping
 
       - name: Run AHR Script
         run: |
-          cd app/\(dashboard\)/python
+          cd app/dashboard/python
           python ahr.py
 
       - name: Commit updated JSON files
