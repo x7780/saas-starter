@@ -25,7 +25,7 @@ jobs:
       - name: Test CoinGecko API availability
         run: |
           echo "Testing CoinGecko API..."
-          curl -s -o /dev/null -w "%{http_code}"  https://api.bybit.com/v5/market/kline?category=spot&symbol=BNBUSDT&interval=D&limit=1000
+          curl -s -o /dev/null -w "%{http_code}"  https://api.kucoin.com/api/v1/market/candles?type=1day&symbol=BNB-USDT&startAt=1609459200&endAt=1661990400
 
       - name: Run AHR Script
         run: |
