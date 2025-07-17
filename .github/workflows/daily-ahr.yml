@@ -25,7 +25,7 @@ jobs:
 
       - name: Run AHR Script
         run: |
-          cd app/dashboard/python
+          cd app/\(dashboard\)/python
           python ahr.py
 
       - name: Commit updated JSON files
