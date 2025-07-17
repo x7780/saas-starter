@@ -1,0 +1,24 @@
+name: Daily AHR Execution
+
+on:
+  schedule:
+    - cron: '30 0 * * *'  # 每天UTC时间0:30 (北京时间8:30)
+
+jobs:
+  run-ahr:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install dependencies
+      run: |
+        pip install -r app/(dashboard)/python/requirements.txt
+        pip install python-dotenv  # 用于环境变量管理
+      
+    - name: Execute AHR script
+      run: python app/(dashboard)/python/ahr.py
