@@ -22,54 +22,55 @@ jobs:
         run: |
           pip install pandas numpy scikit-learn requests jq
 
-      - name: Test Multiple APIs
-        id: api-test
+      - name: Test KuCoin API
+        id: test-kucoin
         run: |
-          # 定义要测试的API列表
-          APIs=(
-            "KuCoin|https://api.kucoin.com/api/v1/market/candles?type=1day&symbol=BNB-USDT&startAt=1609459200&endAt=1661990400"
-            "Bybit|https://api.bybit.com/v5/market/kline?category=spot&symbol=BNBUSDT&interval=D&limit=10"
-            "CoinGecko|https://api.coingecko.com/api/v3/ping"
-            "Binance|https://api.binance.com/api/v3/klines?symbol=BNBUSDT&interval=1d&limit=10"
-          )
-
-          # 测试每个API
-          for API in "${APIs[@]}"; do
-            IFS='|' read -r NAME URL <<< "$API"
-            echo "Testing $NAME API..."
-            
-            RESPONSE_CODE=$(curl -s -o /dev/null -w "%{http_code}" "$URL")
-            echo "$NAME API Response Code: $RESPONSE_CODE"
-            
-            if [ "$RESPONSE_CODE" -eq 200 ]; then
-              echo "✅ $NAME API 可用"
-              echo "SELECTED_API=$NAME" >> $GITHUB_ENV
-              echo "SELECTED_API_URL=${URL//\&/\\&}" >> $GITHUB_ENV
-              break
-            else
-              echo "❌ $NAME API 不可用"
-              # 显示错误详情（如果是JSON响应）
-              curl -s "$URL" | jq . 2>/dev/null || true
+          echo "Testing KuCoin API..."
+          API_URL="https://api.kucoin.com/api/v1/market/candles?type=1day&symbol=BNB-USDT&startAt=1609459200&endAt=1661990400"
+          
+          # 获取响应状态码和内容
+          RESPONSE=$(curl -s -w "\n%{http_code}" "$API_URL")
+          HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+          RESPONSE_BODY=$(echo "$RESPONSE" | sed '$d')
+          
+          echo "HTTP Status Code: $HTTP_CODE"
+          echo "Response Body:"
+          echo "$RESPONSE_BODY" | jq . 2>/dev/null || echo "$RESPONSE_BODY"
+          
+          if [ "$HTTP_CODE" -eq 200 ]; then
+            echo "::notice::KuCoin API 可用"
+            echo "API_AVAILABLE=true" >> $GITHUB_ENV
+          else
+            echo "::error::KuCoin API 不可用"
+            echo "API_AVAILABLE=false" >> $GITHUB_ENV
+            # 显示可能的原因
+            if echo "$RESPONSE_BODY" | grep -q "Too Many Requests"; then
+              echo "原因: 请求频率过高"
+            elif echo "$RESPONSE_BODY" | grep -q "Invalid symbol"; then
+              echo "原因: 交易对符号错误"
             fi
-          done
-
-          if [ -z "$SELECTED_API" ]; then
-            echo "所有API测试失败！"
-            exit 1
+            exit 1  # 立即失败
           fi
 
-      - name: Run AHR Script with Selected API
+      - name: Run AHR Script (if API available)
+        if: env.API_AVAILABLE == 'true'
         run: |
-          echo "使用 $SELECTED_API 执行脚本..."
           cd app/dashboard/python
-          python ahr.py --api $SELECTED_API
+          python ahr.py --api kucoin
 
       - name: Commit updated JSON files
+        if: env.API_AVAILABLE == 'true'
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add *.json
-          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update JSON data via ${{ env.SELECTED_API }} [skip ci]"
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update JSON data via KuCoin [skip ci]"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Notify API failure
+        if: env.API_AVAILABLE == 'false'
+        run: |
+          echo "KuCoin API不可用，工作流终止"
+          # 可以在这里添加通知逻辑，如Slack/webhook等
