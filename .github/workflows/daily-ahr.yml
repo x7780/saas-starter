@@ -2,7 +2,7 @@ name: Daily AHR Execution
 
 on:
   schedule:
-    - cron: '45 14 * * *'  # 每天UTC时间0:30 (北京时间8:30)
+    - cron: '30 00 * * *'  # 每天UTC时间0:30 (北京时间8:30)
 
 jobs:
   run-ahr:
