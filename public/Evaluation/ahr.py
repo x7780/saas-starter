@@ -13,13 +13,17 @@ client = Client(api_key, api_secret)
 
 # ======== 参数配置 ========
 TIMEFRAME = '1d'
-SYMBOLS = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT']
+SYMBOLS = ['BTCUSDT', 'ETHUSDT', 'BNBUSDT', 'SOLUSDT', 'XRPUSDT', 'DOGEUSDT', 'PEPEUSDT', 'TRXUSDT']
 
 COIN_BIRTHDAYS = {
     'BTCUSDT': pd.to_datetime('2009-01-03'),
     'ETHUSDT': pd.to_datetime('2015-07-30'),
     'BNBUSDT': pd.to_datetime('2017-11-06'),
     'SOLUSDT': pd.to_datetime('2020-03-23'),
+    'XRPUSDT': pd.to_datetime('2018-05-01'),
+    'DOGEUSDT': pd.to_datetime('2019-07-01'),
+    'PEPEUSDT': pd.to_datetime('2023-05-01'),
+    'TRXUSDT': pd.to_datetime('2018-06-11'),
 }
 
 # ======== JSON 工具函数 ========
@@ -89,32 +93,30 @@ def calculate_geomean(prices, window=200):
 
 def calculate_exp_growth(df_all, birthdate, symbol, window=1000):
     df_fit = df_all[df_all['date'] >= birthdate].copy()
-
-    if len(df_fit) > window:
-        df_fit = df_fit.iloc[-window:]
-
+    
+    # 修改1：不再强制截断到window天（保留所有可用数据）
     df_fit['days_since_birth'] = (df_fit['date'] - birthdate).dt.total_seconds() / (24 * 3600)
-    df_fit['days_since_birth'] = df_fit['days_since_birth'].clip(lower=1)
+    df_fit['days_since_birth'] = df_fit['days_since_birth'].clip(lower=1e-6)  # 避免log(0)
 
     log_days = np.log10(df_fit['days_since_birth'])
     log_price = np.log10(df_fit['close'])
-    valid = (log_days > 0) & (log_price > 0)
+    valid = (log_days > -np.inf) & (log_price > -np.inf)  # 修改2：放宽有效条件
 
-    if valid.sum() < window:
-        print(f"Symbol: {symbol} 数据不足 {window} 天，跳过拟合")
+    # 修改3：最小有效数据点改为500（或按需调整）
+    min_valid_points = 500 
+    if valid.sum() < min_valid_points:
+        print(f"Symbol: {symbol} 有效数据不足 {min_valid_points} 点（实际 {valid.sum()}），跳过拟合")
         return pd.Series(np.nan, index=df_all.index)
 
+    # 后续计算保持不变...
     slope, intercept = np.polyfit(log_days[valid], log_price[valid], 1)
-    r2 = r2_score(log_price[valid], slope * log_days + intercept)
-    print(f"Symbol: {symbol}, Slope: {slope:.4f}, Intercept: {intercept:.4f}, R²: {r2:.4f}")
+    r2 = r2_score(log_price[valid], slope * log_days[valid] + intercept)
+    print(f"Symbol: {symbol}, 有效数据点: {valid.sum()}, Slope: {slope:.4f}, R²: {r2:.4f}")
 
     days_since_birth_all = (df_all['date'] - birthdate).dt.total_seconds() / (24 * 3600)
-    days_since_birth_all = days_since_birth_all.clip(lower=1)
-    log_days_all = np.log10(days_since_birth_all)
-    exp_val = 10 ** (slope * log_days_all + intercept)
-
-    return pd.Series(exp_val.values, index=df_all.index)
-
+    days_since_birth_all = days_since_birth_all.clip(lower=1e-6)
+    exp_val = 10 ** (slope * np.log10(days_since_birth_all) + intercept)
+    return pd.Series(exp_val, index=df_all.index)
 def calculate_ahr999(df):
     for col in ['open', 'high', 'low', 'close']:
         df[f'{col}_ahr999'] = ((df[col] / df['geomean']) * (df[col] / df['exp_growth'])).round(2)

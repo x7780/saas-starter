@@ -249,17 +249,25 @@ export default function CryptoDashboard() {
     const fetchCryptoData = async () => {
       try {
         setLoading(true)
-        const [btcRes, ethRes, solRes, bnbRes] = await Promise.all([
+        const [btcRes, ethRes, solRes, bnbRes, xrpRes, dogeRes, trxRes, pepeRes] = await Promise.all([
           fetch("/Evaluation/BTCUSDT.json"),
           fetch("/Evaluation/ETHUSDT.json"),
           fetch("/Evaluation/SOLUSDT.json"),
           fetch("/Evaluation/BNBUSDT.json"),
+          fetch("/Evaluation/XRPUSDT.json"),
+          fetch("/Evaluation/DOGEUSDT.json"),
+          fetch("/Evaluation/TRXUSDT.json"),
+          fetch("/Evaluation/PEPEUSDT.json"),
         ])
 
         const btcData: HistoricalData[] = await btcRes.json()
         const ethData: HistoricalData[] = await ethRes.json()
         const solData: HistoricalData[] = await solRes.json()
         const bnbData: HistoricalData[] = await bnbRes.json()
+        const xrpData: HistoricalData[] = await xrpRes.json()
+        const dogeData: HistoricalData[] = await dogeRes.json()
+        const trxData: HistoricalData[] = await trxRes.json()
+        const pepeData: HistoricalData[] = await pepeRes.json()
 
         const metrics: Metric[] = []
 
@@ -283,6 +291,10 @@ export default function CryptoDashboard() {
         pushMetric(ethData, "ETH/USDT", true)
         pushMetric(solData, "SOL/USDT", true)
         pushMetric(bnbData, "BNB/USDT", true)
+        pushMetric(xrpData, "XRP/USDT", )
+        pushMetric(dogeData, "DOGE/USDT", )
+        pushMetric(trxData, "TRX/USDT", )
+        pushMetric(pepeData, "PEPE/USDT", )
 
         setCryptoMetrics(metrics)
       } catch (e: any) {

@@ -1,0 +1,6410 @@
+[
+  {
+    "date": "2023-05-11",
+    "open": 0.07312,
+    "ahr": 0.81,
+    "change": 2e-05,
+    "changePercent": 0.03,
+    "isPositive": true
+  },
+  {
+    "date": "2023-05-12",
+    "open": 0.07193,
+    "ahr": 0.78,
+    "change": -0.00119,
+    "changePercent": -1.63,
+    "isPositive": false
+  },
+  {
+    "date": "2023-05-13",
+    "open": 0.07235,
+    "ahr": 0.79,
+    "change": 0.00042,
+    "changePercent": 0.58,
+    "isPositive": true
+  },
+  {
+    "date": "2023-05-14",
+    "open": 0.07168,
+    "ahr": 0.77,
+    "change": -0.00067,
+    "changePercent": -0.93,
+    "isPositive": false
+  },
+  {
+    "date": "2023-05-15",
+    "open": 0.07195,
+    "ahr": 0.78,
+    "change": 0.00027,
+    "changePercent": 0.38,
+    "isPositive": true
+  },
+  {
+    "date": "2023-05-16",
+    "open": 0.0719,
+    "ahr": 0.78,
+    "change": -5e-05,
+    "changePercent": -0.07,
+    "isPositive": false
+  },
+  {
+    "date": "2023-05-17",
+    "open": 0.07276,
+    "ahr": 0.8,
+    "change": 0.00086,
+    "changePercent": 1.2,
+    "isPositive": true
+  },
+  {
+    "date": "2023-05-18",
+    "open": 0.07484,
+    "ahr": 0.84,
+    "change": 0.00208,
+    "changePercent": 2.86,
+    "isPositive": true
+  },
+  {
+    "date": "2023-05-19",
+    "open": 0.07344,
+    "ahr": 0.81,
+    "change": -0.0014,
+    "changePercent": -1.87,
+    "isPositive": false
+  },
+  {
+    "date": "2023-05-20",
+    "open": 0.07351,
+    "ahr": 0.82,
+    "change": 7e-05,
+    "changePercent": 0.1,
+    "isPositive": true
+  },
+  {
+    "date": "2023-05-21",
+    "open": 0.07362,
+    "ahr": 0.82,
+    "change": 0.00011,
+    "changePercent": 0.15,
+    "isPositive": true
+  },
+  {
+    "date": "2023-05-22",
+    "open": 0.07212,
+    "ahr": 0.79,
+    "change": -0.0015,
+    "changePercent": -2.04,
+    "isPositive": false
+  },
+  {
+    "date": "2023-05-23",
+    "open": 0.07292,
+    "ahr": 0.81,
+    "change": 0.0008,
+    "changePercent": 1.11,
+    "isPositive": true
+  },
+  {
+    "date": "2023-05-24",
+    "open": 0.07288,
+    "ahr": 0.81,
+    "change": -4e-05,
+    "changePercent": -0.05,
+    "isPositive": false
+  },
+  {
+    "date": "2023-05-25",
+    "open": 0.07065,
+    "ahr": 0.76,
+    "change": -0.00223,
+    "changePercent": -3.06,
+    "isPositive": false
+  },
+  {
+    "date": "2023-05-26",
+    "open": 0.07087,
+    "ahr": 0.76,
+    "change": 0.00022,
+    "changePercent": 0.31,
+    "isPositive": true
+  },
+  {
+    "date": "2023-05-27",
+    "open": 0.07097,
+    "ahr": 0.76,
+    "change": 0.0001,
+    "changePercent": 0.14,
+    "isPositive": true
+  },
+  {
+    "date": "2023-05-28",
+    "open": 0.07255,
+    "ahr": 0.8,
+    "change": 0.00158,
+    "changePercent": 2.23,
+    "isPositive": true
+  },
+  {
+    "date": "2023-05-29",
+    "open": 0.07353,
+    "ahr": 0.82,
+    "change": 0.00098,
+    "changePercent": 1.35,
+    "isPositive": true
+  },
+  {
+    "date": "2023-05-30",
+    "open": 0.07313,
+    "ahr": 0.81,
+    "change": -0.0004,
+    "changePercent": -0.54,
+    "isPositive": false
+  },
+  {
+    "date": "2023-05-31",
+    "open": 0.07231,
+    "ahr": 0.79,
+    "change": -0.00082,
+    "changePercent": -1.12,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-01",
+    "open": 0.07165,
+    "ahr": 0.78,
+    "change": -0.00066,
+    "changePercent": -0.91,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-02",
+    "open": 0.07143,
+    "ahr": 0.77,
+    "change": -0.00022,
+    "changePercent": -0.31,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-03",
+    "open": 0.07257,
+    "ahr": 0.8,
+    "change": 0.00114,
+    "changePercent": 1.6,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-04",
+    "open": 0.07271,
+    "ahr": 0.8,
+    "change": 0.00014,
+    "changePercent": 0.19,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-05",
+    "open": 0.07249,
+    "ahr": 0.79,
+    "change": -0.00022,
+    "changePercent": -0.3,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-06",
+    "open": 0.0664,
+    "ahr": 0.66,
+    "change": -0.00609,
+    "changePercent": -8.4,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-07",
+    "open": 0.07025,
+    "ahr": 0.74,
+    "change": 0.00385,
+    "changePercent": 5.8,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-08",
+    "open": 0.06728,
+    "ahr": 0.68,
+    "change": -0.00297,
+    "changePercent": -4.23,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-09",
+    "open": 0.06796,
+    "ahr": 0.69,
+    "change": 0.00068,
+    "changePercent": 1.01,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-10",
+    "open": 0.06947,
+    "ahr": 0.73,
+    "change": 0.00151,
+    "changePercent": 2.22,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-11",
+    "open": 0.06175,
+    "ahr": 0.57,
+    "change": -0.00772,
+    "changePercent": -11.11,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-12",
+    "open": 0.06152,
+    "ahr": 0.57,
+    "change": -0.00023,
+    "changePercent": -0.37,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-13",
+    "open": 0.06144,
+    "ahr": 0.57,
+    "change": -8e-05,
+    "changePercent": -0.13,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-14",
+    "open": 0.06174,
+    "ahr": 0.57,
+    "change": 0.0003,
+    "changePercent": 0.49,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-15",
+    "open": 0.06038,
+    "ahr": 0.55,
+    "change": -0.00136,
+    "changePercent": -2.2,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-16",
+    "open": 0.06154,
+    "ahr": 0.57,
+    "change": 0.00116,
+    "changePercent": 1.92,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-17",
+    "open": 0.06219,
+    "ahr": 0.58,
+    "change": 0.00065,
+    "changePercent": 1.06,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-18",
+    "open": 0.0622,
+    "ahr": 0.58,
+    "change": 1e-05,
+    "changePercent": 0.02,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-19",
+    "open": 0.06212,
+    "ahr": 0.58,
+    "change": -8e-05,
+    "changePercent": -0.13,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-20",
+    "open": 0.06244,
+    "ahr": 0.59,
+    "change": 0.00032,
+    "changePercent": 0.52,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-21",
+    "open": 0.06314,
+    "ahr": 0.6,
+    "change": 0.0007,
+    "changePercent": 1.12,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-22",
+    "open": 0.06562,
+    "ahr": 0.65,
+    "change": 0.00248,
+    "changePercent": 3.93,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-23",
+    "open": 0.06556,
+    "ahr": 0.65,
+    "change": -6e-05,
+    "changePercent": -0.09,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-24",
+    "open": 0.06823,
+    "ahr": 0.71,
+    "change": 0.00267,
+    "changePercent": 4.07,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-25",
+    "open": 0.06669,
+    "ahr": 0.67,
+    "change": -0.00154,
+    "changePercent": -2.26,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-26",
+    "open": 0.06672,
+    "ahr": 0.68,
+    "change": 3e-05,
+    "changePercent": 0.04,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-27",
+    "open": 0.06474,
+    "ahr": 0.64,
+    "change": -0.00198,
+    "changePercent": -2.97,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-28",
+    "open": 0.06557,
+    "ahr": 0.65,
+    "change": 0.00083,
+    "changePercent": 1.28,
+    "isPositive": true
+  },
+  {
+    "date": "2023-06-29",
+    "open": 0.06257,
+    "ahr": 0.59,
+    "change": -0.003,
+    "changePercent": -4.58,
+    "isPositive": false
+  },
+  {
+    "date": "2023-06-30",
+    "open": 0.06342,
+    "ahr": 0.61,
+    "change": 0.00085,
+    "changePercent": 1.36,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-01",
+    "open": 0.06646,
+    "ahr": 0.67,
+    "change": 0.00304,
+    "changePercent": 4.79,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-02",
+    "open": 0.06851,
+    "ahr": 0.71,
+    "change": 0.00205,
+    "changePercent": 3.08,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-03",
+    "open": 0.06801,
+    "ahr": 0.7,
+    "change": -0.0005,
+    "changePercent": -0.73,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-04",
+    "open": 0.06845,
+    "ahr": 0.71,
+    "change": 0.00044,
+    "changePercent": 0.65,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-05",
+    "open": 0.06891,
+    "ahr": 0.72,
+    "change": 0.00046,
+    "changePercent": 0.67,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-06",
+    "open": 0.06697,
+    "ahr": 0.68,
+    "change": -0.00194,
+    "changePercent": -2.82,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-07",
+    "open": 0.06484,
+    "ahr": 0.64,
+    "change": -0.00213,
+    "changePercent": -3.18,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-08",
+    "open": 0.0654,
+    "ahr": 0.65,
+    "change": 0.00056,
+    "changePercent": 0.86,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-09",
+    "open": 0.06573,
+    "ahr": 0.65,
+    "change": 0.00033,
+    "changePercent": 0.5,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-10",
+    "open": 0.06537,
+    "ahr": 0.64,
+    "change": -0.00036,
+    "changePercent": -0.55,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-11",
+    "open": 0.06523,
+    "ahr": 0.64,
+    "change": -0.00014,
+    "changePercent": -0.21,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-12",
+    "open": 0.06529,
+    "ahr": 0.64,
+    "change": 6e-05,
+    "changePercent": 0.09,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-13",
+    "open": 0.06504,
+    "ahr": 0.64,
+    "change": -0.00025,
+    "changePercent": -0.38,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-14",
+    "open": 0.07042,
+    "ahr": 0.75,
+    "change": 0.00538,
+    "changePercent": 8.27,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-15",
+    "open": 0.06848,
+    "ahr": 0.7,
+    "change": -0.00194,
+    "changePercent": -2.75,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-16",
+    "open": 0.07196,
+    "ahr": 0.78,
+    "change": 0.00348,
+    "changePercent": 5.08,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-17",
+    "open": 0.06951,
+    "ahr": 0.72,
+    "change": -0.00245,
+    "changePercent": -3.4,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-18",
+    "open": 0.06982,
+    "ahr": 0.73,
+    "change": 0.00031,
+    "changePercent": 0.45,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-19",
+    "open": 0.06867,
+    "ahr": 0.7,
+    "change": -0.00115,
+    "changePercent": -1.65,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-20",
+    "open": 0.07004,
+    "ahr": 0.73,
+    "change": 0.00137,
+    "changePercent": 2.0,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-21",
+    "open": 0.07061,
+    "ahr": 0.74,
+    "change": 0.00057,
+    "changePercent": 0.81,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-22",
+    "open": 0.07322,
+    "ahr": 0.8,
+    "change": 0.00261,
+    "changePercent": 3.7,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-23",
+    "open": 0.07047,
+    "ahr": 0.74,
+    "change": -0.00275,
+    "changePercent": -3.76,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-24",
+    "open": 0.07179,
+    "ahr": 0.76,
+    "change": 0.00132,
+    "changePercent": 1.87,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-25",
+    "open": 0.0742,
+    "ahr": 0.81,
+    "change": 0.00241,
+    "changePercent": 3.36,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-26",
+    "open": 0.08185,
+    "ahr": 0.99,
+    "change": 0.00765,
+    "changePercent": 10.31,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-27",
+    "open": 0.07794,
+    "ahr": 0.89,
+    "change": -0.00391,
+    "changePercent": -4.78,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-28",
+    "open": 0.07761,
+    "ahr": 0.89,
+    "change": -0.00033,
+    "changePercent": -0.42,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-29",
+    "open": 0.07717,
+    "ahr": 0.87,
+    "change": -0.00044,
+    "changePercent": -0.57,
+    "isPositive": false
+  },
+  {
+    "date": "2023-07-30",
+    "open": 0.08024,
+    "ahr": 0.94,
+    "change": 0.00307,
+    "changePercent": 3.98,
+    "isPositive": true
+  },
+  {
+    "date": "2023-07-31",
+    "open": 0.07802,
+    "ahr": 0.89,
+    "change": -0.00222,
+    "changePercent": -2.77,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-01",
+    "open": 0.07786,
+    "ahr": 0.89,
+    "change": -0.00016,
+    "changePercent": -0.21,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-02",
+    "open": 0.07815,
+    "ahr": 0.89,
+    "change": 0.00029,
+    "changePercent": 0.37,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-03",
+    "open": 0.07422,
+    "ahr": 0.8,
+    "change": -0.00393,
+    "changePercent": -5.03,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-04",
+    "open": 0.07358,
+    "ahr": 0.79,
+    "change": -0.00064,
+    "changePercent": -0.86,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-05",
+    "open": 0.07346,
+    "ahr": 0.79,
+    "change": -0.00012,
+    "changePercent": -0.16,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-06",
+    "open": 0.07572,
+    "ahr": 0.83,
+    "change": 0.00226,
+    "changePercent": 3.08,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-07",
+    "open": 0.07427,
+    "ahr": 0.8,
+    "change": -0.00145,
+    "changePercent": -1.91,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-08",
+    "open": 0.07354,
+    "ahr": 0.79,
+    "change": -0.00073,
+    "changePercent": -0.98,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-09",
+    "open": 0.07497,
+    "ahr": 0.82,
+    "change": 0.00143,
+    "changePercent": 1.94,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-10",
+    "open": 0.07542,
+    "ahr": 0.82,
+    "change": 0.00045,
+    "changePercent": 0.6,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-11",
+    "open": 0.07587,
+    "ahr": 0.83,
+    "change": 0.00045,
+    "changePercent": 0.6,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-12",
+    "open": 0.07574,
+    "ahr": 0.83,
+    "change": -0.00013,
+    "changePercent": -0.17,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-13",
+    "open": 0.0767,
+    "ahr": 0.85,
+    "change": 0.00096,
+    "changePercent": 1.27,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-14",
+    "open": 0.07479,
+    "ahr": 0.81,
+    "change": -0.00191,
+    "changePercent": -2.49,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-15",
+    "open": 0.0747,
+    "ahr": 0.81,
+    "change": -9e-05,
+    "changePercent": -0.12,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-16",
+    "open": 0.07092,
+    "ahr": 0.73,
+    "change": -0.00378,
+    "changePercent": -5.06,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-17",
+    "open": 0.06718,
+    "ahr": 0.65,
+    "change": -0.00374,
+    "changePercent": -5.27,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-18",
+    "open": 0.06102,
+    "ahr": 0.54,
+    "change": -0.00616,
+    "changePercent": -9.17,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-19",
+    "open": 0.06326,
+    "ahr": 0.58,
+    "change": 0.00224,
+    "changePercent": 3.67,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-20",
+    "open": 0.06379,
+    "ahr": 0.59,
+    "change": 0.00053,
+    "changePercent": 0.84,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-21",
+    "open": 0.06384,
+    "ahr": 0.59,
+    "change": 5e-05,
+    "changePercent": 0.08,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-22",
+    "open": 0.06253,
+    "ahr": 0.57,
+    "change": -0.00131,
+    "changePercent": -2.05,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-23",
+    "open": 0.06258,
+    "ahr": 0.57,
+    "change": 5e-05,
+    "changePercent": 0.08,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-24",
+    "open": 0.06379,
+    "ahr": 0.59,
+    "change": 0.00121,
+    "changePercent": 1.93,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-25",
+    "open": 0.06308,
+    "ahr": 0.58,
+    "change": -0.00071,
+    "changePercent": -1.11,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-26",
+    "open": 0.06312,
+    "ahr": 0.58,
+    "change": 4e-05,
+    "changePercent": 0.06,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-27",
+    "open": 0.06289,
+    "ahr": 0.57,
+    "change": -0.00023,
+    "changePercent": -0.36,
+    "isPositive": false
+  },
+  {
+    "date": "2023-08-28",
+    "open": 0.06317,
+    "ahr": 0.58,
+    "change": 0.00028,
+    "changePercent": 0.45,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-29",
+    "open": 0.06345,
+    "ahr": 0.58,
+    "change": 0.00028,
+    "changePercent": 0.44,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-30",
+    "open": 0.0664,
+    "ahr": 0.64,
+    "change": 0.00295,
+    "changePercent": 4.65,
+    "isPositive": true
+  },
+  {
+    "date": "2023-08-31",
+    "open": 0.06588,
+    "ahr": 0.63,
+    "change": -0.00052,
+    "changePercent": -0.78,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-01",
+    "open": 0.06379,
+    "ahr": 0.59,
+    "change": -0.00209,
+    "changePercent": -3.17,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-02",
+    "open": 0.06386,
+    "ahr": 0.59,
+    "change": 7e-05,
+    "changePercent": 0.11,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-03",
+    "open": 0.06348,
+    "ahr": 0.58,
+    "change": -0.00038,
+    "changePercent": -0.6,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-04",
+    "open": 0.06317,
+    "ahr": 0.58,
+    "change": -0.00031,
+    "changePercent": -0.49,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-05",
+    "open": 0.06326,
+    "ahr": 0.58,
+    "change": 9e-05,
+    "changePercent": 0.14,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-06",
+    "open": 0.06403,
+    "ahr": 0.59,
+    "change": 0.00077,
+    "changePercent": 1.22,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-07",
+    "open": 0.06364,
+    "ahr": 0.59,
+    "change": -0.00039,
+    "changePercent": -0.61,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-08",
+    "open": 0.06366,
+    "ahr": 0.59,
+    "change": 2e-05,
+    "changePercent": 0.03,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-09",
+    "open": 0.0637,
+    "ahr": 0.59,
+    "change": 4e-05,
+    "changePercent": 0.06,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-10",
+    "open": 0.06338,
+    "ahr": 0.58,
+    "change": -0.00032,
+    "changePercent": -0.5,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-11",
+    "open": 0.0613,
+    "ahr": 0.55,
+    "change": -0.00208,
+    "changePercent": -3.28,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-12",
+    "open": 0.06047,
+    "ahr": 0.53,
+    "change": -0.00083,
+    "changePercent": -1.35,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-13",
+    "open": 0.0609,
+    "ahr": 0.54,
+    "change": 0.00043,
+    "changePercent": 0.71,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-14",
+    "open": 0.06125,
+    "ahr": 0.54,
+    "change": 0.00035,
+    "changePercent": 0.57,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-15",
+    "open": 0.06207,
+    "ahr": 0.56,
+    "change": 0.00082,
+    "changePercent": 1.34,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-16",
+    "open": 0.0625,
+    "ahr": 0.57,
+    "change": 0.00043,
+    "changePercent": 0.69,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-17",
+    "open": 0.06213,
+    "ahr": 0.56,
+    "change": -0.00037,
+    "changePercent": -0.59,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-18",
+    "open": 0.06146,
+    "ahr": 0.55,
+    "change": -0.00067,
+    "changePercent": -1.08,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-19",
+    "open": 0.06196,
+    "ahr": 0.56,
+    "change": 0.0005,
+    "changePercent": 0.81,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-20",
+    "open": 0.06269,
+    "ahr": 0.57,
+    "change": 0.00073,
+    "changePercent": 1.18,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-21",
+    "open": 0.06263,
+    "ahr": 0.57,
+    "change": -6e-05,
+    "changePercent": -0.1,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-22",
+    "open": 0.0613,
+    "ahr": 0.54,
+    "change": -0.00133,
+    "changePercent": -2.12,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-23",
+    "open": 0.06153,
+    "ahr": 0.55,
+    "change": 0.00023,
+    "changePercent": 0.38,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-24",
+    "open": 0.06152,
+    "ahr": 0.55,
+    "change": -1e-05,
+    "changePercent": -0.02,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-25",
+    "open": 0.06068,
+    "ahr": 0.53,
+    "change": -0.00084,
+    "changePercent": -1.37,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-26",
+    "open": 0.06095,
+    "ahr": 0.54,
+    "change": 0.00027,
+    "changePercent": 0.44,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-27",
+    "open": 0.06062,
+    "ahr": 0.53,
+    "change": -0.00033,
+    "changePercent": -0.54,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-28",
+    "open": 0.06052,
+    "ahr": 0.53,
+    "change": -0.0001,
+    "changePercent": -0.16,
+    "isPositive": false
+  },
+  {
+    "date": "2023-09-29",
+    "open": 0.06151,
+    "ahr": 0.54,
+    "change": 0.00099,
+    "changePercent": 1.64,
+    "isPositive": true
+  },
+  {
+    "date": "2023-09-30",
+    "open": 0.06213,
+    "ahr": 0.56,
+    "change": 0.00062,
+    "changePercent": 1.01,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-01",
+    "open": 0.06207,
+    "ahr": 0.55,
+    "change": -6e-05,
+    "changePercent": -0.1,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-02",
+    "open": 0.0632,
+    "ahr": 0.57,
+    "change": 0.00113,
+    "changePercent": 1.82,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-03",
+    "open": 0.06201,
+    "ahr": 0.55,
+    "change": -0.00119,
+    "changePercent": -1.88,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-04",
+    "open": 0.06138,
+    "ahr": 0.54,
+    "change": -0.00063,
+    "changePercent": -1.02,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-05",
+    "open": 0.06146,
+    "ahr": 0.54,
+    "change": 8e-05,
+    "changePercent": 0.13,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-06",
+    "open": 0.06087,
+    "ahr": 0.53,
+    "change": -0.00059,
+    "changePercent": -0.96,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-07",
+    "open": 0.06136,
+    "ahr": 0.54,
+    "change": 0.00049,
+    "changePercent": 0.8,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-08",
+    "open": 0.06143,
+    "ahr": 0.54,
+    "change": 7e-05,
+    "changePercent": 0.11,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-09",
+    "open": 0.06095,
+    "ahr": 0.53,
+    "change": -0.00048,
+    "changePercent": -0.78,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-10",
+    "open": 0.05872,
+    "ahr": 0.49,
+    "change": -0.00223,
+    "changePercent": -3.66,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-11",
+    "open": 0.05914,
+    "ahr": 0.5,
+    "change": 0.00042,
+    "changePercent": 0.72,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-12",
+    "open": 0.05851,
+    "ahr": 0.49,
+    "change": -0.00063,
+    "changePercent": -1.07,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-13",
+    "open": 0.05789,
+    "ahr": 0.48,
+    "change": -0.00062,
+    "changePercent": -1.06,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-14",
+    "open": 0.05839,
+    "ahr": 0.49,
+    "change": 0.0005,
+    "changePercent": 0.86,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-15",
+    "open": 0.05984,
+    "ahr": 0.51,
+    "change": 0.00145,
+    "changePercent": 2.48,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-16",
+    "open": 0.0593,
+    "ahr": 0.5,
+    "change": -0.00054,
+    "changePercent": -0.9,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-17",
+    "open": 0.06,
+    "ahr": 0.51,
+    "change": 0.0007,
+    "changePercent": 1.18,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-18",
+    "open": 0.05903,
+    "ahr": 0.5,
+    "change": -0.00097,
+    "changePercent": -1.62,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-19",
+    "open": 0.05859,
+    "ahr": 0.49,
+    "change": -0.00044,
+    "changePercent": -0.75,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-20",
+    "open": 0.05887,
+    "ahr": 0.5,
+    "change": 0.00028,
+    "changePercent": 0.48,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-21",
+    "open": 0.0599,
+    "ahr": 0.51,
+    "change": 0.00103,
+    "changePercent": 1.75,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-22",
+    "open": 0.06119,
+    "ahr": 0.54,
+    "change": 0.00129,
+    "changePercent": 2.15,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-23",
+    "open": 0.06169,
+    "ahr": 0.55,
+    "change": 0.0005,
+    "changePercent": 0.82,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-24",
+    "open": 0.06742,
+    "ahr": 0.65,
+    "change": 0.00573,
+    "changePercent": 9.29,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-25",
+    "open": 0.0666,
+    "ahr": 0.63,
+    "change": -0.00082,
+    "changePercent": -1.22,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-26",
+    "open": 0.06832,
+    "ahr": 0.67,
+    "change": 0.00172,
+    "changePercent": 2.58,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-27",
+    "open": 0.07184,
+    "ahr": 0.74,
+    "change": 0.00352,
+    "changePercent": 5.15,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-28",
+    "open": 0.06776,
+    "ahr": 0.66,
+    "change": -0.00408,
+    "changePercent": -5.68,
+    "isPositive": false
+  },
+  {
+    "date": "2023-10-29",
+    "open": 0.069,
+    "ahr": 0.68,
+    "change": 0.00124,
+    "changePercent": 1.83,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-30",
+    "open": 0.06936,
+    "ahr": 0.69,
+    "change": 0.00036,
+    "changePercent": 0.52,
+    "isPositive": true
+  },
+  {
+    "date": "2023-10-31",
+    "open": 0.06958,
+    "ahr": 0.69,
+    "change": 0.00022,
+    "changePercent": 0.32,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-01",
+    "open": 0.06827,
+    "ahr": 0.67,
+    "change": -0.00131,
+    "changePercent": -1.88,
+    "isPositive": false
+  },
+  {
+    "date": "2023-11-02",
+    "open": 0.06893,
+    "ahr": 0.68,
+    "change": 0.00066,
+    "changePercent": 0.97,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-03",
+    "open": 0.0679,
+    "ahr": 0.66,
+    "change": -0.00103,
+    "changePercent": -1.49,
+    "isPositive": false
+  },
+  {
+    "date": "2023-11-04",
+    "open": 0.06808,
+    "ahr": 0.66,
+    "change": 0.00018,
+    "changePercent": 0.27,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-05",
+    "open": 0.06908,
+    "ahr": 0.68,
+    "change": 0.001,
+    "changePercent": 1.47,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-06",
+    "open": 0.07108,
+    "ahr": 0.72,
+    "change": 0.002,
+    "changePercent": 2.9,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-07",
+    "open": 0.07637,
+    "ahr": 0.83,
+    "change": 0.00529,
+    "changePercent": 7.44,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-08",
+    "open": 0.07338,
+    "ahr": 0.77,
+    "change": -0.00299,
+    "changePercent": -3.92,
+    "isPositive": false
+  },
+  {
+    "date": "2023-11-09",
+    "open": 0.07535,
+    "ahr": 0.81,
+    "change": 0.00197,
+    "changePercent": 2.68,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-10",
+    "open": 0.07357,
+    "ahr": 0.77,
+    "change": -0.00178,
+    "changePercent": -2.36,
+    "isPositive": false
+  },
+  {
+    "date": "2023-11-11",
+    "open": 0.07539,
+    "ahr": 0.81,
+    "change": 0.00182,
+    "changePercent": 2.47,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-12",
+    "open": 0.0785,
+    "ahr": 0.87,
+    "change": 0.00311,
+    "changePercent": 4.13,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-13",
+    "open": 0.07795,
+    "ahr": 0.86,
+    "change": -0.00055,
+    "changePercent": -0.7,
+    "isPositive": false
+  },
+  {
+    "date": "2023-11-14",
+    "open": 0.07456,
+    "ahr": 0.79,
+    "change": -0.00339,
+    "changePercent": -4.35,
+    "isPositive": false
+  },
+  {
+    "date": "2023-11-15",
+    "open": 0.07244,
+    "ahr": 0.74,
+    "change": -0.00212,
+    "changePercent": -2.84,
+    "isPositive": false
+  },
+  {
+    "date": "2023-11-16",
+    "open": 0.07623,
+    "ahr": 0.82,
+    "change": 0.00379,
+    "changePercent": 5.23,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-17",
+    "open": 0.07946,
+    "ahr": 0.89,
+    "change": 0.00323,
+    "changePercent": 4.24,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-18",
+    "open": 0.08642,
+    "ahr": 1.05,
+    "change": 0.00696,
+    "changePercent": 8.76,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-19",
+    "open": 0.08027,
+    "ahr": 0.9,
+    "change": -0.00615,
+    "changePercent": -7.12,
+    "isPositive": false
+  },
+  {
+    "date": "2023-11-20",
+    "open": 0.08045,
+    "ahr": 0.91,
+    "change": 0.00018,
+    "changePercent": 0.22,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-21",
+    "open": 0.07768,
+    "ahr": 0.84,
+    "change": -0.00277,
+    "changePercent": -3.44,
+    "isPositive": false
+  },
+  {
+    "date": "2023-11-22",
+    "open": 0.07175,
+    "ahr": 0.72,
+    "change": -0.00593,
+    "changePercent": -7.63,
+    "isPositive": false
+  },
+  {
+    "date": "2023-11-23",
+    "open": 0.07576,
+    "ahr": 0.8,
+    "change": 0.00401,
+    "changePercent": 5.59,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-24",
+    "open": 0.07621,
+    "ahr": 0.81,
+    "change": 0.00045,
+    "changePercent": 0.59,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-25",
+    "open": 0.07818,
+    "ahr": 0.85,
+    "change": 0.00197,
+    "changePercent": 2.58,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-26",
+    "open": 0.07894,
+    "ahr": 0.87,
+    "change": 0.00076,
+    "changePercent": 0.97,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-27",
+    "open": 0.07867,
+    "ahr": 0.86,
+    "change": -0.00027,
+    "changePercent": -0.34,
+    "isPositive": false
+  },
+  {
+    "date": "2023-11-28",
+    "open": 0.07883,
+    "ahr": 0.86,
+    "change": 0.00016,
+    "changePercent": 0.2,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-29",
+    "open": 0.08083,
+    "ahr": 0.9,
+    "change": 0.002,
+    "changePercent": 2.54,
+    "isPositive": true
+  },
+  {
+    "date": "2023-11-30",
+    "open": 0.08045,
+    "ahr": 0.89,
+    "change": -0.00038,
+    "changePercent": -0.47,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-01",
+    "open": 0.08344,
+    "ahr": 0.96,
+    "change": 0.00299,
+    "changePercent": 3.72,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-02",
+    "open": 0.08384,
+    "ahr": 0.96,
+    "change": 0.0004,
+    "changePercent": 0.48,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-03",
+    "open": 0.08617,
+    "ahr": 1.02,
+    "change": 0.00233,
+    "changePercent": 2.78,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-04",
+    "open": 0.08571,
+    "ahr": 1.0,
+    "change": -0.00046,
+    "changePercent": -0.53,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-05",
+    "open": 0.09188,
+    "ahr": 1.15,
+    "change": 0.00617,
+    "changePercent": 7.2,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-06",
+    "open": 0.09436,
+    "ahr": 1.21,
+    "change": 0.00248,
+    "changePercent": 2.7,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-07",
+    "open": 0.09493,
+    "ahr": 1.22,
+    "change": 0.00057,
+    "changePercent": 0.6,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-08",
+    "open": 0.09594,
+    "ahr": 1.24,
+    "change": 0.00101,
+    "changePercent": 1.06,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-09",
+    "open": 0.10165,
+    "ahr": 1.39,
+    "change": 0.00571,
+    "changePercent": 5.95,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-10",
+    "open": 0.09846,
+    "ahr": 1.3,
+    "change": -0.00319,
+    "changePercent": -3.14,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-11",
+    "open": 0.10186,
+    "ahr": 1.39,
+    "change": 0.0034,
+    "changePercent": 3.45,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-12",
+    "open": 0.09412,
+    "ahr": 1.18,
+    "change": -0.00774,
+    "changePercent": -7.6,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-13",
+    "open": 0.09381,
+    "ahr": 1.17,
+    "change": -0.00031,
+    "changePercent": -0.33,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-14",
+    "open": 0.09643,
+    "ahr": 1.23,
+    "change": 0.00262,
+    "changePercent": 2.79,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-15",
+    "open": 0.0983,
+    "ahr": 1.28,
+    "change": 0.00187,
+    "changePercent": 1.94,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-16",
+    "open": 0.09302,
+    "ahr": 1.14,
+    "change": -0.00528,
+    "changePercent": -5.37,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-17",
+    "open": 0.09713,
+    "ahr": 1.24,
+    "change": 0.00411,
+    "changePercent": 4.42,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-18",
+    "open": 0.09295,
+    "ahr": 1.13,
+    "change": -0.00418,
+    "changePercent": -4.3,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-19",
+    "open": 0.09212,
+    "ahr": 1.11,
+    "change": -0.00083,
+    "changePercent": -0.89,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-20",
+    "open": 0.09023,
+    "ahr": 1.06,
+    "change": -0.00189,
+    "changePercent": -2.05,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-21",
+    "open": 0.09151,
+    "ahr": 1.09,
+    "change": 0.00128,
+    "changePercent": 1.42,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-22",
+    "open": 0.095,
+    "ahr": 1.17,
+    "change": 0.00349,
+    "changePercent": 3.81,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-23",
+    "open": 0.09498,
+    "ahr": 1.17,
+    "change": -2e-05,
+    "changePercent": -0.02,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-24",
+    "open": 0.09346,
+    "ahr": 1.13,
+    "change": -0.00152,
+    "changePercent": -1.6,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-25",
+    "open": 0.09172,
+    "ahr": 1.08,
+    "change": -0.00174,
+    "changePercent": -1.86,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-26",
+    "open": 0.09436,
+    "ahr": 1.14,
+    "change": 0.00264,
+    "changePercent": 2.88,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-27",
+    "open": 0.09135,
+    "ahr": 1.07,
+    "change": -0.00301,
+    "changePercent": -3.19,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-28",
+    "open": 0.09365,
+    "ahr": 1.12,
+    "change": 0.0023,
+    "changePercent": 2.52,
+    "isPositive": true
+  },
+  {
+    "date": "2023-12-29",
+    "open": 0.09174,
+    "ahr": 1.07,
+    "change": -0.00191,
+    "changePercent": -2.04,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-30",
+    "open": 0.09096,
+    "ahr": 1.05,
+    "change": -0.00078,
+    "changePercent": -0.85,
+    "isPositive": false
+  },
+  {
+    "date": "2023-12-31",
+    "open": 0.09,
+    "ahr": 1.02,
+    "change": -0.00096,
+    "changePercent": -1.06,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-01",
+    "open": 0.08956,
+    "ahr": 1.01,
+    "change": -0.00044,
+    "changePercent": -0.49,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-02",
+    "open": 0.092,
+    "ahr": 1.06,
+    "change": 0.00244,
+    "changePercent": 2.72,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-03",
+    "open": 0.09109,
+    "ahr": 1.04,
+    "change": -0.00091,
+    "changePercent": -0.99,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-04",
+    "open": 0.082,
+    "ahr": 0.84,
+    "change": -0.00909,
+    "changePercent": -9.98,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-05",
+    "open": 0.08401,
+    "ahr": 0.88,
+    "change": 0.00201,
+    "changePercent": 2.45,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-06",
+    "open": 0.08267,
+    "ahr": 0.85,
+    "change": -0.00134,
+    "changePercent": -1.6,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-07",
+    "open": 0.08058,
+    "ahr": 0.8,
+    "change": -0.00209,
+    "changePercent": -2.53,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-08",
+    "open": 0.07822,
+    "ahr": 0.76,
+    "change": -0.00236,
+    "changePercent": -2.93,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-09",
+    "open": 0.0813,
+    "ahr": 0.81,
+    "change": 0.00308,
+    "changePercent": 3.94,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-10",
+    "open": 0.07922,
+    "ahr": 0.77,
+    "change": -0.00208,
+    "changePercent": -2.56,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-11",
+    "open": 0.08307,
+    "ahr": 0.85,
+    "change": 0.00385,
+    "changePercent": 4.86,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-12",
+    "open": 0.08456,
+    "ahr": 0.87,
+    "change": 0.00149,
+    "changePercent": 1.79,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-13",
+    "open": 0.08007,
+    "ahr": 0.78,
+    "change": -0.00449,
+    "changePercent": -5.31,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-14",
+    "open": 0.08094,
+    "ahr": 0.8,
+    "change": 0.00087,
+    "changePercent": 1.09,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-15",
+    "open": 0.08002,
+    "ahr": 0.78,
+    "change": -0.00092,
+    "changePercent": -1.14,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-16",
+    "open": 0.08108,
+    "ahr": 0.8,
+    "change": 0.00106,
+    "changePercent": 1.32,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-17",
+    "open": 0.08134,
+    "ahr": 0.8,
+    "change": 0.00026,
+    "changePercent": 0.32,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-18",
+    "open": 0.0806,
+    "ahr": 0.78,
+    "change": -0.00074,
+    "changePercent": -0.91,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-19",
+    "open": 0.07808,
+    "ahr": 0.73,
+    "change": -0.00252,
+    "changePercent": -3.13,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-20",
+    "open": 0.07856,
+    "ahr": 0.74,
+    "change": 0.00048,
+    "changePercent": 0.61,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-21",
+    "open": 0.08777,
+    "ahr": 0.92,
+    "change": 0.00921,
+    "changePercent": 11.72,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-22",
+    "open": 0.08547,
+    "ahr": 0.87,
+    "change": -0.0023,
+    "changePercent": -2.62,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-23",
+    "open": 0.08057,
+    "ahr": 0.77,
+    "change": -0.0049,
+    "changePercent": -5.73,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-24",
+    "open": 0.07821,
+    "ahr": 0.73,
+    "change": -0.00236,
+    "changePercent": -2.93,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-25",
+    "open": 0.07905,
+    "ahr": 0.74,
+    "change": 0.00084,
+    "changePercent": 1.07,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-26",
+    "open": 0.07795,
+    "ahr": 0.72,
+    "change": -0.0011,
+    "changePercent": -1.39,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-27",
+    "open": 0.07985,
+    "ahr": 0.75,
+    "change": 0.0019,
+    "changePercent": 2.44,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-28",
+    "open": 0.08014,
+    "ahr": 0.76,
+    "change": 0.00029,
+    "changePercent": 0.36,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-29",
+    "open": 0.07883,
+    "ahr": 0.73,
+    "change": -0.00131,
+    "changePercent": -1.63,
+    "isPositive": false
+  },
+  {
+    "date": "2024-01-30",
+    "open": 0.08137,
+    "ahr": 0.78,
+    "change": 0.00254,
+    "changePercent": 3.22,
+    "isPositive": true
+  },
+  {
+    "date": "2024-01-31",
+    "open": 0.07971,
+    "ahr": 0.74,
+    "change": -0.00166,
+    "changePercent": -2.04,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-01",
+    "open": 0.07874,
+    "ahr": 0.72,
+    "change": -0.00097,
+    "changePercent": -1.22,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-02",
+    "open": 0.07937,
+    "ahr": 0.74,
+    "change": 0.00063,
+    "changePercent": 0.8,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-03",
+    "open": 0.07928,
+    "ahr": 0.73,
+    "change": -9e-05,
+    "changePercent": -0.11,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-04",
+    "open": 0.07874,
+    "ahr": 0.72,
+    "change": -0.00054,
+    "changePercent": -0.68,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-05",
+    "open": 0.07831,
+    "ahr": 0.71,
+    "change": -0.00043,
+    "changePercent": -0.55,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-06",
+    "open": 0.07835,
+    "ahr": 0.71,
+    "change": 4e-05,
+    "changePercent": 0.05,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-07",
+    "open": 0.07848,
+    "ahr": 0.71,
+    "change": 0.00013,
+    "changePercent": 0.17,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-08",
+    "open": 0.08013,
+    "ahr": 0.74,
+    "change": 0.00165,
+    "changePercent": 2.1,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-09",
+    "open": 0.07986,
+    "ahr": 0.73,
+    "change": -0.00027,
+    "changePercent": -0.34,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-10",
+    "open": 0.08154,
+    "ahr": 0.76,
+    "change": 0.00168,
+    "changePercent": 2.1,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-11",
+    "open": 0.08141,
+    "ahr": 0.76,
+    "change": -0.00013,
+    "changePercent": -0.16,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-12",
+    "open": 0.08123,
+    "ahr": 0.76,
+    "change": -0.00018,
+    "changePercent": -0.22,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-13",
+    "open": 0.08223,
+    "ahr": 0.77,
+    "change": 0.001,
+    "changePercent": 1.23,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-14",
+    "open": 0.08105,
+    "ahr": 0.75,
+    "change": -0.00118,
+    "changePercent": -1.43,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-15",
+    "open": 0.08549,
+    "ahr": 0.83,
+    "change": 0.00444,
+    "changePercent": 5.48,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-16",
+    "open": 0.08527,
+    "ahr": 0.83,
+    "change": -0.00022,
+    "changePercent": -0.26,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-17",
+    "open": 0.08591,
+    "ahr": 0.84,
+    "change": 0.00064,
+    "changePercent": 0.75,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-18",
+    "open": 0.08355,
+    "ahr": 0.79,
+    "change": -0.00236,
+    "changePercent": -2.75,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-19",
+    "open": 0.08516,
+    "ahr": 0.82,
+    "change": 0.00161,
+    "changePercent": 1.93,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-20",
+    "open": 0.08942,
+    "ahr": 0.9,
+    "change": 0.00426,
+    "changePercent": 5.0,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-21",
+    "open": 0.08615,
+    "ahr": 0.84,
+    "change": -0.00327,
+    "changePercent": -3.66,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-22",
+    "open": 0.08457,
+    "ahr": 0.8,
+    "change": -0.00158,
+    "changePercent": -1.83,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-23",
+    "open": 0.08409,
+    "ahr": 0.79,
+    "change": -0.00048,
+    "changePercent": -0.57,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-24",
+    "open": 0.08451,
+    "ahr": 0.8,
+    "change": 0.00042,
+    "changePercent": 0.5,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-25",
+    "open": 0.08616,
+    "ahr": 0.83,
+    "change": 0.00165,
+    "changePercent": 1.95,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-26",
+    "open": 0.08613,
+    "ahr": 0.83,
+    "change": -3e-05,
+    "changePercent": -0.03,
+    "isPositive": false
+  },
+  {
+    "date": "2024-02-27",
+    "open": 0.08923,
+    "ahr": 0.89,
+    "change": 0.0031,
+    "changePercent": 3.6,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-28",
+    "open": 0.09759,
+    "ahr": 1.06,
+    "change": 0.00836,
+    "changePercent": 9.37,
+    "isPositive": true
+  },
+  {
+    "date": "2024-02-29",
+    "open": 0.11585,
+    "ahr": 1.48,
+    "change": 0.01826,
+    "changePercent": 18.71,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-01",
+    "open": 0.11732,
+    "ahr": 1.52,
+    "change": 0.00147,
+    "changePercent": 1.27,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-02",
+    "open": 0.13934,
+    "ahr": 2.13,
+    "change": 0.02202,
+    "changePercent": 18.77,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-03",
+    "open": 0.14195,
+    "ahr": 2.2,
+    "change": 0.00261,
+    "changePercent": 1.87,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-04",
+    "open": 0.15346,
+    "ahr": 2.55,
+    "change": 0.01151,
+    "changePercent": 8.11,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-05",
+    "open": 0.18197,
+    "ahr": 3.56,
+    "change": 0.02851,
+    "changePercent": 18.58,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-06",
+    "open": 0.15304,
+    "ahr": 2.51,
+    "change": -0.02893,
+    "changePercent": -15.9,
+    "isPositive": false
+  },
+  {
+    "date": "2024-03-07",
+    "open": 0.15784,
+    "ahr": 2.65,
+    "change": 0.0048,
+    "changePercent": 3.14,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-08",
+    "open": 0.15762,
+    "ahr": 2.63,
+    "change": -0.00022,
+    "changePercent": -0.14,
+    "isPositive": false
+  },
+  {
+    "date": "2024-03-09",
+    "open": 0.16456,
+    "ahr": 2.84,
+    "change": 0.00694,
+    "changePercent": 4.4,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-10",
+    "open": 0.17875,
+    "ahr": 3.34,
+    "change": 0.01419,
+    "changePercent": 8.62,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-11",
+    "open": 0.16998,
+    "ahr": 3.0,
+    "change": -0.00877,
+    "changePercent": -4.91,
+    "isPositive": false
+  },
+  {
+    "date": "2024-03-12",
+    "open": 0.182,
+    "ahr": 3.41,
+    "change": 0.01202,
+    "changePercent": 7.07,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-13",
+    "open": 0.16817,
+    "ahr": 2.9,
+    "change": -0.01383,
+    "changePercent": -7.6,
+    "isPositive": false
+  },
+  {
+    "date": "2024-03-14",
+    "open": 0.16895,
+    "ahr": 2.9,
+    "change": 0.00078,
+    "changePercent": 0.46,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-15",
+    "open": 0.1772,
+    "ahr": 3.18,
+    "change": 0.00825,
+    "changePercent": 4.88,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-16",
+    "open": 0.16358,
+    "ahr": 2.69,
+    "change": -0.01362,
+    "changePercent": -7.69,
+    "isPositive": false
+  },
+  {
+    "date": "2024-03-17",
+    "open": 0.14253,
+    "ahr": 2.03,
+    "change": -0.02105,
+    "changePercent": -12.87,
+    "isPositive": false
+  },
+  {
+    "date": "2024-03-18",
+    "open": 0.15428,
+    "ahr": 2.37,
+    "change": 0.01175,
+    "changePercent": 8.24,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-19",
+    "open": 0.14352,
+    "ahr": 2.04,
+    "change": -0.01076,
+    "changePercent": -6.97,
+    "isPositive": false
+  },
+  {
+    "date": "2024-03-20",
+    "open": 0.12879,
+    "ahr": 1.63,
+    "change": -0.01473,
+    "changePercent": -10.26,
+    "isPositive": false
+  },
+  {
+    "date": "2024-03-21",
+    "open": 0.15209,
+    "ahr": 2.27,
+    "change": 0.0233,
+    "changePercent": 18.09,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-22",
+    "open": 0.15536,
+    "ahr": 2.35,
+    "change": 0.00327,
+    "changePercent": 2.15,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-23",
+    "open": 0.15294,
+    "ahr": 2.26,
+    "change": -0.00242,
+    "changePercent": -1.56,
+    "isPositive": false
+  },
+  {
+    "date": "2024-03-24",
+    "open": 0.16191,
+    "ahr": 2.52,
+    "change": 0.00897,
+    "changePercent": 5.87,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-25",
+    "open": 0.17651,
+    "ahr": 2.98,
+    "change": 0.0146,
+    "changePercent": 9.02,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-26",
+    "open": 0.17526,
+    "ahr": 2.92,
+    "change": -0.00125,
+    "changePercent": -0.71,
+    "isPositive": false
+  },
+  {
+    "date": "2024-03-27",
+    "open": 0.18231,
+    "ahr": 3.13,
+    "change": 0.00705,
+    "changePercent": 4.02,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-28",
+    "open": 0.19048,
+    "ahr": 3.4,
+    "change": 0.00817,
+    "changePercent": 4.48,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-29",
+    "open": 0.22002,
+    "ahr": 4.5,
+    "change": 0.02954,
+    "changePercent": 15.51,
+    "isPositive": true
+  },
+  {
+    "date": "2024-03-30",
+    "open": 0.213,
+    "ahr": 4.18,
+    "change": -0.00702,
+    "changePercent": -3.19,
+    "isPositive": false
+  },
+  {
+    "date": "2024-03-31",
+    "open": 0.19913,
+    "ahr": 3.63,
+    "change": -0.01387,
+    "changePercent": -6.51,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-01",
+    "open": 0.22,
+    "ahr": 4.4,
+    "change": 0.02087,
+    "changePercent": 10.48,
+    "isPositive": true
+  },
+  {
+    "date": "2024-04-02",
+    "open": 0.20502,
+    "ahr": 3.79,
+    "change": -0.01498,
+    "changePercent": -6.81,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-03",
+    "open": 0.18249,
+    "ahr": 2.99,
+    "change": -0.02253,
+    "changePercent": -10.99,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-04",
+    "open": 0.17521,
+    "ahr": 2.73,
+    "change": -0.00728,
+    "changePercent": -3.99,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-05",
+    "open": 0.17997,
+    "ahr": 2.87,
+    "change": 0.00476,
+    "changePercent": 2.72,
+    "isPositive": true
+  },
+  {
+    "date": "2024-04-06",
+    "open": 0.17719,
+    "ahr": 2.76,
+    "change": -0.00278,
+    "changePercent": -1.54,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-07",
+    "open": 0.18576,
+    "ahr": 3.01,
+    "change": 0.00857,
+    "changePercent": 4.84,
+    "isPositive": true
+  },
+  {
+    "date": "2024-04-08",
+    "open": 0.19887,
+    "ahr": 3.43,
+    "change": 0.01311,
+    "changePercent": 7.06,
+    "isPositive": true
+  },
+  {
+    "date": "2024-04-09",
+    "open": 0.20261,
+    "ahr": 3.53,
+    "change": 0.00374,
+    "changePercent": 1.88,
+    "isPositive": true
+  },
+  {
+    "date": "2024-04-10",
+    "open": 0.18915,
+    "ahr": 3.06,
+    "change": -0.01346,
+    "changePercent": -6.64,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-11",
+    "open": 0.19971,
+    "ahr": 3.38,
+    "change": 0.01056,
+    "changePercent": 5.58,
+    "isPositive": true
+  },
+  {
+    "date": "2024-04-12",
+    "open": 0.19382,
+    "ahr": 3.17,
+    "change": -0.00589,
+    "changePercent": -2.95,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-13",
+    "open": 0.17403,
+    "ahr": 2.54,
+    "change": -0.01979,
+    "changePercent": -10.21,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-14",
+    "open": 0.15254,
+    "ahr": 1.94,
+    "change": -0.02149,
+    "changePercent": -12.35,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-15",
+    "open": 0.1621,
+    "ahr": 2.17,
+    "change": 0.00956,
+    "changePercent": 6.27,
+    "isPositive": true
+  },
+  {
+    "date": "2024-04-16",
+    "open": 0.16123,
+    "ahr": 2.14,
+    "change": -0.00087,
+    "changePercent": -0.54,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-17",
+    "open": 0.156,
+    "ahr": 1.99,
+    "change": -0.00523,
+    "changePercent": -3.24,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-18",
+    "open": 0.14755,
+    "ahr": 1.77,
+    "change": -0.00845,
+    "changePercent": -5.42,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-19",
+    "open": 0.15222,
+    "ahr": 1.87,
+    "change": 0.00467,
+    "changePercent": 3.17,
+    "isPositive": true
+  },
+  {
+    "date": "2024-04-20",
+    "open": 0.15632,
+    "ahr": 1.96,
+    "change": 0.0041,
+    "changePercent": 2.69,
+    "isPositive": true
+  },
+  {
+    "date": "2024-04-21",
+    "open": 0.16259,
+    "ahr": 2.11,
+    "change": 0.00627,
+    "changePercent": 4.01,
+    "isPositive": true
+  },
+  {
+    "date": "2024-04-22",
+    "open": 0.15823,
+    "ahr": 1.99,
+    "change": -0.00436,
+    "changePercent": -2.68,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-23",
+    "open": 0.16121,
+    "ahr": 2.05,
+    "change": 0.00298,
+    "changePercent": 1.88,
+    "isPositive": true
+  },
+  {
+    "date": "2024-04-24",
+    "open": 0.15979,
+    "ahr": 2.0,
+    "change": -0.00142,
+    "changePercent": -0.88,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-25",
+    "open": 0.15139,
+    "ahr": 1.79,
+    "change": -0.0084,
+    "changePercent": -5.26,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-26",
+    "open": 0.15126,
+    "ahr": 1.77,
+    "change": -0.00013,
+    "changePercent": -0.09,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-27",
+    "open": 0.14802,
+    "ahr": 1.69,
+    "change": -0.00324,
+    "changePercent": -2.14,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-28",
+    "open": 0.14776,
+    "ahr": 1.67,
+    "change": -0.00026,
+    "changePercent": -0.18,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-29",
+    "open": 0.14671,
+    "ahr": 1.64,
+    "change": -0.00105,
+    "changePercent": -0.71,
+    "isPositive": false
+  },
+  {
+    "date": "2024-04-30",
+    "open": 0.14343,
+    "ahr": 1.56,
+    "change": -0.00328,
+    "changePercent": -2.24,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-01",
+    "open": 0.13337,
+    "ahr": 1.34,
+    "change": -0.01006,
+    "changePercent": -7.01,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-02",
+    "open": 0.13021,
+    "ahr": 1.27,
+    "change": -0.00316,
+    "changePercent": -2.37,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-03",
+    "open": 0.13189,
+    "ahr": 1.3,
+    "change": 0.00168,
+    "changePercent": 1.29,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-04",
+    "open": 0.14604,
+    "ahr": 1.58,
+    "change": 0.01415,
+    "changePercent": 10.73,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-05",
+    "open": 0.16012,
+    "ahr": 1.89,
+    "change": 0.01408,
+    "changePercent": 9.64,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-06",
+    "open": 0.161,
+    "ahr": 1.9,
+    "change": 0.00088,
+    "changePercent": 0.55,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-07",
+    "open": 0.15649,
+    "ahr": 1.78,
+    "change": -0.00451,
+    "changePercent": -2.8,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-08",
+    "open": 0.14999,
+    "ahr": 1.63,
+    "change": -0.0065,
+    "changePercent": -4.15,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-09",
+    "open": 0.14323,
+    "ahr": 1.48,
+    "change": -0.00676,
+    "changePercent": -4.51,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-10",
+    "open": 0.1522,
+    "ahr": 1.66,
+    "change": 0.00897,
+    "changePercent": 6.26,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-11",
+    "open": 0.14389,
+    "ahr": 1.47,
+    "change": -0.00831,
+    "changePercent": -5.46,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-12",
+    "open": 0.14305,
+    "ahr": 1.45,
+    "change": -0.00084,
+    "changePercent": -0.58,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-13",
+    "open": 0.14122,
+    "ahr": 1.41,
+    "change": -0.00183,
+    "changePercent": -1.28,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-14",
+    "open": 0.14863,
+    "ahr": 1.55,
+    "change": 0.00741,
+    "changePercent": 5.25,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-15",
+    "open": 0.14552,
+    "ahr": 1.48,
+    "change": -0.00311,
+    "changePercent": -2.09,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-16",
+    "open": 0.15533,
+    "ahr": 1.68,
+    "change": 0.00981,
+    "changePercent": 6.74,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-17",
+    "open": 0.14971,
+    "ahr": 1.55,
+    "change": -0.00562,
+    "changePercent": -3.62,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-18",
+    "open": 0.15555,
+    "ahr": 1.66,
+    "change": 0.00584,
+    "changePercent": 3.9,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-19",
+    "open": 0.15302,
+    "ahr": 1.6,
+    "change": -0.00253,
+    "changePercent": -1.63,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-20",
+    "open": 0.14908,
+    "ahr": 1.51,
+    "change": -0.00394,
+    "changePercent": -2.57,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-21",
+    "open": 0.16573,
+    "ahr": 1.86,
+    "change": 0.01665,
+    "changePercent": 11.17,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-22",
+    "open": 0.17023,
+    "ahr": 1.95,
+    "change": 0.0045,
+    "changePercent": 2.72,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-23",
+    "open": 0.16628,
+    "ahr": 1.85,
+    "change": -0.00395,
+    "changePercent": -2.32,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-24",
+    "open": 0.15973,
+    "ahr": 1.7,
+    "change": -0.00655,
+    "changePercent": -3.94,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-25",
+    "open": 0.16386,
+    "ahr": 1.78,
+    "change": 0.00413,
+    "changePercent": 2.59,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-26",
+    "open": 0.17402,
+    "ahr": 1.99,
+    "change": 0.01016,
+    "changePercent": 6.2,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-27",
+    "open": 0.16621,
+    "ahr": 1.81,
+    "change": -0.00781,
+    "changePercent": -4.49,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-28",
+    "open": 0.16908,
+    "ahr": 1.86,
+    "change": 0.00287,
+    "changePercent": 1.73,
+    "isPositive": true
+  },
+  {
+    "date": "2024-05-29",
+    "open": 0.16496,
+    "ahr": 1.76,
+    "change": -0.00412,
+    "changePercent": -2.44,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-30",
+    "open": 0.16386,
+    "ahr": 1.73,
+    "change": -0.0011,
+    "changePercent": -0.67,
+    "isPositive": false
+  },
+  {
+    "date": "2024-05-31",
+    "open": 0.15945,
+    "ahr": 1.63,
+    "change": -0.00441,
+    "changePercent": -2.69,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-01",
+    "open": 0.15898,
+    "ahr": 1.61,
+    "change": -0.00047,
+    "changePercent": -0.29,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-02",
+    "open": 0.16031,
+    "ahr": 1.63,
+    "change": 0.00133,
+    "changePercent": 0.84,
+    "isPositive": true
+  },
+  {
+    "date": "2024-06-03",
+    "open": 0.1571,
+    "ahr": 1.56,
+    "change": -0.00321,
+    "changePercent": -2.0,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-04",
+    "open": 0.15834,
+    "ahr": 1.58,
+    "change": 0.00124,
+    "changePercent": 0.79,
+    "isPositive": true
+  },
+  {
+    "date": "2024-06-05",
+    "open": 0.16136,
+    "ahr": 1.63,
+    "change": 0.00302,
+    "changePercent": 1.91,
+    "isPositive": true
+  },
+  {
+    "date": "2024-06-06",
+    "open": 0.16327,
+    "ahr": 1.66,
+    "change": 0.00191,
+    "changePercent": 1.18,
+    "isPositive": true
+  },
+  {
+    "date": "2024-06-07",
+    "open": 0.16015,
+    "ahr": 1.59,
+    "change": -0.00312,
+    "changePercent": -1.91,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-08",
+    "open": 0.1482,
+    "ahr": 1.36,
+    "change": -0.01195,
+    "changePercent": -7.46,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-09",
+    "open": 0.1459,
+    "ahr": 1.31,
+    "change": -0.0023,
+    "changePercent": -1.55,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-10",
+    "open": 0.14679,
+    "ahr": 1.32,
+    "change": 0.00089,
+    "changePercent": 0.61,
+    "isPositive": true
+  },
+  {
+    "date": "2024-06-11",
+    "open": 0.14478,
+    "ahr": 1.28,
+    "change": -0.00201,
+    "changePercent": -1.37,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-12",
+    "open": 0.13806,
+    "ahr": 1.16,
+    "change": -0.00672,
+    "changePercent": -4.64,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-13",
+    "open": 0.14621,
+    "ahr": 1.29,
+    "change": 0.00815,
+    "changePercent": 5.9,
+    "isPositive": true
+  },
+  {
+    "date": "2024-06-14",
+    "open": 0.1411,
+    "ahr": 1.2,
+    "change": -0.00511,
+    "changePercent": -3.49,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-15",
+    "open": 0.13499,
+    "ahr": 1.09,
+    "change": -0.00611,
+    "changePercent": -4.33,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-16",
+    "open": 0.13678,
+    "ahr": 1.12,
+    "change": 0.00179,
+    "changePercent": 1.33,
+    "isPositive": true
+  },
+  {
+    "date": "2024-06-17",
+    "open": 0.13713,
+    "ahr": 1.12,
+    "change": 0.00035,
+    "changePercent": 0.26,
+    "isPositive": true
+  },
+  {
+    "date": "2024-06-18",
+    "open": 0.12879,
+    "ahr": 0.98,
+    "change": -0.00834,
+    "changePercent": -6.08,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-19",
+    "open": 0.12224,
+    "ahr": 0.88,
+    "change": -0.00655,
+    "changePercent": -5.09,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-20",
+    "open": 0.12247,
+    "ahr": 0.89,
+    "change": 0.00023,
+    "changePercent": 0.19,
+    "isPositive": true
+  },
+  {
+    "date": "2024-06-21",
+    "open": 0.12455,
+    "ahr": 0.91,
+    "change": 0.00208,
+    "changePercent": 1.7,
+    "isPositive": true
+  },
+  {
+    "date": "2024-06-22",
+    "open": 0.12418,
+    "ahr": 0.91,
+    "change": -0.00037,
+    "changePercent": -0.3,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-23",
+    "open": 0.12376,
+    "ahr": 0.9,
+    "change": -0.00042,
+    "changePercent": -0.34,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-24",
+    "open": 0.12222,
+    "ahr": 0.87,
+    "change": -0.00154,
+    "changePercent": -1.24,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-25",
+    "open": 0.11901,
+    "ahr": 0.83,
+    "change": -0.00321,
+    "changePercent": -2.63,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-26",
+    "open": 0.12616,
+    "ahr": 0.93,
+    "change": 0.00715,
+    "changePercent": 6.01,
+    "isPositive": true
+  },
+  {
+    "date": "2024-06-27",
+    "open": 0.12277,
+    "ahr": 0.87,
+    "change": -0.00339,
+    "changePercent": -2.69,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-28",
+    "open": 0.12711,
+    "ahr": 0.93,
+    "change": 0.00434,
+    "changePercent": 3.54,
+    "isPositive": true
+  },
+  {
+    "date": "2024-06-29",
+    "open": 0.12306,
+    "ahr": 0.87,
+    "change": -0.00405,
+    "changePercent": -3.19,
+    "isPositive": false
+  },
+  {
+    "date": "2024-06-30",
+    "open": 0.1219,
+    "ahr": 0.86,
+    "change": -0.00116,
+    "changePercent": -0.94,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-01",
+    "open": 0.12449,
+    "ahr": 0.89,
+    "change": 0.00259,
+    "changePercent": 2.12,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-02",
+    "open": 0.12352,
+    "ahr": 0.87,
+    "change": -0.00097,
+    "changePercent": -0.78,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-03",
+    "open": 0.1253,
+    "ahr": 0.9,
+    "change": 0.00178,
+    "changePercent": 1.44,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-04",
+    "open": 0.11849,
+    "ahr": 0.8,
+    "change": -0.00681,
+    "changePercent": -5.43,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-05",
+    "open": 0.10503,
+    "ahr": 0.63,
+    "change": -0.01346,
+    "changePercent": -11.36,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-06",
+    "open": 0.10548,
+    "ahr": 0.63,
+    "change": 0.00045,
+    "changePercent": 0.43,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-07",
+    "open": 0.11343,
+    "ahr": 0.73,
+    "change": 0.00795,
+    "changePercent": 7.54,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-08",
+    "open": 0.10415,
+    "ahr": 0.61,
+    "change": -0.00928,
+    "changePercent": -8.18,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-09",
+    "open": 0.10757,
+    "ahr": 0.65,
+    "change": 0.00342,
+    "changePercent": 3.28,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-10",
+    "open": 0.10756,
+    "ahr": 0.65,
+    "change": -1e-05,
+    "changePercent": -0.01,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-11",
+    "open": 0.108,
+    "ahr": 0.66,
+    "change": 0.00044,
+    "changePercent": 0.41,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-12",
+    "open": 0.10664,
+    "ahr": 0.64,
+    "change": -0.00136,
+    "changePercent": -1.26,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-13",
+    "open": 0.10769,
+    "ahr": 0.65,
+    "change": 0.00105,
+    "changePercent": 0.98,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-14",
+    "open": 0.11231,
+    "ahr": 0.71,
+    "change": 0.00462,
+    "changePercent": 4.29,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-15",
+    "open": 0.11535,
+    "ahr": 0.74,
+    "change": 0.00304,
+    "changePercent": 2.71,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-16",
+    "open": 0.1249,
+    "ahr": 0.87,
+    "change": 0.00955,
+    "changePercent": 8.28,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-17",
+    "open": 0.12479,
+    "ahr": 0.86,
+    "change": -0.00011,
+    "changePercent": -0.09,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-18",
+    "open": 0.12179,
+    "ahr": 0.82,
+    "change": -0.003,
+    "changePercent": -2.4,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-19",
+    "open": 0.11955,
+    "ahr": 0.79,
+    "change": -0.00224,
+    "changePercent": -1.84,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-20",
+    "open": 0.12543,
+    "ahr": 0.86,
+    "change": 0.00588,
+    "changePercent": 4.92,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-21",
+    "open": 0.13423,
+    "ahr": 0.99,
+    "change": 0.0088,
+    "changePercent": 7.02,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-22",
+    "open": 0.14027,
+    "ahr": 1.07,
+    "change": 0.00604,
+    "changePercent": 4.5,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-23",
+    "open": 0.13777,
+    "ahr": 1.03,
+    "change": -0.0025,
+    "changePercent": -1.78,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-24",
+    "open": 0.1303,
+    "ahr": 0.92,
+    "change": -0.00747,
+    "changePercent": -5.42,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-25",
+    "open": 0.12793,
+    "ahr": 0.88,
+    "change": -0.00237,
+    "changePercent": -1.82,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-26",
+    "open": 0.12525,
+    "ahr": 0.84,
+    "change": -0.00268,
+    "changePercent": -2.09,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-27",
+    "open": 0.13419,
+    "ahr": 0.96,
+    "change": 0.00894,
+    "changePercent": 7.14,
+    "isPositive": true
+  },
+  {
+    "date": "2024-07-28",
+    "open": 0.13143,
+    "ahr": 0.92,
+    "change": -0.00276,
+    "changePercent": -2.06,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-29",
+    "open": 0.13005,
+    "ahr": 0.9,
+    "change": -0.00138,
+    "changePercent": -1.05,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-30",
+    "open": 0.12844,
+    "ahr": 0.88,
+    "change": -0.00161,
+    "changePercent": -1.24,
+    "isPositive": false
+  },
+  {
+    "date": "2024-07-31",
+    "open": 0.12551,
+    "ahr": 0.83,
+    "change": -0.00293,
+    "changePercent": -2.28,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-01",
+    "open": 0.12192,
+    "ahr": 0.78,
+    "change": -0.00359,
+    "changePercent": -2.86,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-02",
+    "open": 0.11899,
+    "ahr": 0.74,
+    "change": -0.00293,
+    "changePercent": -2.4,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-03",
+    "open": 0.11154,
+    "ahr": 0.65,
+    "change": -0.00745,
+    "changePercent": -6.26,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-04",
+    "open": 0.10812,
+    "ahr": 0.61,
+    "change": -0.00342,
+    "changePercent": -3.07,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-05",
+    "open": 0.10375,
+    "ahr": 0.56,
+    "change": -0.00437,
+    "changePercent": -4.04,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-06",
+    "open": 0.09437,
+    "ahr": 0.46,
+    "change": -0.00938,
+    "changePercent": -9.04,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-07",
+    "open": 0.09646,
+    "ahr": 0.48,
+    "change": 0.00209,
+    "changePercent": 2.21,
+    "isPositive": true
+  },
+  {
+    "date": "2024-08-08",
+    "open": 0.09561,
+    "ahr": 0.47,
+    "change": -0.00085,
+    "changePercent": -0.88,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-09",
+    "open": 0.10747,
+    "ahr": 0.6,
+    "change": 0.01186,
+    "changePercent": 12.4,
+    "isPositive": true
+  },
+  {
+    "date": "2024-08-10",
+    "open": 0.10386,
+    "ahr": 0.56,
+    "change": -0.00361,
+    "changePercent": -3.36,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-11",
+    "open": 0.10519,
+    "ahr": 0.57,
+    "change": 0.00133,
+    "changePercent": 1.28,
+    "isPositive": true
+  },
+  {
+    "date": "2024-08-12",
+    "open": 0.10059,
+    "ahr": 0.52,
+    "change": -0.0046,
+    "changePercent": -4.37,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-13",
+    "open": 0.10791,
+    "ahr": 0.6,
+    "change": 0.00732,
+    "changePercent": 7.28,
+    "isPositive": true
+  },
+  {
+    "date": "2024-08-14",
+    "open": 0.10637,
+    "ahr": 0.58,
+    "change": -0.00154,
+    "changePercent": -1.43,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-15",
+    "open": 0.1024,
+    "ahr": 0.53,
+    "change": -0.00397,
+    "changePercent": -3.73,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-16",
+    "open": 0.10021,
+    "ahr": 0.51,
+    "change": -0.00219,
+    "changePercent": -2.14,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-17",
+    "open": 0.10034,
+    "ahr": 0.51,
+    "change": 0.00013,
+    "changePercent": 0.13,
+    "isPositive": true
+  },
+  {
+    "date": "2024-08-18",
+    "open": 0.10275,
+    "ahr": 0.53,
+    "change": 0.00241,
+    "changePercent": 2.4,
+    "isPositive": true
+  },
+  {
+    "date": "2024-08-19",
+    "open": 0.10005,
+    "ahr": 0.51,
+    "change": -0.0027,
+    "changePercent": -2.63,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-20",
+    "open": 0.10132,
+    "ahr": 0.52,
+    "change": 0.00127,
+    "changePercent": 1.27,
+    "isPositive": true
+  },
+  {
+    "date": "2024-08-21",
+    "open": 0.10289,
+    "ahr": 0.53,
+    "change": 0.00157,
+    "changePercent": 1.55,
+    "isPositive": true
+  },
+  {
+    "date": "2024-08-22",
+    "open": 0.10615,
+    "ahr": 0.56,
+    "change": 0.00326,
+    "changePercent": 3.17,
+    "isPositive": true
+  },
+  {
+    "date": "2024-08-23",
+    "open": 0.10526,
+    "ahr": 0.55,
+    "change": -0.00089,
+    "changePercent": -0.84,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-24",
+    "open": 0.11292,
+    "ahr": 0.63,
+    "change": 0.00766,
+    "changePercent": 7.28,
+    "isPositive": true
+  },
+  {
+    "date": "2024-08-25",
+    "open": 0.11258,
+    "ahr": 0.63,
+    "change": -0.00034,
+    "changePercent": -0.3,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-26",
+    "open": 0.1096,
+    "ahr": 0.59,
+    "change": -0.00298,
+    "changePercent": -2.65,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-27",
+    "open": 0.1052,
+    "ahr": 0.55,
+    "change": -0.0044,
+    "changePercent": -4.01,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-28",
+    "open": 0.0989,
+    "ahr": 0.48,
+    "change": -0.0063,
+    "changePercent": -5.99,
+    "isPositive": false
+  },
+  {
+    "date": "2024-08-29",
+    "open": 0.09965,
+    "ahr": 0.49,
+    "change": 0.00075,
+    "changePercent": 0.76,
+    "isPositive": true
+  },
+  {
+    "date": "2024-08-30",
+    "open": 0.10037,
+    "ahr": 0.49,
+    "change": 0.00072,
+    "changePercent": 0.72,
+    "isPositive": true
+  },
+  {
+    "date": "2024-08-31",
+    "open": 0.10177,
+    "ahr": 0.51,
+    "change": 0.0014,
+    "changePercent": 1.39,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-01",
+    "open": 0.10128,
+    "ahr": 0.5,
+    "change": -0.00049,
+    "changePercent": -0.48,
+    "isPositive": false
+  },
+  {
+    "date": "2024-09-02",
+    "open": 0.09508,
+    "ahr": 0.44,
+    "change": -0.0062,
+    "changePercent": -6.12,
+    "isPositive": false
+  },
+  {
+    "date": "2024-09-03",
+    "open": 0.09912,
+    "ahr": 0.48,
+    "change": 0.00404,
+    "changePercent": 4.25,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-04",
+    "open": 0.09678,
+    "ahr": 0.46,
+    "change": -0.00234,
+    "changePercent": -2.36,
+    "isPositive": false
+  },
+  {
+    "date": "2024-09-05",
+    "open": 0.09799,
+    "ahr": 0.47,
+    "change": 0.00121,
+    "changePercent": 1.25,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-06",
+    "open": 0.09842,
+    "ahr": 0.47,
+    "change": 0.00043,
+    "changePercent": 0.44,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-07",
+    "open": 0.09255,
+    "ahr": 0.41,
+    "change": -0.00587,
+    "changePercent": -5.96,
+    "isPositive": false
+  },
+  {
+    "date": "2024-09-08",
+    "open": 0.0954,
+    "ahr": 0.44,
+    "change": 0.00285,
+    "changePercent": 3.08,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-09",
+    "open": 0.09616,
+    "ahr": 0.45,
+    "change": 0.00076,
+    "changePercent": 0.8,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-10",
+    "open": 0.10375,
+    "ahr": 0.52,
+    "change": 0.00759,
+    "changePercent": 7.89,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-11",
+    "open": 0.10279,
+    "ahr": 0.51,
+    "change": -0.00096,
+    "changePercent": -0.93,
+    "isPositive": false
+  },
+  {
+    "date": "2024-09-12",
+    "open": 0.10132,
+    "ahr": 0.49,
+    "change": -0.00147,
+    "changePercent": -1.43,
+    "isPositive": false
+  },
+  {
+    "date": "2024-09-13",
+    "open": 0.10269,
+    "ahr": 0.5,
+    "change": 0.00137,
+    "changePercent": 1.35,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-14",
+    "open": 0.10695,
+    "ahr": 0.55,
+    "change": 0.00426,
+    "changePercent": 4.15,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-15",
+    "open": 0.1054,
+    "ahr": 0.53,
+    "change": -0.00155,
+    "changePercent": -1.45,
+    "isPositive": false
+  },
+  {
+    "date": "2024-09-16",
+    "open": 0.1028,
+    "ahr": 0.5,
+    "change": -0.0026,
+    "changePercent": -2.47,
+    "isPositive": false
+  },
+  {
+    "date": "2024-09-17",
+    "open": 0.09965,
+    "ahr": 0.47,
+    "change": -0.00315,
+    "changePercent": -3.06,
+    "isPositive": false
+  },
+  {
+    "date": "2024-09-18",
+    "open": 0.10111,
+    "ahr": 0.49,
+    "change": 0.00146,
+    "changePercent": 1.47,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-19",
+    "open": 0.10384,
+    "ahr": 0.51,
+    "change": 0.00273,
+    "changePercent": 2.7,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-20",
+    "open": 0.10498,
+    "ahr": 0.53,
+    "change": 0.00114,
+    "changePercent": 1.1,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-21",
+    "open": 0.10555,
+    "ahr": 0.53,
+    "change": 0.00057,
+    "changePercent": 0.54,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-22",
+    "open": 0.10994,
+    "ahr": 0.58,
+    "change": 0.00439,
+    "changePercent": 4.16,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-23",
+    "open": 0.10632,
+    "ahr": 0.54,
+    "change": -0.00362,
+    "changePercent": -3.29,
+    "isPositive": false
+  },
+  {
+    "date": "2024-09-24",
+    "open": 0.10807,
+    "ahr": 0.56,
+    "change": 0.00175,
+    "changePercent": 1.65,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-25",
+    "open": 0.10977,
+    "ahr": 0.58,
+    "change": 0.0017,
+    "changePercent": 1.57,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-26",
+    "open": 0.10851,
+    "ahr": 0.57,
+    "change": -0.00126,
+    "changePercent": -1.15,
+    "isPositive": false
+  },
+  {
+    "date": "2024-09-27",
+    "open": 0.11817,
+    "ahr": 0.67,
+    "change": 0.00966,
+    "changePercent": 8.9,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-28",
+    "open": 0.12352,
+    "ahr": 0.73,
+    "change": 0.00535,
+    "changePercent": 4.53,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-29",
+    "open": 0.12807,
+    "ahr": 0.79,
+    "change": 0.00455,
+    "changePercent": 3.68,
+    "isPositive": true
+  },
+  {
+    "date": "2024-09-30",
+    "open": 0.12438,
+    "ahr": 0.74,
+    "change": -0.00369,
+    "changePercent": -2.88,
+    "isPositive": false
+  },
+  {
+    "date": "2024-10-01",
+    "open": 0.11421,
+    "ahr": 0.63,
+    "change": -0.01017,
+    "changePercent": -8.18,
+    "isPositive": false
+  },
+  {
+    "date": "2024-10-02",
+    "open": 0.10686,
+    "ahr": 0.55,
+    "change": -0.00735,
+    "changePercent": -6.44,
+    "isPositive": false
+  },
+  {
+    "date": "2024-10-03",
+    "open": 0.10462,
+    "ahr": 0.53,
+    "change": -0.00224,
+    "changePercent": -2.1,
+    "isPositive": false
+  },
+  {
+    "date": "2024-10-04",
+    "open": 0.10506,
+    "ahr": 0.53,
+    "change": 0.00044,
+    "changePercent": 0.42,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-05",
+    "open": 0.10924,
+    "ahr": 0.58,
+    "change": 0.00418,
+    "changePercent": 3.98,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-06",
+    "open": 0.10941,
+    "ahr": 0.58,
+    "change": 0.00017,
+    "changePercent": 0.16,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-07",
+    "open": 0.11159,
+    "ahr": 0.6,
+    "change": 0.00218,
+    "changePercent": 1.99,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-08",
+    "open": 0.10841,
+    "ahr": 0.57,
+    "change": -0.00318,
+    "changePercent": -2.85,
+    "isPositive": false
+  },
+  {
+    "date": "2024-10-09",
+    "open": 0.10709,
+    "ahr": 0.55,
+    "change": -0.00132,
+    "changePercent": -1.22,
+    "isPositive": false
+  },
+  {
+    "date": "2024-10-10",
+    "open": 0.10795,
+    "ahr": 0.56,
+    "change": 0.00086,
+    "changePercent": 0.8,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-11",
+    "open": 0.10603,
+    "ahr": 0.54,
+    "change": -0.00192,
+    "changePercent": -1.78,
+    "isPositive": false
+  },
+  {
+    "date": "2024-10-12",
+    "open": 0.11077,
+    "ahr": 0.6,
+    "change": 0.00474,
+    "changePercent": 4.47,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-13",
+    "open": 0.11138,
+    "ahr": 0.6,
+    "change": 0.00061,
+    "changePercent": 0.55,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-14",
+    "open": 0.1114,
+    "ahr": 0.6,
+    "change": 2e-05,
+    "changePercent": 0.02,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-15",
+    "open": 0.11669,
+    "ahr": 0.66,
+    "change": 0.00529,
+    "changePercent": 4.75,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-16",
+    "open": 0.11748,
+    "ahr": 0.67,
+    "change": 0.00079,
+    "changePercent": 0.68,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-17",
+    "open": 0.12574,
+    "ahr": 0.77,
+    "change": 0.00826,
+    "changePercent": 7.03,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-18",
+    "open": 0.12967,
+    "ahr": 0.82,
+    "change": 0.00393,
+    "changePercent": 3.13,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-19",
+    "open": 0.13718,
+    "ahr": 0.92,
+    "change": 0.00751,
+    "changePercent": 5.79,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-20",
+    "open": 0.14408,
+    "ahr": 1.02,
+    "change": 0.0069,
+    "changePercent": 5.03,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-21",
+    "open": 0.14214,
+    "ahr": 0.99,
+    "change": -0.00194,
+    "changePercent": -1.35,
+    "isPositive": false
+  },
+  {
+    "date": "2024-10-22",
+    "open": 0.14364,
+    "ahr": 1.01,
+    "change": 0.0015,
+    "changePercent": 1.06,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-23",
+    "open": 0.1397,
+    "ahr": 0.96,
+    "change": -0.00394,
+    "changePercent": -2.74,
+    "isPositive": false
+  },
+  {
+    "date": "2024-10-24",
+    "open": 0.13998,
+    "ahr": 0.96,
+    "change": 0.00028,
+    "changePercent": 0.2,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-25",
+    "open": 0.14189,
+    "ahr": 0.99,
+    "change": 0.00191,
+    "changePercent": 1.36,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-26",
+    "open": 0.13161,
+    "ahr": 0.85,
+    "change": -0.01028,
+    "changePercent": -7.25,
+    "isPositive": false
+  },
+  {
+    "date": "2024-10-27",
+    "open": 0.13747,
+    "ahr": 0.93,
+    "change": 0.00586,
+    "changePercent": 4.45,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-28",
+    "open": 0.14427,
+    "ahr": 1.02,
+    "change": 0.0068,
+    "changePercent": 4.95,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-29",
+    "open": 0.16145,
+    "ahr": 1.28,
+    "change": 0.01718,
+    "changePercent": 11.91,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-30",
+    "open": 0.17586,
+    "ahr": 1.51,
+    "change": 0.01441,
+    "changePercent": 8.93,
+    "isPositive": true
+  },
+  {
+    "date": "2024-10-31",
+    "open": 0.16828,
+    "ahr": 1.38,
+    "change": -0.00758,
+    "changePercent": -4.31,
+    "isPositive": false
+  },
+  {
+    "date": "2024-11-01",
+    "open": 0.16164,
+    "ahr": 1.28,
+    "change": -0.00664,
+    "changePercent": -3.95,
+    "isPositive": false
+  },
+  {
+    "date": "2024-11-02",
+    "open": 0.15917,
+    "ahr": 1.24,
+    "change": -0.00247,
+    "changePercent": -1.53,
+    "isPositive": false
+  },
+  {
+    "date": "2024-11-03",
+    "open": 0.15955,
+    "ahr": 1.24,
+    "change": 0.00038,
+    "changePercent": 0.24,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-04",
+    "open": 0.15139,
+    "ahr": 1.12,
+    "change": -0.00816,
+    "changePercent": -5.11,
+    "isPositive": false
+  },
+  {
+    "date": "2024-11-05",
+    "open": 0.15822,
+    "ahr": 1.22,
+    "change": 0.00683,
+    "changePercent": 4.51,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-06",
+    "open": 0.16999,
+    "ahr": 1.4,
+    "change": 0.01177,
+    "changePercent": 7.44,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-07",
+    "open": 0.19646,
+    "ahr": 1.87,
+    "change": 0.02647,
+    "changePercent": 15.57,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-08",
+    "open": 0.19325,
+    "ahr": 1.8,
+    "change": -0.00321,
+    "changePercent": -1.63,
+    "isPositive": false
+  },
+  {
+    "date": "2024-11-09",
+    "open": 0.20197,
+    "ahr": 1.96,
+    "change": 0.00872,
+    "changePercent": 4.51,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-10",
+    "open": 0.21891,
+    "ahr": 2.3,
+    "change": 0.01694,
+    "changePercent": 8.39,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-11",
+    "open": 0.27781,
+    "ahr": 3.68,
+    "change": 0.0589,
+    "changePercent": 26.91,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-12",
+    "open": 0.35135,
+    "ahr": 5.85,
+    "change": 0.07354,
+    "changePercent": 26.47,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-13",
+    "open": 0.37995,
+    "ahr": 6.8,
+    "change": 0.0286,
+    "changePercent": 8.14,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-14",
+    "open": 0.39899,
+    "ahr": 7.46,
+    "change": 0.01904,
+    "changePercent": 5.01,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-15",
+    "open": 0.36258,
+    "ahr": 6.12,
+    "change": -0.03641,
+    "changePercent": -9.13,
+    "isPositive": false
+  },
+  {
+    "date": "2024-11-16",
+    "open": 0.3815,
+    "ahr": 6.73,
+    "change": 0.01892,
+    "changePercent": 5.22,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-17",
+    "open": 0.36421,
+    "ahr": 6.1,
+    "change": -0.01729,
+    "changePercent": -4.53,
+    "isPositive": false
+  },
+  {
+    "date": "2024-11-18",
+    "open": 0.36704,
+    "ahr": 6.16,
+    "change": 0.00283,
+    "changePercent": 0.78,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-19",
+    "open": 0.37113,
+    "ahr": 6.26,
+    "change": 0.00409,
+    "changePercent": 1.11,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-20",
+    "open": 0.39067,
+    "ahr": 6.89,
+    "change": 0.01954,
+    "changePercent": 5.27,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-21",
+    "open": 0.37778,
+    "ahr": 6.41,
+    "change": -0.01289,
+    "changePercent": -3.3,
+    "isPositive": false
+  },
+  {
+    "date": "2024-11-22",
+    "open": 0.38664,
+    "ahr": 6.68,
+    "change": 0.00886,
+    "changePercent": 2.35,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-23",
+    "open": 0.41277,
+    "ahr": 7.56,
+    "change": 0.02613,
+    "changePercent": 6.76,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-24",
+    "open": 0.43016,
+    "ahr": 8.16,
+    "change": 0.01739,
+    "changePercent": 4.21,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-25",
+    "open": 0.43026,
+    "ahr": 8.11,
+    "change": 0.0001,
+    "changePercent": 0.02,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-26",
+    "open": 0.39263,
+    "ahr": 6.71,
+    "change": -0.03763,
+    "changePercent": -8.75,
+    "isPositive": false
+  },
+  {
+    "date": "2024-11-27",
+    "open": 0.38705,
+    "ahr": 6.48,
+    "change": -0.00558,
+    "changePercent": -1.42,
+    "isPositive": false
+  },
+  {
+    "date": "2024-11-28",
+    "open": 0.40093,
+    "ahr": 6.91,
+    "change": 0.01388,
+    "changePercent": 3.59,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-29",
+    "open": 0.4016,
+    "ahr": 6.89,
+    "change": 0.00067,
+    "changePercent": 0.17,
+    "isPositive": true
+  },
+  {
+    "date": "2024-11-30",
+    "open": 0.42635,
+    "ahr": 7.72,
+    "change": 0.02475,
+    "changePercent": 6.16,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-01",
+    "open": 0.4216,
+    "ahr": 7.5,
+    "change": -0.00475,
+    "changePercent": -1.11,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-02",
+    "open": 0.44045,
+    "ahr": 8.13,
+    "change": 0.01885,
+    "changePercent": 4.47,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-03",
+    "open": 0.42457,
+    "ahr": 7.51,
+    "change": -0.01588,
+    "changePercent": -3.61,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-04",
+    "open": 0.40632,
+    "ahr": 6.84,
+    "change": -0.01825,
+    "changePercent": -4.3,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-05",
+    "open": 0.43274,
+    "ahr": 7.71,
+    "change": 0.02642,
+    "changePercent": 6.5,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-06",
+    "open": 0.42683,
+    "ahr": 7.45,
+    "change": -0.00591,
+    "changePercent": -1.37,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-07",
+    "open": 0.43468,
+    "ahr": 7.68,
+    "change": 0.00785,
+    "changePercent": 1.84,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-08",
+    "open": 0.45283,
+    "ahr": 8.28,
+    "change": 0.01815,
+    "changePercent": 4.18,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-09",
+    "open": 0.46635,
+    "ahr": 8.74,
+    "change": 0.01352,
+    "changePercent": 2.99,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-10",
+    "open": 0.41403,
+    "ahr": 6.85,
+    "change": -0.05232,
+    "changePercent": -11.22,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-11",
+    "open": 0.39391,
+    "ahr": 6.16,
+    "change": -0.02012,
+    "changePercent": -4.86,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-12",
+    "open": 0.41402,
+    "ahr": 6.77,
+    "change": 0.02011,
+    "changePercent": 5.11,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-13",
+    "open": 0.40611,
+    "ahr": 6.48,
+    "change": -0.00791,
+    "changePercent": -1.91,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-14",
+    "open": 0.40901,
+    "ahr": 6.54,
+    "change": 0.0029,
+    "changePercent": 0.71,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-15",
+    "open": 0.39827,
+    "ahr": 6.16,
+    "change": -0.01074,
+    "changePercent": -2.63,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-16",
+    "open": 0.40659,
+    "ahr": 6.39,
+    "change": 0.00832,
+    "changePercent": 2.09,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-17",
+    "open": 0.40195,
+    "ahr": 6.21,
+    "change": -0.00464,
+    "changePercent": -1.14,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-18",
+    "open": 0.39415,
+    "ahr": 5.94,
+    "change": -0.0078,
+    "changePercent": -1.94,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-19",
+    "open": 0.35825,
+    "ahr": 4.88,
+    "change": -0.0359,
+    "changePercent": -9.11,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-20",
+    "open": 0.31431,
+    "ahr": 3.74,
+    "change": -0.04394,
+    "changePercent": -12.27,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-21",
+    "open": 0.31792,
+    "ahr": 3.81,
+    "change": 0.00361,
+    "changePercent": 1.15,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-22",
+    "open": 0.32042,
+    "ahr": 3.85,
+    "change": 0.0025,
+    "changePercent": 0.79,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-23",
+    "open": 0.31263,
+    "ahr": 3.65,
+    "change": -0.00779,
+    "changePercent": -2.43,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-24",
+    "open": 0.32497,
+    "ahr": 3.92,
+    "change": 0.01234,
+    "changePercent": 3.95,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-25",
+    "open": 0.3371,
+    "ahr": 4.2,
+    "change": 0.01213,
+    "changePercent": 3.73,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-26",
+    "open": 0.33434,
+    "ahr": 4.11,
+    "change": -0.00276,
+    "changePercent": -0.82,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-27",
+    "open": 0.31274,
+    "ahr": 3.58,
+    "change": -0.0216,
+    "changePercent": -6.46,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-28",
+    "open": 0.31187,
+    "ahr": 3.54,
+    "change": -0.00087,
+    "changePercent": -0.28,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-29",
+    "open": 0.32439,
+    "ahr": 3.81,
+    "change": 0.01252,
+    "changePercent": 4.01,
+    "isPositive": true
+  },
+  {
+    "date": "2024-12-30",
+    "open": 0.31435,
+    "ahr": 3.56,
+    "change": -0.01004,
+    "changePercent": -3.1,
+    "isPositive": false
+  },
+  {
+    "date": "2024-12-31",
+    "open": 0.31396,
+    "ahr": 3.53,
+    "change": -0.00039,
+    "changePercent": -0.12,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-01",
+    "open": 0.316,
+    "ahr": 3.56,
+    "change": 0.00204,
+    "changePercent": 0.65,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-02",
+    "open": 0.32513,
+    "ahr": 3.75,
+    "change": 0.00913,
+    "changePercent": 2.89,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-03",
+    "open": 0.33894,
+    "ahr": 4.05,
+    "change": 0.01381,
+    "changePercent": 4.25,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-04",
+    "open": 0.37989,
+    "ahr": 5.05,
+    "change": 0.04095,
+    "changePercent": 12.08,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-05",
+    "open": 0.39482,
+    "ahr": 5.42,
+    "change": 0.01493,
+    "changePercent": 3.93,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-06",
+    "open": 0.38231,
+    "ahr": 5.04,
+    "change": -0.01251,
+    "changePercent": -3.17,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-07",
+    "open": 0.38782,
+    "ahr": 5.16,
+    "change": 0.00551,
+    "changePercent": 1.44,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-08",
+    "open": 0.348,
+    "ahr": 4.13,
+    "change": -0.03982,
+    "changePercent": -10.27,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-09",
+    "open": 0.3423,
+    "ahr": 3.97,
+    "change": -0.0057,
+    "changePercent": -1.64,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-10",
+    "open": 0.32099,
+    "ahr": 3.47,
+    "change": -0.02131,
+    "changePercent": -6.23,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-11",
+    "open": 0.33388,
+    "ahr": 3.73,
+    "change": 0.01289,
+    "changePercent": 4.02,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-12",
+    "open": 0.3412,
+    "ahr": 3.87,
+    "change": 0.00732,
+    "changePercent": 2.19,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-13",
+    "open": 0.33591,
+    "ahr": 3.73,
+    "change": -0.00529,
+    "changePercent": -1.55,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-14",
+    "open": 0.33808,
+    "ahr": 3.75,
+    "change": 0.00217,
+    "changePercent": 0.65,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-15",
+    "open": 0.35591,
+    "ahr": 4.13,
+    "change": 0.01783,
+    "changePercent": 5.27,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-16",
+    "open": 0.38537,
+    "ahr": 4.81,
+    "change": 0.02946,
+    "changePercent": 8.28,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-17",
+    "open": 0.37649,
+    "ahr": 4.56,
+    "change": -0.00888,
+    "changePercent": -2.3,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-18",
+    "open": 0.41525,
+    "ahr": 5.51,
+    "change": 0.03876,
+    "changePercent": 10.3,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-19",
+    "open": 0.39641,
+    "ahr": 4.99,
+    "change": -0.01884,
+    "changePercent": -4.54,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-20",
+    "open": 0.35839,
+    "ahr": 4.05,
+    "change": -0.03802,
+    "changePercent": -9.59,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-21",
+    "open": 0.35456,
+    "ahr": 3.93,
+    "change": -0.00383,
+    "changePercent": -1.07,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-22",
+    "open": 0.37178,
+    "ahr": 4.29,
+    "change": 0.01722,
+    "changePercent": 4.86,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-23",
+    "open": 0.36291,
+    "ahr": 4.06,
+    "change": -0.00887,
+    "changePercent": -2.39,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-24",
+    "open": 0.35207,
+    "ahr": 3.8,
+    "change": -0.01084,
+    "changePercent": -2.99,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-25",
+    "open": 0.35086,
+    "ahr": 3.74,
+    "change": -0.00121,
+    "changePercent": -0.34,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-26",
+    "open": 0.35351,
+    "ahr": 3.78,
+    "change": 0.00265,
+    "changePercent": 0.76,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-27",
+    "open": 0.33604,
+    "ahr": 3.39,
+    "change": -0.01747,
+    "changePercent": -4.94,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-28",
+    "open": 0.33398,
+    "ahr": 3.33,
+    "change": -0.00206,
+    "changePercent": -0.61,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-29",
+    "open": 0.31872,
+    "ahr": 3.01,
+    "change": -0.01526,
+    "changePercent": -4.57,
+    "isPositive": false
+  },
+  {
+    "date": "2025-01-30",
+    "open": 0.32405,
+    "ahr": 3.09,
+    "change": 0.00533,
+    "changePercent": 1.67,
+    "isPositive": true
+  },
+  {
+    "date": "2025-01-31",
+    "open": 0.33154,
+    "ahr": 3.22,
+    "change": 0.00749,
+    "changePercent": 2.31,
+    "isPositive": true
+  },
+  {
+    "date": "2025-02-01",
+    "open": 0.3289,
+    "ahr": 3.15,
+    "change": -0.00264,
+    "changePercent": -0.8,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-02",
+    "open": 0.30793,
+    "ahr": 2.74,
+    "change": -0.02097,
+    "changePercent": -6.38,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-03",
+    "open": 0.26809,
+    "ahr": 2.07,
+    "change": -0.03984,
+    "changePercent": -12.94,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-04",
+    "open": 0.28484,
+    "ahr": 2.32,
+    "change": 0.01675,
+    "changePercent": 6.25,
+    "isPositive": true
+  },
+  {
+    "date": "2025-02-05",
+    "open": 0.26346,
+    "ahr": 1.98,
+    "change": -0.02138,
+    "changePercent": -7.51,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-06",
+    "open": 0.25617,
+    "ahr": 1.86,
+    "change": -0.00729,
+    "changePercent": -2.77,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-07",
+    "open": 0.24788,
+    "ahr": 1.74,
+    "change": -0.00829,
+    "changePercent": -3.24,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-08",
+    "open": 0.24652,
+    "ahr": 1.71,
+    "change": -0.00136,
+    "changePercent": -0.55,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-09",
+    "open": 0.25287,
+    "ahr": 1.79,
+    "change": 0.00635,
+    "changePercent": 2.58,
+    "isPositive": true
+  },
+  {
+    "date": "2025-02-10",
+    "open": 0.2489,
+    "ahr": 1.73,
+    "change": -0.00397,
+    "changePercent": -1.57,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-11",
+    "open": 0.25541,
+    "ahr": 1.81,
+    "change": 0.00651,
+    "changePercent": 2.62,
+    "isPositive": true
+  },
+  {
+    "date": "2025-02-12",
+    "open": 0.25305,
+    "ahr": 1.77,
+    "change": -0.00236,
+    "changePercent": -0.92,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-13",
+    "open": 0.26419,
+    "ahr": 1.92,
+    "change": 0.01114,
+    "changePercent": 4.4,
+    "isPositive": true
+  },
+  {
+    "date": "2025-02-14",
+    "open": 0.26245,
+    "ahr": 1.89,
+    "change": -0.00174,
+    "changePercent": -0.66,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-15",
+    "open": 0.2718,
+    "ahr": 2.02,
+    "change": 0.00935,
+    "changePercent": 3.56,
+    "isPositive": true
+  },
+  {
+    "date": "2025-02-16",
+    "open": 0.27174,
+    "ahr": 2.0,
+    "change": -6e-05,
+    "changePercent": -0.02,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-17",
+    "open": 0.26555,
+    "ahr": 1.9,
+    "change": -0.00619,
+    "changePercent": -2.28,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-18",
+    "open": 0.25819,
+    "ahr": 1.79,
+    "change": -0.00736,
+    "changePercent": -2.77,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-19",
+    "open": 0.25137,
+    "ahr": 1.69,
+    "change": -0.00682,
+    "changePercent": -2.64,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-20",
+    "open": 0.2548,
+    "ahr": 1.73,
+    "change": 0.00343,
+    "changePercent": 1.36,
+    "isPositive": true
+  },
+  {
+    "date": "2025-02-21",
+    "open": 0.25473,
+    "ahr": 1.72,
+    "change": -7e-05,
+    "changePercent": -0.03,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-22",
+    "open": 0.23966,
+    "ahr": 1.51,
+    "change": -0.01507,
+    "changePercent": -5.92,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-23",
+    "open": 0.24657,
+    "ahr": 1.59,
+    "change": 0.00691,
+    "changePercent": 2.88,
+    "isPositive": true
+  },
+  {
+    "date": "2025-02-24",
+    "open": 0.24285,
+    "ahr": 1.53,
+    "change": -0.00372,
+    "changePercent": -1.51,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-25",
+    "open": 0.21044,
+    "ahr": 1.15,
+    "change": -0.03241,
+    "changePercent": -13.35,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-26",
+    "open": 0.21158,
+    "ahr": 1.15,
+    "change": 0.00114,
+    "changePercent": 0.54,
+    "isPositive": true
+  },
+  {
+    "date": "2025-02-27",
+    "open": 0.20355,
+    "ahr": 1.06,
+    "change": -0.00803,
+    "changePercent": -3.8,
+    "isPositive": false
+  },
+  {
+    "date": "2025-02-28",
+    "open": 0.20688,
+    "ahr": 1.09,
+    "change": 0.00333,
+    "changePercent": 1.64,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-01",
+    "open": 0.20184,
+    "ahr": 1.04,
+    "change": -0.00504,
+    "changePercent": -2.44,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-02",
+    "open": 0.20673,
+    "ahr": 1.08,
+    "change": 0.00489,
+    "changePercent": 2.42,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-03",
+    "open": 0.2393,
+    "ahr": 1.44,
+    "change": 0.03257,
+    "changePercent": 15.75,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-04",
+    "open": 0.19914,
+    "ahr": 0.99,
+    "change": -0.04016,
+    "changePercent": -16.78,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-05",
+    "open": 0.19905,
+    "ahr": 0.99,
+    "change": -9e-05,
+    "changePercent": -0.05,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-06",
+    "open": 0.20471,
+    "ahr": 1.04,
+    "change": 0.00566,
+    "changePercent": 2.84,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-07",
+    "open": 0.20152,
+    "ahr": 1.0,
+    "change": -0.00319,
+    "changePercent": -1.56,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-08",
+    "open": 0.19843,
+    "ahr": 0.97,
+    "change": -0.00309,
+    "changePercent": -1.53,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-09",
+    "open": 0.19234,
+    "ahr": 0.91,
+    "change": -0.00609,
+    "changePercent": -3.07,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-10",
+    "open": 0.1681,
+    "ahr": 0.69,
+    "change": -0.02424,
+    "changePercent": -12.6,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-11",
+    "open": 0.15409,
+    "ahr": 0.58,
+    "change": -0.01401,
+    "changePercent": -8.33,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-12",
+    "open": 0.16453,
+    "ahr": 0.66,
+    "change": 0.01044,
+    "changePercent": 6.78,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-13",
+    "open": 0.17244,
+    "ahr": 0.72,
+    "change": 0.00791,
+    "changePercent": 4.81,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-14",
+    "open": 0.16523,
+    "ahr": 0.66,
+    "change": -0.00721,
+    "changePercent": -4.18,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-15",
+    "open": 0.17194,
+    "ahr": 0.71,
+    "change": 0.00671,
+    "changePercent": 4.06,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-16",
+    "open": 0.17593,
+    "ahr": 0.74,
+    "change": 0.00399,
+    "changePercent": 2.32,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-17",
+    "open": 0.16818,
+    "ahr": 0.68,
+    "change": -0.00775,
+    "changePercent": -4.41,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-18",
+    "open": 0.17333,
+    "ahr": 0.72,
+    "change": 0.00515,
+    "changePercent": 3.06,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-19",
+    "open": 0.16803,
+    "ahr": 0.67,
+    "change": -0.0053,
+    "changePercent": -3.06,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-20",
+    "open": 0.178,
+    "ahr": 0.75,
+    "change": 0.00997,
+    "changePercent": 5.93,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-21",
+    "open": 0.16948,
+    "ahr": 0.68,
+    "change": -0.00852,
+    "changePercent": -4.79,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-22",
+    "open": 0.16727,
+    "ahr": 0.66,
+    "change": -0.00221,
+    "changePercent": -1.3,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-23",
+    "open": 0.16737,
+    "ahr": 0.65,
+    "change": 0.0001,
+    "changePercent": 0.06,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-24",
+    "open": 0.17261,
+    "ahr": 0.69,
+    "change": 0.00524,
+    "changePercent": 3.13,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-25",
+    "open": 0.18299,
+    "ahr": 0.78,
+    "change": 0.01038,
+    "changePercent": 6.01,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-26",
+    "open": 0.19063,
+    "ahr": 0.84,
+    "change": 0.00764,
+    "changePercent": 4.18,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-27",
+    "open": 0.1949,
+    "ahr": 0.87,
+    "change": 0.00427,
+    "changePercent": 2.24,
+    "isPositive": true
+  },
+  {
+    "date": "2025-03-28",
+    "open": 0.19047,
+    "ahr": 0.83,
+    "change": -0.00443,
+    "changePercent": -2.27,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-29",
+    "open": 0.18024,
+    "ahr": 0.74,
+    "change": -0.01023,
+    "changePercent": -5.37,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-30",
+    "open": 0.16958,
+    "ahr": 0.65,
+    "change": -0.01066,
+    "changePercent": -5.91,
+    "isPositive": false
+  },
+  {
+    "date": "2025-03-31",
+    "open": 0.16653,
+    "ahr": 0.63,
+    "change": -0.00305,
+    "changePercent": -1.8,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-01",
+    "open": 0.16666,
+    "ahr": 0.63,
+    "change": 0.00013,
+    "changePercent": 0.08,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-02",
+    "open": 0.17399,
+    "ahr": 0.68,
+    "change": 0.00733,
+    "changePercent": 4.4,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-03",
+    "open": 0.16383,
+    "ahr": 0.6,
+    "change": -0.01016,
+    "changePercent": -5.84,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-04",
+    "open": 0.16232,
+    "ahr": 0.59,
+    "change": -0.00151,
+    "changePercent": -0.92,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-05",
+    "open": 0.17128,
+    "ahr": 0.65,
+    "change": 0.00896,
+    "changePercent": 5.52,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-06",
+    "open": 0.16898,
+    "ahr": 0.63,
+    "change": -0.0023,
+    "changePercent": -1.34,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-07",
+    "open": 0.14927,
+    "ahr": 0.49,
+    "change": -0.01971,
+    "changePercent": -11.66,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-08",
+    "open": 0.14958,
+    "ahr": 0.49,
+    "change": 0.00031,
+    "changePercent": 0.21,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-09",
+    "open": 0.14225,
+    "ahr": 0.44,
+    "change": -0.00733,
+    "changePercent": -4.9,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-10",
+    "open": 0.1603,
+    "ahr": 0.56,
+    "change": 0.01805,
+    "changePercent": 12.69,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-11",
+    "open": 0.15356,
+    "ahr": 0.51,
+    "change": -0.00674,
+    "changePercent": -4.2,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-12",
+    "open": 0.16003,
+    "ahr": 0.56,
+    "change": 0.00647,
+    "changePercent": 4.21,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-13",
+    "open": 0.16764,
+    "ahr": 0.61,
+    "change": 0.00761,
+    "changePercent": 4.76,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-14",
+    "open": 0.1626,
+    "ahr": 0.57,
+    "change": -0.00504,
+    "changePercent": -3.01,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-15",
+    "open": 0.15854,
+    "ahr": 0.54,
+    "change": -0.00406,
+    "changePercent": -2.5,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-16",
+    "open": 0.15356,
+    "ahr": 0.51,
+    "change": -0.00498,
+    "changePercent": -3.14,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-17",
+    "open": 0.15472,
+    "ahr": 0.51,
+    "change": 0.00116,
+    "changePercent": 0.76,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-18",
+    "open": 0.15589,
+    "ahr": 0.52,
+    "change": 0.00117,
+    "changePercent": 0.76,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-19",
+    "open": 0.15758,
+    "ahr": 0.53,
+    "change": 0.00169,
+    "changePercent": 1.08,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-20",
+    "open": 0.15735,
+    "ahr": 0.53,
+    "change": -0.00023,
+    "changePercent": -0.15,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-21",
+    "open": 0.15527,
+    "ahr": 0.51,
+    "change": -0.00208,
+    "changePercent": -1.32,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-22",
+    "open": 0.15939,
+    "ahr": 0.54,
+    "change": 0.00412,
+    "changePercent": 2.65,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-23",
+    "open": 0.17864,
+    "ahr": 0.67,
+    "change": 0.01925,
+    "changePercent": 12.08,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-24",
+    "open": 0.17864,
+    "ahr": 0.67,
+    "change": 0.0,
+    "changePercent": 0.0,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-25",
+    "open": 0.18254,
+    "ahr": 0.7,
+    "change": 0.0039,
+    "changePercent": 2.18,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-26",
+    "open": 0.18159,
+    "ahr": 0.69,
+    "change": -0.00095,
+    "changePercent": -0.52,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-27",
+    "open": 0.18193,
+    "ahr": 0.69,
+    "change": 0.00034,
+    "changePercent": 0.19,
+    "isPositive": true
+  },
+  {
+    "date": "2025-04-28",
+    "open": 0.17932,
+    "ahr": 0.67,
+    "change": -0.00261,
+    "changePercent": -1.43,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-29",
+    "open": 0.17908,
+    "ahr": 0.66,
+    "change": -0.00024,
+    "changePercent": -0.13,
+    "isPositive": false
+  },
+  {
+    "date": "2025-04-30",
+    "open": 0.17465,
+    "ahr": 0.63,
+    "change": -0.00443,
+    "changePercent": -2.47,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-01",
+    "open": 0.17224,
+    "ahr": 0.61,
+    "change": -0.00241,
+    "changePercent": -1.38,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-02",
+    "open": 0.18065,
+    "ahr": 0.67,
+    "change": 0.00841,
+    "changePercent": 4.88,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-03",
+    "open": 0.18151,
+    "ahr": 0.67,
+    "change": 0.00086,
+    "changePercent": 0.48,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-04",
+    "open": 0.17565,
+    "ahr": 0.63,
+    "change": -0.00586,
+    "changePercent": -3.23,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-05",
+    "open": 0.17048,
+    "ahr": 0.59,
+    "change": -0.00517,
+    "changePercent": -2.94,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-06",
+    "open": 0.17062,
+    "ahr": 0.59,
+    "change": 0.00014,
+    "changePercent": 0.08,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-07",
+    "open": 0.1722,
+    "ahr": 0.6,
+    "change": 0.00158,
+    "changePercent": 0.93,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-08",
+    "open": 0.17201,
+    "ahr": 0.6,
+    "change": -0.00019,
+    "changePercent": -0.11,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-09",
+    "open": 0.19818,
+    "ahr": 0.79,
+    "change": 0.02617,
+    "changePercent": 15.21,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-10",
+    "open": 0.2053,
+    "ahr": 0.84,
+    "change": 0.00712,
+    "changePercent": 3.59,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-11",
+    "open": 0.25062,
+    "ahr": 1.25,
+    "change": 0.04532,
+    "changePercent": 22.08,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-12",
+    "open": 0.23181,
+    "ahr": 1.07,
+    "change": -0.01881,
+    "changePercent": -7.51,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-13",
+    "open": 0.23102,
+    "ahr": 1.06,
+    "change": -0.00079,
+    "changePercent": -0.34,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-14",
+    "open": 0.24078,
+    "ahr": 1.14,
+    "change": 0.00976,
+    "changePercent": 4.22,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-15",
+    "open": 0.23279,
+    "ahr": 1.07,
+    "change": -0.00799,
+    "changePercent": -3.32,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-16",
+    "open": 0.2194,
+    "ahr": 0.94,
+    "change": -0.01339,
+    "changePercent": -5.75,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-17",
+    "open": 0.22111,
+    "ahr": 0.96,
+    "change": 0.00171,
+    "changePercent": 0.78,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-18",
+    "open": 0.21458,
+    "ahr": 0.9,
+    "change": -0.00653,
+    "changePercent": -2.95,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-19",
+    "open": 0.23309,
+    "ahr": 1.06,
+    "change": 0.01851,
+    "changePercent": 8.63,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-20",
+    "open": 0.22446,
+    "ahr": 0.98,
+    "change": -0.00863,
+    "changePercent": -3.7,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-21",
+    "open": 0.22626,
+    "ahr": 0.99,
+    "change": 0.0018,
+    "changePercent": 0.8,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-22",
+    "open": 0.23404,
+    "ahr": 1.06,
+    "change": 0.00778,
+    "changePercent": 3.44,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-23",
+    "open": 0.24559,
+    "ahr": 1.16,
+    "change": 0.01155,
+    "changePercent": 4.94,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-24",
+    "open": 0.22521,
+    "ahr": 0.97,
+    "change": -0.02038,
+    "changePercent": -8.3,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-25",
+    "open": 0.22512,
+    "ahr": 0.97,
+    "change": -9e-05,
+    "changePercent": -0.04,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-26",
+    "open": 0.22491,
+    "ahr": 0.97,
+    "change": -0.00021,
+    "changePercent": -0.09,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-27",
+    "open": 0.22596,
+    "ahr": 0.97,
+    "change": 0.00105,
+    "changePercent": 0.47,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-28",
+    "open": 0.22599,
+    "ahr": 0.97,
+    "change": 3e-05,
+    "changePercent": 0.01,
+    "isPositive": true
+  },
+  {
+    "date": "2025-05-29",
+    "open": 0.22096,
+    "ahr": 0.93,
+    "change": -0.00503,
+    "changePercent": -2.23,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-30",
+    "open": 0.21487,
+    "ahr": 0.88,
+    "change": -0.00609,
+    "changePercent": -2.76,
+    "isPositive": false
+  },
+  {
+    "date": "2025-05-31",
+    "open": 0.19358,
+    "ahr": 0.72,
+    "change": -0.02129,
+    "changePercent": -9.91,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-01",
+    "open": 0.19251,
+    "ahr": 0.71,
+    "change": -0.00107,
+    "changePercent": -0.55,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-02",
+    "open": 0.19364,
+    "ahr": 0.72,
+    "change": 0.00113,
+    "changePercent": 0.59,
+    "isPositive": true
+  },
+  {
+    "date": "2025-06-03",
+    "open": 0.19507,
+    "ahr": 0.73,
+    "change": 0.00143,
+    "changePercent": 0.74,
+    "isPositive": true
+  },
+  {
+    "date": "2025-06-04",
+    "open": 0.19311,
+    "ahr": 0.72,
+    "change": -0.00196,
+    "changePercent": -1.0,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-05",
+    "open": 0.18811,
+    "ahr": 0.69,
+    "change": -0.005,
+    "changePercent": -2.59,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-06",
+    "open": 0.17106,
+    "ahr": 0.57,
+    "change": -0.01705,
+    "changePercent": -9.06,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-07",
+    "open": 0.17878,
+    "ahr": 0.62,
+    "change": 0.00772,
+    "changePercent": 4.51,
+    "isPositive": true
+  },
+  {
+    "date": "2025-06-08",
+    "open": 0.1851,
+    "ahr": 0.67,
+    "change": 0.00632,
+    "changePercent": 3.54,
+    "isPositive": true
+  },
+  {
+    "date": "2025-06-09",
+    "open": 0.18417,
+    "ahr": 0.66,
+    "change": -0.00093,
+    "changePercent": -0.5,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-10",
+    "open": 0.1949,
+    "ahr": 0.75,
+    "change": 0.01073,
+    "changePercent": 5.83,
+    "isPositive": true
+  },
+  {
+    "date": "2025-06-11",
+    "open": 0.19851,
+    "ahr": 0.78,
+    "change": 0.00361,
+    "changePercent": 1.85,
+    "isPositive": true
+  },
+  {
+    "date": "2025-06-12",
+    "open": 0.19294,
+    "ahr": 0.74,
+    "change": -0.00557,
+    "changePercent": -2.81,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-13",
+    "open": 0.18111,
+    "ahr": 0.65,
+    "change": -0.01183,
+    "changePercent": -6.13,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-14",
+    "open": 0.18041,
+    "ahr": 0.65,
+    "change": -0.0007,
+    "changePercent": -0.39,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-15",
+    "open": 0.17825,
+    "ahr": 0.63,
+    "change": -0.00216,
+    "changePercent": -1.2,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-16",
+    "open": 0.17554,
+    "ahr": 0.62,
+    "change": -0.00271,
+    "changePercent": -1.52,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-17",
+    "open": 0.17271,
+    "ahr": 0.6,
+    "change": -0.00283,
+    "changePercent": -1.61,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-18",
+    "open": 0.16936,
+    "ahr": 0.58,
+    "change": -0.00335,
+    "changePercent": -1.94,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-19",
+    "open": 0.17069,
+    "ahr": 0.59,
+    "change": 0.00133,
+    "changePercent": 0.79,
+    "isPositive": true
+  },
+  {
+    "date": "2025-06-20",
+    "open": 0.17091,
+    "ahr": 0.59,
+    "change": 0.00022,
+    "changePercent": 0.13,
+    "isPositive": true
+  },
+  {
+    "date": "2025-06-21",
+    "open": 0.16235,
+    "ahr": 0.54,
+    "change": -0.00856,
+    "changePercent": -5.01,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-22",
+    "open": 0.15448,
+    "ahr": 0.49,
+    "change": -0.00787,
+    "changePercent": -4.85,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-23",
+    "open": 0.15128,
+    "ahr": 0.47,
+    "change": -0.0032,
+    "changePercent": -2.07,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-24",
+    "open": 0.16377,
+    "ahr": 0.55,
+    "change": 0.01249,
+    "changePercent": 8.26,
+    "isPositive": true
+  },
+  {
+    "date": "2025-06-25",
+    "open": 0.16572,
+    "ahr": 0.57,
+    "change": 0.00195,
+    "changePercent": 1.19,
+    "isPositive": true
+  },
+  {
+    "date": "2025-06-26",
+    "open": 0.16458,
+    "ahr": 0.56,
+    "change": -0.00114,
+    "changePercent": -0.69,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-27",
+    "open": 0.16002,
+    "ahr": 0.53,
+    "change": -0.00456,
+    "changePercent": -2.77,
+    "isPositive": false
+  },
+  {
+    "date": "2025-06-28",
+    "open": 0.16105,
+    "ahr": 0.54,
+    "change": 0.00103,
+    "changePercent": 0.64,
+    "isPositive": true
+  },
+  {
+    "date": "2025-06-29",
+    "open": 0.16362,
+    "ahr": 0.56,
+    "change": 0.00257,
+    "changePercent": 1.6,
+    "isPositive": true
+  },
+  {
+    "date": "2025-06-30",
+    "open": 0.16945,
+    "ahr": 0.61,
+    "change": 0.00583,
+    "changePercent": 3.56,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-01",
+    "open": 0.16518,
+    "ahr": 0.58,
+    "change": -0.00427,
+    "changePercent": -2.52,
+    "isPositive": false
+  },
+  {
+    "date": "2025-07-02",
+    "open": 0.15779,
+    "ahr": 0.53,
+    "change": -0.00739,
+    "changePercent": -4.47,
+    "isPositive": false
+  },
+  {
+    "date": "2025-07-03",
+    "open": 0.16868,
+    "ahr": 0.61,
+    "change": 0.01089,
+    "changePercent": 6.9,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-04",
+    "open": 0.17201,
+    "ahr": 0.63,
+    "change": 0.00333,
+    "changePercent": 1.97,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-05",
+    "open": 0.16289,
+    "ahr": 0.57,
+    "change": -0.00912,
+    "changePercent": -5.3,
+    "isPositive": false
+  },
+  {
+    "date": "2025-07-06",
+    "open": 0.16422,
+    "ahr": 0.58,
+    "change": 0.00133,
+    "changePercent": 0.82,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-07",
+    "open": 0.17196,
+    "ahr": 0.64,
+    "change": 0.00774,
+    "changePercent": 4.71,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-08",
+    "open": 0.16793,
+    "ahr": 0.61,
+    "change": -0.00403,
+    "changePercent": -2.34,
+    "isPositive": false
+  },
+  {
+    "date": "2025-07-09",
+    "open": 0.17094,
+    "ahr": 0.63,
+    "change": 0.00301,
+    "changePercent": 1.79,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-10",
+    "open": 0.18053,
+    "ahr": 0.71,
+    "change": 0.00959,
+    "changePercent": 5.61,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-11",
+    "open": 0.19508,
+    "ahr": 0.83,
+    "change": 0.01455,
+    "changePercent": 8.06,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-12",
+    "open": 0.20103,
+    "ahr": 0.88,
+    "change": 0.00595,
+    "changePercent": 3.05,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-13",
+    "open": 0.19741,
+    "ahr": 0.85,
+    "change": -0.00362,
+    "changePercent": -1.8,
+    "isPositive": false
+  },
+  {
+    "date": "2025-07-14",
+    "open": 0.19855,
+    "ahr": 0.86,
+    "change": 0.00114,
+    "changePercent": 0.58,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-15",
+    "open": 0.19748,
+    "ahr": 0.85,
+    "change": -0.00107,
+    "changePercent": -0.54,
+    "isPositive": false
+  },
+  {
+    "date": "2025-07-16",
+    "open": 0.1992,
+    "ahr": 0.87,
+    "change": 0.00172,
+    "changePercent": 0.87,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-17",
+    "open": 0.21269,
+    "ahr": 0.99,
+    "change": 0.01349,
+    "changePercent": 6.77,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-18",
+    "open": 0.21826,
+    "ahr": 1.04,
+    "change": 0.00557,
+    "changePercent": 2.62,
+    "isPositive": true
+  },
+  {
+    "date": "2025-07-19",
+    "open": 0.2358,
+    "ahr": 1.22,
+    "change": 0.01754,
+    "changePercent": 8.04,
+    "isPositive": true
+  }
+]
