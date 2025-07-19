@@ -27,14 +27,13 @@ interface Metric {
 }
 
 // Helper to convert historical data
-const processChartData = (historicalData: HistoricalData[]) => {
+const processChartData = (historicalData: HistoricalData[]): [string, number, number][] => {
   return historicalData.map((item) => [
     item.date,
     item.open,
     Math.round(item.ahr * 100),
   ])
 }
-
 // MetricCard
 function MetricCard({ metric }: { metric: Metric }) {
   const getChangeColor = () => {
