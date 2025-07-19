@@ -250,10 +250,10 @@ export default function CryptoDashboard() {
       try {
         setLoading(true)
         const [btcRes, ethRes, solRes, bnbRes] = await Promise.all([
-          fetch("/python/BTCUSDT.json"),
-          fetch("/python/ETHUSDT.json"),
-          fetch("/python/SOLUSDT.json"),
-          fetch("/python/BNBUSDT.json"),
+          fetch("/Evaluation/BTCUSDT.json"),
+          fetch("/Evaluation/ETHUSDT.json"),
+          fetch("/Evaluation/SOLUSDT.json"),
+          fetch("/Evaluation/BNBUSDT.json"),
         ])
 
         const btcData: HistoricalData[] = await btcRes.json()
@@ -280,9 +280,9 @@ export default function CryptoDashboard() {
         }
 
         pushMetric(btcData, "BTC/USDT", true)
-        pushMetric(ethData, "ETH/USDT")
-        pushMetric(solData, "SOL/USDT")
-        pushMetric(bnbData, "BNB/USDT")
+        pushMetric(ethData, "ETH/USDT", true)
+        pushMetric(solData, "SOL/USDT", true)
+        pushMetric(bnbData, "BNB/USDT", true)
 
         setCryptoMetrics(metrics)
       } catch (e: any) {
