@@ -120,6 +120,18 @@ def calculate_ahr999(df):
         df[f'{col}_ahr999'] = ((df[col] / df['geomean']) * (df[col] / df['exp_growth'])).round(2)
     return df
 
+def calculate_price_changes(df):
+    """计算价格变化 change, changePercent 和 isPositive"""
+    df['change'] = df['open'].diff()  # 当前开盘价与前一天的差值
+    df['changePercent'] = (df['change'] / df['open'].shift(1)) * 100  # 计算百分比变化
+    df['isPositive'] = df['change'] > 0  # 判断是涨还是跌
+    
+    # 格式化 change 和 changePercent
+    df['change'] = df['change'].round(6)
+    df['changePercent'] = df['changePercent'].round(2)
+    
+    return df
+
 # ======== 主程序入口 ========
 if __name__ == "__main__":
     for symbol in SYMBOLS:
@@ -140,9 +152,10 @@ if __name__ == "__main__":
         full_data['geomean'] = calculate_geomean(full_data['close'], window=200)
         full_data['exp_growth'] = calculate_exp_growth(full_data, COIN_BIRTHDAYS[symbol], symbol, window=1000)
         full_data = calculate_ahr999(full_data)
+        full_data = calculate_price_changes(full_data)  # 新增：计算价格变化
 
         # 准备最终数据
-        final_data = full_data[['date', 'open', 'open_ahr999']]
+        final_data = full_data[['date', 'open', 'open_ahr999', 'change', 'changePercent', 'isPositive']]
         final_data = final_data.rename(columns={'open_ahr999': 'ahr'})
         final_data = final_data.dropna()  # 过滤空值
 

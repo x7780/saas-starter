@@ -2,4006 +2,6409 @@
   {
     "date": "2023-05-10",
     "open": 20.66,
-    "ahr": 0.82
+    "ahr": 0.82,
+    "change": 0.03,
+    "changePercent": 0.15,
+    "isPositive": true
   },
   {
     "date": "2023-05-11",
     "open": 20.92,
-    "ahr": 0.84
+    "ahr": 0.84,
+    "change": 0.26,
+    "changePercent": 1.26,
+    "isPositive": true
   },
   {
     "date": "2023-05-12",
     "open": 20.17,
-    "ahr": 0.78
+    "ahr": 0.78,
+    "change": -0.75,
+    "changePercent": -3.59,
+    "isPositive": false
   },
   {
     "date": "2023-05-13",
     "open": 20.91,
-    "ahr": 0.83
+    "ahr": 0.83,
+    "change": 0.74,
+    "changePercent": 3.67,
+    "isPositive": true
   },
   {
     "date": "2023-05-14",
     "open": 20.83,
-    "ahr": 0.83
+    "ahr": 0.83,
+    "change": -0.08,
+    "changePercent": -0.38,
+    "isPositive": false
   },
   {
     "date": "2023-05-15",
     "open": 20.93,
-    "ahr": 0.83
+    "ahr": 0.83,
+    "change": 0.1,
+    "changePercent": 0.48,
+    "isPositive": true
   },
   {
     "date": "2023-05-16",
     "open": 20.98,
-    "ahr": 0.83
+    "ahr": 0.83,
+    "change": 0.05,
+    "changePercent": 0.24,
+    "isPositive": true
   },
   {
     "date": "2023-05-17",
     "open": 20.68,
-    "ahr": 0.81
+    "ahr": 0.81,
+    "change": -0.3,
+    "changePercent": -1.43,
+    "isPositive": false
   },
   {
     "date": "2023-05-18",
     "open": 21.06,
-    "ahr": 0.84
+    "ahr": 0.84,
+    "change": 0.38,
+    "changePercent": 1.84,
+    "isPositive": true
   },
   {
     "date": "2023-05-19",
     "open": 20.35,
-    "ahr": 0.78
+    "ahr": 0.78,
+    "change": -0.71,
+    "changePercent": -3.37,
+    "isPositive": false
   },
   {
     "date": "2023-05-20",
     "open": 20.35,
-    "ahr": 0.78
+    "ahr": 0.78,
+    "change": 0.0,
+    "changePercent": 0.0,
+    "isPositive": false
   },
   {
     "date": "2023-05-21",
     "open": 20.28,
-    "ahr": 0.77
+    "ahr": 0.77,
+    "change": -0.07,
+    "changePercent": -0.34,
+    "isPositive": false
   },
   {
     "date": "2023-05-22",
     "open": 19.61,
-    "ahr": 0.72
+    "ahr": 0.72,
+    "change": -0.67,
+    "changePercent": -3.3,
+    "isPositive": false
   },
   {
     "date": "2023-05-23",
     "open": 19.52,
-    "ahr": 0.72
+    "ahr": 0.72,
+    "change": -0.09,
+    "changePercent": -0.46,
+    "isPositive": false
   },
   {
     "date": "2023-05-24",
     "open": 20.02,
-    "ahr": 0.75
+    "ahr": 0.75,
+    "change": 0.5,
+    "changePercent": 2.56,
+    "isPositive": true
   },
   {
     "date": "2023-05-25",
     "open": 19.22,
-    "ahr": 0.69
+    "ahr": 0.69,
+    "change": -0.8,
+    "changePercent": -4.0,
+    "isPositive": false
   },
   {
     "date": "2023-05-26",
     "open": 19.25,
-    "ahr": 0.69
+    "ahr": 0.69,
+    "change": 0.03,
+    "changePercent": 0.16,
+    "isPositive": true
   },
   {
     "date": "2023-05-27",
     "open": 19.35,
-    "ahr": 0.7
+    "ahr": 0.7,
+    "change": 0.1,
+    "changePercent": 0.52,
+    "isPositive": true
   },
   {
     "date": "2023-05-28",
     "open": 20.42,
-    "ahr": 0.77
+    "ahr": 0.77,
+    "change": 1.07,
+    "changePercent": 5.53,
+    "isPositive": true
   },
   {
     "date": "2023-05-29",
     "open": 20.81,
-    "ahr": 0.8
+    "ahr": 0.8,
+    "change": 0.39,
+    "changePercent": 1.91,
+    "isPositive": true
   },
   {
     "date": "2023-05-30",
     "open": 20.57,
-    "ahr": 0.78
+    "ahr": 0.78,
+    "change": -0.24,
+    "changePercent": -1.15,
+    "isPositive": false
   },
   {
     "date": "2023-05-31",
     "open": 21.25,
-    "ahr": 0.83
+    "ahr": 0.83,
+    "change": 0.68,
+    "changePercent": 3.31,
+    "isPositive": true
   },
   {
     "date": "2023-06-01",
     "open": 20.82,
-    "ahr": 0.79
+    "ahr": 0.79,
+    "change": -0.43,
+    "changePercent": -2.02,
+    "isPositive": false
   },
   {
     "date": "2023-06-02",
     "open": 20.49,
-    "ahr": 0.76
+    "ahr": 0.76,
+    "change": -0.33,
+    "changePercent": -1.59,
+    "isPositive": false
   },
   {
     "date": "2023-06-03",
     "open": 21.26,
-    "ahr": 0.81
+    "ahr": 0.81,
+    "change": 0.77,
+    "changePercent": 3.76,
+    "isPositive": true
   },
   {
     "date": "2023-06-04",
     "open": 21.19,
-    "ahr": 0.8
+    "ahr": 0.8,
+    "change": -0.07,
+    "changePercent": -0.33,
+    "isPositive": false
   },
   {
     "date": "2023-06-05",
     "open": 21.83,
-    "ahr": 0.85
+    "ahr": 0.85,
+    "change": 0.64,
+    "changePercent": 3.02,
+    "isPositive": true
   },
   {
     "date": "2023-06-06",
     "open": 20.01,
-    "ahr": 0.71
+    "ahr": 0.71,
+    "change": -1.82,
+    "changePercent": -8.34,
+    "isPositive": false
   },
   {
     "date": "2023-06-07",
     "open": 20.38,
-    "ahr": 0.73
+    "ahr": 0.73,
+    "change": 0.37,
+    "changePercent": 1.85,
+    "isPositive": true
   },
   {
     "date": "2023-06-08",
     "open": 18.64,
-    "ahr": 0.61
+    "ahr": 0.61,
+    "change": -1.74,
+    "changePercent": -8.54,
+    "isPositive": false
   },
   {
     "date": "2023-06-09",
     "open": 18.88,
-    "ahr": 0.62
+    "ahr": 0.62,
+    "change": 0.24,
+    "changePercent": 1.29,
+    "isPositive": true
   },
   {
     "date": "2023-06-10",
     "open": 17.4,
-    "ahr": 0.52
+    "ahr": 0.52,
+    "change": -1.48,
+    "changePercent": -7.84,
+    "isPositive": false
   },
   {
     "date": "2023-06-11",
     "open": 15.61,
-    "ahr": 0.42
+    "ahr": 0.42,
+    "change": -1.79,
+    "changePercent": -10.29,
+    "isPositive": false
   },
   {
     "date": "2023-06-12",
     "open": 15.55,
-    "ahr": 0.41
+    "ahr": 0.41,
+    "change": -0.06,
+    "changePercent": -0.38,
+    "isPositive": false
   },
   {
     "date": "2023-06-13",
     "open": 15.19,
-    "ahr": 0.39
+    "ahr": 0.39,
+    "change": -0.36,
+    "changePercent": -2.32,
+    "isPositive": false
   },
   {
     "date": "2023-06-14",
     "open": 15.03,
-    "ahr": 0.38
+    "ahr": 0.38,
+    "change": -0.16,
+    "changePercent": -1.05,
+    "isPositive": false
   },
   {
     "date": "2023-06-15",
     "open": 14.49,
-    "ahr": 0.36
+    "ahr": 0.36,
+    "change": -0.54,
+    "changePercent": -3.59,
+    "isPositive": false
   },
   {
     "date": "2023-06-16",
     "open": 14.78,
-    "ahr": 0.37
+    "ahr": 0.37,
+    "change": 0.29,
+    "changePercent": 2.0,
+    "isPositive": true
   },
   {
     "date": "2023-06-17",
     "open": 15.32,
-    "ahr": 0.39
+    "ahr": 0.39,
+    "change": 0.54,
+    "changePercent": 3.65,
+    "isPositive": true
   },
   {
     "date": "2023-06-18",
     "open": 15.65,
-    "ahr": 0.41
+    "ahr": 0.41,
+    "change": 0.33,
+    "changePercent": 2.15,
+    "isPositive": true
   },
   {
     "date": "2023-06-19",
     "open": 15.45,
-    "ahr": 0.4
+    "ahr": 0.4,
+    "change": -0.2,
+    "changePercent": -1.28,
+    "isPositive": false
   },
   {
     "date": "2023-06-20",
     "open": 16.1,
-    "ahr": 0.43
+    "ahr": 0.43,
+    "change": 0.65,
+    "changePercent": 4.21,
+    "isPositive": true
   },
   {
     "date": "2023-06-21",
     "open": 16.65,
-    "ahr": 0.46
+    "ahr": 0.46,
+    "change": 0.55,
+    "changePercent": 3.42,
+    "isPositive": true
   },
   {
     "date": "2023-06-22",
     "open": 17.23,
-    "ahr": 0.49
+    "ahr": 0.49,
+    "change": 0.58,
+    "changePercent": 3.48,
+    "isPositive": true
   },
   {
     "date": "2023-06-23",
     "open": 16.62,
-    "ahr": 0.45
+    "ahr": 0.45,
+    "change": -0.61,
+    "changePercent": -3.54,
+    "isPositive": false
   },
   {
     "date": "2023-06-24",
     "open": 17.14,
-    "ahr": 0.48
+    "ahr": 0.48,
+    "change": 0.52,
+    "changePercent": 3.13,
+    "isPositive": true
   },
   {
     "date": "2023-06-25",
     "open": 16.64,
-    "ahr": 0.45
+    "ahr": 0.45,
+    "change": -0.5,
+    "changePercent": -2.92,
+    "isPositive": false
   },
   {
     "date": "2023-06-26",
     "open": 16.96,
-    "ahr": 0.46
+    "ahr": 0.46,
+    "change": 0.32,
+    "changePercent": 1.92,
+    "isPositive": true
   },
   {
     "date": "2023-06-27",
     "open": 16.27,
-    "ahr": 0.42
+    "ahr": 0.42,
+    "change": -0.69,
+    "changePercent": -4.07,
+    "isPositive": false
   },
   {
     "date": "2023-06-28",
     "open": 16.63,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": 0.36,
+    "changePercent": 2.21,
+    "isPositive": true
   },
   {
     "date": "2023-06-29",
     "open": 15.98,
-    "ahr": 0.41
+    "ahr": 0.41,
+    "change": -0.65,
+    "changePercent": -3.91,
+    "isPositive": false
   },
   {
     "date": "2023-06-30",
     "open": 18.0,
-    "ahr": 0.51
+    "ahr": 0.51,
+    "change": 2.02,
+    "changePercent": 12.64,
+    "isPositive": true
   },
   {
     "date": "2023-07-01",
     "open": 18.85,
-    "ahr": 0.56
+    "ahr": 0.56,
+    "change": 0.85,
+    "changePercent": 4.72,
+    "isPositive": true
   },
   {
     "date": "2023-07-02",
     "open": 18.7,
-    "ahr": 0.55
+    "ahr": 0.55,
+    "change": -0.15,
+    "changePercent": -0.8,
+    "isPositive": false
   },
   {
     "date": "2023-07-03",
     "open": 19.46,
-    "ahr": 0.59
+    "ahr": 0.59,
+    "change": 0.76,
+    "changePercent": 4.06,
+    "isPositive": true
   },
   {
     "date": "2023-07-04",
     "open": 19.25,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": -0.21,
+    "changePercent": -1.08,
+    "isPositive": false
   },
   {
     "date": "2023-07-05",
     "open": 19.14,
-    "ahr": 0.56
+    "ahr": 0.56,
+    "change": -0.11,
+    "changePercent": -0.57,
+    "isPositive": false
   },
   {
     "date": "2023-07-06",
     "open": 18.99,
-    "ahr": 0.55
+    "ahr": 0.55,
+    "change": -0.15,
+    "changePercent": -0.78,
+    "isPositive": false
   },
   {
     "date": "2023-07-07",
     "open": 19.61,
-    "ahr": 0.58
+    "ahr": 0.58,
+    "change": 0.62,
+    "changePercent": 3.26,
+    "isPositive": true
   },
   {
     "date": "2023-07-08",
     "open": 21.51,
-    "ahr": 0.7
+    "ahr": 0.7,
+    "change": 1.9,
+    "changePercent": 9.69,
+    "isPositive": true
   },
   {
     "date": "2023-07-09",
     "open": 21.82,
-    "ahr": 0.71
+    "ahr": 0.71,
+    "change": 0.31,
+    "changePercent": 1.44,
+    "isPositive": true
   },
   {
     "date": "2023-07-10",
     "open": 21.32,
-    "ahr": 0.68
+    "ahr": 0.68,
+    "change": -0.5,
+    "changePercent": -2.29,
+    "isPositive": false
   },
   {
     "date": "2023-07-11",
     "open": 21.3,
-    "ahr": 0.67
+    "ahr": 0.67,
+    "change": -0.02,
+    "changePercent": -0.09,
+    "isPositive": false
   },
   {
     "date": "2023-07-12",
     "open": 22.06,
-    "ahr": 0.71
+    "ahr": 0.71,
+    "change": 0.76,
+    "changePercent": 3.57,
+    "isPositive": true
   },
   {
     "date": "2023-07-13",
     "open": 21.93,
-    "ahr": 0.7
+    "ahr": 0.7,
+    "change": -0.13,
+    "changePercent": -0.59,
+    "isPositive": false
   },
   {
     "date": "2023-07-14",
     "open": 26.01,
-    "ahr": 0.98
+    "ahr": 0.98,
+    "change": 4.08,
+    "changePercent": 18.6,
+    "isPositive": true
   },
   {
     "date": "2023-07-15",
     "open": 26.67,
-    "ahr": 1.02
+    "ahr": 1.02,
+    "change": 0.66,
+    "changePercent": 2.54,
+    "isPositive": true
   },
   {
     "date": "2023-07-16",
     "open": 27.47,
-    "ahr": 1.07
+    "ahr": 1.07,
+    "change": 0.8,
+    "changePercent": 3.0,
+    "isPositive": true
   },
   {
     "date": "2023-07-17",
     "open": 27.41,
-    "ahr": 1.06
+    "ahr": 1.06,
+    "change": -0.06,
+    "changePercent": -0.22,
+    "isPositive": false
   },
   {
     "date": "2023-07-18",
     "open": 26.8,
-    "ahr": 1.0
+    "ahr": 1.0,
+    "change": -0.61,
+    "changePercent": -2.23,
+    "isPositive": false
   },
   {
     "date": "2023-07-19",
     "open": 25.54,
-    "ahr": 0.9
+    "ahr": 0.9,
+    "change": -1.26,
+    "changePercent": -4.7,
+    "isPositive": false
   },
   {
     "date": "2023-07-20",
     "open": 26.31,
-    "ahr": 0.95
+    "ahr": 0.95,
+    "change": 0.77,
+    "changePercent": 3.01,
+    "isPositive": true
   },
   {
     "date": "2023-07-21",
     "open": 25.38,
-    "ahr": 0.88
+    "ahr": 0.88,
+    "change": -0.93,
+    "changePercent": -3.53,
+    "isPositive": false
   },
   {
     "date": "2023-07-22",
     "open": 25.51,
-    "ahr": 0.88
+    "ahr": 0.88,
+    "change": 0.13,
+    "changePercent": 0.51,
+    "isPositive": true
   },
   {
     "date": "2023-07-23",
     "open": 24.52,
-    "ahr": 0.81
+    "ahr": 0.81,
+    "change": -0.99,
+    "changePercent": -3.88,
+    "isPositive": false
   },
   {
     "date": "2023-07-24",
     "open": 24.76,
-    "ahr": 0.82
+    "ahr": 0.82,
+    "change": 0.24,
+    "changePercent": 0.98,
+    "isPositive": true
   },
   {
     "date": "2023-07-25",
     "open": 23.36,
-    "ahr": 0.73
+    "ahr": 0.73,
+    "change": -1.4,
+    "changePercent": -5.65,
+    "isPositive": false
   },
   {
     "date": "2023-07-26",
     "open": 23.28,
-    "ahr": 0.72
+    "ahr": 0.72,
+    "change": -0.08,
+    "changePercent": -0.34,
+    "isPositive": false
   },
   {
     "date": "2023-07-27",
     "open": 25.18,
-    "ahr": 0.83
+    "ahr": 0.83,
+    "change": 1.9,
+    "changePercent": 8.16,
+    "isPositive": true
   },
   {
     "date": "2023-07-28",
     "open": 25.1,
-    "ahr": 0.82
+    "ahr": 0.82,
+    "change": -0.08,
+    "changePercent": -0.32,
+    "isPositive": false
   },
   {
     "date": "2023-07-29",
     "open": 24.82,
-    "ahr": 0.8
+    "ahr": 0.8,
+    "change": -0.28,
+    "changePercent": -1.12,
+    "isPositive": false
   },
   {
     "date": "2023-07-30",
     "open": 25.17,
-    "ahr": 0.82
+    "ahr": 0.82,
+    "change": 0.35,
+    "changePercent": 1.41,
+    "isPositive": true
   },
   {
     "date": "2023-07-31",
     "open": 24.25,
-    "ahr": 0.75
+    "ahr": 0.75,
+    "change": -0.92,
+    "changePercent": -3.66,
+    "isPositive": false
   },
   {
     "date": "2023-08-01",
     "open": 23.72,
-    "ahr": 0.72
+    "ahr": 0.72,
+    "change": -0.53,
+    "changePercent": -2.19,
+    "isPositive": false
   },
   {
     "date": "2023-08-02",
     "open": 24.06,
-    "ahr": 0.74
+    "ahr": 0.74,
+    "change": 0.34,
+    "changePercent": 1.43,
+    "isPositive": true
   },
   {
     "date": "2023-08-03",
     "open": 23.14,
-    "ahr": 0.68
+    "ahr": 0.68,
+    "change": -0.92,
+    "changePercent": -3.82,
+    "isPositive": false
   },
   {
     "date": "2023-08-04",
     "open": 22.65,
-    "ahr": 0.65
+    "ahr": 0.65,
+    "change": -0.49,
+    "changePercent": -2.12,
+    "isPositive": false
   },
   {
     "date": "2023-08-05",
     "open": 22.8,
-    "ahr": 0.65
+    "ahr": 0.65,
+    "change": 0.15,
+    "changePercent": 0.66,
+    "isPositive": true
   },
   {
     "date": "2023-08-06",
     "open": 22.66,
-    "ahr": 0.64
+    "ahr": 0.64,
+    "change": -0.14,
+    "changePercent": -0.61,
+    "isPositive": false
   },
   {
     "date": "2023-08-07",
     "open": 23.2,
-    "ahr": 0.67
+    "ahr": 0.67,
+    "change": 0.54,
+    "changePercent": 2.38,
+    "isPositive": true
   },
   {
     "date": "2023-08-08",
     "open": 23.11,
-    "ahr": 0.66
+    "ahr": 0.66,
+    "change": -0.09,
+    "changePercent": -0.39,
+    "isPositive": false
   },
   {
     "date": "2023-08-09",
     "open": 24.22,
-    "ahr": 0.73
+    "ahr": 0.73,
+    "change": 1.11,
+    "changePercent": 4.8,
+    "isPositive": true
   },
   {
     "date": "2023-08-10",
     "open": 24.39,
-    "ahr": 0.74
+    "ahr": 0.74,
+    "change": 0.17,
+    "changePercent": 0.7,
+    "isPositive": true
   },
   {
     "date": "2023-08-11",
     "open": 24.63,
-    "ahr": 0.75
+    "ahr": 0.75,
+    "change": 0.24,
+    "changePercent": 0.98,
+    "isPositive": true
   },
   {
     "date": "2023-08-12",
     "open": 24.63,
-    "ahr": 0.74
+    "ahr": 0.74,
+    "change": 0.0,
+    "changePercent": 0.0,
+    "isPositive": false
   },
   {
     "date": "2023-08-13",
     "open": 24.91,
-    "ahr": 0.76
+    "ahr": 0.76,
+    "change": 0.28,
+    "changePercent": 1.14,
+    "isPositive": true
   },
   {
     "date": "2023-08-14",
     "open": 24.22,
-    "ahr": 0.71
+    "ahr": 0.71,
+    "change": -0.69,
+    "changePercent": -2.77,
+    "isPositive": false
   },
   {
     "date": "2023-08-15",
     "open": 25.19,
-    "ahr": 0.77
+    "ahr": 0.77,
+    "change": 0.97,
+    "changePercent": 4.0,
+    "isPositive": true
   },
   {
     "date": "2023-08-16",
     "open": 23.91,
-    "ahr": 0.69
+    "ahr": 0.69,
+    "change": -1.28,
+    "changePercent": -5.08,
+    "isPositive": false
   },
   {
     "date": "2023-08-17",
     "open": 22.82,
-    "ahr": 0.63
+    "ahr": 0.63,
+    "change": -1.09,
+    "changePercent": -4.56,
+    "isPositive": false
   },
   {
     "date": "2023-08-18",
     "open": 21.67,
-    "ahr": 0.56
+    "ahr": 0.56,
+    "change": -1.15,
+    "changePercent": -5.04,
+    "isPositive": false
   },
   {
     "date": "2023-08-19",
     "open": 21.34,
-    "ahr": 0.55
+    "ahr": 0.55,
+    "change": -0.33,
+    "changePercent": -1.52,
+    "isPositive": false
   },
   {
     "date": "2023-08-20",
     "open": 21.89,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": 0.55,
+    "changePercent": 2.58,
+    "isPositive": true
   },
   {
     "date": "2023-08-21",
     "open": 21.78,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": -0.11,
+    "changePercent": -0.5,
+    "isPositive": false
   },
   {
     "date": "2023-08-22",
     "open": 21.2,
-    "ahr": 0.53
+    "ahr": 0.53,
+    "change": -0.58,
+    "changePercent": -2.66,
+    "isPositive": false
   },
   {
     "date": "2023-08-23",
     "open": 20.59,
-    "ahr": 0.5
+    "ahr": 0.5,
+    "change": -0.61,
+    "changePercent": -2.88,
+    "isPositive": false
   },
   {
     "date": "2023-08-24",
     "open": 21.74,
-    "ahr": 0.56
+    "ahr": 0.56,
+    "change": 1.15,
+    "changePercent": 5.59,
+    "isPositive": true
   },
   {
     "date": "2023-08-25",
     "open": 21.05,
-    "ahr": 0.52
+    "ahr": 0.52,
+    "change": -0.69,
+    "changePercent": -3.17,
+    "isPositive": false
   },
   {
     "date": "2023-08-26",
     "open": 20.42,
-    "ahr": 0.49
+    "ahr": 0.49,
+    "change": -0.63,
+    "changePercent": -2.99,
+    "isPositive": false
   },
   {
     "date": "2023-08-27",
     "open": 20.28,
-    "ahr": 0.48
+    "ahr": 0.48,
+    "change": -0.14,
+    "changePercent": -0.69,
+    "isPositive": false
   },
   {
     "date": "2023-08-28",
     "open": 20.79,
-    "ahr": 0.51
+    "ahr": 0.51,
+    "change": 0.51,
+    "changePercent": 2.51,
+    "isPositive": true
   },
   {
     "date": "2023-08-29",
     "open": 20.57,
-    "ahr": 0.49
+    "ahr": 0.49,
+    "change": -0.22,
+    "changePercent": -1.06,
+    "isPositive": false
   },
   {
     "date": "2023-08-30",
     "open": 21.79,
-    "ahr": 0.55
+    "ahr": 0.55,
+    "change": 1.22,
+    "changePercent": 5.93,
+    "isPositive": true
   },
   {
     "date": "2023-08-31",
     "open": 20.82,
-    "ahr": 0.5
+    "ahr": 0.5,
+    "change": -0.97,
+    "changePercent": -4.45,
+    "isPositive": false
   },
   {
     "date": "2023-09-01",
     "open": 19.74,
-    "ahr": 0.45
+    "ahr": 0.45,
+    "change": -1.08,
+    "changePercent": -5.19,
+    "isPositive": false
   },
   {
     "date": "2023-09-02",
     "open": 19.33,
-    "ahr": 0.43
+    "ahr": 0.43,
+    "change": -0.41,
+    "changePercent": -2.08,
+    "isPositive": false
   },
   {
     "date": "2023-09-03",
     "open": 19.5,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": 0.17,
+    "changePercent": 0.88,
+    "isPositive": true
   },
   {
     "date": "2023-09-04",
     "open": 19.57,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": 0.07,
+    "changePercent": 0.36,
+    "isPositive": true
   },
   {
     "date": "2023-09-05",
     "open": 19.52,
-    "ahr": 0.43
+    "ahr": 0.43,
+    "change": -0.05,
+    "changePercent": -0.26,
+    "isPositive": false
   },
   {
     "date": "2023-09-06",
     "open": 20.26,
-    "ahr": 0.47
+    "ahr": 0.47,
+    "change": 0.74,
+    "changePercent": 3.79,
+    "isPositive": true
   },
   {
     "date": "2023-09-07",
     "open": 19.63,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": -0.63,
+    "changePercent": -3.11,
+    "isPositive": false
   },
   {
     "date": "2023-09-08",
     "open": 19.92,
-    "ahr": 0.45
+    "ahr": 0.45,
+    "change": 0.29,
+    "changePercent": 1.48,
+    "isPositive": true
   },
   {
     "date": "2023-09-09",
     "open": 19.6,
-    "ahr": 0.43
+    "ahr": 0.43,
+    "change": -0.32,
+    "changePercent": -1.61,
+    "isPositive": false
   },
   {
     "date": "2023-09-10",
     "open": 19.43,
-    "ahr": 0.43
+    "ahr": 0.43,
+    "change": -0.17,
+    "changePercent": -0.87,
+    "isPositive": false
   },
   {
     "date": "2023-09-11",
     "open": 18.23,
-    "ahr": 0.37
+    "ahr": 0.37,
+    "change": -1.2,
+    "changePercent": -6.18,
+    "isPositive": false
   },
   {
     "date": "2023-09-12",
     "open": 17.72,
-    "ahr": 0.35
+    "ahr": 0.35,
+    "change": -0.51,
+    "changePercent": -2.8,
+    "isPositive": false
   },
   {
     "date": "2023-09-13",
     "open": 17.91,
-    "ahr": 0.36
+    "ahr": 0.36,
+    "change": 0.19,
+    "changePercent": 1.07,
+    "isPositive": true
   },
   {
     "date": "2023-09-14",
     "open": 18.4,
-    "ahr": 0.38
+    "ahr": 0.38,
+    "change": 0.49,
+    "changePercent": 2.74,
+    "isPositive": true
   },
   {
     "date": "2023-09-15",
     "open": 18.85,
-    "ahr": 0.4
+    "ahr": 0.4,
+    "change": 0.45,
+    "changePercent": 2.45,
+    "isPositive": true
   },
   {
     "date": "2023-09-16",
     "open": 19.15,
-    "ahr": 0.41
+    "ahr": 0.41,
+    "change": 0.3,
+    "changePercent": 1.59,
+    "isPositive": true
   },
   {
     "date": "2023-09-17",
     "open": 19.12,
-    "ahr": 0.41
+    "ahr": 0.41,
+    "change": -0.03,
+    "changePercent": -0.16,
+    "isPositive": false
   },
   {
     "date": "2023-09-18",
     "open": 18.81,
-    "ahr": 0.39
+    "ahr": 0.39,
+    "change": -0.31,
+    "changePercent": -1.62,
+    "isPositive": false
   },
   {
     "date": "2023-09-19",
     "open": 19.65,
-    "ahr": 0.43
+    "ahr": 0.43,
+    "change": 0.84,
+    "changePercent": 4.47,
+    "isPositive": true
   },
   {
     "date": "2023-09-20",
     "open": 20.02,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": 0.37,
+    "changePercent": 1.88,
+    "isPositive": true
   },
   {
     "date": "2023-09-21",
     "open": 20.29,
-    "ahr": 0.45
+    "ahr": 0.45,
+    "change": 0.27,
+    "changePercent": 1.35,
+    "isPositive": true
   },
   {
     "date": "2023-09-22",
     "open": 19.45,
-    "ahr": 0.41
+    "ahr": 0.41,
+    "change": -0.84,
+    "changePercent": -4.14,
+    "isPositive": false
   },
   {
     "date": "2023-09-23",
     "open": 19.42,
-    "ahr": 0.41
+    "ahr": 0.41,
+    "change": -0.03,
+    "changePercent": -0.15,
+    "isPositive": false
   },
   {
     "date": "2023-09-24",
     "open": 19.48,
-    "ahr": 0.41
+    "ahr": 0.41,
+    "change": 0.06,
+    "changePercent": 0.31,
+    "isPositive": true
   },
   {
     "date": "2023-09-25",
     "open": 19.36,
-    "ahr": 0.4
+    "ahr": 0.4,
+    "change": -0.12,
+    "changePercent": -0.62,
+    "isPositive": false
   },
   {
     "date": "2023-09-26",
     "open": 19.39,
-    "ahr": 0.4
+    "ahr": 0.4,
+    "change": 0.03,
+    "changePercent": 0.15,
+    "isPositive": true
   },
   {
     "date": "2023-09-27",
     "open": 19.03,
-    "ahr": 0.39
+    "ahr": 0.39,
+    "change": -0.36,
+    "changePercent": -1.86,
+    "isPositive": false
   },
   {
     "date": "2023-09-28",
     "open": 19.13,
-    "ahr": 0.39
+    "ahr": 0.39,
+    "change": 0.1,
+    "changePercent": 0.53,
+    "isPositive": true
   },
   {
     "date": "2023-09-29",
     "open": 19.97,
-    "ahr": 0.42
+    "ahr": 0.42,
+    "change": 0.84,
+    "changePercent": 4.39,
+    "isPositive": true
   },
   {
     "date": "2023-09-30",
     "open": 20.28,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": 0.31,
+    "changePercent": 1.55,
+    "isPositive": true
   },
   {
     "date": "2023-10-01",
     "open": 21.37,
-    "ahr": 0.48
+    "ahr": 0.48,
+    "change": 1.09,
+    "changePercent": 5.37,
+    "isPositive": true
   },
   {
     "date": "2023-10-02",
     "open": 23.88,
-    "ahr": 0.6
+    "ahr": 0.6,
+    "change": 2.51,
+    "changePercent": 11.75,
+    "isPositive": true
   },
   {
     "date": "2023-10-03",
     "open": 23.38,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": -0.5,
+    "changePercent": -2.09,
+    "isPositive": false
   },
   {
     "date": "2023-10-04",
     "open": 23.61,
-    "ahr": 0.58
+    "ahr": 0.58,
+    "change": 0.23,
+    "changePercent": 0.98,
+    "isPositive": true
   },
   {
     "date": "2023-10-05",
     "open": 23.13,
-    "ahr": 0.56
+    "ahr": 0.56,
+    "change": -0.48,
+    "changePercent": -2.03,
+    "isPositive": false
   },
   {
     "date": "2023-10-06",
     "open": 22.7,
-    "ahr": 0.53
+    "ahr": 0.53,
+    "change": -0.43,
+    "changePercent": -1.86,
+    "isPositive": false
   },
   {
     "date": "2023-10-07",
     "open": 23.41,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": 0.71,
+    "changePercent": 3.13,
+    "isPositive": true
   },
   {
     "date": "2023-10-08",
     "open": 23.29,
-    "ahr": 0.56
+    "ahr": 0.56,
+    "change": -0.12,
+    "changePercent": -0.51,
+    "isPositive": false
   },
   {
     "date": "2023-10-09",
     "open": 23.21,
-    "ahr": 0.55
+    "ahr": 0.55,
+    "change": -0.08,
+    "changePercent": -0.34,
+    "isPositive": false
   },
   {
     "date": "2023-10-10",
     "open": 22.09,
-    "ahr": 0.5
+    "ahr": 0.5,
+    "change": -1.12,
+    "changePercent": -4.83,
+    "isPositive": false
   },
   {
     "date": "2023-10-11",
     "open": 22.11,
-    "ahr": 0.5
+    "ahr": 0.5,
+    "change": 0.02,
+    "changePercent": 0.09,
+    "isPositive": true
   },
   {
     "date": "2023-10-12",
     "open": 22.01,
-    "ahr": 0.49
+    "ahr": 0.49,
+    "change": -0.1,
+    "changePercent": -0.45,
+    "isPositive": false
   },
   {
     "date": "2023-10-13",
     "open": 21.29,
-    "ahr": 0.46
+    "ahr": 0.46,
+    "change": -0.72,
+    "changePercent": -3.27,
+    "isPositive": false
   },
   {
     "date": "2023-10-14",
     "open": 21.85,
-    "ahr": 0.48
+    "ahr": 0.48,
+    "change": 0.56,
+    "changePercent": 2.63,
+    "isPositive": true
   },
   {
     "date": "2023-10-15",
     "open": 22.0,
-    "ahr": 0.49
+    "ahr": 0.49,
+    "change": 0.15,
+    "changePercent": 0.69,
+    "isPositive": true
   },
   {
     "date": "2023-10-16",
     "open": 21.93,
-    "ahr": 0.48
+    "ahr": 0.48,
+    "change": -0.07,
+    "changePercent": -0.32,
+    "isPositive": false
   },
   {
     "date": "2023-10-17",
     "open": 23.95,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": 2.02,
+    "changePercent": 9.21,
+    "isPositive": true
   },
   {
     "date": "2023-10-18",
     "open": 23.94,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": -0.01,
+    "changePercent": -0.04,
+    "isPositive": false
   },
   {
     "date": "2023-10-19",
     "open": 23.41,
-    "ahr": 0.54
+    "ahr": 0.54,
+    "change": -0.53,
+    "changePercent": -2.21,
+    "isPositive": false
   },
   {
     "date": "2023-10-20",
     "open": 24.92,
-    "ahr": 0.61
+    "ahr": 0.61,
+    "change": 1.51,
+    "changePercent": 6.45,
+    "isPositive": true
   },
   {
     "date": "2023-10-21",
     "open": 27.02,
-    "ahr": 0.71
+    "ahr": 0.71,
+    "change": 2.1,
+    "changePercent": 8.43,
+    "isPositive": true
   },
   {
     "date": "2023-10-22",
     "open": 29.33,
-    "ahr": 0.84
+    "ahr": 0.84,
+    "change": 2.31,
+    "changePercent": 8.55,
+    "isPositive": true
   },
   {
     "date": "2023-10-23",
     "open": 29.06,
-    "ahr": 0.82
+    "ahr": 0.82,
+    "change": -0.27,
+    "changePercent": -0.92,
+    "isPositive": false
   },
   {
     "date": "2023-10-24",
     "open": 31.88,
-    "ahr": 0.98
+    "ahr": 0.98,
+    "change": 2.82,
+    "changePercent": 9.7,
+    "isPositive": true
   },
   {
     "date": "2023-10-25",
     "open": 30.18,
-    "ahr": 0.87
+    "ahr": 0.87,
+    "change": -1.7,
+    "changePercent": -5.33,
+    "isPositive": false
   },
   {
     "date": "2023-10-26",
     "open": 32.43,
-    "ahr": 1.0
+    "ahr": 1.0,
+    "change": 2.25,
+    "changePercent": 7.46,
+    "isPositive": true
   },
   {
     "date": "2023-10-27",
     "open": 32.78,
-    "ahr": 1.02
+    "ahr": 1.02,
+    "change": 0.35,
+    "changePercent": 1.08,
+    "isPositive": true
   },
   {
     "date": "2023-10-28",
     "open": 31.73,
-    "ahr": 0.95
+    "ahr": 0.95,
+    "change": -1.05,
+    "changePercent": -3.2,
+    "isPositive": false
   },
   {
     "date": "2023-10-29",
     "open": 31.62,
-    "ahr": 0.94
+    "ahr": 0.94,
+    "change": -0.11,
+    "changePercent": -0.35,
+    "isPositive": false
   },
   {
     "date": "2023-10-30",
     "open": 32.83,
-    "ahr": 1.01
+    "ahr": 1.01,
+    "change": 1.21,
+    "changePercent": 3.83,
+    "isPositive": true
   },
   {
     "date": "2023-10-31",
     "open": 34.94,
-    "ahr": 1.13
+    "ahr": 1.13,
+    "change": 2.11,
+    "changePercent": 6.43,
+    "isPositive": true
   },
   {
     "date": "2023-11-01",
     "open": 38.41,
-    "ahr": 1.36
+    "ahr": 1.36,
+    "change": 3.47,
+    "changePercent": 9.93,
+    "isPositive": true
   },
   {
     "date": "2023-11-02",
     "open": 41.16,
-    "ahr": 1.55
+    "ahr": 1.55,
+    "change": 2.75,
+    "changePercent": 7.16,
+    "isPositive": true
   },
   {
     "date": "2023-11-03",
     "open": 40.24,
-    "ahr": 1.48
+    "ahr": 1.48,
+    "change": -0.92,
+    "changePercent": -2.24,
+    "isPositive": false
   },
   {
     "date": "2023-11-04",
     "open": 39.45,
-    "ahr": 1.41
+    "ahr": 1.41,
+    "change": -0.79,
+    "changePercent": -1.96,
+    "isPositive": false
   },
   {
     "date": "2023-11-05",
     "open": 42.41,
-    "ahr": 1.62
+    "ahr": 1.62,
+    "change": 2.96,
+    "changePercent": 7.5,
+    "isPositive": true
   },
   {
     "date": "2023-11-06",
     "open": 41.16,
-    "ahr": 1.52
+    "ahr": 1.52,
+    "change": -1.25,
+    "changePercent": -2.95,
+    "isPositive": false
   },
   {
     "date": "2023-11-07",
     "open": 42.16,
-    "ahr": 1.58
+    "ahr": 1.58,
+    "change": 1.0,
+    "changePercent": 2.43,
+    "isPositive": true
   },
   {
     "date": "2023-11-08",
     "open": 42.93,
-    "ahr": 1.63
+    "ahr": 1.63,
+    "change": 0.77,
+    "changePercent": 1.83,
+    "isPositive": true
   },
   {
     "date": "2023-11-09",
     "open": 43.12,
-    "ahr": 1.63
+    "ahr": 1.63,
+    "change": 0.19,
+    "changePercent": 0.44,
+    "isPositive": true
   },
   {
     "date": "2023-11-10",
     "open": 45.3,
-    "ahr": 1.78
+    "ahr": 1.78,
+    "change": 2.18,
+    "changePercent": 5.06,
+    "isPositive": true
   },
   {
     "date": "2023-11-11",
     "open": 56.67,
-    "ahr": 2.77
+    "ahr": 2.77,
+    "change": 11.37,
+    "changePercent": 25.1,
+    "isPositive": true
   },
   {
     "date": "2023-11-12",
     "open": 56.36,
-    "ahr": 2.72
+    "ahr": 2.72,
+    "change": -0.31,
+    "changePercent": -0.55,
+    "isPositive": false
   },
   {
     "date": "2023-11-13",
     "open": 56.27,
-    "ahr": 2.69
+    "ahr": 2.69,
+    "change": -0.09,
+    "changePercent": -0.16,
+    "isPositive": false
   },
   {
     "date": "2023-11-14",
     "open": 51.6,
-    "ahr": 2.24
+    "ahr": 2.24,
+    "change": -4.67,
+    "changePercent": -8.3,
+    "isPositive": false
   },
   {
     "date": "2023-11-15",
     "open": 56.81,
-    "ahr": 2.7
+    "ahr": 2.7,
+    "change": 5.21,
+    "changePercent": 10.1,
+    "isPositive": true
   },
   {
     "date": "2023-11-16",
     "open": 65.43,
-    "ahr": 3.55
+    "ahr": 3.55,
+    "change": 8.62,
+    "changePercent": 15.17,
+    "isPositive": true
   },
   {
     "date": "2023-11-17",
     "open": 57.81,
-    "ahr": 2.75
+    "ahr": 2.75,
+    "change": -7.62,
+    "changePercent": -11.65,
+    "isPositive": false
   },
   {
     "date": "2023-11-18",
     "open": 58.52,
-    "ahr": 2.79
+    "ahr": 2.79,
+    "change": 0.71,
+    "changePercent": 1.23,
+    "isPositive": true
   },
   {
     "date": "2023-11-19",
     "open": 58.56,
-    "ahr": 2.77
+    "ahr": 2.77,
+    "change": 0.04,
+    "changePercent": 0.07,
+    "isPositive": true
   },
   {
     "date": "2023-11-20",
     "open": 61.1,
-    "ahr": 3.0
+    "ahr": 3.0,
+    "change": 2.54,
+    "changePercent": 4.34,
+    "isPositive": true
   },
   {
     "date": "2023-11-21",
     "open": 56.57,
-    "ahr": 2.55
+    "ahr": 2.55,
+    "change": -4.53,
+    "changePercent": -7.41,
+    "isPositive": false
   },
   {
     "date": "2023-11-22",
     "open": 51.65,
-    "ahr": 2.11
+    "ahr": 2.11,
+    "change": -4.92,
+    "changePercent": -8.7,
+    "isPositive": false
   },
   {
     "date": "2023-11-23",
     "open": 57.55,
-    "ahr": 2.6
+    "ahr": 2.6,
+    "change": 5.9,
+    "changePercent": 11.42,
+    "isPositive": true
   },
   {
     "date": "2023-11-24",
     "open": 56.52,
-    "ahr": 2.48
+    "ahr": 2.48,
+    "change": -1.03,
+    "changePercent": -1.79,
+    "isPositive": false
   },
   {
     "date": "2023-11-25",
     "open": 56.86,
-    "ahr": 2.49
+    "ahr": 2.49,
+    "change": 0.34,
+    "changePercent": 0.6,
+    "isPositive": true
   },
   {
     "date": "2023-11-26",
     "open": 58.81,
-    "ahr": 2.64
+    "ahr": 2.64,
+    "change": 1.95,
+    "changePercent": 3.43,
+    "isPositive": true
   },
   {
     "date": "2023-11-27",
     "open": 57.57,
-    "ahr": 2.51
+    "ahr": 2.51,
+    "change": -1.24,
+    "changePercent": -2.11,
+    "isPositive": false
   },
   {
     "date": "2023-11-28",
     "open": 55.06,
-    "ahr": 2.28
+    "ahr": 2.28,
+    "change": -2.51,
+    "changePercent": -4.36,
+    "isPositive": false
   },
   {
     "date": "2023-11-29",
     "open": 58.18,
-    "ahr": 2.52
+    "ahr": 2.52,
+    "change": 3.12,
+    "changePercent": 5.67,
+    "isPositive": true
   },
   {
     "date": "2023-11-30",
     "open": 59.31,
-    "ahr": 2.6
+    "ahr": 2.6,
+    "change": 1.13,
+    "changePercent": 1.94,
+    "isPositive": true
   },
   {
     "date": "2023-12-01",
     "open": 59.3,
-    "ahr": 2.58
+    "ahr": 2.58,
+    "change": -0.01,
+    "changePercent": -0.02,
+    "isPositive": false
   },
   {
     "date": "2023-12-02",
     "open": 59.74,
-    "ahr": 2.59
+    "ahr": 2.59,
+    "change": 0.44,
+    "changePercent": 0.74,
+    "isPositive": true
   },
   {
     "date": "2023-12-03",
     "open": 63.66,
-    "ahr": 2.92
+    "ahr": 2.92,
+    "change": 3.92,
+    "changePercent": 6.56,
+    "isPositive": true
   },
   {
     "date": "2023-12-04",
     "open": 62.99,
-    "ahr": 2.83
+    "ahr": 2.83,
+    "change": -0.67,
+    "changePercent": -1.05,
+    "isPositive": false
   },
   {
     "date": "2023-12-05",
     "open": 61.63,
-    "ahr": 2.69
+    "ahr": 2.69,
+    "change": -1.36,
+    "changePercent": -2.16,
+    "isPositive": false
   },
   {
     "date": "2023-12-06",
     "open": 61.04,
-    "ahr": 2.61
+    "ahr": 2.61,
+    "change": -0.59,
+    "changePercent": -0.96,
+    "isPositive": false
   },
   {
     "date": "2023-12-07",
     "open": 61.85,
-    "ahr": 2.66
+    "ahr": 2.66,
+    "change": 0.81,
+    "changePercent": 1.33,
+    "isPositive": true
   },
   {
     "date": "2023-12-08",
     "open": 67.74,
-    "ahr": 3.16
+    "ahr": 3.16,
+    "change": 5.89,
+    "changePercent": 9.52,
+    "isPositive": true
   },
   {
     "date": "2023-12-09",
     "open": 74.93,
-    "ahr": 3.83
+    "ahr": 3.83,
+    "change": 7.19,
+    "changePercent": 10.61,
+    "isPositive": true
   },
   {
     "date": "2023-12-10",
     "open": 72.31,
-    "ahr": 3.53
+    "ahr": 3.53,
+    "change": -2.62,
+    "changePercent": -3.5,
+    "isPositive": false
   },
   {
     "date": "2023-12-11",
     "open": 74.88,
-    "ahr": 3.75
+    "ahr": 3.75,
+    "change": 2.57,
+    "changePercent": 3.55,
+    "isPositive": true
   },
   {
     "date": "2023-12-12",
     "open": 70.24,
-    "ahr": 3.27
+    "ahr": 3.27,
+    "change": -4.64,
+    "changePercent": -6.2,
+    "isPositive": false
   },
   {
     "date": "2023-12-13",
     "open": 68.6,
-    "ahr": 3.09
+    "ahr": 3.09,
+    "change": -1.64,
+    "changePercent": -2.33,
+    "isPositive": false
   },
   {
     "date": "2023-12-14",
     "open": 70.62,
-    "ahr": 3.24
+    "ahr": 3.24,
+    "change": 2.02,
+    "changePercent": 2.94,
+    "isPositive": true
   },
   {
     "date": "2023-12-15",
     "open": 75.68,
-    "ahr": 3.68
+    "ahr": 3.68,
+    "change": 5.06,
+    "changePercent": 7.17,
+    "isPositive": true
   },
   {
     "date": "2023-12-16",
     "open": 72.51,
-    "ahr": 3.35
+    "ahr": 3.35,
+    "change": -3.17,
+    "changePercent": -4.19,
+    "isPositive": false
   },
   {
     "date": "2023-12-17",
     "open": 73.71,
-    "ahr": 3.43
+    "ahr": 3.43,
+    "change": 1.2,
+    "changePercent": 1.65,
+    "isPositive": true
   },
   {
     "date": "2023-12-18",
     "open": 70.85,
-    "ahr": 3.14
+    "ahr": 3.14,
+    "change": -2.86,
+    "changePercent": -3.88,
+    "isPositive": false
   },
   {
     "date": "2023-12-19",
     "open": 74.41,
-    "ahr": 3.43
+    "ahr": 3.43,
+    "change": 3.56,
+    "changePercent": 5.02,
+    "isPositive": true
   },
   {
     "date": "2023-12-20",
     "open": 73.0,
-    "ahr": 3.27
+    "ahr": 3.27,
+    "change": -1.41,
+    "changePercent": -1.89,
+    "isPositive": false
   },
   {
     "date": "2023-12-21",
     "open": 82.22,
-    "ahr": 4.1
+    "ahr": 4.1,
+    "change": 9.22,
+    "changePercent": 12.63,
+    "isPositive": true
   },
   {
     "date": "2023-12-22",
     "open": 93.86,
-    "ahr": 5.29
+    "ahr": 5.29,
+    "change": 11.64,
+    "changePercent": 14.16,
+    "isPositive": true
   },
   {
     "date": "2023-12-23",
     "open": 97.91,
-    "ahr": 5.69
+    "ahr": 5.69,
+    "change": 4.05,
+    "changePercent": 4.31,
+    "isPositive": true
   },
   {
     "date": "2023-12-24",
     "open": 107.88,
-    "ahr": 6.82
+    "ahr": 6.82,
+    "change": 9.97,
+    "changePercent": 10.18,
+    "isPositive": true
   },
   {
     "date": "2023-12-25",
     "open": 112.45,
-    "ahr": 7.32
+    "ahr": 7.32,
+    "change": 4.57,
+    "changePercent": 4.24,
+    "isPositive": true
   },
   {
     "date": "2023-12-26",
     "open": 120.91,
-    "ahr": 8.36
+    "ahr": 8.36,
+    "change": 8.46,
+    "changePercent": 7.52,
+    "isPositive": true
   },
   {
     "date": "2023-12-27",
     "open": 112.48,
-    "ahr": 7.14
+    "ahr": 7.14,
+    "change": -8.43,
+    "changePercent": -6.97,
+    "isPositive": false
   },
   {
     "date": "2023-12-28",
     "open": 106.92,
-    "ahr": 6.37
+    "ahr": 6.37,
+    "change": -5.56,
+    "changePercent": -4.94,
+    "isPositive": false
   },
   {
     "date": "2023-12-29",
     "open": 101.8,
-    "ahr": 5.7
+    "ahr": 5.7,
+    "change": -5.12,
+    "changePercent": -4.79,
+    "isPositive": false
   },
   {
     "date": "2023-12-30",
     "open": 106.17,
-    "ahr": 6.12
+    "ahr": 6.12,
+    "change": 4.37,
+    "changePercent": 4.29,
+    "isPositive": true
   },
   {
     "date": "2023-12-31",
     "open": 101.9,
-    "ahr": 5.57
+    "ahr": 5.57,
+    "change": -4.27,
+    "changePercent": -4.02,
+    "isPositive": false
   },
   {
     "date": "2024-01-01",
     "open": 101.72,
-    "ahr": 5.48
+    "ahr": 5.48,
+    "change": -0.18,
+    "changePercent": -0.18,
+    "isPositive": false
   },
   {
     "date": "2024-01-02",
     "open": 109.93,
-    "ahr": 6.31
+    "ahr": 6.31,
+    "change": 8.21,
+    "changePercent": 8.07,
+    "isPositive": true
   },
   {
     "date": "2024-01-03",
     "open": 106.72,
-    "ahr": 5.88
+    "ahr": 5.88,
+    "change": -3.21,
+    "changePercent": -2.92,
+    "isPositive": false
   },
   {
     "date": "2024-01-04",
     "open": 98.52,
-    "ahr": 4.95
+    "ahr": 4.95,
+    "change": -8.2,
+    "changePercent": -7.68,
+    "isPositive": false
   },
   {
     "date": "2024-01-05",
     "open": 104.91,
-    "ahr": 5.54
+    "ahr": 5.54,
+    "change": 6.39,
+    "changePercent": 6.49,
+    "isPositive": true
   },
   {
     "date": "2024-01-06",
     "open": 99.93,
-    "ahr": 4.97
+    "ahr": 4.97,
+    "change": -4.98,
+    "changePercent": -4.75,
+    "isPositive": false
   },
   {
     "date": "2024-01-07",
     "open": 93.77,
-    "ahr": 4.32
+    "ahr": 4.32,
+    "change": -6.16,
+    "changePercent": -6.16,
+    "isPositive": false
   },
   {
     "date": "2024-01-08",
     "open": 89.44,
-    "ahr": 3.89
+    "ahr": 3.89,
+    "change": -4.33,
+    "changePercent": -4.62,
+    "isPositive": false
   },
   {
     "date": "2024-01-09",
     "open": 97.88,
-    "ahr": 4.6
+    "ahr": 4.6,
+    "change": 8.44,
+    "changePercent": 9.44,
+    "isPositive": true
   },
   {
     "date": "2024-01-10",
     "open": 99.36,
-    "ahr": 4.68
+    "ahr": 4.68,
+    "change": 1.48,
+    "changePercent": 1.51,
+    "isPositive": true
   },
   {
     "date": "2024-01-11",
     "open": 101.99,
-    "ahr": 4.88
+    "ahr": 4.88,
+    "change": 2.63,
+    "changePercent": 2.65,
+    "isPositive": true
   },
   {
     "date": "2024-01-12",
     "open": 99.89,
-    "ahr": 4.62
+    "ahr": 4.62,
+    "change": -2.1,
+    "changePercent": -2.06,
+    "isPositive": false
   },
   {
     "date": "2024-01-13",
     "open": 92.14,
-    "ahr": 3.89
+    "ahr": 3.89,
+    "change": -7.75,
+    "changePercent": -7.76,
+    "isPositive": false
   },
   {
     "date": "2024-01-14",
     "open": 95.85,
-    "ahr": 4.16
+    "ahr": 4.16,
+    "change": 3.71,
+    "changePercent": 4.03,
+    "isPositive": true
   },
   {
     "date": "2024-01-15",
     "open": 93.81,
-    "ahr": 3.94
+    "ahr": 3.94,
+    "change": -2.04,
+    "changePercent": -2.13,
+    "isPositive": false
   },
   {
     "date": "2024-01-16",
     "open": 94.35,
-    "ahr": 3.94
+    "ahr": 3.94,
+    "change": 0.54,
+    "changePercent": 0.58,
+    "isPositive": true
   },
   {
     "date": "2024-01-17",
     "open": 97.6,
-    "ahr": 4.16
+    "ahr": 4.16,
+    "change": 3.25,
+    "changePercent": 3.44,
+    "isPositive": true
   },
   {
     "date": "2024-01-18",
     "open": 102.1,
-    "ahr": 4.51
+    "ahr": 4.51,
+    "change": 4.5,
+    "changePercent": 4.61,
+    "isPositive": true
   },
   {
     "date": "2024-01-19",
     "open": 94.39,
-    "ahr": 3.81
+    "ahr": 3.81,
+    "change": -7.71,
+    "changePercent": -7.55,
+    "isPositive": false
   },
   {
     "date": "2024-01-20",
     "open": 93.62,
-    "ahr": 3.71
+    "ahr": 3.71,
+    "change": -0.77,
+    "changePercent": -0.82,
+    "isPositive": false
   },
   {
     "date": "2024-01-21",
     "open": 92.88,
-    "ahr": 3.61
+    "ahr": 3.61,
+    "change": -0.74,
+    "changePercent": -0.79,
+    "isPositive": false
   },
   {
     "date": "2024-01-22",
     "open": 91.08,
-    "ahr": 3.43
+    "ahr": 3.43,
+    "change": -1.8,
+    "changePercent": -1.94,
+    "isPositive": false
   },
   {
     "date": "2024-01-23",
     "open": 83.84,
-    "ahr": 2.88
+    "ahr": 2.88,
+    "change": -7.24,
+    "changePercent": -7.95,
+    "isPositive": false
   },
   {
     "date": "2024-01-24",
     "open": 84.36,
-    "ahr": 2.89
+    "ahr": 2.89,
+    "change": 0.52,
+    "changePercent": 0.62,
+    "isPositive": true
   },
   {
     "date": "2024-01-25",
     "open": 88.77,
-    "ahr": 3.16
+    "ahr": 3.16,
+    "change": 4.41,
+    "changePercent": 5.23,
+    "isPositive": true
   },
   {
     "date": "2024-01-26",
     "open": 86.9,
-    "ahr": 3.0
+    "ahr": 3.0,
+    "change": -1.87,
+    "changePercent": -2.11,
+    "isPositive": false
   },
   {
     "date": "2024-01-27",
     "open": 92.29,
-    "ahr": 3.35
+    "ahr": 3.35,
+    "change": 5.39,
+    "changePercent": 6.2,
+    "isPositive": true
   },
   {
     "date": "2024-01-28",
     "open": 94.27,
-    "ahr": 3.46
+    "ahr": 3.46,
+    "change": 1.98,
+    "changePercent": 2.15,
+    "isPositive": true
   },
   {
     "date": "2024-01-29",
     "open": 95.99,
-    "ahr": 3.55
+    "ahr": 3.55,
+    "change": 1.72,
+    "changePercent": 1.82,
+    "isPositive": true
   },
   {
     "date": "2024-01-30",
     "open": 101.67,
-    "ahr": 3.95
+    "ahr": 3.95,
+    "change": 5.68,
+    "changePercent": 5.92,
+    "isPositive": true
   },
   {
     "date": "2024-01-31",
     "open": 101.4,
-    "ahr": 3.89
+    "ahr": 3.89,
+    "change": -0.27,
+    "changePercent": -0.27,
+    "isPositive": false
   },
   {
     "date": "2024-02-01",
     "open": 96.96,
-    "ahr": 3.52
+    "ahr": 3.52,
+    "change": -4.44,
+    "changePercent": -4.38,
+    "isPositive": false
   },
   {
     "date": "2024-02-02",
     "open": 97.81,
-    "ahr": 3.55
+    "ahr": 3.55,
+    "change": 0.85,
+    "changePercent": 0.88,
+    "isPositive": true
   },
   {
     "date": "2024-02-03",
     "open": 100.57,
-    "ahr": 3.72
+    "ahr": 3.72,
+    "change": 2.76,
+    "changePercent": 2.82,
+    "isPositive": true
   },
   {
     "date": "2024-02-04",
     "open": 97.95,
-    "ahr": 3.49
+    "ahr": 3.49,
+    "change": -2.62,
+    "changePercent": -2.61,
+    "isPositive": false
   },
   {
     "date": "2024-02-05",
     "open": 95.48,
-    "ahr": 3.28
+    "ahr": 3.28,
+    "change": -2.47,
+    "changePercent": -2.52,
+    "isPositive": false
   },
   {
     "date": "2024-02-06",
     "open": 95.66,
-    "ahr": 3.27
+    "ahr": 3.27,
+    "change": 0.18,
+    "changePercent": 0.19,
+    "isPositive": true
   },
   {
     "date": "2024-02-07",
     "open": 96.87,
-    "ahr": 3.31
+    "ahr": 3.31,
+    "change": 1.21,
+    "changePercent": 1.26,
+    "isPositive": true
   },
   {
     "date": "2024-02-08",
     "open": 101.14,
-    "ahr": 3.58
+    "ahr": 3.58,
+    "change": 4.27,
+    "changePercent": 4.41,
+    "isPositive": true
   },
   {
     "date": "2024-02-09",
     "open": 102.77,
-    "ahr": 3.65
+    "ahr": 3.65,
+    "change": 1.63,
+    "changePercent": 1.61,
+    "isPositive": true
   },
   {
     "date": "2024-02-10",
     "open": 106.94,
-    "ahr": 3.91
+    "ahr": 3.91,
+    "change": 4.17,
+    "changePercent": 4.06,
+    "isPositive": true
   },
   {
     "date": "2024-02-11",
     "open": 109.01,
-    "ahr": 4.02
+    "ahr": 4.02,
+    "change": 2.07,
+    "changePercent": 1.94,
+    "isPositive": true
   },
   {
     "date": "2024-02-12",
     "open": 107.46,
-    "ahr": 3.87
+    "ahr": 3.87,
+    "change": -1.55,
+    "changePercent": -1.42,
+    "isPositive": false
   },
   {
     "date": "2024-02-13",
     "open": 111.65,
-    "ahr": 4.13
+    "ahr": 4.13,
+    "change": 4.19,
+    "changePercent": 3.9,
+    "isPositive": true
   },
   {
     "date": "2024-02-14",
     "open": 112.49,
-    "ahr": 4.15
+    "ahr": 4.15,
+    "change": 0.84,
+    "changePercent": 0.75,
+    "isPositive": true
   },
   {
     "date": "2024-02-15",
     "open": 116.97,
-    "ahr": 4.44
+    "ahr": 4.44,
+    "change": 4.48,
+    "changePercent": 3.98,
+    "isPositive": true
   },
   {
     "date": "2024-02-16",
     "open": 113.5,
-    "ahr": 4.14
+    "ahr": 4.14,
+    "change": -3.47,
+    "changePercent": -2.97,
+    "isPositive": false
   },
   {
     "date": "2024-02-17",
     "open": 110.32,
-    "ahr": 3.87
+    "ahr": 3.87,
+    "change": -3.18,
+    "changePercent": -2.8,
+    "isPositive": false
   },
   {
     "date": "2024-02-18",
     "open": 108.92,
-    "ahr": 3.73
+    "ahr": 3.73,
+    "change": -1.4,
+    "changePercent": -1.27,
+    "isPositive": false
   },
   {
     "date": "2024-02-19",
     "open": 112.25,
-    "ahr": 3.92
+    "ahr": 3.92,
+    "change": 3.33,
+    "changePercent": 3.06,
+    "isPositive": true
   },
   {
     "date": "2024-02-20",
     "open": 111.53,
-    "ahr": 3.82
+    "ahr": 3.82,
+    "change": -0.72,
+    "changePercent": -0.64,
+    "isPositive": false
   },
   {
     "date": "2024-02-21",
     "open": 108.32,
-    "ahr": 3.57
+    "ahr": 3.57,
+    "change": -3.21,
+    "changePercent": -2.88,
+    "isPositive": false
   },
   {
     "date": "2024-02-22",
     "open": 105.04,
-    "ahr": 3.32
+    "ahr": 3.32,
+    "change": -3.28,
+    "changePercent": -3.03,
+    "isPositive": false
   },
   {
     "date": "2024-02-23",
     "open": 101.75,
-    "ahr": 3.08
+    "ahr": 3.08,
+    "change": -3.29,
+    "changePercent": -3.13,
+    "isPositive": false
   },
   {
     "date": "2024-02-24",
     "open": 99.91,
-    "ahr": 2.94
+    "ahr": 2.94,
+    "change": -1.84,
+    "changePercent": -1.81,
+    "isPositive": false
   },
   {
     "date": "2024-02-25",
     "open": 104.02,
-    "ahr": 3.16
+    "ahr": 3.16,
+    "change": 4.11,
+    "changePercent": 4.11,
+    "isPositive": true
   },
   {
     "date": "2024-02-26",
     "open": 103.47,
-    "ahr": 3.09
+    "ahr": 3.09,
+    "change": -0.55,
+    "changePercent": -0.53,
+    "isPositive": false
   },
   {
     "date": "2024-02-27",
     "open": 109.9,
-    "ahr": 3.45
+    "ahr": 3.45,
+    "change": 6.43,
+    "changePercent": 6.21,
+    "isPositive": true
   },
   {
     "date": "2024-02-28",
     "open": 108.35,
-    "ahr": 3.32
+    "ahr": 3.32,
+    "change": -1.55,
+    "changePercent": -1.41,
+    "isPositive": false
   },
   {
     "date": "2024-02-29",
     "open": 119.03,
-    "ahr": 3.96
+    "ahr": 3.96,
+    "change": 10.68,
+    "changePercent": 9.86,
+    "isPositive": true
   },
   {
     "date": "2024-03-01",
     "open": 125.68,
-    "ahr": 4.37
+    "ahr": 4.37,
+    "change": 6.65,
+    "changePercent": 5.59,
+    "isPositive": true
   },
   {
     "date": "2024-03-02",
     "open": 129.43,
-    "ahr": 4.58
+    "ahr": 4.58,
+    "change": 3.75,
+    "changePercent": 2.98,
+    "isPositive": true
   },
   {
     "date": "2024-03-03",
     "open": 130.03,
-    "ahr": 4.57
+    "ahr": 4.57,
+    "change": 0.6,
+    "changePercent": 0.46,
+    "isPositive": true
   },
   {
     "date": "2024-03-04",
     "open": 130.16,
-    "ahr": 4.52
+    "ahr": 4.52,
+    "change": 0.13,
+    "changePercent": 0.1,
+    "isPositive": true
   },
   {
     "date": "2024-03-05",
     "open": 133.26,
-    "ahr": 4.68
+    "ahr": 4.68,
+    "change": 3.1,
+    "changePercent": 2.38,
+    "isPositive": true
   },
   {
     "date": "2024-03-06",
     "open": 125.31,
-    "ahr": 4.09
+    "ahr": 4.09,
+    "change": -7.95,
+    "changePercent": -5.97,
+    "isPositive": false
   },
   {
     "date": "2024-03-07",
     "open": 130.8,
-    "ahr": 4.4
+    "ahr": 4.4,
+    "change": 5.49,
+    "changePercent": 4.38,
+    "isPositive": true
   },
   {
     "date": "2024-03-08",
     "open": 143.82,
-    "ahr": 5.26
+    "ahr": 5.26,
+    "change": 13.02,
+    "changePercent": 9.95,
+    "isPositive": true
   },
   {
     "date": "2024-03-09",
     "open": 144.79,
-    "ahr": 5.26
+    "ahr": 5.26,
+    "change": 0.97,
+    "changePercent": 0.67,
+    "isPositive": true
   },
   {
     "date": "2024-03-10",
     "open": 144.3,
-    "ahr": 5.16
+    "ahr": 5.16,
+    "change": -0.49,
+    "changePercent": -0.34,
+    "isPositive": false
   },
   {
     "date": "2024-03-11",
     "open": 144.39,
-    "ahr": 5.1
+    "ahr": 5.1,
+    "change": 0.09,
+    "changePercent": 0.06,
+    "isPositive": true
   },
   {
     "date": "2024-03-12",
     "open": 148.83,
-    "ahr": 5.35
+    "ahr": 5.35,
+    "change": 4.44,
+    "changePercent": 3.08,
+    "isPositive": true
   },
   {
     "date": "2024-03-13",
     "open": 151.06,
-    "ahr": 5.44
+    "ahr": 5.44,
+    "change": 2.23,
+    "changePercent": 1.5,
+    "isPositive": true
   },
   {
     "date": "2024-03-14",
     "open": 163.9,
-    "ahr": 6.31
+    "ahr": 6.31,
+    "change": 12.84,
+    "changePercent": 8.5,
+    "isPositive": true
   },
   {
     "date": "2024-03-15",
     "open": 176.65,
-    "ahr": 7.23
+    "ahr": 7.23,
+    "change": 12.75,
+    "changePercent": 7.78,
+    "isPositive": true
   },
   {
     "date": "2024-03-16",
     "open": 183.95,
-    "ahr": 7.74
+    "ahr": 7.74,
+    "change": 7.3,
+    "changePercent": 4.13,
+    "isPositive": true
   },
   {
     "date": "2024-03-17",
     "open": 182.05,
-    "ahr": 7.47
+    "ahr": 7.47,
+    "change": -1.9,
+    "changePercent": -1.03,
+    "isPositive": false
   },
   {
     "date": "2024-03-18",
     "open": 201.85,
-    "ahr": 9.05
+    "ahr": 9.05,
+    "change": 19.8,
+    "changePercent": 10.88,
+    "isPositive": true
   },
   {
     "date": "2024-03-19",
     "open": 195.92,
-    "ahr": 8.41
+    "ahr": 8.41,
+    "change": -5.93,
+    "changePercent": -2.94,
+    "isPositive": false
   },
   {
     "date": "2024-03-20",
     "open": 169.82,
-    "ahr": 6.23
+    "ahr": 6.23,
+    "change": -26.1,
+    "changePercent": -13.32,
+    "isPositive": false
   },
   {
     "date": "2024-03-21",
     "open": 191.76,
-    "ahr": 7.83
+    "ahr": 7.83,
+    "change": 21.94,
+    "changePercent": 12.92,
+    "isPositive": true
   },
   {
     "date": "2024-03-22",
     "open": 179.46,
-    "ahr": 6.76
+    "ahr": 6.76,
+    "change": -12.3,
+    "changePercent": -6.41,
+    "isPositive": false
   },
   {
     "date": "2024-03-23",
     "open": 175.21,
-    "ahr": 6.36
+    "ahr": 6.36,
+    "change": -4.25,
+    "changePercent": -2.37,
+    "isPositive": false
   },
   {
     "date": "2024-03-24",
     "open": 172.65,
-    "ahr": 6.09
+    "ahr": 6.09,
+    "change": -2.56,
+    "changePercent": -1.46,
+    "isPositive": false
   },
   {
     "date": "2024-03-25",
     "open": 183.87,
-    "ahr": 6.81
+    "ahr": 6.81,
+    "change": 11.22,
+    "changePercent": 6.5,
+    "isPositive": true
   },
   {
     "date": "2024-03-26",
     "open": 188.98,
-    "ahr": 7.09
+    "ahr": 7.09,
+    "change": 5.11,
+    "changePercent": 2.78,
+    "isPositive": true
   },
   {
     "date": "2024-03-27",
     "open": 190.46,
-    "ahr": 7.1
+    "ahr": 7.1,
+    "change": 1.48,
+    "changePercent": 0.78,
+    "isPositive": true
   },
   {
     "date": "2024-03-28",
     "open": 186.34,
-    "ahr": 6.69
+    "ahr": 6.69,
+    "change": -4.12,
+    "changePercent": -2.16,
+    "isPositive": false
   },
   {
     "date": "2024-03-29",
     "open": 189.64,
-    "ahr": 6.83
+    "ahr": 6.83,
+    "change": 3.3,
+    "changePercent": 1.77,
+    "isPositive": true
   },
   {
     "date": "2024-03-30",
     "open": 192.02,
-    "ahr": 6.9
+    "ahr": 6.9,
+    "change": 2.38,
+    "changePercent": 1.26,
+    "isPositive": true
   },
   {
     "date": "2024-03-31",
     "open": 194.19,
-    "ahr": 6.95
+    "ahr": 6.95,
+    "change": 2.17,
+    "changePercent": 1.13,
+    "isPositive": true
   },
   {
     "date": "2024-04-01",
     "open": 202.45,
-    "ahr": 7.45
+    "ahr": 7.45,
+    "change": 8.26,
+    "changePercent": 4.25,
+    "isPositive": true
   },
   {
     "date": "2024-04-02",
     "open": 192.24,
-    "ahr": 6.62
+    "ahr": 6.62,
+    "change": -10.21,
+    "changePercent": -5.04,
+    "isPositive": false
   },
   {
     "date": "2024-04-03",
     "open": 181.53,
-    "ahr": 5.82
+    "ahr": 5.82,
+    "change": -10.71,
+    "changePercent": -5.57,
+    "isPositive": false
   },
   {
     "date": "2024-04-04",
     "open": 185.05,
-    "ahr": 5.96
+    "ahr": 5.96,
+    "change": 3.52,
+    "changePercent": 1.94,
+    "isPositive": true
   },
   {
     "date": "2024-04-05",
     "open": 184.0,
-    "ahr": 5.81
+    "ahr": 5.81,
+    "change": -1.05,
+    "changePercent": -0.57,
+    "isPositive": false
   },
   {
     "date": "2024-04-06",
     "open": 174.37,
-    "ahr": 5.15
+    "ahr": 5.15,
+    "change": -9.63,
+    "changePercent": -5.23,
+    "isPositive": false
   },
   {
     "date": "2024-04-07",
     "open": 178.69,
-    "ahr": 5.33
+    "ahr": 5.33,
+    "change": 4.32,
+    "changePercent": 2.48,
+    "isPositive": true
   },
   {
     "date": "2024-04-08",
     "open": 179.51,
-    "ahr": 5.31
+    "ahr": 5.31,
+    "change": 0.82,
+    "changePercent": 0.46,
+    "isPositive": true
   },
   {
     "date": "2024-04-09",
     "open": 180.68,
-    "ahr": 5.3
+    "ahr": 5.3,
+    "change": 1.17,
+    "changePercent": 0.65,
+    "isPositive": true
   },
   {
     "date": "2024-04-10",
     "open": 172.41,
-    "ahr": 4.76
+    "ahr": 4.76,
+    "change": -8.27,
+    "changePercent": -4.58,
+    "isPositive": false
   },
   {
     "date": "2024-04-11",
     "open": 173.3,
-    "ahr": 4.74
+    "ahr": 4.74,
+    "change": 0.89,
+    "changePercent": 0.52,
+    "isPositive": true
   },
   {
     "date": "2024-04-12",
     "open": 172.37,
-    "ahr": 4.63
+    "ahr": 4.63,
+    "change": -0.93,
+    "changePercent": -0.54,
+    "isPositive": false
   },
   {
     "date": "2024-04-13",
     "open": 153.16,
-    "ahr": 3.61
+    "ahr": 3.61,
+    "change": -19.21,
+    "changePercent": -11.14,
+    "isPositive": false
   },
   {
     "date": "2024-04-14",
     "open": 138.47,
-    "ahr": 2.91
+    "ahr": 2.91,
+    "change": -14.69,
+    "changePercent": -9.59,
+    "isPositive": false
   },
   {
     "date": "2024-04-15",
     "open": 151.26,
-    "ahr": 3.43
+    "ahr": 3.43,
+    "change": 12.79,
+    "changePercent": 9.24,
+    "isPositive": true
   },
   {
     "date": "2024-04-16",
     "open": 138.51,
-    "ahr": 2.84
+    "ahr": 2.84,
+    "change": -12.75,
+    "changePercent": -8.43,
+    "isPositive": false
   },
   {
     "date": "2024-04-17",
     "open": 136.21,
-    "ahr": 2.71
+    "ahr": 2.71,
+    "change": -2.3,
+    "changePercent": -1.66,
+    "isPositive": false
   },
   {
     "date": "2024-04-18",
     "open": 131.84,
-    "ahr": 2.51
+    "ahr": 2.51,
+    "change": -4.37,
+    "changePercent": -3.21,
+    "isPositive": false
   },
   {
     "date": "2024-04-19",
     "open": 142.08,
-    "ahr": 2.88
+    "ahr": 2.88,
+    "change": 10.24,
+    "changePercent": 7.77,
+    "isPositive": true
   },
   {
     "date": "2024-04-20",
     "open": 142.5,
-    "ahr": 2.87
+    "ahr": 2.87,
+    "change": 0.42,
+    "changePercent": 0.3,
+    "isPositive": true
   },
   {
     "date": "2024-04-21",
     "open": 151.21,
-    "ahr": 3.19
+    "ahr": 3.19,
+    "change": 8.71,
+    "changePercent": 6.11,
+    "isPositive": true
   },
   {
     "date": "2024-04-22",
     "open": 148.81,
-    "ahr": 3.05
+    "ahr": 3.05,
+    "change": -2.4,
+    "changePercent": -1.59,
+    "isPositive": false
   },
   {
     "date": "2024-04-23",
     "open": 156.94,
-    "ahr": 3.35
+    "ahr": 3.35,
+    "change": 8.13,
+    "changePercent": 5.46,
+    "isPositive": true
   },
   {
     "date": "2024-04-24",
     "open": 154.75,
-    "ahr": 3.22
+    "ahr": 3.22,
+    "change": -2.19,
+    "changePercent": -1.4,
+    "isPositive": false
   },
   {
     "date": "2024-04-25",
     "open": 147.79,
-    "ahr": 2.9
+    "ahr": 2.9,
+    "change": -6.96,
+    "changePercent": -4.5,
+    "isPositive": false
   },
   {
     "date": "2024-04-26",
     "open": 144.83,
-    "ahr": 2.75
+    "ahr": 2.75,
+    "change": -2.96,
+    "changePercent": -2.0,
+    "isPositive": false
   },
   {
     "date": "2024-04-27",
     "open": 139.23,
-    "ahr": 2.51
+    "ahr": 2.51,
+    "change": -5.6,
+    "changePercent": -3.87,
+    "isPositive": false
   },
   {
     "date": "2024-04-28",
     "open": 141.31,
-    "ahr": 2.56
+    "ahr": 2.56,
+    "change": 2.08,
+    "changePercent": 1.49,
+    "isPositive": true
   },
   {
     "date": "2024-04-29",
     "open": 137.99,
-    "ahr": 2.41
+    "ahr": 2.41,
+    "change": -3.32,
+    "changePercent": -2.35,
+    "isPositive": false
   },
   {
     "date": "2024-04-30",
     "open": 137.79,
-    "ahr": 2.37
+    "ahr": 2.37,
+    "change": -0.2,
+    "changePercent": -0.14,
+    "isPositive": false
   },
   {
     "date": "2024-05-01",
     "open": 126.76,
-    "ahr": 1.98
+    "ahr": 1.98,
+    "change": -11.03,
+    "changePercent": -8.0,
+    "isPositive": false
   },
   {
     "date": "2024-05-02",
     "open": 134.64,
-    "ahr": 2.21
+    "ahr": 2.21,
+    "change": 7.88,
+    "changePercent": 6.22,
+    "isPositive": true
   },
   {
     "date": "2024-05-03",
     "open": 137.58,
-    "ahr": 2.28
+    "ahr": 2.28,
+    "change": 2.94,
+    "changePercent": 2.18,
+    "isPositive": true
   },
   {
     "date": "2024-05-04",
     "open": 143.7,
-    "ahr": 2.46
+    "ahr": 2.46,
+    "change": 6.12,
+    "changePercent": 4.45,
+    "isPositive": true
   },
   {
     "date": "2024-05-05",
     "open": 146.05,
-    "ahr": 2.51
+    "ahr": 2.51,
+    "change": 2.35,
+    "changePercent": 1.64,
+    "isPositive": true
   },
   {
     "date": "2024-05-06",
     "open": 145.74,
-    "ahr": 2.47
+    "ahr": 2.47,
+    "change": -0.31,
+    "changePercent": -0.21,
+    "isPositive": false
   },
   {
     "date": "2024-05-07",
     "open": 152.81,
-    "ahr": 2.69
+    "ahr": 2.69,
+    "change": 7.07,
+    "changePercent": 4.85,
+    "isPositive": true
   },
   {
     "date": "2024-05-08",
     "open": 148.03,
-    "ahr": 2.49
+    "ahr": 2.49,
+    "change": -4.78,
+    "changePercent": -3.13,
+    "isPositive": false
   },
   {
     "date": "2024-05-09",
     "open": 142.17,
-    "ahr": 2.27
+    "ahr": 2.27,
+    "change": -5.86,
+    "changePercent": -3.96,
+    "isPositive": false
   },
   {
     "date": "2024-05-10",
     "open": 152.56,
-    "ahr": 2.59
+    "ahr": 2.59,
+    "change": 10.39,
+    "changePercent": 7.31,
+    "isPositive": true
   },
   {
     "date": "2024-05-11",
     "open": 146.02,
-    "ahr": 2.35
+    "ahr": 2.35,
+    "change": -6.54,
+    "changePercent": -4.29,
+    "isPositive": false
   },
   {
     "date": "2024-05-12",
     "open": 145.42,
-    "ahr": 2.3
+    "ahr": 2.3,
+    "change": -0.6,
+    "changePercent": -0.41,
+    "isPositive": false
   },
   {
     "date": "2024-05-13",
     "open": 143.42,
-    "ahr": 2.22
+    "ahr": 2.22,
+    "change": -2.0,
+    "changePercent": -1.38,
+    "isPositive": false
   },
   {
     "date": "2024-05-14",
     "open": 147.53,
-    "ahr": 2.32
+    "ahr": 2.32,
+    "change": 4.11,
+    "changePercent": 2.87,
+    "isPositive": true
   },
   {
     "date": "2024-05-15",
     "open": 142.03,
-    "ahr": 2.13
+    "ahr": 2.13,
+    "change": -5.5,
+    "changePercent": -3.73,
+    "isPositive": false
   },
   {
     "date": "2024-05-16",
     "open": 158.52,
-    "ahr": 2.62
+    "ahr": 2.62,
+    "change": 16.49,
+    "changePercent": 11.61,
+    "isPositive": true
   },
   {
     "date": "2024-05-17",
     "open": 159.36,
-    "ahr": 2.62
+    "ahr": 2.62,
+    "change": 0.84,
+    "changePercent": 0.53,
+    "isPositive": true
   },
   {
     "date": "2024-05-18",
     "open": 169.43,
-    "ahr": 2.94
+    "ahr": 2.94,
+    "change": 10.07,
+    "changePercent": 6.32,
+    "isPositive": true
   },
   {
     "date": "2024-05-19",
     "open": 172.4,
-    "ahr": 3.01
+    "ahr": 3.01,
+    "change": 2.97,
+    "changePercent": 1.75,
+    "isPositive": true
   },
   {
     "date": "2024-05-20",
     "open": 169.93,
-    "ahr": 2.89
+    "ahr": 2.89,
+    "change": -2.47,
+    "changePercent": -1.43,
+    "isPositive": false
   },
   {
     "date": "2024-05-21",
     "open": 186.69,
-    "ahr": 3.46
+    "ahr": 3.46,
+    "change": 16.76,
+    "changePercent": 9.86,
+    "isPositive": true
   },
   {
     "date": "2024-05-22",
     "open": 178.15,
-    "ahr": 3.12
+    "ahr": 3.12,
+    "change": -8.54,
+    "changePercent": -4.57,
+    "isPositive": false
   },
   {
     "date": "2024-05-23",
     "open": 176.96,
-    "ahr": 3.04
+    "ahr": 3.04,
+    "change": -1.19,
+    "changePercent": -0.67,
+    "isPositive": false
   },
   {
     "date": "2024-05-24",
     "open": 176.15,
-    "ahr": 2.99
+    "ahr": 2.99,
+    "change": -0.81,
+    "changePercent": -0.46,
+    "isPositive": false
   },
   {
     "date": "2024-05-25",
     "open": 167.7,
-    "ahr": 2.68
+    "ahr": 2.68,
+    "change": -8.45,
+    "changePercent": -4.8,
+    "isPositive": false
   },
   {
     "date": "2024-05-26",
     "open": 168.35,
-    "ahr": 2.68
+    "ahr": 2.68,
+    "change": 0.65,
+    "changePercent": 0.39,
+    "isPositive": true
   },
   {
     "date": "2024-05-27",
     "open": 163.42,
-    "ahr": 2.5
+    "ahr": 2.5,
+    "change": -4.93,
+    "changePercent": -2.93,
+    "isPositive": false
   },
   {
     "date": "2024-05-28",
     "open": 170.15,
-    "ahr": 2.69
+    "ahr": 2.69,
+    "change": 6.73,
+    "changePercent": 4.12,
+    "isPositive": true
   },
   {
     "date": "2024-05-29",
     "open": 168.68,
-    "ahr": 2.62
+    "ahr": 2.62,
+    "change": -1.47,
+    "changePercent": -0.86,
+    "isPositive": false
   },
   {
     "date": "2024-05-30",
     "open": 168.32,
-    "ahr": 2.58
+    "ahr": 2.58,
+    "change": -0.36,
+    "changePercent": -0.21,
+    "isPositive": false
   },
   {
     "date": "2024-05-31",
     "open": 166.88,
-    "ahr": 2.52
+    "ahr": 2.52,
+    "change": -1.44,
+    "changePercent": -0.86,
+    "isPositive": false
   },
   {
     "date": "2024-06-01",
     "open": 165.65,
-    "ahr": 2.46
+    "ahr": 2.46,
+    "change": -1.23,
+    "changePercent": -0.74,
+    "isPositive": false
   },
   {
     "date": "2024-06-02",
     "open": 166.14,
-    "ahr": 2.46
+    "ahr": 2.46,
+    "change": 0.49,
+    "changePercent": 0.3,
+    "isPositive": true
   },
   {
     "date": "2024-06-03",
     "open": 163.14,
-    "ahr": 2.35
+    "ahr": 2.35,
+    "change": -3.0,
+    "changePercent": -1.81,
+    "isPositive": false
   },
   {
     "date": "2024-06-04",
     "open": 164.9,
-    "ahr": 2.38
+    "ahr": 2.38,
+    "change": 1.76,
+    "changePercent": 1.08,
+    "isPositive": true
   },
   {
     "date": "2024-06-05",
     "open": 171.78,
-    "ahr": 2.56
+    "ahr": 2.56,
+    "change": 6.88,
+    "changePercent": 4.17,
+    "isPositive": true
   },
   {
     "date": "2024-06-06",
     "open": 173.55,
-    "ahr": 2.6
+    "ahr": 2.6,
+    "change": 1.77,
+    "changePercent": 1.03,
+    "isPositive": true
   },
   {
     "date": "2024-06-07",
     "open": 170.15,
-    "ahr": 2.48
+    "ahr": 2.48,
+    "change": -3.4,
+    "changePercent": -1.96,
+    "isPositive": false
   },
   {
     "date": "2024-06-08",
     "open": 162.51,
-    "ahr": 2.24
+    "ahr": 2.24,
+    "change": -7.64,
+    "changePercent": -4.49,
+    "isPositive": false
   },
   {
     "date": "2024-06-09",
     "open": 157.83,
-    "ahr": 2.09
+    "ahr": 2.09,
+    "change": -4.68,
+    "changePercent": -2.88,
+    "isPositive": false
   },
   {
     "date": "2024-06-10",
     "open": 162.12,
-    "ahr": 2.19
+    "ahr": 2.19,
+    "change": 4.29,
+    "changePercent": 2.72,
+    "isPositive": true
   },
   {
     "date": "2024-06-11",
     "open": 159.04,
-    "ahr": 2.09
+    "ahr": 2.09,
+    "change": -3.08,
+    "changePercent": -1.9,
+    "isPositive": false
   },
   {
     "date": "2024-06-12",
     "open": 149.31,
-    "ahr": 1.83
+    "ahr": 1.83,
+    "change": -9.73,
+    "changePercent": -6.12,
+    "isPositive": false
   },
   {
     "date": "2024-06-13",
     "open": 155.21,
-    "ahr": 1.96
+    "ahr": 1.96,
+    "change": 5.9,
+    "changePercent": 3.95,
+    "isPositive": true
   },
   {
     "date": "2024-06-14",
     "open": 147.29,
-    "ahr": 1.76
+    "ahr": 1.76,
+    "change": -7.92,
+    "changePercent": -5.1,
+    "isPositive": false
   },
   {
     "date": "2024-06-15",
     "open": 143.04,
-    "ahr": 1.64
+    "ahr": 1.64,
+    "change": -4.25,
+    "changePercent": -2.89,
+    "isPositive": false
   },
   {
     "date": "2024-06-16",
     "open": 145.52,
-    "ahr": 1.69
+    "ahr": 1.69,
+    "change": 2.48,
+    "changePercent": 1.73,
+    "isPositive": true
   },
   {
     "date": "2024-06-17",
     "open": 151.3,
-    "ahr": 1.81
+    "ahr": 1.81,
+    "change": 5.78,
+    "changePercent": 3.97,
+    "isPositive": true
   },
   {
     "date": "2024-06-18",
     "open": 143.28,
-    "ahr": 1.61
+    "ahr": 1.61,
+    "change": -8.02,
+    "changePercent": -5.3,
+    "isPositive": false
   },
   {
     "date": "2024-06-19",
     "open": 137.41,
-    "ahr": 1.47
+    "ahr": 1.47,
+    "change": -5.87,
+    "changePercent": -4.1,
+    "isPositive": false
   },
   {
     "date": "2024-06-20",
     "open": 135.62,
-    "ahr": 1.43
+    "ahr": 1.43,
+    "change": -1.79,
+    "changePercent": -1.3,
+    "isPositive": false
   },
   {
     "date": "2024-06-21",
     "open": 133.55,
-    "ahr": 1.37
+    "ahr": 1.37,
+    "change": -2.07,
+    "changePercent": -1.53,
+    "isPositive": false
   },
   {
     "date": "2024-06-22",
     "open": 134.61,
-    "ahr": 1.39
+    "ahr": 1.39,
+    "change": 1.06,
+    "changePercent": 0.79,
+    "isPositive": true
   },
   {
     "date": "2024-06-23",
     "open": 133.7,
-    "ahr": 1.36
+    "ahr": 1.36,
+    "change": -0.91,
+    "changePercent": -0.68,
+    "isPositive": false
   },
   {
     "date": "2024-06-24",
     "open": 128.68,
-    "ahr": 1.25
+    "ahr": 1.25,
+    "change": -5.02,
+    "changePercent": -3.75,
+    "isPositive": false
   },
   {
     "date": "2024-06-25",
     "open": 132.34,
-    "ahr": 1.32
+    "ahr": 1.32,
+    "change": 3.66,
+    "changePercent": 2.84,
+    "isPositive": true
   },
   {
     "date": "2024-06-26",
     "open": 136.57,
-    "ahr": 1.39
+    "ahr": 1.39,
+    "change": 4.23,
+    "changePercent": 3.2,
+    "isPositive": true
   },
   {
     "date": "2024-06-27",
     "open": 136.81,
-    "ahr": 1.39
+    "ahr": 1.39,
+    "change": 0.24,
+    "changePercent": 0.18,
+    "isPositive": true
   },
   {
     "date": "2024-06-28",
     "open": 149.71,
-    "ahr": 1.65
+    "ahr": 1.65,
+    "change": 12.9,
+    "changePercent": 9.43,
+    "isPositive": true
   },
   {
     "date": "2024-06-29",
     "open": 140.03,
-    "ahr": 1.44
+    "ahr": 1.44,
+    "change": -9.68,
+    "changePercent": -6.47,
+    "isPositive": false
   },
   {
     "date": "2024-06-30",
     "open": 140.28,
-    "ahr": 1.43
+    "ahr": 1.43,
+    "change": 0.25,
+    "changePercent": 0.18,
+    "isPositive": true
   },
   {
     "date": "2024-07-01",
     "open": 146.61,
-    "ahr": 1.56
+    "ahr": 1.56,
+    "change": 6.33,
+    "changePercent": 4.51,
+    "isPositive": true
   },
   {
     "date": "2024-07-02",
     "open": 146.68,
-    "ahr": 1.55
+    "ahr": 1.55,
+    "change": 0.07,
+    "changePercent": 0.05,
+    "isPositive": true
   },
   {
     "date": "2024-07-03",
     "open": 154.03,
-    "ahr": 1.7
+    "ahr": 1.7,
+    "change": 7.35,
+    "changePercent": 5.01,
+    "isPositive": true
   },
   {
     "date": "2024-07-04",
     "open": 140.84,
-    "ahr": 1.41
+    "ahr": 1.41,
+    "change": -13.19,
+    "changePercent": -8.56,
+    "isPositive": false
   },
   {
     "date": "2024-07-05",
     "open": 127.85,
-    "ahr": 1.16
+    "ahr": 1.16,
+    "change": -12.99,
+    "changePercent": -9.22,
+    "isPositive": false
   },
   {
     "date": "2024-07-06",
     "open": 134.32,
-    "ahr": 1.27
+    "ahr": 1.27,
+    "change": 6.47,
+    "changePercent": 5.06,
+    "isPositive": true
   },
   {
     "date": "2024-07-07",
     "open": 143.05,
-    "ahr": 1.43
+    "ahr": 1.43,
+    "change": 8.73,
+    "changePercent": 6.5,
+    "isPositive": true
   },
   {
     "date": "2024-07-08",
     "open": 131.64,
-    "ahr": 1.21
+    "ahr": 1.21,
+    "change": -11.41,
+    "changePercent": -7.98,
+    "isPositive": false
   },
   {
     "date": "2024-07-09",
     "open": 139.81,
-    "ahr": 1.35
+    "ahr": 1.35,
+    "change": 8.17,
+    "changePercent": 6.21,
+    "isPositive": true
   },
   {
     "date": "2024-07-10",
     "open": 141.43,
-    "ahr": 1.38
+    "ahr": 1.38,
+    "change": 1.62,
+    "changePercent": 1.16,
+    "isPositive": true
   },
   {
     "date": "2024-07-11",
     "open": 141.99,
-    "ahr": 1.38
+    "ahr": 1.38,
+    "change": 0.56,
+    "changePercent": 0.4,
+    "isPositive": true
   },
   {
     "date": "2024-07-12",
     "open": 135.73,
-    "ahr": 1.26
+    "ahr": 1.26,
+    "change": -6.26,
+    "changePercent": -4.41,
+    "isPositive": false
   },
   {
     "date": "2024-07-13",
     "open": 139.47,
-    "ahr": 1.33
+    "ahr": 1.33,
+    "change": 3.74,
+    "changePercent": 2.76,
+    "isPositive": true
   },
   {
     "date": "2024-07-14",
     "open": 141.89,
-    "ahr": 1.37
+    "ahr": 1.37,
+    "change": 2.42,
+    "changePercent": 1.74,
+    "isPositive": true
   },
   {
     "date": "2024-07-15",
     "open": 147.66,
-    "ahr": 1.47
+    "ahr": 1.47,
+    "change": 5.77,
+    "changePercent": 4.07,
+    "isPositive": true
   },
   {
     "date": "2024-07-16",
     "open": 159.37,
-    "ahr": 1.71
+    "ahr": 1.71,
+    "change": 11.71,
+    "changePercent": 7.93,
+    "isPositive": true
   },
   {
     "date": "2024-07-17",
     "open": 160.62,
-    "ahr": 1.73
+    "ahr": 1.73,
+    "change": 1.25,
+    "changePercent": 0.78,
+    "isPositive": true
   },
   {
     "date": "2024-07-18",
     "open": 155.5,
-    "ahr": 1.61
+    "ahr": 1.61,
+    "change": -5.12,
+    "changePercent": -3.19,
+    "isPositive": false
   },
   {
     "date": "2024-07-19",
     "open": 159.22,
-    "ahr": 1.68
+    "ahr": 1.68,
+    "change": 3.72,
+    "changePercent": 2.39,
+    "isPositive": true
   },
   {
     "date": "2024-07-20",
     "open": 169.12,
-    "ahr": 1.88
+    "ahr": 1.88,
+    "change": 9.9,
+    "changePercent": 6.22,
+    "isPositive": true
   },
   {
     "date": "2024-07-21",
     "open": 173.6,
-    "ahr": 1.97
+    "ahr": 1.97,
+    "change": 4.48,
+    "changePercent": 2.65,
+    "isPositive": true
   },
   {
     "date": "2024-07-22",
     "open": 184.49,
-    "ahr": 2.22
+    "ahr": 2.22,
+    "change": 10.89,
+    "changePercent": 6.27,
+    "isPositive": true
   },
   {
     "date": "2024-07-23",
     "open": 178.9,
-    "ahr": 2.07
+    "ahr": 2.07,
+    "change": -5.59,
+    "changePercent": -3.03,
+    "isPositive": false
   },
   {
     "date": "2024-07-24",
     "open": 173.03,
-    "ahr": 1.93
+    "ahr": 1.93,
+    "change": -5.87,
+    "changePercent": -3.28,
+    "isPositive": false
   },
   {
     "date": "2024-07-25",
     "open": 178.07,
-    "ahr": 2.03
+    "ahr": 2.03,
+    "change": 5.04,
+    "changePercent": 2.91,
+    "isPositive": true
   },
   {
     "date": "2024-07-26",
     "open": 171.86,
-    "ahr": 1.88
+    "ahr": 1.88,
+    "change": -6.21,
+    "changePercent": -3.49,
+    "isPositive": false
   },
   {
     "date": "2024-07-27",
     "open": 183.07,
-    "ahr": 2.12
+    "ahr": 2.12,
+    "change": 11.21,
+    "changePercent": 6.52,
+    "isPositive": true
   },
   {
     "date": "2024-07-28",
     "open": 183.92,
-    "ahr": 2.13
+    "ahr": 2.13,
+    "change": 0.85,
+    "changePercent": 0.46,
+    "isPositive": true
   },
   {
     "date": "2024-07-29",
     "open": 184.91,
-    "ahr": 2.14
+    "ahr": 2.14,
+    "change": 0.99,
+    "changePercent": 0.54,
+    "isPositive": true
   },
   {
     "date": "2024-07-30",
     "open": 182.57,
-    "ahr": 2.07
+    "ahr": 2.07,
+    "change": -2.34,
+    "changePercent": -1.27,
+    "isPositive": false
   },
   {
     "date": "2024-07-31",
     "open": 179.16,
-    "ahr": 1.98
+    "ahr": 1.98,
+    "change": -3.41,
+    "changePercent": -1.87,
+    "isPositive": false
   },
   {
     "date": "2024-08-01",
     "open": 171.7,
-    "ahr": 1.81
+    "ahr": 1.81,
+    "change": -7.46,
+    "changePercent": -4.16,
+    "isPositive": false
   },
   {
     "date": "2024-08-02",
     "open": 167.37,
-    "ahr": 1.71
+    "ahr": 1.71,
+    "change": -4.33,
+    "changePercent": -2.52,
+    "isPositive": false
   },
   {
     "date": "2024-08-03",
     "open": 152.78,
-    "ahr": 1.42
+    "ahr": 1.42,
+    "change": -14.59,
+    "changePercent": -8.72,
+    "isPositive": false
   },
   {
     "date": "2024-08-04",
     "open": 142.53,
-    "ahr": 1.23
+    "ahr": 1.23,
+    "change": -10.25,
+    "changePercent": -6.71,
+    "isPositive": false
   },
   {
     "date": "2024-08-05",
     "open": 138.32,
-    "ahr": 1.15
+    "ahr": 1.15,
+    "change": -4.21,
+    "changePercent": -2.95,
+    "isPositive": false
   },
   {
     "date": "2024-08-06",
     "open": 129.79,
-    "ahr": 1.01
+    "ahr": 1.01,
+    "change": -8.53,
+    "changePercent": -6.17,
+    "isPositive": false
   },
   {
     "date": "2024-08-07",
     "open": 144.4,
-    "ahr": 1.25
+    "ahr": 1.25,
+    "change": 14.61,
+    "changePercent": 11.26,
+    "isPositive": true
   },
   {
     "date": "2024-08-08",
     "open": 144.78,
-    "ahr": 1.25
+    "ahr": 1.25,
+    "change": 0.38,
+    "changePercent": 0.26,
+    "isPositive": true
   },
   {
     "date": "2024-08-09",
     "open": 163.12,
-    "ahr": 1.57
+    "ahr": 1.57,
+    "change": 18.34,
+    "changePercent": 12.67,
+    "isPositive": true
   },
   {
     "date": "2024-08-10",
     "open": 156.29,
-    "ahr": 1.44
+    "ahr": 1.44,
+    "change": -6.83,
+    "changePercent": -4.19,
+    "isPositive": false
   },
   {
     "date": "2024-08-11",
     "open": 154.01,
-    "ahr": 1.39
+    "ahr": 1.39,
+    "change": -2.28,
+    "changePercent": -1.46,
+    "isPositive": false
   },
   {
     "date": "2024-08-12",
     "open": 141.56,
-    "ahr": 1.17
+    "ahr": 1.17,
+    "change": -12.45,
+    "changePercent": -8.08,
+    "isPositive": false
   },
   {
     "date": "2024-08-13",
     "open": 146.29,
-    "ahr": 1.24
+    "ahr": 1.24,
+    "change": 4.73,
+    "changePercent": 3.34,
+    "isPositive": true
   },
   {
     "date": "2024-08-14",
     "open": 146.65,
-    "ahr": 1.24
+    "ahr": 1.24,
+    "change": 0.36,
+    "changePercent": 0.25,
+    "isPositive": true
   },
   {
     "date": "2024-08-15",
     "open": 143.7,
-    "ahr": 1.18
+    "ahr": 1.18,
+    "change": -2.95,
+    "changePercent": -2.01,
+    "isPositive": false
   },
   {
     "date": "2024-08-16",
     "open": 142.58,
-    "ahr": 1.16
+    "ahr": 1.16,
+    "change": -1.12,
+    "changePercent": -0.78,
+    "isPositive": false
   },
   {
     "date": "2024-08-17",
     "open": 139.04,
-    "ahr": 1.1
+    "ahr": 1.1,
+    "change": -3.54,
+    "changePercent": -2.48,
+    "isPositive": false
   },
   {
     "date": "2024-08-18",
     "open": 141.92,
-    "ahr": 1.14
+    "ahr": 1.14,
+    "change": 2.88,
+    "changePercent": 2.07,
+    "isPositive": true
   },
   {
     "date": "2024-08-19",
     "open": 142.42,
-    "ahr": 1.14
+    "ahr": 1.14,
+    "change": 0.5,
+    "changePercent": 0.35,
+    "isPositive": true
   },
   {
     "date": "2024-08-20",
     "open": 144.28,
-    "ahr": 1.17
+    "ahr": 1.17,
+    "change": 1.86,
+    "changePercent": 1.31,
+    "isPositive": true
   },
   {
     "date": "2024-08-21",
     "open": 142.27,
-    "ahr": 1.13
+    "ahr": 1.13,
+    "change": -2.01,
+    "changePercent": -1.39,
+    "isPositive": false
   },
   {
     "date": "2024-08-22",
     "open": 142.78,
-    "ahr": 1.13
+    "ahr": 1.13,
+    "change": 0.51,
+    "changePercent": 0.36,
+    "isPositive": true
   },
   {
     "date": "2024-08-23",
     "open": 143.23,
-    "ahr": 1.13
+    "ahr": 1.13,
+    "change": 0.45,
+    "changePercent": 0.32,
+    "isPositive": true
   },
   {
     "date": "2024-08-24",
     "open": 153.27,
-    "ahr": 1.29
+    "ahr": 1.29,
+    "change": 10.04,
+    "changePercent": 7.01,
+    "isPositive": true
   },
   {
     "date": "2024-08-25",
     "open": 160.67,
-    "ahr": 1.41
+    "ahr": 1.41,
+    "change": 7.4,
+    "changePercent": 4.83,
+    "isPositive": true
   },
   {
     "date": "2024-08-26",
     "open": 158.92,
-    "ahr": 1.37
+    "ahr": 1.37,
+    "change": -1.75,
+    "changePercent": -1.09,
+    "isPositive": false
   },
   {
     "date": "2024-08-27",
     "open": 157.12,
-    "ahr": 1.34
+    "ahr": 1.34,
+    "change": -1.8,
+    "changePercent": -1.13,
+    "isPositive": false
   },
   {
     "date": "2024-08-28",
     "open": 146.78,
-    "ahr": 1.16
+    "ahr": 1.16,
+    "change": -10.34,
+    "changePercent": -6.58,
+    "isPositive": false
   },
   {
     "date": "2024-08-29",
     "open": 143.96,
-    "ahr": 1.11
+    "ahr": 1.11,
+    "change": -2.82,
+    "changePercent": -1.92,
+    "isPositive": false
   },
   {
     "date": "2024-08-30",
     "open": 140.01,
-    "ahr": 1.05
+    "ahr": 1.05,
+    "change": -3.95,
+    "changePercent": -2.74,
+    "isPositive": false
   },
   {
     "date": "2024-08-31",
     "open": 137.99,
-    "ahr": 1.02
+    "ahr": 1.02,
+    "change": -2.02,
+    "changePercent": -1.44,
+    "isPositive": false
   },
   {
     "date": "2024-09-01",
     "open": 135.35,
-    "ahr": 0.97
+    "ahr": 0.97,
+    "change": -2.64,
+    "changePercent": -1.91,
+    "isPositive": false
   },
   {
     "date": "2024-09-02",
     "open": 128.5,
-    "ahr": 0.88
+    "ahr": 0.88,
+    "change": -6.85,
+    "changePercent": -5.06,
+    "isPositive": false
   },
   {
     "date": "2024-09-03",
     "open": 134.95,
-    "ahr": 0.96
+    "ahr": 0.96,
+    "change": 6.45,
+    "changePercent": 5.02,
+    "isPositive": true
   },
   {
     "date": "2024-09-04",
     "open": 127.54,
-    "ahr": 0.86
+    "ahr": 0.86,
+    "change": -7.41,
+    "changePercent": -5.49,
+    "isPositive": false
   },
   {
     "date": "2024-09-05",
     "open": 133.64,
-    "ahr": 0.94
+    "ahr": 0.94,
+    "change": 6.1,
+    "changePercent": 4.78,
+    "isPositive": true
   },
   {
     "date": "2024-09-06",
     "open": 129.4,
-    "ahr": 0.88
+    "ahr": 0.88,
+    "change": -4.24,
+    "changePercent": -3.17,
+    "isPositive": false
   },
   {
     "date": "2024-09-07",
     "open": 125.05,
-    "ahr": 0.81
+    "ahr": 0.81,
+    "change": -4.35,
+    "changePercent": -3.36,
+    "isPositive": false
   },
   {
     "date": "2024-09-08",
     "open": 127.72,
-    "ahr": 0.85
+    "ahr": 0.85,
+    "change": 2.67,
+    "changePercent": 2.14,
+    "isPositive": true
   },
   {
     "date": "2024-09-09",
     "open": 130.15,
-    "ahr": 0.88
+    "ahr": 0.88,
+    "change": 2.43,
+    "changePercent": 1.9,
+    "isPositive": true
   },
   {
     "date": "2024-09-10",
     "open": 135.07,
-    "ahr": 0.94
+    "ahr": 0.94,
+    "change": 4.92,
+    "changePercent": 3.78,
+    "isPositive": true
   },
   {
     "date": "2024-09-11",
     "open": 135.64,
-    "ahr": 0.94
+    "ahr": 0.94,
+    "change": 0.57,
+    "changePercent": 0.42,
+    "isPositive": true
   },
   {
     "date": "2024-09-12",
     "open": 132.43,
-    "ahr": 0.9
+    "ahr": 0.9,
+    "change": -3.21,
+    "changePercent": -2.37,
+    "isPositive": false
   },
   {
     "date": "2024-09-13",
     "open": 136.06,
-    "ahr": 0.94
+    "ahr": 0.94,
+    "change": 3.63,
+    "changePercent": 2.74,
+    "isPositive": true
   },
   {
     "date": "2024-09-14",
     "open": 139.02,
-    "ahr": 0.98
+    "ahr": 0.98,
+    "change": 2.96,
+    "changePercent": 2.18,
+    "isPositive": true
   },
   {
     "date": "2024-09-15",
     "open": 137.15,
-    "ahr": 0.95
+    "ahr": 0.95,
+    "change": -1.87,
+    "changePercent": -1.35,
+    "isPositive": false
   },
   {
     "date": "2024-09-16",
     "open": 131.38,
-    "ahr": 0.87
+    "ahr": 0.87,
+    "change": -5.77,
+    "changePercent": -4.21,
+    "isPositive": false
   },
   {
     "date": "2024-09-17",
     "open": 131.47,
-    "ahr": 0.87
+    "ahr": 0.87,
+    "change": 0.09,
+    "changePercent": 0.07,
+    "isPositive": true
   },
   {
     "date": "2024-09-18",
     "open": 131.54,
-    "ahr": 0.87
+    "ahr": 0.87,
+    "change": 0.07,
+    "changePercent": 0.05,
+    "isPositive": true
   },
   {
     "date": "2024-09-19",
     "open": 134.34,
-    "ahr": 0.9
+    "ahr": 0.9,
+    "change": 2.8,
+    "changePercent": 2.13,
+    "isPositive": true
   },
   {
     "date": "2024-09-20",
     "open": 142.88,
-    "ahr": 1.02
+    "ahr": 1.02,
+    "change": 8.54,
+    "changePercent": 6.36,
+    "isPositive": true
   },
   {
     "date": "2024-09-21",
     "open": 146.67,
-    "ahr": 1.07
+    "ahr": 1.07,
+    "change": 3.79,
+    "changePercent": 2.65,
+    "isPositive": true
   },
   {
     "date": "2024-09-22",
     "open": 149.42,
-    "ahr": 1.1
+    "ahr": 1.1,
+    "change": 2.75,
+    "changePercent": 1.87,
+    "isPositive": true
   },
   {
     "date": "2024-09-23",
     "open": 144.64,
-    "ahr": 1.03
+    "ahr": 1.03,
+    "change": -4.78,
+    "changePercent": -3.2,
+    "isPositive": false
   },
   {
     "date": "2024-09-24",
     "open": 144.79,
-    "ahr": 1.03
+    "ahr": 1.03,
+    "change": 0.15,
+    "changePercent": 0.1,
+    "isPositive": true
   },
   {
     "date": "2024-09-25",
     "open": 152.74,
-    "ahr": 1.14
+    "ahr": 1.14,
+    "change": 7.95,
+    "changePercent": 5.49,
+    "isPositive": true
   },
   {
     "date": "2024-09-26",
     "open": 147.97,
-    "ahr": 1.07
+    "ahr": 1.07,
+    "change": -4.77,
+    "changePercent": -3.12,
+    "isPositive": false
   },
   {
     "date": "2024-09-27",
     "open": 155.54,
-    "ahr": 1.18
+    "ahr": 1.18,
+    "change": 7.57,
+    "changePercent": 5.12,
+    "isPositive": true
   },
   {
     "date": "2024-09-28",
     "open": 157.63,
-    "ahr": 1.21
+    "ahr": 1.21,
+    "change": 2.09,
+    "changePercent": 1.34,
+    "isPositive": true
   },
   {
     "date": "2024-09-29",
     "open": 156.75,
-    "ahr": 1.19
+    "ahr": 1.19,
+    "change": -0.88,
+    "changePercent": -0.56,
+    "isPositive": false
   },
   {
     "date": "2024-09-30",
     "open": 158.47,
-    "ahr": 1.22
+    "ahr": 1.22,
+    "change": 1.72,
+    "changePercent": 1.1,
+    "isPositive": true
   },
   {
     "date": "2024-10-01",
     "open": 152.51,
-    "ahr": 1.12
+    "ahr": 1.12,
+    "change": -5.96,
+    "changePercent": -3.76,
+    "isPositive": false
   },
   {
     "date": "2024-10-02",
     "open": 145.12,
-    "ahr": 1.02
+    "ahr": 1.02,
+    "change": -7.39,
+    "changePercent": -4.85,
+    "isPositive": false
   },
   {
     "date": "2024-10-03",
     "open": 140.18,
-    "ahr": 0.95
+    "ahr": 0.95,
+    "change": -4.94,
+    "changePercent": -3.4,
+    "isPositive": false
   },
   {
     "date": "2024-10-04",
     "open": 136.81,
-    "ahr": 0.9
+    "ahr": 0.9,
+    "change": -3.37,
+    "changePercent": -2.4,
+    "isPositive": false
   },
   {
     "date": "2024-10-05",
     "open": 143.24,
-    "ahr": 0.99
+    "ahr": 0.99,
+    "change": 6.43,
+    "changePercent": 4.7,
+    "isPositive": true
   },
   {
     "date": "2024-10-06",
     "open": 142.59,
-    "ahr": 0.98
+    "ahr": 0.98,
+    "change": -0.65,
+    "changePercent": -0.45,
+    "isPositive": false
   },
   {
     "date": "2024-10-07",
     "open": 146.47,
-    "ahr": 1.03
+    "ahr": 1.03,
+    "change": 3.88,
+    "changePercent": 2.72,
+    "isPositive": true
   },
   {
     "date": "2024-10-08",
     "open": 143.97,
-    "ahr": 0.99
+    "ahr": 0.99,
+    "change": -2.5,
+    "changePercent": -1.71,
+    "isPositive": false
   },
   {
     "date": "2024-10-09",
     "open": 143.5,
-    "ahr": 0.98
+    "ahr": 0.98,
+    "change": -0.47,
+    "changePercent": -0.33,
+    "isPositive": false
   },
   {
     "date": "2024-10-10",
     "open": 139.33,
-    "ahr": 0.93
+    "ahr": 0.93,
+    "change": -4.17,
+    "changePercent": -2.91,
+    "isPositive": false
   },
   {
     "date": "2024-10-11",
     "open": 139.04,
-    "ahr": 0.92
+    "ahr": 0.92,
+    "change": -0.29,
+    "changePercent": -0.21,
+    "isPositive": false
   },
   {
     "date": "2024-10-12",
     "open": 145.52,
-    "ahr": 1.01
+    "ahr": 1.01,
+    "change": 6.48,
+    "changePercent": 4.66,
+    "isPositive": true
   },
   {
     "date": "2024-10-13",
     "open": 146.39,
-    "ahr": 1.02
+    "ahr": 1.02,
+    "change": 0.87,
+    "changePercent": 0.6,
+    "isPositive": true
   },
   {
     "date": "2024-10-14",
     "open": 147.74,
-    "ahr": 1.04
+    "ahr": 1.04,
+    "change": 1.35,
+    "changePercent": 0.92,
+    "isPositive": true
   },
   {
     "date": "2024-10-15",
     "open": 157.59,
-    "ahr": 1.18
+    "ahr": 1.18,
+    "change": 9.85,
+    "changePercent": 6.67,
+    "isPositive": true
   },
   {
     "date": "2024-10-16",
     "open": 154.76,
-    "ahr": 1.13
+    "ahr": 1.13,
+    "change": -2.83,
+    "changePercent": -1.8,
+    "isPositive": false
   },
   {
     "date": "2024-10-17",
     "open": 154.28,
-    "ahr": 1.13
+    "ahr": 1.13,
+    "change": -0.48,
+    "changePercent": -0.31,
+    "isPositive": false
   },
   {
     "date": "2024-10-18",
     "open": 150.5,
-    "ahr": 1.07
+    "ahr": 1.07,
+    "change": -3.78,
+    "changePercent": -2.45,
+    "isPositive": false
   },
   {
     "date": "2024-10-19",
     "open": 154.93,
-    "ahr": 1.13
+    "ahr": 1.13,
+    "change": 4.43,
+    "changePercent": 2.94,
+    "isPositive": true
   },
   {
     "date": "2024-10-20",
     "open": 159.79,
-    "ahr": 1.2
+    "ahr": 1.2,
+    "change": 4.86,
+    "changePercent": 3.14,
+    "isPositive": true
   },
   {
     "date": "2024-10-21",
     "open": 167.4,
-    "ahr": 1.31
+    "ahr": 1.31,
+    "change": 7.61,
+    "changePercent": 4.76,
+    "isPositive": true
   },
   {
     "date": "2024-10-22",
     "open": 166.16,
-    "ahr": 1.29
+    "ahr": 1.29,
+    "change": -1.24,
+    "changePercent": -0.74,
+    "isPositive": false
   },
   {
     "date": "2024-10-23",
     "open": 167.6,
-    "ahr": 1.31
+    "ahr": 1.31,
+    "change": 1.44,
+    "changePercent": 0.87,
+    "isPositive": true
   },
   {
     "date": "2024-10-24",
     "open": 170.86,
-    "ahr": 1.36
+    "ahr": 1.36,
+    "change": 3.26,
+    "changePercent": 1.95,
+    "isPositive": true
   },
   {
     "date": "2024-10-25",
     "open": 177.19,
-    "ahr": 1.46
+    "ahr": 1.46,
+    "change": 6.33,
+    "changePercent": 3.7,
+    "isPositive": true
   },
   {
     "date": "2024-10-26",
     "open": 164.91,
-    "ahr": 1.26
+    "ahr": 1.26,
+    "change": -12.28,
+    "changePercent": -6.93,
+    "isPositive": false
   },
   {
     "date": "2024-10-27",
     "open": 170.87,
-    "ahr": 1.35
+    "ahr": 1.35,
+    "change": 5.96,
+    "changePercent": 3.61,
+    "isPositive": true
   },
   {
     "date": "2024-10-28",
     "open": 176.63,
-    "ahr": 1.44
+    "ahr": 1.44,
+    "change": 5.76,
+    "changePercent": 3.37,
+    "isPositive": true
   },
   {
     "date": "2024-10-29",
     "open": 178.28,
-    "ahr": 1.46
+    "ahr": 1.46,
+    "change": 1.65,
+    "changePercent": 0.93,
+    "isPositive": true
   },
   {
     "date": "2024-10-30",
     "open": 179.43,
-    "ahr": 1.47
+    "ahr": 1.47,
+    "change": 1.15,
+    "changePercent": 0.65,
+    "isPositive": true
   },
   {
     "date": "2024-10-31",
     "open": 174.87,
-    "ahr": 1.4
+    "ahr": 1.4,
+    "change": -4.56,
+    "changePercent": -2.54,
+    "isPositive": false
   },
   {
     "date": "2024-11-01",
     "open": 168.69,
-    "ahr": 1.29
+    "ahr": 1.29,
+    "change": -6.18,
+    "changePercent": -3.53,
+    "isPositive": false
   },
   {
     "date": "2024-11-02",
     "open": 166.11,
-    "ahr": 1.25
+    "ahr": 1.25,
+    "change": -2.58,
+    "changePercent": -1.53,
+    "isPositive": false
   },
   {
     "date": "2024-11-03",
     "open": 166.16,
-    "ahr": 1.25
+    "ahr": 1.25,
+    "change": 0.05,
+    "changePercent": 0.03,
+    "isPositive": true
   },
   {
     "date": "2024-11-04",
     "open": 162.52,
-    "ahr": 1.19
+    "ahr": 1.19,
+    "change": -3.64,
+    "changePercent": -2.19,
+    "isPositive": false
   },
   {
     "date": "2024-11-05",
     "open": 157.95,
-    "ahr": 1.12
+    "ahr": 1.12,
+    "change": -4.57,
+    "changePercent": -2.81,
+    "isPositive": false
   },
   {
     "date": "2024-11-06",
     "open": 166.63,
-    "ahr": 1.24
+    "ahr": 1.24,
+    "change": 8.68,
+    "changePercent": 5.5,
+    "isPositive": true
   },
   {
     "date": "2024-11-07",
     "open": 186.59,
-    "ahr": 1.55
+    "ahr": 1.55,
+    "change": 19.96,
+    "changePercent": 11.98,
+    "isPositive": true
   },
   {
     "date": "2024-11-08",
     "open": 196.36,
-    "ahr": 1.71
+    "ahr": 1.71,
+    "change": 9.77,
+    "changePercent": 5.24,
+    "isPositive": true
   },
   {
     "date": "2024-11-09",
     "open": 199.86,
-    "ahr": 1.77
+    "ahr": 1.77,
+    "change": 3.5,
+    "changePercent": 1.78,
+    "isPositive": true
   },
   {
     "date": "2024-11-10",
     "open": 199.89,
-    "ahr": 1.76
+    "ahr": 1.76,
+    "change": 0.03,
+    "changePercent": 0.02,
+    "isPositive": true
   },
   {
     "date": "2024-11-11",
     "open": 210.07,
-    "ahr": 1.93
+    "ahr": 1.93,
+    "change": 10.18,
+    "changePercent": 5.09,
+    "isPositive": true
   },
   {
     "date": "2024-11-12",
     "open": 222.12,
-    "ahr": 2.15
+    "ahr": 2.15,
+    "change": 12.05,
+    "changePercent": 5.74,
+    "isPositive": true
   },
   {
     "date": "2024-11-13",
     "open": 211.63,
-    "ahr": 1.94
+    "ahr": 1.94,
+    "change": -10.49,
+    "changePercent": -4.72,
+    "isPositive": false
   },
   {
     "date": "2024-11-14",
     "open": 215.14,
-    "ahr": 2.0
+    "ahr": 2.0,
+    "change": 3.51,
+    "changePercent": 1.66,
+    "isPositive": true
   },
   {
     "date": "2024-11-15",
     "open": 209.57,
-    "ahr": 1.89
+    "ahr": 1.89,
+    "change": -5.57,
+    "changePercent": -2.59,
+    "isPositive": false
   },
   {
     "date": "2024-11-16",
     "open": 218.44,
-    "ahr": 2.04
+    "ahr": 2.04,
+    "change": 8.87,
+    "changePercent": 4.23,
+    "isPositive": true
   },
   {
     "date": "2024-11-17",
     "open": 215.72,
-    "ahr": 1.98
+    "ahr": 1.98,
+    "change": -2.72,
+    "changePercent": -1.25,
+    "isPositive": false
   },
   {
     "date": "2024-11-18",
     "open": 237.47,
-    "ahr": 2.39
+    "ahr": 2.39,
+    "change": 21.75,
+    "changePercent": 10.08,
+    "isPositive": true
   },
   {
     "date": "2024-11-19",
     "open": 239.79,
-    "ahr": 2.42
+    "ahr": 2.42,
+    "change": 2.32,
+    "changePercent": 0.98,
+    "isPositive": true
   },
   {
     "date": "2024-11-20",
     "open": 237.64,
-    "ahr": 2.36
+    "ahr": 2.36,
+    "change": -2.15,
+    "changePercent": -0.9,
+    "isPositive": false
   },
   {
     "date": "2024-11-21",
     "open": 235.48,
-    "ahr": 2.31
+    "ahr": 2.31,
+    "change": -2.16,
+    "changePercent": -0.91,
+    "isPositive": false
   },
   {
     "date": "2024-11-22",
     "open": 256.38,
-    "ahr": 2.72
+    "ahr": 2.72,
+    "change": 20.9,
+    "changePercent": 8.88,
+    "isPositive": true
   },
   {
     "date": "2024-11-23",
     "open": 256.9,
-    "ahr": 2.72
+    "ahr": 2.72,
+    "change": 0.52,
+    "changePercent": 0.2,
+    "isPositive": true
   },
   {
     "date": "2024-11-24",
     "open": 254.9,
-    "ahr": 2.66
+    "ahr": 2.66,
+    "change": -2.0,
+    "changePercent": -0.78,
+    "isPositive": false
   },
   {
     "date": "2024-11-25",
     "open": 252.74,
-    "ahr": 2.61
+    "ahr": 2.61,
+    "change": -2.16,
+    "changePercent": -0.85,
+    "isPositive": false
   },
   {
     "date": "2024-11-26",
     "open": 234.18,
-    "ahr": 2.23
+    "ahr": 2.23,
+    "change": -18.56,
+    "changePercent": -7.34,
+    "isPositive": false
   },
   {
     "date": "2024-11-27",
     "open": 230.69,
-    "ahr": 2.15
+    "ahr": 2.15,
+    "change": -3.49,
+    "changePercent": -1.49,
+    "isPositive": false
   },
   {
     "date": "2024-11-28",
     "open": 241.96,
-    "ahr": 2.35
+    "ahr": 2.35,
+    "change": 11.27,
+    "changePercent": 4.89,
+    "isPositive": true
   },
   {
     "date": "2024-11-29",
     "open": 237.58,
-    "ahr": 2.26
+    "ahr": 2.26,
+    "change": -4.38,
+    "changePercent": -1.81,
+    "isPositive": false
   },
   {
     "date": "2024-11-30",
     "open": 243.33,
-    "ahr": 2.36
+    "ahr": 2.36,
+    "change": 5.75,
+    "changePercent": 2.42,
+    "isPositive": true
   },
   {
     "date": "2024-12-01",
     "open": 237.6,
-    "ahr": 2.24
+    "ahr": 2.24,
+    "change": -5.73,
+    "changePercent": -2.35,
+    "isPositive": false
   },
   {
     "date": "2024-12-02",
     "open": 236.79,
-    "ahr": 2.21
+    "ahr": 2.21,
+    "change": -0.81,
+    "changePercent": -0.34,
+    "isPositive": false
   },
   {
     "date": "2024-12-03",
     "open": 225.73,
-    "ahr": 2.0
+    "ahr": 2.0,
+    "change": -11.06,
+    "changePercent": -4.67,
+    "isPositive": false
   },
   {
     "date": "2024-12-04",
     "open": 233.92,
-    "ahr": 2.14
+    "ahr": 2.14,
+    "change": 8.19,
+    "changePercent": 3.63,
+    "isPositive": true
   },
   {
     "date": "2024-12-05",
     "open": 229.15,
-    "ahr": 2.05
+    "ahr": 2.05,
+    "change": -4.77,
+    "changePercent": -2.04,
+    "isPositive": false
   },
   {
     "date": "2024-12-06",
     "open": 235.84,
-    "ahr": 2.16
+    "ahr": 2.16,
+    "change": 6.69,
+    "changePercent": 2.92,
+    "isPositive": true
   },
   {
     "date": "2024-12-07",
     "open": 236.87,
-    "ahr": 2.17
+    "ahr": 2.17,
+    "change": 1.03,
+    "changePercent": 0.44,
+    "isPositive": true
   },
   {
     "date": "2024-12-08",
     "open": 238.14,
-    "ahr": 2.18
+    "ahr": 2.18,
+    "change": 1.27,
+    "changePercent": 0.54,
+    "isPositive": true
   },
   {
     "date": "2024-12-09",
     "open": 237.02,
-    "ahr": 2.16
+    "ahr": 2.16,
+    "change": -1.12,
+    "changePercent": -0.47,
+    "isPositive": false
   },
   {
     "date": "2024-12-10",
     "open": 216.62,
-    "ahr": 1.79
+    "ahr": 1.79,
+    "change": -20.4,
+    "changePercent": -8.61,
+    "isPositive": false
   },
   {
     "date": "2024-12-11",
     "open": 213.6,
-    "ahr": 1.74
+    "ahr": 1.74,
+    "change": -3.02,
+    "changePercent": -1.39,
+    "isPositive": false
   },
   {
     "date": "2024-12-12",
     "open": 227.29,
-    "ahr": 1.96
+    "ahr": 1.96,
+    "change": 13.69,
+    "changePercent": 6.41,
+    "isPositive": true
   },
   {
     "date": "2024-12-13",
     "open": 226.95,
-    "ahr": 1.95
+    "ahr": 1.95,
+    "change": -0.34,
+    "changePercent": -0.15,
+    "isPositive": false
   },
   {
     "date": "2024-12-14",
     "open": 224.79,
-    "ahr": 1.9
+    "ahr": 1.9,
+    "change": -2.16,
+    "changePercent": -0.95,
+    "isPositive": false
   },
   {
     "date": "2024-12-15",
     "open": 219.94,
-    "ahr": 1.81
+    "ahr": 1.81,
+    "change": -4.85,
+    "changePercent": -2.16,
+    "isPositive": false
   },
   {
     "date": "2024-12-16",
     "open": 224.26,
-    "ahr": 1.88
+    "ahr": 1.88,
+    "change": 4.32,
+    "changePercent": 1.96,
+    "isPositive": true
   },
   {
     "date": "2024-12-17",
     "open": 216.19,
-    "ahr": 1.74
+    "ahr": 1.74,
+    "change": -8.07,
+    "changePercent": -3.6,
+    "isPositive": false
   },
   {
     "date": "2024-12-18",
     "open": 223.16,
-    "ahr": 1.84
+    "ahr": 1.84,
+    "change": 6.97,
+    "changePercent": 3.22,
+    "isPositive": true
   },
   {
     "date": "2024-12-19",
     "open": 206.53,
-    "ahr": 1.57
+    "ahr": 1.57,
+    "change": -16.63,
+    "changePercent": -7.45,
+    "isPositive": false
   },
   {
     "date": "2024-12-20",
     "open": 193.82,
-    "ahr": 1.38
+    "ahr": 1.38,
+    "change": -12.71,
+    "changePercent": -6.15,
+    "isPositive": false
   },
   {
     "date": "2024-12-21",
     "open": 194.48,
-    "ahr": 1.39
+    "ahr": 1.39,
+    "change": 0.66,
+    "changePercent": 0.34,
+    "isPositive": true
   },
   {
     "date": "2024-12-22",
     "open": 181.46,
-    "ahr": 1.21
+    "ahr": 1.21,
+    "change": -13.02,
+    "changePercent": -6.69,
+    "isPositive": false
   },
   {
     "date": "2024-12-23",
     "open": 180.53,
-    "ahr": 1.19
+    "ahr": 1.19,
+    "change": -0.93,
+    "changePercent": -0.51,
+    "isPositive": false
   },
   {
     "date": "2024-12-24",
     "open": 190.12,
-    "ahr": 1.31
+    "ahr": 1.31,
+    "change": 9.59,
+    "changePercent": 5.31,
+    "isPositive": true
   },
   {
     "date": "2024-12-25",
     "open": 197.09,
-    "ahr": 1.41
+    "ahr": 1.41,
+    "change": 6.97,
+    "changePercent": 3.67,
+    "isPositive": true
   },
   {
     "date": "2024-12-26",
     "open": 197.45,
-    "ahr": 1.41
+    "ahr": 1.41,
+    "change": 0.36,
+    "changePercent": 0.18,
+    "isPositive": true
   },
   {
     "date": "2024-12-27",
     "open": 188.46,
-    "ahr": 1.28
+    "ahr": 1.28,
+    "change": -8.99,
+    "changePercent": -4.55,
+    "isPositive": false
   },
   {
     "date": "2024-12-28",
     "open": 184.22,
-    "ahr": 1.22
+    "ahr": 1.22,
+    "change": -4.24,
+    "changePercent": -2.25,
+    "isPositive": false
   },
   {
     "date": "2024-12-29",
     "open": 195.5,
-    "ahr": 1.37
+    "ahr": 1.37,
+    "change": 11.28,
+    "changePercent": 6.12,
+    "isPositive": true
   },
   {
     "date": "2024-12-30",
     "open": 189.94,
-    "ahr": 1.28
+    "ahr": 1.28,
+    "change": -5.56,
+    "changePercent": -2.84,
+    "isPositive": false
   },
   {
     "date": "2024-12-31",
     "open": 191.37,
-    "ahr": 1.3
+    "ahr": 1.3,
+    "change": 1.43,
+    "changePercent": 0.75,
+    "isPositive": true
   },
   {
     "date": "2025-01-01",
     "open": 189.31,
-    "ahr": 1.27
+    "ahr": 1.27,
+    "change": -2.06,
+    "changePercent": -1.08,
+    "isPositive": false
   },
   {
     "date": "2025-01-02",
     "open": 194.28,
-    "ahr": 1.33
+    "ahr": 1.33,
+    "change": 4.97,
+    "changePercent": 2.63,
+    "isPositive": true
   },
   {
     "date": "2025-01-03",
     "open": 208.3,
-    "ahr": 1.52
+    "ahr": 1.52,
+    "change": 14.02,
+    "changePercent": 7.22,
+    "isPositive": true
   },
   {
     "date": "2025-01-04",
     "open": 218.0,
-    "ahr": 1.66
+    "ahr": 1.66,
+    "change": 9.7,
+    "changePercent": 4.66,
+    "isPositive": true
   },
   {
     "date": "2025-01-05",
     "open": 216.67,
-    "ahr": 1.63
+    "ahr": 1.63,
+    "change": -1.33,
+    "changePercent": -0.61,
+    "isPositive": false
   },
   {
     "date": "2025-01-06",
     "open": 213.41,
-    "ahr": 1.57
+    "ahr": 1.57,
+    "change": -3.26,
+    "changePercent": -1.5,
+    "isPositive": false
   },
   {
     "date": "2025-01-07",
     "open": 218.22,
-    "ahr": 1.64
+    "ahr": 1.64,
+    "change": 4.81,
+    "changePercent": 2.25,
+    "isPositive": true
   },
   {
     "date": "2025-01-08",
     "open": 202.17,
-    "ahr": 1.4
+    "ahr": 1.4,
+    "change": -16.05,
+    "changePercent": -7.35,
+    "isPositive": false
   },
   {
     "date": "2025-01-09",
     "open": 197.48,
-    "ahr": 1.33
+    "ahr": 1.33,
+    "change": -4.69,
+    "changePercent": -2.32,
+    "isPositive": false
   },
   {
     "date": "2025-01-10",
     "open": 184.96,
-    "ahr": 1.16
+    "ahr": 1.16,
+    "change": -12.52,
+    "changePercent": -6.34,
+    "isPositive": false
   },
   {
     "date": "2025-01-11",
     "open": 187.69,
-    "ahr": 1.19
+    "ahr": 1.19,
+    "change": 2.73,
+    "changePercent": 1.48,
+    "isPositive": true
   },
   {
     "date": "2025-01-12",
     "open": 188.09,
-    "ahr": 1.19
+    "ahr": 1.19,
+    "change": 0.4,
+    "changePercent": 0.21,
+    "isPositive": true
   },
   {
     "date": "2025-01-13",
     "open": 188.5,
-    "ahr": 1.19
+    "ahr": 1.19,
+    "change": 0.41,
+    "changePercent": 0.22,
+    "isPositive": true
   },
   {
     "date": "2025-01-14",
     "open": 182.86,
-    "ahr": 1.12
+    "ahr": 1.12,
+    "change": -5.64,
+    "changePercent": -2.99,
+    "isPositive": false
   },
   {
     "date": "2025-01-15",
     "open": 187.57,
-    "ahr": 1.17
+    "ahr": 1.17,
+    "change": 4.71,
+    "changePercent": 2.58,
+    "isPositive": true
   },
   {
     "date": "2025-01-16",
     "open": 205.86,
-    "ahr": 1.4
+    "ahr": 1.4,
+    "change": 18.29,
+    "changePercent": 9.75,
+    "isPositive": true
   },
   {
     "date": "2025-01-17",
     "open": 211.15,
-    "ahr": 1.47
+    "ahr": 1.47,
+    "change": 5.29,
+    "changePercent": 2.57,
+    "isPositive": true
   },
   {
     "date": "2025-01-18",
     "open": 219.52,
-    "ahr": 1.58
+    "ahr": 1.58,
+    "change": 8.37,
+    "changePercent": 3.96,
+    "isPositive": true
   },
   {
     "date": "2025-01-19",
     "open": 261.97,
-    "ahr": 2.24
+    "ahr": 2.24,
+    "change": 42.45,
+    "changePercent": 19.34,
+    "isPositive": true
   },
   {
     "date": "2025-01-20",
     "open": 252.4,
-    "ahr": 2.07
+    "ahr": 2.07,
+    "change": -9.57,
+    "changePercent": -3.65,
+    "isPositive": false
   },
   {
     "date": "2025-01-21",
     "open": 242.18,
-    "ahr": 1.89
+    "ahr": 1.89,
+    "change": -10.22,
+    "changePercent": -4.05,
+    "isPositive": false
   },
   {
     "date": "2025-01-22",
     "open": 250.33,
-    "ahr": 2.01
+    "ahr": 2.01,
+    "change": 8.15,
+    "changePercent": 3.37,
+    "isPositive": true
   },
   {
     "date": "2025-01-23",
     "open": 257.37,
-    "ahr": 2.11
+    "ahr": 2.11,
+    "change": 7.04,
+    "changePercent": 2.81,
+    "isPositive": true
   },
   {
     "date": "2025-01-24",
     "open": 253.12,
-    "ahr": 2.03
+    "ahr": 2.03,
+    "change": -4.25,
+    "changePercent": -1.65,
+    "isPositive": false
   },
   {
     "date": "2025-01-25",
     "open": 253.36,
-    "ahr": 2.02
+    "ahr": 2.02,
+    "change": 0.24,
+    "changePercent": 0.09,
+    "isPositive": true
   },
   {
     "date": "2025-01-26",
     "open": 256.4,
-    "ahr": 2.06
+    "ahr": 2.06,
+    "change": 3.04,
+    "changePercent": 1.2,
+    "isPositive": true
   },
   {
     "date": "2025-01-27",
     "open": 240.49,
-    "ahr": 1.81
+    "ahr": 1.81,
+    "change": -15.91,
+    "changePercent": -6.21,
+    "isPositive": false
   },
   {
     "date": "2025-01-28",
     "open": 234.9,
-    "ahr": 1.71
+    "ahr": 1.71,
+    "change": -5.59,
+    "changePercent": -2.32,
+    "isPositive": false
   },
   {
     "date": "2025-01-29",
     "open": 227.06,
-    "ahr": 1.59
+    "ahr": 1.59,
+    "change": -7.84,
+    "changePercent": -3.34,
+    "isPositive": false
   },
   {
     "date": "2025-01-30",
     "open": 228.16,
-    "ahr": 1.6
+    "ahr": 1.6,
+    "change": 1.1,
+    "changePercent": 0.48,
+    "isPositive": true
   },
   {
     "date": "2025-01-31",
     "open": 238.3,
-    "ahr": 1.74
+    "ahr": 1.74,
+    "change": 10.14,
+    "changePercent": 4.44,
+    "isPositive": true
   },
   {
     "date": "2025-02-01",
     "open": 231.77,
-    "ahr": 1.64
+    "ahr": 1.64,
+    "change": -6.53,
+    "changePercent": -2.74,
+    "isPositive": false
   },
   {
     "date": "2025-02-02",
     "open": 213.03,
-    "ahr": 1.38
+    "ahr": 1.38,
+    "change": -18.74,
+    "changePercent": -8.09,
+    "isPositive": false
   },
   {
     "date": "2025-02-03",
     "open": 203.52,
-    "ahr": 1.25
+    "ahr": 1.25,
+    "change": -9.51,
+    "changePercent": -4.46,
+    "isPositive": false
   },
   {
     "date": "2025-02-04",
     "open": 216.27,
-    "ahr": 1.41
+    "ahr": 1.41,
+    "change": 12.75,
+    "changePercent": 6.26,
+    "isPositive": true
   },
   {
     "date": "2025-02-05",
     "open": 206.64,
-    "ahr": 1.28
+    "ahr": 1.28,
+    "change": -9.63,
+    "changePercent": -4.45,
+    "isPositive": false
   },
   {
     "date": "2025-02-06",
     "open": 196.12,
-    "ahr": 1.15
+    "ahr": 1.15,
+    "change": -10.52,
+    "changePercent": -5.09,
+    "isPositive": false
   },
   {
     "date": "2025-02-07",
     "open": 189.53,
-    "ahr": 1.07
+    "ahr": 1.07,
+    "change": -6.59,
+    "changePercent": -3.36,
+    "isPositive": false
   },
   {
     "date": "2025-02-08",
     "open": 192.0,
-    "ahr": 1.1
+    "ahr": 1.1,
+    "change": 2.47,
+    "changePercent": 1.3,
+    "isPositive": true
   },
   {
     "date": "2025-02-09",
     "open": 199.32,
-    "ahr": 1.18
+    "ahr": 1.18,
+    "change": 7.32,
+    "changePercent": 3.81,
+    "isPositive": true
   },
   {
     "date": "2025-02-10",
     "open": 200.47,
-    "ahr": 1.19
+    "ahr": 1.19,
+    "change": 1.15,
+    "changePercent": 0.58,
+    "isPositive": true
   },
   {
     "date": "2025-02-11",
     "open": 200.47,
-    "ahr": 1.19
+    "ahr": 1.19,
+    "change": 0.0,
+    "changePercent": 0.0,
+    "isPositive": false
   },
   {
     "date": "2025-02-12",
     "open": 197.95,
-    "ahr": 1.16
+    "ahr": 1.15,
+    "change": -2.52,
+    "changePercent": -1.26,
+    "isPositive": false
   },
   {
     "date": "2025-02-13",
     "open": 196.78,
-    "ahr": 1.14
+    "ahr": 1.14,
+    "change": -1.17,
+    "changePercent": -0.59,
+    "isPositive": false
   },
   {
     "date": "2025-02-14",
     "open": 194.24,
-    "ahr": 1.11
+    "ahr": 1.11,
+    "change": -2.54,
+    "changePercent": -1.29,
+    "isPositive": false
   },
   {
     "date": "2025-02-15",
     "open": 199.4,
-    "ahr": 1.16
+    "ahr": 1.16,
+    "change": 5.16,
+    "changePercent": 2.66,
+    "isPositive": true
   },
   {
     "date": "2025-02-16",
     "open": 194.47,
-    "ahr": 1.1
+    "ahr": 1.1,
+    "change": -4.93,
+    "changePercent": -2.47,
+    "isPositive": false
   },
   {
     "date": "2025-02-17",
     "open": 188.26,
-    "ahr": 1.03
+    "ahr": 1.03,
+    "change": -6.21,
+    "changePercent": -3.19,
+    "isPositive": false
   },
   {
     "date": "2025-02-18",
     "open": 177.53,
-    "ahr": 0.91
+    "ahr": 0.91,
+    "change": -10.73,
+    "changePercent": -5.7,
+    "isPositive": false
   },
   {
     "date": "2025-02-19",
     "open": 169.32,
-    "ahr": 0.83
+    "ahr": 0.83,
+    "change": -8.21,
+    "changePercent": -4.62,
+    "isPositive": false
   },
   {
     "date": "2025-02-20",
     "open": 168.94,
-    "ahr": 0.82
+    "ahr": 0.82,
+    "change": -0.38,
+    "changePercent": -0.22,
+    "isPositive": false
   },
   {
     "date": "2025-02-21",
     "open": 176.0,
-    "ahr": 0.89
+    "ahr": 0.89,
+    "change": 7.06,
+    "changePercent": 4.18,
+    "isPositive": true
   },
   {
     "date": "2025-02-22",
     "open": 168.94,
-    "ahr": 0.82
+    "ahr": 0.82,
+    "change": -7.06,
+    "changePercent": -4.01,
+    "isPositive": false
   },
   {
     "date": "2025-02-23",
     "open": 172.07,
-    "ahr": 0.84
+    "ahr": 0.84,
+    "change": 3.13,
+    "changePercent": 1.85,
+    "isPositive": true
   },
   {
     "date": "2025-02-24",
     "open": 167.94,
-    "ahr": 0.8
+    "ahr": 0.8,
+    "change": -4.13,
+    "changePercent": -2.4,
+    "isPositive": false
   },
   {
     "date": "2025-02-25",
     "open": 141.81,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": -26.13,
+    "changePercent": -15.56,
+    "isPositive": false
   },
   {
     "date": "2025-02-26",
     "open": 144.33,
-    "ahr": 0.59
+    "ahr": 0.59,
+    "change": 2.52,
+    "changePercent": 1.78,
+    "isPositive": true
   },
   {
     "date": "2025-02-27",
     "open": 135.33,
-    "ahr": 0.52
+    "ahr": 0.52,
+    "change": -9.0,
+    "changePercent": -6.24,
+    "isPositive": false
   },
   {
     "date": "2025-02-28",
     "open": 137.68,
-    "ahr": 0.53
+    "ahr": 0.53,
+    "change": 2.35,
+    "changePercent": 1.74,
+    "isPositive": true
   },
   {
     "date": "2025-03-01",
     "open": 148.18,
-    "ahr": 0.62
+    "ahr": 0.62,
+    "change": 10.5,
+    "changePercent": 7.63,
+    "isPositive": true
   },
   {
     "date": "2025-03-02",
     "open": 143.66,
-    "ahr": 0.58
+    "ahr": 0.58,
+    "change": -4.52,
+    "changePercent": -3.05,
+    "isPositive": false
   },
   {
     "date": "2025-03-03",
     "open": 178.72,
-    "ahr": 0.89
+    "ahr": 0.89,
+    "change": 35.06,
+    "changePercent": 24.4,
+    "isPositive": true
   },
   {
     "date": "2025-03-04",
     "open": 142.16,
-    "ahr": 0.56
+    "ahr": 0.56,
+    "change": -36.56,
+    "changePercent": -20.46,
+    "isPositive": false
   },
   {
     "date": "2025-03-05",
     "open": 144.8,
-    "ahr": 0.58
+    "ahr": 0.58,
+    "change": 2.64,
+    "changePercent": 1.86,
+    "isPositive": true
   },
   {
     "date": "2025-03-06",
     "open": 146.27,
-    "ahr": 0.59
+    "ahr": 0.59,
+    "change": 1.47,
+    "changePercent": 1.02,
+    "isPositive": true
   },
   {
     "date": "2025-03-07",
     "open": 143.3,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": -2.97,
+    "changePercent": -2.03,
+    "isPositive": false
   },
   {
     "date": "2025-03-08",
     "open": 139.39,
-    "ahr": 0.54
+    "ahr": 0.54,
+    "change": -3.91,
+    "changePercent": -2.73,
+    "isPositive": false
   },
   {
     "date": "2025-03-09",
     "open": 137.01,
-    "ahr": 0.52
+    "ahr": 0.52,
+    "change": -2.38,
+    "changePercent": -1.71,
+    "isPositive": false
   },
   {
     "date": "2025-03-10",
     "open": 126.52,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": -10.49,
+    "changePercent": -7.66,
+    "isPositive": false
   },
   {
     "date": "2025-03-11",
     "open": 118.32,
-    "ahr": 0.39
+    "ahr": 0.39,
+    "change": -8.2,
+    "changePercent": -6.48,
+    "isPositive": false
   },
   {
     "date": "2025-03-12",
     "open": 125.35,
-    "ahr": 0.43
+    "ahr": 0.43,
+    "change": 7.03,
+    "changePercent": 5.94,
+    "isPositive": true
   },
   {
     "date": "2025-03-13",
     "open": 126.61,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": 1.26,
+    "changePercent": 1.01,
+    "isPositive": true
   },
   {
     "date": "2025-03-14",
     "open": 123.36,
-    "ahr": 0.42
+    "ahr": 0.42,
+    "change": -3.25,
+    "changePercent": -2.57,
+    "isPositive": false
   },
   {
     "date": "2025-03-15",
     "open": 133.53,
-    "ahr": 0.49
+    "ahr": 0.49,
+    "change": 10.17,
+    "changePercent": 8.24,
+    "isPositive": true
   },
   {
     "date": "2025-03-16",
     "open": 135.86,
-    "ahr": 0.5
+    "ahr": 0.5,
+    "change": 2.33,
+    "changePercent": 1.74,
+    "isPositive": true
   },
   {
     "date": "2025-03-17",
     "open": 126.13,
-    "ahr": 0.43
+    "ahr": 0.43,
+    "change": -9.73,
+    "changePercent": -7.16,
+    "isPositive": false
   },
   {
     "date": "2025-03-18",
     "open": 128.01,
-    "ahr": 0.45
+    "ahr": 0.45,
+    "change": 1.88,
+    "changePercent": 1.49,
+    "isPositive": true
   },
   {
     "date": "2025-03-19",
     "open": 125.33,
-    "ahr": 0.43
+    "ahr": 0.43,
+    "change": -2.68,
+    "changePercent": -2.09,
+    "isPositive": false
   },
   {
     "date": "2025-03-20",
     "open": 135.33,
-    "ahr": 0.5
+    "ahr": 0.5,
+    "change": 10.0,
+    "changePercent": 7.98,
+    "isPositive": true
   },
   {
     "date": "2025-03-21",
     "open": 127.6,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": -7.73,
+    "changePercent": -5.71,
+    "isPositive": false
   },
   {
     "date": "2025-03-22",
     "open": 128.47,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": 0.87,
+    "changePercent": 0.68,
+    "isPositive": true
   },
   {
     "date": "2025-03-23",
     "open": 128.5,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": 0.03,
+    "changePercent": 0.02,
+    "isPositive": true
   },
   {
     "date": "2025-03-24",
     "open": 132.85,
-    "ahr": 0.47
+    "ahr": 0.47,
+    "change": 4.35,
+    "changePercent": 3.39,
+    "isPositive": true
   },
   {
     "date": "2025-03-25",
     "open": 141.01,
-    "ahr": 0.53
+    "ahr": 0.53,
+    "change": 8.16,
+    "changePercent": 6.14,
+    "isPositive": true
   },
   {
     "date": "2025-03-26",
     "open": 143.64,
-    "ahr": 0.55
+    "ahr": 0.55,
+    "change": 2.63,
+    "changePercent": 1.87,
+    "isPositive": true
   },
   {
     "date": "2025-03-27",
     "open": 137.35,
-    "ahr": 0.5
+    "ahr": 0.5,
+    "change": -6.29,
+    "changePercent": -4.38,
+    "isPositive": false
   },
   {
     "date": "2025-03-28",
     "open": 138.44,
-    "ahr": 0.51
+    "ahr": 0.51,
+    "change": 1.09,
+    "changePercent": 0.79,
+    "isPositive": true
   },
   {
     "date": "2025-03-29",
     "open": 129.5,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": -8.94,
+    "changePercent": -6.46,
+    "isPositive": false
   },
   {
     "date": "2025-03-30",
     "open": 124.58,
-    "ahr": 0.41
+    "ahr": 0.41,
+    "change": -4.92,
+    "changePercent": -3.8,
+    "isPositive": false
   },
   {
     "date": "2025-03-31",
     "open": 124.83,
-    "ahr": 0.41
+    "ahr": 0.41,
+    "change": 0.25,
+    "changePercent": 0.2,
+    "isPositive": true
   },
   {
     "date": "2025-04-01",
     "open": 124.53,
-    "ahr": 0.41
+    "ahr": 0.41,
+    "change": -0.3,
+    "changePercent": -0.24,
+    "isPositive": false
   },
   {
     "date": "2025-04-02",
     "open": 126.68,
-    "ahr": 0.42
+    "ahr": 0.42,
+    "change": 2.15,
+    "changePercent": 1.73,
+    "isPositive": true
   },
   {
     "date": "2025-04-03",
     "open": 117.42,
-    "ahr": 0.36
+    "ahr": 0.36,
+    "change": -9.26,
+    "changePercent": -7.31,
+    "isPositive": false
   },
   {
     "date": "2025-04-04",
     "open": 117.17,
-    "ahr": 0.36
+    "ahr": 0.36,
+    "change": -0.25,
+    "changePercent": -0.21,
+    "isPositive": false
   },
   {
     "date": "2025-04-05",
     "open": 122.8,
-    "ahr": 0.39
+    "ahr": 0.39,
+    "change": 5.63,
+    "changePercent": 4.8,
+    "isPositive": true
   },
   {
     "date": "2025-04-06",
     "open": 120.33,
-    "ahr": 0.38
+    "ahr": 0.38,
+    "change": -2.47,
+    "changePercent": -2.01,
+    "isPositive": false
   },
   {
     "date": "2025-04-07",
     "open": 105.9,
-    "ahr": 0.29
+    "ahr": 0.29,
+    "change": -14.43,
+    "changePercent": -11.99,
+    "isPositive": false
   },
   {
     "date": "2025-04-08",
     "open": 106.98,
-    "ahr": 0.3
+    "ahr": 0.3,
+    "change": 1.08,
+    "changePercent": 1.02,
+    "isPositive": true
   },
   {
     "date": "2025-04-09",
     "open": 105.4,
-    "ahr": 0.29
+    "ahr": 0.29,
+    "change": -1.58,
+    "changePercent": -1.48,
+    "isPositive": false
   },
   {
     "date": "2025-04-10",
     "open": 119.05,
-    "ahr": 0.37
+    "ahr": 0.37,
+    "change": 13.65,
+    "changePercent": 12.95,
+    "isPositive": true
   },
   {
     "date": "2025-04-11",
     "open": 112.8,
-    "ahr": 0.33
+    "ahr": 0.33,
+    "change": -6.25,
+    "changePercent": -5.25,
+    "isPositive": false
   },
   {
     "date": "2025-04-12",
     "open": 121.41,
-    "ahr": 0.38
+    "ahr": 0.38,
+    "change": 8.61,
+    "changePercent": 7.63,
+    "isPositive": true
   },
   {
     "date": "2025-04-13",
     "open": 132.24,
-    "ahr": 0.45
+    "ahr": 0.45,
+    "change": 10.83,
+    "changePercent": 8.92,
+    "isPositive": true
   },
   {
     "date": "2025-04-14",
     "open": 128.38,
-    "ahr": 0.43
+    "ahr": 0.43,
+    "change": -3.86,
+    "changePercent": -2.92,
+    "isPositive": false
   },
   {
     "date": "2025-04-15",
     "open": 129.41,
-    "ahr": 0.43
+    "ahr": 0.43,
+    "change": 1.03,
+    "changePercent": 0.8,
+    "isPositive": true
   },
   {
     "date": "2025-04-16",
     "open": 126.1,
-    "ahr": 0.41
+    "ahr": 0.41,
+    "change": -3.31,
+    "changePercent": -2.56,
+    "isPositive": false
   },
   {
     "date": "2025-04-17",
     "open": 131.33,
-    "ahr": 0.44
+    "ahr": 0.44,
+    "change": 5.23,
+    "changePercent": 4.15,
+    "isPositive": true
   },
   {
     "date": "2025-04-18",
     "open": 134.84,
-    "ahr": 0.47
+    "ahr": 0.47,
+    "change": 3.51,
+    "changePercent": 2.67,
+    "isPositive": true
   },
   {
     "date": "2025-04-19",
     "open": 134.05,
-    "ahr": 0.46
+    "ahr": 0.46,
+    "change": -0.79,
+    "changePercent": -0.59,
+    "isPositive": false
   },
   {
     "date": "2025-04-20",
     "open": 139.86,
-    "ahr": 0.5
+    "ahr": 0.5,
+    "change": 5.81,
+    "changePercent": 4.33,
+    "isPositive": true
   },
   {
     "date": "2025-04-21",
     "open": 137.86,
-    "ahr": 0.48
+    "ahr": 0.48,
+    "change": -2.0,
+    "changePercent": -1.43,
+    "isPositive": false
   },
   {
     "date": "2025-04-22",
     "open": 136.57,
-    "ahr": 0.47
+    "ahr": 0.47,
+    "change": -1.29,
+    "changePercent": -0.94,
+    "isPositive": false
   },
   {
     "date": "2025-04-23",
     "open": 148.78,
-    "ahr": 0.56
+    "ahr": 0.56,
+    "change": 12.21,
+    "changePercent": 8.94,
+    "isPositive": true
   },
   {
     "date": "2025-04-24",
     "open": 151.1,
-    "ahr": 0.58
+    "ahr": 0.58,
+    "change": 2.32,
+    "changePercent": 1.56,
+    "isPositive": true
   },
   {
     "date": "2025-04-25",
     "open": 152.55,
-    "ahr": 0.59
+    "ahr": 0.59,
+    "change": 1.45,
+    "changePercent": 0.96,
+    "isPositive": true
   },
   {
     "date": "2025-04-26",
     "open": 150.82,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": -1.73,
+    "changePercent": -1.13,
+    "isPositive": false
   },
   {
     "date": "2025-04-27",
     "open": 149.22,
-    "ahr": 0.56
+    "ahr": 0.56,
+    "change": -1.6,
+    "changePercent": -1.06,
+    "isPositive": false
   },
   {
     "date": "2025-04-28",
     "open": 147.97,
-    "ahr": 0.55
+    "ahr": 0.55,
+    "change": -1.25,
+    "changePercent": -0.84,
+    "isPositive": false
   },
   {
     "date": "2025-04-29",
     "open": 147.84,
-    "ahr": 0.55
+    "ahr": 0.55,
+    "change": -0.13,
+    "changePercent": -0.09,
+    "isPositive": false
   },
   {
     "date": "2025-04-30",
     "open": 146.3,
-    "ahr": 0.53
+    "ahr": 0.53,
+    "change": -1.54,
+    "changePercent": -1.04,
+    "isPositive": false
   },
   {
     "date": "2025-05-01",
     "open": 147.54,
-    "ahr": 0.54
+    "ahr": 0.54,
+    "change": 1.24,
+    "changePercent": 0.85,
+    "isPositive": true
   },
   {
     "date": "2025-05-02",
     "open": 150.85,
-    "ahr": 0.56
+    "ahr": 0.56,
+    "change": 3.31,
+    "changePercent": 2.24,
+    "isPositive": true
   },
   {
     "date": "2025-05-03",
     "open": 148.04,
-    "ahr": 0.54
+    "ahr": 0.54,
+    "change": -2.81,
+    "changePercent": -1.86,
+    "isPositive": false
   },
   {
     "date": "2025-05-04",
     "open": 146.71,
-    "ahr": 0.53
+    "ahr": 0.53,
+    "change": -1.33,
+    "changePercent": -0.9,
+    "isPositive": false
   },
   {
     "date": "2025-05-05",
     "open": 143.94,
-    "ahr": 0.51
+    "ahr": 0.51,
+    "change": -2.77,
+    "changePercent": -1.89,
+    "isPositive": false
   },
   {
     "date": "2025-05-06",
     "open": 146.72,
-    "ahr": 0.53
+    "ahr": 0.53,
+    "change": 2.78,
+    "changePercent": 1.93,
+    "isPositive": true
   },
   {
     "date": "2025-05-07",
     "open": 146.89,
-    "ahr": 0.53
+    "ahr": 0.53,
+    "change": 0.17,
+    "changePercent": 0.12,
+    "isPositive": true
   },
   {
     "date": "2025-05-08",
     "open": 147.32,
-    "ahr": 0.53
+    "ahr": 0.53,
+    "change": 0.43,
+    "changePercent": 0.29,
+    "isPositive": true
   },
   {
     "date": "2025-05-09",
     "open": 164.46,
-    "ahr": 0.66
+    "ahr": 0.66,
+    "change": 17.14,
+    "changePercent": 11.63,
+    "isPositive": true
   },
   {
     "date": "2025-05-10",
     "open": 172.77,
-    "ahr": 0.73
+    "ahr": 0.73,
+    "change": 8.31,
+    "changePercent": 5.05,
+    "isPositive": true
   },
   {
     "date": "2025-05-11",
     "open": 177.89,
-    "ahr": 0.77
+    "ahr": 0.77,
+    "change": 5.12,
+    "changePercent": 2.96,
+    "isPositive": true
   },
   {
     "date": "2025-05-12",
     "open": 173.2,
-    "ahr": 0.73
+    "ahr": 0.73,
+    "change": -4.69,
+    "changePercent": -2.64,
+    "isPositive": false
   },
   {
     "date": "2025-05-13",
     "open": 174.22,
-    "ahr": 0.73
+    "ahr": 0.73,
+    "change": 1.02,
+    "changePercent": 0.59,
+    "isPositive": true
   },
   {
     "date": "2025-05-14",
     "open": 183.75,
-    "ahr": 0.81
+    "ahr": 0.81,
+    "change": 9.53,
+    "changePercent": 5.47,
+    "isPositive": true
   },
   {
     "date": "2025-05-15",
     "open": 176.63,
-    "ahr": 0.75
+    "ahr": 0.75,
+    "change": -7.12,
+    "changePercent": -3.87,
+    "isPositive": false
   },
   {
     "date": "2025-05-16",
     "open": 169.16,
-    "ahr": 0.69
+    "ahr": 0.69,
+    "change": -7.47,
+    "changePercent": -4.23,
+    "isPositive": false
   },
   {
     "date": "2025-05-17",
     "open": 167.4,
-    "ahr": 0.67
+    "ahr": 0.67,
+    "change": -1.76,
+    "changePercent": -1.04,
+    "isPositive": false
   },
   {
     "date": "2025-05-18",
     "open": 165.94,
-    "ahr": 0.66
+    "ahr": 0.66,
+    "change": -1.46,
+    "changePercent": -0.87,
+    "isPositive": false
   },
   {
     "date": "2025-05-19",
     "open": 173.3,
-    "ahr": 0.72
+    "ahr": 0.72,
+    "change": 7.36,
+    "changePercent": 4.44,
+    "isPositive": true
   },
   {
     "date": "2025-05-20",
     "open": 166.87,
-    "ahr": 0.66
+    "ahr": 0.66,
+    "change": -6.43,
+    "changePercent": -3.71,
+    "isPositive": false
   },
   {
     "date": "2025-05-21",
     "open": 168.59,
-    "ahr": 0.68
+    "ahr": 0.68,
+    "change": 1.72,
+    "changePercent": 1.03,
+    "isPositive": true
   },
   {
     "date": "2025-05-22",
     "open": 173.54,
-    "ahr": 0.71
+    "ahr": 0.71,
+    "change": 4.95,
+    "changePercent": 2.94,
+    "isPositive": true
   },
   {
     "date": "2025-05-23",
     "open": 179.68,
-    "ahr": 0.76
+    "ahr": 0.76,
+    "change": 6.14,
+    "changePercent": 3.54,
+    "isPositive": true
   },
   {
     "date": "2025-05-24",
     "open": 174.0,
-    "ahr": 0.71
+    "ahr": 0.71,
+    "change": -5.68,
+    "changePercent": -3.16,
+    "isPositive": false
   },
   {
     "date": "2025-05-25",
     "open": 175.87,
-    "ahr": 0.73
+    "ahr": 0.73,
+    "change": 1.87,
+    "changePercent": 1.07,
+    "isPositive": true
   },
   {
     "date": "2025-05-26",
     "open": 175.75,
-    "ahr": 0.73
+    "ahr": 0.73,
+    "change": -0.12,
+    "changePercent": -0.07,
+    "isPositive": false
   },
   {
     "date": "2025-05-27",
     "open": 174.92,
-    "ahr": 0.72
+    "ahr": 0.72,
+    "change": -0.83,
+    "changePercent": -0.47,
+    "isPositive": false
   },
   {
     "date": "2025-05-28",
     "open": 176.72,
-    "ahr": 0.73
+    "ahr": 0.73,
+    "change": 1.8,
+    "changePercent": 1.03,
+    "isPositive": true
   },
   {
     "date": "2025-05-29",
     "open": 172.22,
-    "ahr": 0.69
+    "ahr": 0.69,
+    "change": -4.5,
+    "changePercent": -2.55,
+    "isPositive": false
   },
   {
     "date": "2025-05-30",
     "open": 166.71,
-    "ahr": 0.65
+    "ahr": 0.65,
+    "change": -5.51,
+    "changePercent": -3.2,
+    "isPositive": false
   },
   {
     "date": "2025-05-31",
     "open": 156.2,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": -10.51,
+    "changePercent": -6.3,
+    "isPositive": false
   },
   {
     "date": "2025-06-01",
     "open": 156.45,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": 0.25,
+    "changePercent": 0.16,
+    "isPositive": true
   },
   {
     "date": "2025-06-02",
     "open": 157.68,
-    "ahr": 0.58
+    "ahr": 0.58,
+    "change": 1.23,
+    "changePercent": 0.79,
+    "isPositive": true
   },
   {
     "date": "2025-06-03",
     "open": 156.83,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": -0.85,
+    "changePercent": -0.54,
+    "isPositive": false
   },
   {
     "date": "2025-06-04",
     "open": 155.19,
-    "ahr": 0.56
+    "ahr": 0.56,
+    "change": -1.64,
+    "changePercent": -1.05,
+    "isPositive": false
   },
   {
     "date": "2025-06-05",
     "open": 153.27,
-    "ahr": 0.55
+    "ahr": 0.55,
+    "change": -1.92,
+    "changePercent": -1.24,
+    "isPositive": false
   },
   {
     "date": "2025-06-06",
     "open": 144.28,
-    "ahr": 0.48
+    "ahr": 0.48,
+    "change": -8.99,
+    "changePercent": -5.87,
+    "isPositive": false
   },
   {
     "date": "2025-06-07",
     "open": 147.82,
-    "ahr": 0.51
+    "ahr": 0.51,
+    "change": 3.54,
+    "changePercent": 2.45,
+    "isPositive": true
   },
   {
     "date": "2025-06-08",
     "open": 150.07,
-    "ahr": 0.52
+    "ahr": 0.52,
+    "change": 2.25,
+    "changePercent": 1.52,
+    "isPositive": true
   },
   {
     "date": "2025-06-09",
     "open": 152.45,
-    "ahr": 0.54
+    "ahr": 0.54,
+    "change": 2.38,
+    "changePercent": 1.59,
+    "isPositive": true
   },
   {
     "date": "2025-06-10",
     "open": 161.16,
-    "ahr": 0.6
+    "ahr": 0.6,
+    "change": 8.71,
+    "changePercent": 5.71,
+    "isPositive": true
   },
   {
     "date": "2025-06-11",
     "open": 165.12,
-    "ahr": 0.64
+    "ahr": 0.64,
+    "change": 3.96,
+    "changePercent": 2.46,
+    "isPositive": true
   },
   {
     "date": "2025-06-12",
     "open": 160.98,
-    "ahr": 0.6
+    "ahr": 0.6,
+    "change": -4.14,
+    "changePercent": -2.51,
+    "isPositive": false
   },
   {
     "date": "2025-06-13",
     "open": 152.32,
-    "ahr": 0.54
+    "ahr": 0.54,
+    "change": -8.66,
+    "changePercent": -5.38,
+    "isPositive": false
   },
   {
     "date": "2025-06-14",
     "open": 148.6,
-    "ahr": 0.51
+    "ahr": 0.51,
+    "change": -3.72,
+    "changePercent": -2.44,
+    "isPositive": false
   },
   {
     "date": "2025-06-15",
     "open": 144.65,
-    "ahr": 0.49
+    "ahr": 0.49,
+    "change": -3.95,
+    "changePercent": -2.66,
+    "isPositive": false
   },
   {
     "date": "2025-06-16",
     "open": 152.97,
-    "ahr": 0.55
+    "ahr": 0.55,
+    "change": 8.32,
+    "changePercent": 5.75,
+    "isPositive": true
   },
   {
     "date": "2025-06-17",
     "open": 150.73,
-    "ahr": 0.53
+    "ahr": 0.53,
+    "change": -2.24,
+    "changePercent": -1.46,
+    "isPositive": false
   },
   {
     "date": "2025-06-18",
     "open": 147.58,
-    "ahr": 0.51
+    "ahr": 0.51,
+    "change": -3.15,
+    "changePercent": -2.09,
+    "isPositive": false
   },
   {
     "date": "2025-06-19",
     "open": 146.35,
-    "ahr": 0.5
+    "ahr": 0.5,
+    "change": -1.23,
+    "changePercent": -0.83,
+    "isPositive": false
   },
   {
     "date": "2025-06-20",
     "open": 147.04,
-    "ahr": 0.5
+    "ahr": 0.5,
+    "change": 0.69,
+    "changePercent": 0.47,
+    "isPositive": true
   },
   {
     "date": "2025-06-21",
     "open": 140.11,
-    "ahr": 0.46
+    "ahr": 0.46,
+    "change": -6.93,
+    "changePercent": -4.71,
+    "isPositive": false
   },
   {
     "date": "2025-06-22",
     "open": 135.43,
-    "ahr": 0.43
+    "ahr": 0.43,
+    "change": -4.68,
+    "changePercent": -3.34,
+    "isPositive": false
   },
   {
     "date": "2025-06-23",
     "open": 131.71,
-    "ahr": 0.4
+    "ahr": 0.4,
+    "change": -3.72,
+    "changePercent": -2.75,
+    "isPositive": false
   },
   {
     "date": "2025-06-24",
     "open": 144.51,
-    "ahr": 0.49
+    "ahr": 0.49,
+    "change": 12.8,
+    "changePercent": 9.72,
+    "isPositive": true
   },
   {
     "date": "2025-06-25",
     "open": 145.93,
-    "ahr": 0.5
+    "ahr": 0.5,
+    "change": 1.42,
+    "changePercent": 0.98,
+    "isPositive": true
   },
   {
     "date": "2025-06-26",
     "open": 143.57,
-    "ahr": 0.48
+    "ahr": 0.48,
+    "change": -2.36,
+    "changePercent": -1.62,
+    "isPositive": false
   },
   {
     "date": "2025-06-27",
     "open": 139.05,
-    "ahr": 0.45
+    "ahr": 0.45,
+    "change": -4.52,
+    "changePercent": -3.15,
+    "isPositive": false
   },
   {
     "date": "2025-06-28",
     "open": 142.09,
-    "ahr": 0.47
+    "ahr": 0.47,
+    "change": 3.04,
+    "changePercent": 2.19,
+    "isPositive": true
   },
   {
     "date": "2025-06-29",
     "open": 150.73,
-    "ahr": 0.53
+    "ahr": 0.53,
+    "change": 8.64,
+    "changePercent": 6.08,
+    "isPositive": true
   },
   {
     "date": "2025-06-30",
     "open": 153.32,
-    "ahr": 0.55
+    "ahr": 0.55,
+    "change": 2.59,
+    "changePercent": 1.72,
+    "isPositive": true
   },
   {
     "date": "2025-07-01",
     "open": 154.82,
-    "ahr": 0.56
+    "ahr": 0.56,
+    "change": 1.5,
+    "changePercent": 0.98,
+    "isPositive": true
   },
   {
     "date": "2025-07-02",
     "open": 146.87,
-    "ahr": 0.5
+    "ahr": 0.5,
+    "change": -7.95,
+    "changePercent": -5.13,
+    "isPositive": false
   },
   {
     "date": "2025-07-03",
     "open": 152.28,
-    "ahr": 0.54
+    "ahr": 0.54,
+    "change": 5.41,
+    "changePercent": 3.68,
+    "isPositive": true
   },
   {
     "date": "2025-07-04",
     "open": 152.35,
-    "ahr": 0.54
+    "ahr": 0.54,
+    "change": 0.07,
+    "changePercent": 0.05,
+    "isPositive": true
   },
   {
     "date": "2025-07-05",
     "open": 147.69,
-    "ahr": 0.51
+    "ahr": 0.51,
+    "change": -4.66,
+    "changePercent": -3.06,
+    "isPositive": false
   },
   {
     "date": "2025-07-06",
     "open": 147.55,
-    "ahr": 0.51
+    "ahr": 0.51,
+    "change": -0.14,
+    "changePercent": -0.09,
+    "isPositive": false
   },
   {
     "date": "2025-07-07",
     "open": 151.86,
-    "ahr": 0.54
+    "ahr": 0.54,
+    "change": 4.31,
+    "changePercent": 2.92,
+    "isPositive": true
   },
   {
     "date": "2025-07-08",
     "open": 148.89,
-    "ahr": 0.52
+    "ahr": 0.52,
+    "change": -2.97,
+    "changePercent": -1.96,
+    "isPositive": false
   },
   {
     "date": "2025-07-09",
     "open": 151.68,
-    "ahr": 0.53
+    "ahr": 0.53,
+    "change": 2.79,
+    "changePercent": 1.87,
+    "isPositive": true
   },
   {
     "date": "2025-07-10",
     "open": 157.06,
-    "ahr": 0.57
+    "ahr": 0.57,
+    "change": 5.38,
+    "changePercent": 3.55,
+    "isPositive": true
   },
   {
     "date": "2025-07-11",
     "open": 164.33,
-    "ahr": 0.62
+    "ahr": 0.62,
+    "change": 7.27,
+    "changePercent": 4.63,
+    "isPositive": true
   },
   {
     "date": "2025-07-12",
     "open": 162.92,
-    "ahr": 0.61
+    "ahr": 0.61,
+    "change": -1.41,
+    "changePercent": -0.86,
+    "isPositive": false
   },
   {
     "date": "2025-07-13",
     "open": 160.7,
-    "ahr": 0.6
+    "ahr": 0.6,
+    "change": -2.22,
+    "changePercent": -1.36,
+    "isPositive": false
   },
   {
     "date": "2025-07-14",
     "open": 161.15,
-    "ahr": 0.6
+    "ahr": 0.6,
+    "change": 0.45,
+    "changePercent": 0.28,
+    "isPositive": true
   },
   {
     "date": "2025-07-15",
     "open": 162.21,
-    "ahr": 0.61
+    "ahr": 0.6,
+    "change": 1.06,
+    "changePercent": 0.66,
+    "isPositive": true
   },
   {
     "date": "2025-07-16",
     "open": 163.98,
-    "ahr": 0.62
+    "ahr": 0.62,
+    "change": 1.77,
+    "changePercent": 1.09,
+    "isPositive": true
   },
   {
     "date": "2025-07-17",
     "open": 173.62,
-    "ahr": 0.69
+    "ahr": 0.69,
+    "change": 9.64,
+    "changePercent": 5.88,
+    "isPositive": true
   },
   {
     "date": "2025-07-18",
     "open": 175.88,
-    "ahr": 0.71
+    "ahr": 0.71,
+    "change": 2.26,
+    "changePercent": 1.3,
+    "isPositive": true
   }
 ]

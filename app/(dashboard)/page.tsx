@@ -1,23 +1,19 @@
 "use client"
+import { ArrowDown, ArrowUp, PauseCircle, Star, DollarSign } from "lucide-react"
+import ReactECharts from "echarts-for-react"
+import { Badge } from "@/components/ui/badge"
+import { useState, useEffect } from "react"
 
-import Link from "next/link" // Import Link for navigation
-import {
-  Twitter,
-  Facebook,
-  Instagram,
-  Send,
-  MessageSquare,
-  TrendingUp,
-  ArrowDown,
-  ArrowUp,
-  PauseCircle,
-  Star,
-  DollarSign,
-} from "lucide-react" // Import all necessary icons
-import ReactECharts from 'echarts-for-react' // Import ECharts component
-import { Badge } from "@/components/ui/badge" // Assuming Badge is a shadcn/ui component
+// Define types
+interface HistoricalData {
+  date: string
+  open: number
+  ahr: number
+  change: number
+  changePercent: number
+  isPositive: boolean
+}
 
-// MetricCard Component (moved from components/metric-card.tsx)
 interface Metric {
   title: string
   value: string
@@ -25,14 +21,22 @@ interface Metric {
   changePercent: string
   date: string
   isPositive: boolean | null
-  isLongTermInvest?: boolean // Added for long-term investment indicator
-  score: number // Added for today's evaluation score
+  isLongTermInvest?: boolean
+  score: number
+  chartData: [string, number, number][]
 }
 
-function MetricCard({ metric }: { metric: Metric }) {
-  const currentValueNum = Number.parseFloat(metric.value.replace(/,/g, ""))
-  const chartData = generateChartData(currentValueNum)
+// Helper to convert historical data
+const processChartData = (historicalData: HistoricalData[]) => {
+  return historicalData.map((item) => [
+    item.date,
+    item.open,
+    Math.round(item.ahr * 100),
+  ])
+}
 
+// MetricCard
+function MetricCard({ metric }: { metric: Metric }) {
   const getChangeColor = () => {
     if (metric.isPositive === null) return "text-gray-500"
     return metric.isPositive ? "text-green-600" : "text-red-600"
@@ -41,30 +45,13 @@ function MetricCard({ metric }: { metric: Metric }) {
   const formatValue = (value: string) => {
     const num = Number.parseFloat(value.replace(/,/g, ""))
     if (num >= 1000) {
-      return num.toLocaleString()
+      return num.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })
     }
     return value
   }
 
-  const getYAxisDomain = () => {
-    const values = chartData.map((d) => Number(d[1]))
-    const min = Math.min(...values)
-    const max = Math.max(...values)
-    const padding = (max - min) * 0.1
-    return [Math.max(0, min - padding), max + padding]
-  }
-
-  // New function to determine recommendation based on score
   const getRecommendationDetails = (score: number) => {
-    if (score < 40) {
-      return {
-        text: "Double Buy",
-        icon: <DollarSign className="h-4 w-4 mr-1" />, // Using DollarSign for Double Buy
-        colorClass: "text-blue-600",
-        riskText: "Very Low Risk",
-      }
-    } else if (score < 85) {
-      // score >= 40 and < 85
+    if  (score < 85) {
       return {
         text: "Recommended Buy",
         icon: <ArrowUp className="h-4 w-4 mr-1" />,
@@ -72,7 +59,6 @@ function MetricCard({ metric }: { metric: Metric }) {
         riskText: "Low Risk",
       }
     } else if (score < 125) {
-      // score >= 85 and < 125
       return {
         text: "Pause",
         icon: <PauseCircle className="h-4 w-4 mr-1" />,
@@ -80,7 +66,6 @@ function MetricCard({ metric }: { metric: Metric }) {
         riskText: "Moderate Risk",
       }
     } else {
-      // score >= 125
       return {
         text: "Recommended Sell",
         icon: <ArrowDown className="h-4 w-4 mr-1" />,
@@ -94,14 +79,11 @@ function MetricCard({ metric }: { metric: Metric }) {
 
   return (
     <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm py-7">
-      {/* Header */}
       <div className="mb-2">
         <div className="flex justify-between items-center mb-1">
           <h3 className="text-base font-semibold text-gray-900 flex items-center">
             {metric.title}
-            {metric.isLongTermInvest && (
-              <Star className="h-4 w-4 ml-2 text-yellow-500" />
-            )}
+            {metric.isLongTermInvest && <Star className="h-4 w-4 ml-2 text-yellow-500" />}
           </h3>
           <span className={`flex items-center font-semibold text-sm ${recommendation.colorClass}`}>
             {recommendation.icon} {recommendation.text}
@@ -109,7 +91,6 @@ function MetricCard({ metric }: { metric: Metric }) {
         </div>
       </div>
 
-      {/* Value and Change */}
       <div className="mb-2">
         <div className="flex items-baseline space-x-3">
           <span className="text-2xl font-bold text-gray-900">{formatValue(metric.value)}</span>
@@ -119,7 +100,6 @@ function MetricCard({ metric }: { metric: Metric }) {
         </div>
       </div>
 
-      {/* Today's Evaluation */}
       <div className="mb-4 mt-2">
         <div className="flex items-center justify-between text-sm">
           <span className="font-semibold text-gray-700">Today's Evaluation:</span>
@@ -133,97 +113,61 @@ function MetricCard({ metric }: { metric: Metric }) {
         </p>
       </div>
 
-      {/* Chart */}
       <div className="h-18 mt-2">
-            <ReactECharts
-            option={{
-              // prettier-ignore
-              tooltip: {
-                trigger: 'axis',
-                formatter: function(params: any) {
-                  const rawData = params[0].data.rawData || params[0].data;
-                  return `
-                    Date: ${rawData[0]}<br/>
-                    Main Value: ${Number(rawData[1]).toFixed(5)}<br/>
-                    Reference Value: ${rawData[2] ? Number(rawData[2]).toFixed(2) : 'N/A'}
-                  `;
-                }
+        <ReactECharts
+          option={{
+            tooltip: {
+              trigger: "axis",
+              formatter: (params: any) => {
+                const rawData = params[0].data.rawData || params[0].data
+                return `
+                  Date: ${rawData[0]}<br/>
+                  Main Value: ${Number(rawData[1]).toFixed(5)}<br/>
+                  Reference Value: ${rawData[2] ? Number(rawData[2]).toFixed(2) : "N/A"}
+                `
               },
-              xAxis: {
-                type: 'category',
-                data: chartData.map(item => item[0]),
-                show: false
-              },
-              yAxis: {
-                type: 'value',
-                show: false,
-                min: function(value: number) {
-                  const minVal = Math.min(...chartData.map(item => Number(item[1])));
-                  return minVal * 0.9; // 留10%下边距
-                },
-                max: function(value: number) {
-                  const maxVal = Math.max(...chartData.map(item => Number(item[1])));
-                  return maxVal * 1.1; // 留10%上边距
-                }
-              },
-              series: [{
-                type: 'line',
-                data: chartData.map(item => ({
+            },
+            xAxis: {
+              type: "category",
+              data: metric.chartData.map((item) => item[0]),
+              show: false,
+            },
+            yAxis: {
+              type: "value",
+              show: false,
+              min: () => Math.min(...metric.chartData.map((item) => item[1])) * 0.9,
+              max: () => Math.max(...metric.chartData.map((item) => item[1])) * 1.1,
+            },
+            series: [
+              {
+                type: "line",
+                data: metric.chartData.map((item) => ({
                   value: item[1],
                   name: item[0],
                   rawData: item,
                   itemStyle: {
-                    color: Number(item[2]) < 85 ? '#00FF00' : // green for Reference Value < 85
-                           Number(item[2]) > 120 ? '#FF0000' : // red for Reference Value > 120
-                           '#3398DB' // default blue for others
-                  }
+                    color: item[2] < 85 ? "#00FF00" : item[2] > 120 ? "#FF0000" : "#3398DB",
+                  },
                 })),
-                lineStyle: {
-                  color: '#3398DB'
-                },
-                symbol: 'circle',
-                symbolSize: 5,
-                showAllSymbol: true, // 强制显示所有点
-                symbolKeepAspect: true, // 保持圆形比例
-                showSymbol: true,  
-                label: {
-                  show: false
-                }
-              }]
-            }}
-            style={{ height: '100%', width: '100%' }}
-            opts={{ renderer: 'svg' }}
-          />
+                lineStyle: { color: "#3398DB" },
+                symbol: "circle",
+                symbolSize: 1.8,
+                showAllSymbol: true,
+                showSymbol: true,
+                label: { show: false },
+              },
+            ],
+          }}
+          style={{ height: "100%", width: "100%" }}
+          opts={{ renderer: "svg" }}
+        />
         <div className="text-xs text-gray-500 text-right mt-1">{metric.date}</div>
       </div>
     </div>
   )
 }
 
-// Helper function for chart data (moved from components/metric-card.tsx)
-const generateChartData = (currentValue: number) => {
-  const points = 50
-  const data = []
-  const volatility = currentValue * 0.2 // 20% volatility
-
-  for (let i = 0; i < points; i++) {
-    const value = currentValue + (Math.random() * 2 - 1) * volatility * (Math.sin(i / 3) + 1.5)
-    // Generate indicator between 50-150 based on value variation
-    const indicator = 100 + (value - currentValue) / currentValue * 100
-    // Generate dates in YYYY-MM-DD format
-    const date = new Date(2000, 5, 5 + i); // Starting from 2000-06-05
-    const formattedDate = date.toISOString().split('T')[0];
-
-    data.push([
-      formattedDate,
-      Math.max(0, value),
-      Math.max(50, Math.min(150, indicator))
-    ])
-  }
-  return data
-}
-
-// FaqSection Component (moved from components/faq-section.tsx)
+// FAQ Section
 const faqs = [
   {
     id: "1",
@@ -296,123 +240,62 @@ function FaqSection() {
   )
 }
 
-// Main Page Component
-const cryptoMetricsData = [
-  {
-    title: "BTC/USDT",
-    value: "68,500.23",
-    change: "+123.45",
-    changePercent: "+0.18%",
-    date: "Jul 15,2025",
-    isPositive: true,
-    isLongTermInvest: true,
-    score: 30, // Double Buy
-  },
-  {
-    title: "ETH/USDT",
-    value: "3,890.75",
-    change: "-15.20",
-    changePercent: "-0.39%",
-    date: "Jul 15,2025",
-    isPositive: false,
-    isLongTermInvest: true,
-    score: 70, // Recommended Buy
-  },
-  {
-    title: "BNB/USDT",
-    value: "610.50",
-    change: "+5.10",
-    changePercent: "+0.84%",
-    date: "Jul 15,2025",
-    isPositive: true,
-    isLongTermInvest: true,
-    score: 95, // Pause
-  },
-  {
-    title: "SOL/USDT",
-    value: "155.80",
-    change: "-2.30",
-    changePercent: "-1.45%",
-    date: "Jul 15,2025",
-    isPositive: false,
-    isLongTermInvest: true,
-    score: 130, // Recommended Sell
-  },
-  {
-    title: "XRP/USDT",
-    value: "0.52",
-    change: "+0.01",
-    changePercent: "+1.96%",
-    date: "Jul 15,2025",
-    isPositive: true,
-    score: 45, // Recommended Buy
-  },
-  {
-    title: "ADA/USDT",
-    value: "0.40",
-    change: "-0.005",
-    changePercent: "-1.23%",
-    date: "Jul 15,2025",
-    isPositive: false,
-    score: 100, // Pause
-  },
-  {
-    title: "DOGE/USDT",
-    value: "0.12",
-    change: "+0.002",
-    changePercent: "+1.69%",
-    date: "Jul 15,2025",
-    isPositive: true,
-    score: 25, // Double Buy
-  },
-  {
-    title: "DOT/USDT",
-    value: "7.80",
-    change: "-0.15",
-    changePercent: "-1.89%",
-    date: "Jul 15,2025",
-    isPositive: false,
-    score: 110, // Pause
-  },
-  {
-    title: "LTC/USDT",
-    value: "75.20",
-    change: "+0.80",
-    changePercent: "+1.08%",
-    date: "Jul 15,2025",
-    isPositive: true,
-    score: 80, // Recommended Buy
-  },
-  {
-    title: "LINK/USDT",
-    value: "14.30",
-    change: "-0.25",
-    changePercent: "-1.72%",
-    date: "Jul 15,2025",
-    isPositive: false,
-    score: 140, // Recommended Sell
-  },
-  {
-    title: "BCH/USDT",
-    value: "420.00",
-    change: "+5.50",
-    changePercent: "+1.33%",
-    date: "Jul 15,2025",
-    isPositive: true,
-    score: 35, // Double Buy
-  },
-  {
-    title: "XLM/USDT",
-    value: "0.10",
-    change: "-0.001",
-    changePercent: "-0.99%",
-    date: "Jul 15,2025",
-    isPositive: false,
-    score: 90, // Pause
-  },
-]
-
+// Main Page
 export default function CryptoDashboard() {
+  const [cryptoMetrics, setCryptoMetrics] = useState<Metric[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    const fetchCryptoData = async () => {
+      try {
+        setLoading(true)
+        const [btcRes, ethRes, solRes, bnbRes] = await Promise.all([
+          fetch("/python/BTCUSDT.json"),
+          fetch("/python/ETHUSDT.json"),
+          fetch("/python/SOLUSDT.json"),
+          fetch("/python/BNBUSDT.json"),
+        ])
+
+        const btcData: HistoricalData[] = await btcRes.json()
+        const ethData: HistoricalData[] = await ethRes.json()
+        const solData: HistoricalData[] = await solRes.json()
+        const bnbData: HistoricalData[] = await bnbRes.json()
+
+        const metrics: Metric[] = []
+
+        const pushMetric = (data: HistoricalData[], title: string, isLongTermInvest = false) => {
+          if (!data.length) return
+          const latest = data[data.length - 1]
+          metrics.push({
+            title,
+            value: latest.open.toFixed(2),
+            change: latest.change.toFixed(2),
+            changePercent: latest.changePercent.toFixed(2) + "%",
+            date: latest.date,
+            isPositive: latest.isPositive,
+            isLongTermInvest,
+            score: Math.round(latest.ahr * 100),
+            chartData: processChartData(data),
+          })
+        }
+
+        pushMetric(btcData, "BTC/USDT", true)
+        pushMetric(ethData, "ETH/USDT")
+        pushMetric(solData, "SOL/USDT")
+        pushMetric(bnbData, "BNB/USDT")
+
+        setCryptoMetrics(metrics)
+      } catch (e: any) {
+        setError(e.message)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchCryptoData()
+  }, [])
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -421,75 +304,33 @@ export default function CryptoDashboard() {
           Daily Dollar-Cost Averaging (DCA) in Crypto:
         </h1>
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
-          <span className="text-orange-500">BTC, ETH, BNB,SOL,</span>
+          <span className="text-orange-500">BTC, ETH, SOL, BNB,</span>
           <span className="text-gray-900"> and More</span>
         </h2>
         <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-          For digital asset investors: Smart daily DCA with real-time risk monitoring. Join our proven strategy—maintaining a flawless 0% loss rate and 100% success rate since 2018.
+          For digital asset investors: Smart daily DCA with real-time risk monitoring. Join our proven
+          strategy—maintaining a flawless 0% loss rate and 100% success rate since 2018.
         </p>
       </div>
 
-      {/* Metrics Grid */}
+      {/* Metric Cards */}
       <div className="container mx-auto px-4 pb-12 mt-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {cryptoMetricsData.map((metric, index) => (
-            <MetricCard key={index} metric={metric} />
-          ))}
+          {loading
+            ? Array.from({ length: 4 }).map((_, i) => (
+                <div key={i} className="animate-pulse bg-gray-100 h-[280px] rounded-xl border border-gray-200 shadow-sm" />
+              ))
+            : error
+              ? <div className="col-span-full text-red-500 text-center">{error}</div>
+              : cryptoMetrics.map((metric, index) => (
+                  <MetricCard key={index} metric={metric} />
+                ))}
         </div>
       </div>
 
       {/* FAQ Section */}
       <FaqSection />
-
-      {/* Footer */}
-      <footer className="border-t bg-muted/50 flex flex-col justify-center items-center">
-        <div className="container flex flex-col gap-6 py-8 px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4">
-            <h3 className="text-base font-medium">Follow Us</h3>
-            <div className="flex items-center gap-6">
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
-                  <Twitter className="h-6 w-6" />
-                  <span className="text-xs">Twitter</span>
-                </div>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
-                  <Facebook className="h-6 w-6" />
-                  <span className="text-xs">Facebook</span>
-                </div>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
-                  <Instagram className="h-6 w-6" />
-                  <span className="text-xs">Instagram</span>
-                </div>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
-                  <Send className="h-6 w-6" />
-                  <span className="text-xs">Telegram</span>
-                </div>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
-                <div className="flex flex-col items-center gap-2">
-                  <MessageSquare className="h-6 w-6" />
-                  <span className="text-xs">Discord</span>
-                </div>
-              </Link>
-            </div>
-          </div>
-          <div className="flex flex-col gap-4 sm:flex-row items-center justify-center">
-            <div className="flex items-center gap-2">
-              <TrendingUp className="h-6 w-6" />
-              <span className="font-bold">Smart Invest Digital</span>
-            </div>
-            <p className="text-xs text-muted-foreground">
-              © {new Date().getFullYear()} Smart Invest Digital. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      
     </div>
   )
 }
